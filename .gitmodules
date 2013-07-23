@@ -1,0 +1,3 @@
+[submodule "app/CMS"]
+	path = app/CMS
+	url = git://github.com/vitkutny/cms-module
