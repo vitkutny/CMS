@@ -1,3 +1,9 @@
 [submodule "app/CMS"]
 	path = app/CMS
 	url = git://github.com/vitkutny/cms-module
+[submodule "app/Menu"]
+	path = app/Menu
+	url = git://github.com/vitkutny/cms-module-menu
+[submodule "app/Page"]
+	path = app/Page
+	url = git://github.com/vitkutny/cms-module-page
