@@ -1,0 +1,7 @@
+parameters:
+services:
+    - CMS\Menu\Model\ListRepository
+    - CMS\Menu\Model\NodeRepository
+factories:
+    menuFactory:
+        implement: CMS\Menu\Component\MenuFactory

@@ -1,0 +1,5 @@
+<nav class="breadcrumbs" n:inner-foreach="$breadcrumb as $node">
+    <a n:class="$iterator->last?current" href="{ifset $node['link']}{ifset $node['link_id']}{plink $node['link'], id=>$node['link_id']}{else}{plink $node['link']}{/ifset}{else}#{/ifset}">
+        {$node['title']}
+    </a>
+</nav>

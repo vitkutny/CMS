@@ -1,0 +1,31 @@
+{extends '../../templates/@layout.latte'}
+{#core}
+<div class="contain-to-grid">
+    <nav class="top-bar">
+        <ul class="title-area">
+            <li class="name">
+                <h1>
+                    <a n:href="$home->link,id=>$home->link_id">
+                        <i class="icon-home"></i> {$home->title}
+                    </a>
+                </h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+        <section class="top-bar-section">
+            {control menu:navbar front}
+        </section>
+    </nav>
+</div>
+<div class="row">
+    <div class="column">
+        {control menu:breadcrumb}
+        <p n:foreach="$flashes as $flash" data-alert class="alert-box {$flash->type}">
+            {$flash->message}
+            <a href="#" class="close">&times;</a>
+        </p>
+    </div>
+    <div class="column">
+        {include #module}
+    </div>
+</div>

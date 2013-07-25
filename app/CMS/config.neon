@@ -1,0 +1,35 @@
+includes:
+    - config.local.neon
+    - /../Menu/config.neon
+    - /../Page/config.neon
+parameters:
+    cmsDir: %appDir%/CMS
+    modulesDir: %appDir%/modules
+    jsDir: %cmsDir%/templates/js
+    cssDir: %cmsDir%/templates/css
+    javascript:
+        modernizr: %jsDir%/custom.modernizr.js
+        jQuery: %jsDir%/jquery-2.0.3.min.js
+        foundation: %jsDir%/foundation.min.js
+        cms: %jsDir%/cms.js
+        liveForm: %jsDir%/live-form-validation.js
+    css:
+        normalize: %cssDir%/normalize.css
+        foundation: %cssDir%/foundation.min.css
+        fontAwesome: %cssDir%/font-awesome.min.css
+        cms: %cssDir%/cms.css
+services:
+factories:
+nette:
+    application:
+        mapping:
+            *: CMS\*\*Presenter
+        errorPresenter: Error
+    routing:
+        routes:
+            '<module>[/<presenter>][/<action>][/<id>]':
+                module: Front
+                presenter: Home
+                action: view
+    session:
+        expiration: 14 days

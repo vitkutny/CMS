@@ -1,0 +1,15 @@
+{var $level=0}
+<ul n:class="$level==0?left:dropdown" n:block="nav">
+    {var $level++}
+    {foreach $menu as $node}
+        {var $subMenu=$node->related('node')->order('position')->order('title')}
+        <li n:class="isset($breadcrumb[$node->id])?active,$subMenu->count()?has-dropdown">
+            <a href="{plink $node->link,id=>$node->link_id}">
+                {$node->title}
+            </a>
+            {if $subMenu->count()}
+                {include #nav, menu=>$subMenu}
+            {/if}
+        </li>
+    {/foreach}
+</ul>

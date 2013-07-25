@@ -1,0 +1,12 @@
+{block #content}
+<ul n:block="menu">
+    <li n:foreach="$menu as $node">
+        {var $subMenu=$node->related('node')}
+        <a n:href="Node:edit, id=>$node->id">
+            {$node->title}
+        </a>
+        {if $subMenu->count()}
+            {include #menu, menu=>$subMenu}
+        {/if}
+    </li>
+</ul>
