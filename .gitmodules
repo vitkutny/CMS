@@ -1,9 +1,0 @@
-[submodule "app/Menu"]
-	path = app/Menu
-	url = git://github.com/vitkutny/cms-module-menu
-[submodule "app/Page"]
-	path = app/Page
-	url = git://github.com/vitkutny/cms-module-page
-[submodule "app/CMS"]
-	path = app/CMS
-	url = https://github.com/vitkutny/cms-module.git
