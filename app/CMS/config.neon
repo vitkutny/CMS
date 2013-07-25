@@ -1,7 +1,5 @@
 includes:
     - config.local.neon
-    - /../Menu/config.neon
-    - /../Page/config.neon
 parameters:
     cmsDir: %appDir%/CMS
     modulesDir: %appDir%/modules
