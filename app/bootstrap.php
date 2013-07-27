@@ -1,8 +1,8 @@
 <?php
 
-require __DIR__ . '/../libs/autoload.php';
+require_once __DIR__ . '/../libs/autoload.php';
 $configurator = new Nette\Configurator;
-//$configurator->setDebugMode(FALSE);
+//$configurator->setDebugMode(TRUE);
 $configurator->enableDebugger(__DIR__ . '/../log');
 $configurator->setTempDirectory(__DIR__ . '/../temp');
 $configurator->createRobotLoader()
@@ -22,4 +22,4 @@ $configurator->addConfig(__DIR__ . '/CMS/config.neon');
 
 $container = $configurator->createContainer();
 
-return $container;
+$container->application->run();
