@@ -1,0 +1,18 @@
+parameters:
+services:
+    pageRepository: CMS\Page\Model\PageRepository
+factories:
+nette:
+    routing:
+        routes:
+            '<id .*>-page':
+                module: 'Page'
+                presenter: 'Page'
+                action: 'view'
+                id:
+                    filterIn:
+                        - @pageRepository
+                        - filterIn
+                    filterOut:
+                        - @pageRepository
+                        - filterOut
