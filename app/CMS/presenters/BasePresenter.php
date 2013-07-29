@@ -4,14 +4,13 @@
  * TODO:
  * Shared components:
  * User, Photo, Comments
- * FormRenderer
+ * ACL
  */
 
 namespace CMS;
 
 use WebLoader;
 use Nette\Application\UI\Presenter;
-use CMS\Menu\Component\MenuFactory;
 use CMS\Menu\Component\MenuControl;
 use \JavaScriptPacker as JsPacker;
 
@@ -27,9 +26,16 @@ abstract class BasePresenter extends Presenter {
      */
     protected $menu;
 
+    /**
+     * @inject
+     * @var \CMS\Menu\Component\MenuFactory
+     */
+    public $menuFactory;
+
     protected function startup() {
         parent::startup();
         $this->baseBacklink = $this->storeRequest();
+        $this->menu = $this->menuFactory->create();
     }
 
     protected function beforeRender() {
@@ -41,7 +47,6 @@ abstract class BasePresenter extends Presenter {
     }
 
     /**
-     * 
      * @return \WebLoader\Nette\CssLoader
      */
     protected function createComponentCss() {
@@ -56,7 +61,6 @@ abstract class BasePresenter extends Presenter {
     }
 
     /**
-     * 
      * @return \WebLoader\Nette\JavaScriptLoader
      */
     protected function createComponentJs() {
@@ -71,13 +75,8 @@ abstract class BasePresenter extends Presenter {
         return new WebLoader\Nette\JavaScriptLoader($compiler, $this->template->basePath . '/temp');
     }
 
-    public function injectMenuControl(MenuFactory $menu) {
-        $this->menu = $menu->create();
-    }
-
     /**
-     * 
-     * @return \CMS\Menu\Component\MenuFactory
+     * @return MenuControl
      */
     protected function createComponentMenu() {
         return $this->menu;
