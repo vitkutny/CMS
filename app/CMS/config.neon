@@ -6,14 +6,14 @@ parameters:
     jsDir: %cmsDir%/templates/js
     cssDir: %cmsDir%/templates/css
     javascript:
-        modernizr: %jsDir%/custom.modernizr.js
         jQuery: %jsDir%/jquery-2.0.3.min.js
-        foundation: %jsDir%/foundation.min.js
+        bootstrap: %jsDir%/bootstrap.min.js
         cms: %jsDir%/cms.js
         liveForm: %jsDir%/live-form-validation.js
+        respond: %jsDir%/respond.min.js
     css:
         normalize: %cssDir%/normalize.css
-        foundation: %cssDir%/foundation.min.css
+        bootstrap: %cssDir%/bootstrap.min.css
         fontAwesome: %cssDir%/font-awesome.min.css
         cms: %cssDir%/cms.css
 services:

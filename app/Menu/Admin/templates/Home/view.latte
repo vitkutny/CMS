@@ -2,7 +2,7 @@
 <ul n:inner-foreach="$lists as $list">
     <li>
         <a n:href="List:Edit, id=>$list->id">
-            {$list->title}
+            {$list->node->title}
         </a>
     </li>
 </ul>

@@ -8,7 +8,7 @@ abstract class BasePresenter extends Presenter {
 
     protected function startup() {
         parent::startup();
-        $this->menu->setCurrent($this->menu->setHome('admin'), 'node');
+        $this->menu->setCurrent($this->menu->setHome('admin'));
     }
 
 }

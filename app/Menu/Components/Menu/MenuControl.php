@@ -31,15 +31,39 @@ class MenuControl extends Control {
         $this->nodeRepository = $nodeRepository;
     }
 
+    public function render($menu, $type) {
+        $list = $this->listRepository->getListByType($type);
+        $template = $this->template;
+        $template->type = $type;
+        $template->menu = $this->nodeRepository->getMenu($list);
+        $template->breadcrumb = $this->getBreadcrumb(FALSE);
+        $template->home = $list->node;
+        $template->setFile(__DIR__ . "/templates/$menu.latte");
+        $template->render();
+    }
+
     /**
      * @param string $list
      */
-    public function renderNavbar($list) {
+    public function renderNavbar($type) {
+        $list = $this->listRepository->getListByType($type);
         $template = $this->template;
-        $list = $this->listRepository->getListByType($list);
-        $template->menu = $this->nodeRepository->getRootNode($list)->related('node');
-        $template->breadcrumb = $this->getBreadcrumb();
+        $template->type = $type;
+        $template->menu = $this->nodeRepository->getMenu($list);
+        $template->breadcrumb = $this->getBreadcrumb(FALSE);
+        $template->home = $list->node;
         $template->setFile(__DIR__ . '/templates/navbar.latte');
+        $template->render();
+    }
+
+    public function renderPanel($type) {
+        $list = $this->listRepository->getListByType($type);
+        $template = $this->template;
+        $template->type = $type;
+        $template->menu = $this->nodeRepository->getMenu($list);
+        $template->breadcrumb = $this->getBreadcrumb(FALSE);
+        $template->home = $list->node;
+        $template->setFile(__DIR__ . '/templates/panel.latte');
         $template->render();
     }
 
@@ -74,7 +98,7 @@ class MenuControl extends Control {
     }
 
     public function setHome($list) {
-        $this->home = $this->nodeRepository->getRootNode($this->listRepository->getListByType($list));
+        $this->home = $this->listRepository->getListByType($list)->node;
         return $this->home;
     }
 
@@ -82,16 +106,20 @@ class MenuControl extends Control {
         return $this->home;
     }
 
+    public function getTest() {
+        return $this->test;
+    }
+
     public function setCurrent($source, $type = NULL) {
         switch ($type) {
-            case 'node':
-                $this->current = $source;
+            case 'id':
+                $this->current = $this->nodeRepository->getNode($source);
                 break;
             case 'link':
                 $this->current = $this->nodeRepository->getNodeByLink($source);
                 break;
             default:
-                $this->current = $this->nodeRepository->getNode($source);
+                $this->current = $source;
         };
     }
 
@@ -104,6 +132,7 @@ class MenuControl extends Control {
     }
 
     public function getBreadcrumb($full = TRUE) {
+        $breadcrumb = array();
         if ($this->current) {
             foreach ($this->nodeRepository->getBreadcrumb($this->current) as $node) {
                 $breadcrumb[$node->id] = array('title' => $node->title, 'link' => $node->link, 'link_id' => $node->link_id);

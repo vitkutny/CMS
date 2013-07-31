@@ -7,10 +7,10 @@
 var LiveForm = {
     options: {
         controlErrorClass: 'error', // CSS class for an invalid control
-        alertValidation: 'alertValidation', // CSS class for a alert validation
+        alertValidation: 'alert', // CSS class for a alert validation
         messageTag: 'small', // tag that will hold the error/valid message
         messageIdPostfix: '_error', // message element id = control id + this postfix
-        wait: 300                                           // delay in ms before validating on keyup/keydown
+        wait: 300, // delay in ms before validating on keyup/keydown
     },
     forms: {}
 };

@@ -1,32 +1,18 @@
-{extends '../../templates/@layout.latte'}
-{#core}
-<div class="contain-to-grid">
-    <nav class="top-bar">
-        <ul class="title-area">
-            <li class="name">
-                <h1>
-                    <a n:href="$home->link,id=>$home->link_id">
-                        {$home->title}
-                    </a>
-                </h1>
-            </li>
-            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-        </ul>
-        <section class="top-bar-section">
-            {control menu:navbar admin}
-        </section>
-    </nav>
-</div>
-<div class="row">
-    <div class="large-9 push-3 columns">
-        {control menu:breadcrumb}
-        <div n:foreach="$flashes as $flash" data-alert class="alert-box {$flash->type}">
-            {$flash->message}
-            <a href="#" class="close">&times;</a>
+{layout $baseLayout}
+{#layout}
+{control menu:navbar admin}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9 col-push-3">
+            {control menu:breadcrumb}
+            <div n:foreach="$flashes as $flash" class="alert alert-{$flash->type}">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                {$flash->message}
+            </div>
+            {include #module}
         </div>
-        {include #module}
-    </div>
-    <div class="large-3 pull-9 columns">
-        a
+        <div class="col-sm-3 col-pull-9">
+            {block #sidebar}{/block}
+        </div>
     </div>
 </div>

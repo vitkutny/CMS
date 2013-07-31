@@ -1,3 +1,9 @@
-
+{define #sidebar}
+<div class="list-group">
+    <a n:href="Home:view" n:class="$presenter->isLinkCurrent('Home:view')?active,list-group-item">
+        <strong class="list-group-item-heading">Dashboard</strong>
+    </a>
+</div>
+{/define}
 {#module}
 <br>Admin/Default/default

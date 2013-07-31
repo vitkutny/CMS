@@ -1,0 +1,21 @@
+<div class="panel panel-primary">
+    <div class="panel-heading clearfix">
+        <strong class="panel-title">{$home->title}</strong>
+    </div>
+    <div class="panel-content">
+        <a data-toggle="collapse" data-target=".panel-collapse" class="btn btn-block btn-default visible-sm">
+            <i class="icon-align-right"></i> Show / Hide
+        </a>
+        <div class="nav-collapse collapse panel-collapse">
+            <ul n:block="nav" n:inner-foreach="$menu as $node">
+                {var $subMenu=$node->related('node')->where('list_id',$node->list_id)}
+                <li>
+                    <a href="{plink $node->link,id=>$node->link_id}">{$node->title}</a>
+                    {if $subMenu->count()}
+                        {include #nav, menu=>$subMenu}
+                    {/if}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>    

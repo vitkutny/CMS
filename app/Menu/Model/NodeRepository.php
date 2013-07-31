@@ -29,20 +29,11 @@ class NodeRepository extends Repository {
     }
 
     /**
-     * 
      * @param Table\ActiveRow $list
-     * @return Table\ActiveRow
-     */
-    public function getRootNode($list) {
-        return $list->related('node')->where('node_id', NULL)->fetch();
-    }
-
-    /**
-     * 
      * @return Table\Selection
      */
-    public function getAllRootNodes() {
-        return $this->table()->where('node_id', NULL);
+    public function getMenu($list) {
+        return $list->node->related('node')->where('list_id', $list->id);
     }
 
     /**
@@ -51,10 +42,10 @@ class NodeRepository extends Repository {
      * @return Table\ActiveRow
      */
     public function setRootNode($node) {
-        $rootNode = $this->getRootNode($node->list);
+        $rootNode = $node->list->node;
         $rootNode->related('node')->update(array('node_id' => $node->id));
+        $node->update(array('node_id' => $rootNode->id));
         $rootNode->update(array('node_id' => $node->id));
-        return $node->update(array('node_id' => NULL));
     }
 
     /**
@@ -110,6 +101,7 @@ class NodeRepository extends Repository {
      */
     public function getParentNodeSelect($node) {
         $data = $node->list->related('node')->fetchPairs('id', 'title');
+        $data[$node->list->node->id] = $node->list->node->title;
         unset($data[$node->id]);
         foreach ($this->getChildNodes($node) as $child) {
             unset($data[$child->id]);
@@ -127,7 +119,7 @@ class NodeRepository extends Repository {
      */
     public function addNode($list, $title, $link, $link_id = NULL) {
         $data = array(
-            'node_id' => $this->getRootNode($list)->id,
+            'node_id' => $list->node->id,
             'list_id' => $list->id,
             'title' => $title,
             'link' => $link,
@@ -153,8 +145,7 @@ class NodeRepository extends Repository {
      * @return boolean
      */
     public function removeNode($node) {
-        $rootNode = $this->getRootNode($node->list);
-        if ($node->id !== $rootNode->id) {
+        if ($node->id !== $node->list->node->id) {
             $node->related('node')->update(array('node_id' => $node->node_id));
             return $node->delete();
         }

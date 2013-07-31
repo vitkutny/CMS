@@ -21,8 +21,7 @@ final class NodePresenter extends BasePresenter {
     }
 
     public function renderEdit() {
-        $this->menu->breadcrumbAdd($this->node->list->title, ':Admin:Menu:List:edit', $this->node->list->id);
-        $this->menu->breadcrumbAdd($this->node->title, $this->getAction(TRUE), $this->node->id);
+        $this->menu->breadcrumbAdd('Edit node');
     }
 
     protected function createComponentNodeEditForm() {

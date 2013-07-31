@@ -41,9 +41,9 @@ abstract class BasePresenter extends Presenter {
     protected function beforeRender() {
         parent::beforeRender();
         $this->template->backlink = $this->baseBacklink;
-        $this->template->home = $this->menu->getHome();
-        $this->template->frontLayout = dirname(__DIR__) . "/Front/templates/@layout.latte";
-        $this->template->adminLayout = dirname(__DIR__) . "/Admin/templates/@layout.latte";
+        $this->template->baseLayout = dirname(__DIR__) . '/templates/@layout.latte';
+        $this->template->frontLayout = dirname(__DIR__) . '/Front/templates/@layout.latte';
+        $this->template->adminLayout = dirname(__DIR__) . '/Admin/templates/@layout.latte';
     }
 
     /**
