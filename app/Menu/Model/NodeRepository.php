@@ -44,7 +44,7 @@ class NodeRepository extends Repository {
     public function setRootNode($node) {
         $rootNode = $node->list->node;
         $rootNode->related('node')->update(array('node_id' => $node->id));
-        $node->update(array('node_id' => $rootNode->id));
+        $node->update(array('node_id' => $rootNode->node_id));
         $rootNode->update(array('node_id' => $node->id));
     }
 

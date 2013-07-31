@@ -2,7 +2,6 @@ includes:
     - config.local.neon
 parameters:
     cmsDir: %appDir%/CMS
-    modulesDir: %appDir%/modules
     jsDir: %cmsDir%/templates/js
     cssDir: %cmsDir%/templates/css
     javascript:
