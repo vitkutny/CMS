@@ -7,6 +7,6 @@ use Nette\Forms\Form;
 use Nette\Forms\IControl;
 use Nette\Utils\Html;
 
-class FormRenderer extends DefaultFormRenderer {
+final class FormRenderer extends DefaultFormRenderer {
     
 }

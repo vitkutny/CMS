@@ -3,33 +3,23 @@
 namespace CMS\Menu\Component;
 
 use Nette\Application\UI\Control;
-use CMS\Menu\Model\ListRepository;
-use CMS\Menu\Model\NodeRepository;
 
-class MenuControl extends Control {
+final class MenuControl extends Control {
 
     /**
-     * @var ListRepository
+     * @inject
+     * @var CMS\Menu\Model\ListRepository
      */
-    private $listRepository;
+    public $listRepository;
 
     /**
-     * @var NodeRepository
+     * @inject
+     * @var CMS\Menu\Model\NodeRepository
      */
-    private $nodeRepository;
+    public $nodeRepository;
     private $current;
     private $home;
     private $breadcrumb = array();
-
-    /**
-     * 
-     * @param NodeRepository $pageRepository
-     */
-    public function __construct(ListRepository $listRepository, NodeRepository $nodeRepository) {
-        parent::__construct();
-        $this->listRepository = $listRepository;
-        $this->nodeRepository = $nodeRepository;
-    }
 
     public function render($menu, $type) {
         $list = $this->listRepository->getListByType($type);
@@ -104,10 +94,6 @@ class MenuControl extends Control {
 
     public function getHome() {
         return $this->home;
-    }
-
-    public function getTest() {
-        return $this->test;
     }
 
     public function setCurrent($source, $type = NULL) {

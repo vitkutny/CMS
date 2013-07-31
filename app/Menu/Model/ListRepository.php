@@ -5,7 +5,7 @@ namespace CMS\Menu\Model;
 use CMS\Model\BaseRepository as Repository;
 use Nette\Database\Table;
 
-class ListRepository extends Repository {
+final class ListRepository extends Repository {
 
     /**
      * 
@@ -13,7 +13,7 @@ class ListRepository extends Repository {
      * @return Table\ActiveRow
      */
     public function getList($id) {
-        return $this->table()->where('id', $id)->fetch();
+        return $this->table()->get($id);
     }
 
     /**

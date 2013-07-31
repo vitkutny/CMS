@@ -5,7 +5,7 @@ namespace CMS\Menu\Model;
 use CMS\Model\BaseRepository as Repository;
 use Nette\Database\Table;
 
-class NodeRepository extends Repository {
+final class NodeRepository extends Repository {
 
     private $temp;
 
@@ -15,7 +15,7 @@ class NodeRepository extends Repository {
      * @return Table\ActiveRow
      */
     public function getNode($id) {
-        return $this->table()->where('id', $id)->fetch();
+        return $this->table()->get($id);
     }
 
     /**
@@ -101,7 +101,7 @@ class NodeRepository extends Repository {
      */
     public function getParentNodeSelect($node) {
         $data = $node->list->related('node')->fetchPairs('id', 'title');
-        $data[$node->list->node->id] = $node->list->node->title;
+        $data[$node->list->node_id] = $node->list->node->title;
         unset($data[$node->id]);
         foreach ($this->getChildNodes($node) as $child) {
             unset($data[$child->id]);
@@ -119,7 +119,7 @@ class NodeRepository extends Repository {
      */
     public function addNode($list, $title, $link, $link_id = NULL) {
         $data = array(
-            'node_id' => $list->node->id,
+            'node_id' => $list->node_id,
             'list_id' => $list->id,
             'title' => $title,
             'link' => $link,
@@ -145,7 +145,7 @@ class NodeRepository extends Repository {
      * @return boolean
      */
     public function removeNode($node) {
-        if ($node->id !== $node->list->node->id) {
+        if ($node->id !== $node->list->node_id) {
             $node->related('node')->update(array('node_id' => $node->node_id));
             return $node->delete();
         }

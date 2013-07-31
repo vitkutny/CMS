@@ -8,13 +8,13 @@ abstract class BasePresenter extends Presenter {
 
     /**
      * @inject
-     * @var \CMS\Menu\Model\NodeRepository
+     * @var CMS\Menu\Model\NodeRepository
      */
     public $nodeRepository;
 
     /**
      * @inject
-     * @var \CMS\Menu\Model\ListRepository
+     * @var CMS\Menu\Model\ListRepository
      */
     public $listRepository;
 

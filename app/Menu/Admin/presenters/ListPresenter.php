@@ -6,6 +6,9 @@ use Nette\Application\UI\Form;
 
 final class ListPresenter extends BasePresenter {
 
+    /**
+     * @var Nette\Database\Table\ActiveRow 
+     */
     private $list;
 
     public function actionEdit($id) {
