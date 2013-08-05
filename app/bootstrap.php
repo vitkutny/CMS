@@ -15,7 +15,7 @@ foreach (new DirectoryIterator(__DIR__) as $file) {
         continue;
     }
     if ($file->isDir()) {
-        $configurator->addConfig(__DIR__ . '/' . $file . '/config.neon');
+        $configurator->addConfig(__DIR__ . "/$file/config.neon");
     }
 }
 $configurator->addConfig(__DIR__ . '/cms/config.neon');
