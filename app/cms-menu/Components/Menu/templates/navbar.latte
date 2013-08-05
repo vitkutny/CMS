@@ -14,7 +14,7 @@
             <ul n:class="!$level?nav,!$level?navbar-nav,$level?dropdown-menu" n:block="nav">
                 <li n:if="!$level" n:class="$presenter->isLinkCurrent($home->link,array(id=>$home->link_id))?active">
                     <a href="{plink $home->link,id=>$home->link_id}">
-                        <i class="icon-home icon-large"></i> {$home->title}
+                        <i class="icon-home icon-large"></i> <strong>{$home->title}</strong>
                     </a>
                 </li>
                 {var $level++}
