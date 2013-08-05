@@ -7,6 +7,7 @@ parameters:
     javascript:
         jQuery: %jsDir%/jquery-2.0.3.min.js
         bootstrap: %jsDir%/bootstrap.min.js
+        responsiveTables: %jsDir%/responsive-tables.js
         cms: %jsDir%/cms.js
         liveForm: %jsDir%/live-form-validation.js
         respond: %jsDir%/respond.min.js
@@ -14,6 +15,7 @@ parameters:
         normalize: %cssDir%/normalize.css
         bootstrap: %cssDir%/bootstrap.min.css
         fontAwesome: %cssDir%/font-awesome.min.css
+        responsiveTables: %cssDir%/responsive-tables.css
         cms: %cssDir%/cms.css
 services:
 factories:
