@@ -1,0 +1,35 @@
+<div class="navbar navbar-static-top navbar-{$type}">
+    <div class="container">
+        <div data-toggle="collapse" data-target=".top-menu" class="visible-sm">
+            <a class="navbar-brand" href="#">{$home->title}
+                <button type="button" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </a>
+        </div>
+        <div class="nav-collapse collapse top-menu">
+            {var $level=0}
+            <ul n:class="!$level?nav,!$level?navbar-nav,$level?dropdown-menu" n:block="nav">
+                <li n:if="!$level" n:class="$presenter->isLinkCurrent($home->link,array(id=>$home->link_id))?active">
+                    <a href="{plink $home->link,id=>$home->link_id}">
+                        <i class="icon-home icon-large"></i> {$home->title}
+                    </a>
+                </li>
+                {var $level++}
+                {foreach $menu as $node}
+                    {var $subMenu=$node->related('node')->where('list_id',$node->list_id)}
+                    <li n:class="isset($breadcrumb[$node->id])?active,$subMenu->count()?($level==1?dropdown:dropdown-submenu)">
+                        <a href="{plink $node->link,id=>$node->link_id}"{if $subMenu->count()} class="dropdown-toggle" data-toggle="dropdown"{/if}>
+                            {$node->title}
+                        </a>
+                        {if $subMenu->count()}
+                            {include #nav, menu=>$subMenu}
+                        {/if}
+                    </li>
+                {/foreach}
+            </ul>
+        </div>
+    </div>
+</div>

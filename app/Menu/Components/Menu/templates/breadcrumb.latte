@@ -1,8 +1,0 @@
-<ul class="breadcrumb" n:inner-foreach="$breadcrumb as $id=>$node">
-    <li n:class="$iterator->last?active">
-        <a n:tag-if="!$iterator->last" 
-           href="{ifset $node['link']}{ifset $node['link_id']}{plink $node['link'], id=>$node['link_id']}{else}{plink $node['link']}{/ifset}{else}#{/ifset}">
-            {$node['title']}
-        </a>
-    </li>
-</ul>

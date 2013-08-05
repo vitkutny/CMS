@@ -11,14 +11,14 @@ $configurator->createRobotLoader()
         ->register();
 
 foreach (new DirectoryIterator(__DIR__) as $file) {
-    if ($file->isDot() OR $file->getFilename() === 'CMS') {
+    if ($file->isDot() OR $file->getFilename() === 'cms') {
         continue;
     }
     if ($file->isDir()) {
         $configurator->addConfig(__DIR__ . '/' . $file . '/config.neon');
     }
 }
-$configurator->addConfig(__DIR__ . '/CMS/config.neon');
+$configurator->addConfig(__DIR__ . '/cms/config.neon');
 
 $container = $configurator->createContainer();
 

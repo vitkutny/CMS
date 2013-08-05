@@ -1,0 +1,28 @@
+<a data-toggle="collapse" data-target=".panel-collapse" class="btn btn-default visible-sm">
+    <strong>{$home->title}</strong> <i class="icon-caret-down"></i>
+</a>
+<div class="nav-collapse collapse panel-collapse">
+    <div class="panel panel-{$type}">
+        <div class="panel-heading hidden-sm">
+            <strong class="panel-title">{$home->title}</strong>
+        </div>
+        <div class="panel-content">
+            {var $level = 0}
+            <ul n:block="nav" n:class="$level==0?'nav nav-pills nav-stacked'">
+                {var $level++}
+                {foreach $menu as $node}
+                    {var $subMenu=array()}
+                    {if isset($breadcrumb[$node->id])}
+                        {var $subMenu=$node->related('node')->where('list_id',$node->list_id)}
+                    {/if}
+                    <li n:class="isset($breadcrumb[$node->id])?active">
+                        <a href="{plink $node->link,id=>$node->link_id}">{$node->title}</a>
+                        {if count($subMenu)}
+                            {include #nav, menu=>$subMenu}
+                        {/if}
+                    </li>
+                {/foreach}
+            </ul>
+        </div>
+    </div>
+</div>    
