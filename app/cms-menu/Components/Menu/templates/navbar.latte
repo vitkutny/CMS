@@ -1,22 +1,18 @@
 <div class="navbar navbar-static-top navbar-{$type}">
     <div class="container">
-        <div data-toggle="collapse" data-target=".top-menu" class="visible-sm">
-            <a class="navbar-brand" href="#">{$home->title}
-                <button type="button" class="navbar-toggle">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </a>
-        </div>
-        <div class="nav-collapse collapse top-menu">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-{$type}-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{plink $home->link, id=>$home->link_id}">
+            <strong>
+                <i class="icon-home"></i> {$home->title}
+            </strong>
+        </a>
+        <div class="nav-collapse collapse navbar-{$type}-collapse">
             {var $level=0}
             <ul n:class="!$level?nav,!$level?navbar-nav,$level?dropdown-menu" n:block="nav">
-                <li n:if="!$level" n:class="$presenter->isLinkCurrent($home->link,array(id=>$home->link_id))?active">
-                    <a href="{plink $home->link,id=>$home->link_id}">
-                        <i class="icon-home icon-large"></i> <strong>{$home->title}</strong>
-                    </a>
-                </li>
                 {var $level++}
                 {foreach $menu as $node}
                     {var $subMenu=$node->related('node')->where('list_id',$node->list_id)}

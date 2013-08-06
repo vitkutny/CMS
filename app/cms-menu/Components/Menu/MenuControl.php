@@ -18,7 +18,6 @@ final class MenuControl extends Control {
      */
     public $nodeRepository;
     private $current;
-    private $home;
     private $breadcrumb = array();
 
     public function render($type, $style = 'navbar') {
@@ -50,12 +49,8 @@ final class MenuControl extends Control {
         $template->render();
     }
 
-    public function setHome($type) {
-        return $this->home = $this->listRepository->getListByType($type)->node;
-    }
-
-    public function getHome() {
-        return $this->home;
+    public function getHome($type) {
+        return $this->listRepository->getListByType($type)->node;
     }
 
     public function setCurrent($link, $link_id = NULL) {
@@ -87,8 +82,8 @@ final class MenuControl extends Control {
         return $breadcrumb;
     }
 
-    public function insert($list, $title, $link, $link_id = NULL) {
-        $list = $this->listRepository->getListByType($list);
+    public function insert($type, $title, $link, $link_id = NULL) {
+        $list = $this->listRepository->getListByType($type);
         return $this->nodeRepository->addNode($list, $title, $link, $link_id);
     }
 

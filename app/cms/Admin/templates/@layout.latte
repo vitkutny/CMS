@@ -3,7 +3,7 @@
 {control menu admin}
 <div class="container">
     <div class="row">
-        <div class="col-sm-9 col-push-3">
+        <div class="col-sm-9 col-sm-push-3">
             {control menu:breadcrumb}
             <div n:foreach="$flashes as $flash" class="alert alert-{$flash->type}">
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -11,7 +11,7 @@
             </div>
             {include #module}
         </div>
-        <div class="col-sm-3 col-pull-9">
+        <div class="col-sm-3 col-sm-pull-9">
             {block #sidebar}{/block}
         </div>
     </div>

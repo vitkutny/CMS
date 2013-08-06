@@ -8,7 +8,6 @@ use Nette\Database\Table;
 final class ListRepository extends Repository {
 
     /**
-     * 
      * @param int $id
      * @return Table\ActiveRow
      */
@@ -17,7 +16,6 @@ final class ListRepository extends Repository {
     }
 
     /**
-     * 
      * @param string $type
      * @return Table\ActiveRow
      */
@@ -26,10 +24,9 @@ final class ListRepository extends Repository {
     }
 
     /**
-     * 
      * @return Table\Selection
      */
-    public function getLists() {
+    public function getAllLists() {
         return $this->table();
     }
 
