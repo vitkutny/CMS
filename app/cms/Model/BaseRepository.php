@@ -24,7 +24,7 @@ abstract class BaseRepository extends Nette\Object {
      * @param string|null $name
      * @return Table\Selection
      */
-    protected function table($name = null) {
+    protected function table($name = NULL) {
         if ($name) {
             return $this->connection->table($name);
         } else {

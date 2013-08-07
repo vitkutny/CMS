@@ -3,7 +3,7 @@
 /**
  * TODO:
  * Shared components:
- * User, Photo, Comments
+ * User, Photo/Video, Comments
  * ACL
  */
 
@@ -11,8 +11,8 @@ namespace CMS;
 
 use WebLoader;
 use Nette\Application\UI\Presenter;
-use CMS\Menu\Component\MenuControl;
-use \JavaScriptPacker as JsPacker;
+use CMS\Menu\Component\Menu\MenuControl;
+use \JavaScriptPacker;
 
 abstract class BasePresenter extends Presenter {
 
@@ -28,7 +28,7 @@ abstract class BasePresenter extends Presenter {
 
     /**
      * @inject
-     * @var CMS\Menu\Component\MenuFactory
+     * @var CMS\Menu\Component\Menu\MenuFactory
      */
     public $menuFactory;
 
@@ -52,7 +52,7 @@ abstract class BasePresenter extends Presenter {
     protected function createComponentCss() {
         $dir = $this->context->parameters['wwwDir'] . '/temp';
         $files = new WebLoader\FileCollection();
-        $files->addFiles($this->context->parameters['css']);
+        $files->addFiles($this->context->parameters['styles']);
         $compiler = WebLoader\Compiler::createCssCompiler($files, $dir);
         $compiler->addFilter(function($css) {
                     return str_replace(array("\r\n", "\r", "\n", "\t", '  ', '    ', '    '), '', str_replace(': ', ':', preg_replace('!/\*[^*]*\*+([^/][^*]*\*+)*/!', '', $css)));
@@ -66,10 +66,10 @@ abstract class BasePresenter extends Presenter {
     protected function createComponentJs() {
         $dir = $this->context->parameters['wwwDir'] . '/temp';
         $files = new WebLoader\FileCollection();
-        $files->addFiles($this->context->parameters['javascript']);
+        $files->addFiles($this->context->parameters['scripts']);
         $compiler = WebLoader\Compiler::createJsCompiler($files, $dir);
         $compiler->addFilter(function($js) {
-                    $packer = new JsPacker($js);
+                    $packer = new JavaScriptPacker($js);
                     return $packer->pack();
                 });
         return new WebLoader\Nette\JavaScriptLoader($compiler, $this->template->basePath . '/temp');

@@ -4,4 +4,4 @@ services:
     - CMS\Menu\Model\NodeRepository
 factories:
     menuFactory:
-        implement: CMS\Menu\Component\MenuFactory
+        implement: CMS\Menu\Component\Menu\MenuFactory

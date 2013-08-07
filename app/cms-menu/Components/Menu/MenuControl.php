@@ -1,6 +1,6 @@
 <?php
 
-namespace CMS\Menu\Component;
+namespace CMS\Menu\Component\Menu;
 
 use Nette\Application\UI\Control;
 
