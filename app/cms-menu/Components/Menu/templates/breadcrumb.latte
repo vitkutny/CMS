@@ -1,7 +1,7 @@
-<ul class="breadcrumb" n:inner-foreach="$breadcrumb as $node">
-    <li n:class="$iterator->last?active">
-        <a n:tag-if="!$iterator->last" href="{plink $node->link, id=>$node->link_id}">
+<nav class="breadcrumbs" n:inner-foreach="$breadcrumb as $node">
+    <a n:tag-if="!$iterator->last" href="{plink $node->link, id=>$node->link_id}">
+        <span n:tag-if="$iterator->last" class="current">
             {$node->title}
-        </a>
-    </li>
-</ul>
+        </span>
+    </a>
+</nav>

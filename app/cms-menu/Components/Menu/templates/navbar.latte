@@ -1,22 +1,22 @@
-<div class="navbar navbar-static-top navbar-{$type}">
-    <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-{$type}-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="{plink $home->link, id=>$home->link_id}">
-            <strong>
-                <i class="icon-home"></i> {$home->title}
-            </strong>
-        </a>
-        <div class="nav-collapse collapse navbar-{$type}-collapse">
+<div class="contain-to-grid">
+    <nav class="top-bar tob-bar-{$type}">
+        <ul class="title-area">
+            <li class="name">
+                <h1>
+                    <a href="{plink $home->link, id=>$home->link_id}">
+                        {$home->title}
+                    </a>
+                </h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+        <section class="top-bar-section">
             {var $level=0}
-            <ul n:class="!$level?nav,!$level?navbar-nav,$level?dropdown-menu" n:block="nav">
+            <ul n:class="!$level?left:dropdown" n:block="nav">
                 {var $level++}
                 {foreach $menu as $node}
                     {var $subMenu=$node->related('node')->where('list_id',$node->list_id)}
-                    <li n:class="isset($breadcrumb[$node->id])?active,$subMenu->count()?($level==1?dropdown:dropdown-submenu)">
+                    <li n:class="isset($breadcrumb[$node->id])?active,$subMenu->count()?has-dropdown">
                         <a href="{plink $node->link,id=>$node->link_id}"{if $subMenu->count()} class="dropdown-toggle" data-toggle="dropdown"{/if}>
                             {$node->title}
                         </a>
@@ -26,6 +26,6 @@
                     </li>
                 {/foreach}
             </ul>
-        </div>
-    </div>
+        </section>
+    </nav>
 </div>

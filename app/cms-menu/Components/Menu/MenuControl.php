@@ -2,9 +2,9 @@
 
 namespace CMS\Menu\Component\Menu;
 
-use Nette\Application\UI\Control;
+use CMS\Component\BaseControl;
 
-final class MenuControl extends Control {
+final class MenuControl extends BaseControl {
 
     /**
      * @inject

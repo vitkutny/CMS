@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{control menu:title}</title>
-    {control css}
-</head>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="cs"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="cs"> <!--<![endif]-->
 
-<body class="{$presenter->getName()} {$presenter->getAction()}">
-    {include #layout}
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{control menu:title}</title>
+        {control css}
+    </head>
 
-    {control js}
-</body>
+    <body class="{$presenter->getName()} {$presenter->getAction()}">
+        {include #layout}
+
+        {control js}
+    </body>
 </html>

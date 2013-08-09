@@ -11,7 +11,6 @@ namespace CMS;
 
 use WebLoader;
 use Nette\Application\UI\Presenter;
-use CMS\Menu\Component\Menu\MenuControl;
 use \JavaScriptPacker;
 
 abstract class BasePresenter extends Presenter {
@@ -22,20 +21,14 @@ abstract class BasePresenter extends Presenter {
     protected $baseBacklink;
 
     /**
-     * @var MenuControl
-     */
-    protected $menu;
-
-    /**
      * @inject
-     * @var CMS\Menu\Component\Menu\MenuFactory
+     * @var \CMS\Menu\Component\Menu\MenuControl
      */
-    public $menuFactory;
+    public $menu;
 
     protected function startup() {
         parent::startup();
         $this->baseBacklink = $this->storeRequest();
-        $this->menu = $this->menuFactory->create();
     }
 
     protected function beforeRender() {

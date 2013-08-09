@@ -5,17 +5,16 @@ parameters:
     jsDir: %cmsDir%/templates/js
     cssDir: %cmsDir%/templates/css
     scripts:
-        jQuery: %jsDir%/jquery-2.0.3.min.js
-        bootstrap: %jsDir%/bootstrap.min.js
-        responsiveTables: %jsDir%/responsive-tables.js
+        modernizr: %jsDir%/custom.modernizr.js
+        jquery: %jsDir%/jquery-2.0.3.min.js
+        foundation: %jsDir%/foundation.min.js
+        responsivetables: %jsDir%/responsive-tables.js
         cms: %jsDir%/cms.js
-        liveForm: %jsDir%/live-form-validation.js
-        respond: %jsDir%/respond.min.js
     styles:
         normalize: %cssDir%/normalize.css
-        bootstrap: %cssDir%/bootstrap.min.css
-        fontAwesome: %cssDir%/font-awesome.min.css
-        responsiveTables: %cssDir%/responsive-tables.css
+        foundation: %cssDir%/foundation.min.css
+        fontawesome: %cssDir%/font-awesome.min.css
+        responsivetables: %cssDir%/responsive-tables.css
         cms: %cssDir%/cms.css
 services:
 factories:
