@@ -1,4 +1,4 @@
-<div class="section-container accordion" data-section="accordion" n:inner-foreach="$menu as $node" data-options="one_up: false;">
+<div class="section-container accordion" data-section="accordion" n:inner-foreach="$menu as $node" data-options="one_up: false;deep_linking: true;  ">
     {var $subMenu=$node->related('node')->where('list_id',$node->list_id)}
     <section n:class="isset($breadcrumb[$node->id])?active">
         <p class="title" data-section-title>
