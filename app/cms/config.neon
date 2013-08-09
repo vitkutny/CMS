@@ -10,6 +10,7 @@ parameters:
         foundation: %jsDir%/foundation.min.js
         responsivetables: %jsDir%/responsive-tables.js
         cms: %jsDir%/cms.js
+        netteforms: %jsDir%/netteForms.js
     styles:
         normalize: %cssDir%/normalize.css
         foundation: %cssDir%/foundation.min.css

@@ -1,6 +1,6 @@
 <nav class="breadcrumbs" n:inner-foreach="$breadcrumb as $node">
-    <a n:tag-if="!$iterator->last" href="{plink $node->link, id=>$node->link_id}">
-        <span n:tag-if="$iterator->last" class="current">
+    <a n:tag-if="!$iterator->last AND $node->link" href="{plink $node->link, id=>$node->link_id}">
+        <span n:tag-if="$iterator->last OR !$node->link" class="current">
             {$node->title}
         </span>
     </a>
