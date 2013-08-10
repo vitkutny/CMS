@@ -26,7 +26,7 @@ nette:
         errorPresenter: Error
     routing:
         routes:
-            '<module>[/<presenter>][/<action>][/<id>]':
+            '[<module>/]<presenter>[/<action>][/<id>]':
                 module: Front
                 presenter: Home
                 action: view

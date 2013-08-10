@@ -53,7 +53,7 @@ final class NodeRepository extends Repository {
      * @param Table\ActiveRow $node
      * @return array
      */
-    public function getChildNodes($node) {
+    public function getChildNodesIds($node) {
         $this->temp = array();
         $this->compileChildNodes($node);
         return $this->temp;
@@ -79,7 +79,7 @@ final class NodeRepository extends Repository {
      */
     private function compileChildNodes($node) {
         foreach ($node->related('node') as $child) {
-            $this->temp[] = $child;
+            $this->temp[] = $child->id;
             $this->compileChildNodes($child);
         }
     }
@@ -92,8 +92,8 @@ final class NodeRepository extends Repository {
         $data = $node->list->related('node')->fetchPairs('id', 'title');
         $data[$node->list->node_id] = $node->list->node->title;
         unset($data[$node->id]);
-        foreach ($this->getChildNodes($node) as $child) {
-            unset($data[$child->id]);
+        foreach ($this->getChildNodesIds($node) as $id) {
+            unset($data[$id]);
         }
         return $data;
     }
