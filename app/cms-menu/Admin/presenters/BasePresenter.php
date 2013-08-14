@@ -20,7 +20,7 @@ abstract class BasePresenter extends Presenter {
 
     protected function startup() {
         parent::startup();
-        $this->menu->setCurrent(':Admin:Menu:Home:view');
+        $this->menu->setActive(':Admin:Menu:Home:view');
     }
 
 }

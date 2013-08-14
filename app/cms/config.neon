@@ -5,17 +5,17 @@ parameters:
     jsDir: %cmsDir%/templates/js
     cssDir: %cmsDir%/templates/css
     scripts:
-        modernizr: %jsDir%/custom.modernizr.js
         jquery: %jsDir%/jquery-2.0.3.min.js
-        foundation: %jsDir%/foundation.min.js
+        bootstrap: %jsDir%/bootstrap.min.js
         responsivetables: %jsDir%/responsive-tables.js
-        cms: %jsDir%/cms.js
         netteforms: %jsDir%/netteForms.js
+        respondjs: %jsDir%/respond.min.js
+        cms: %jsDir%/cms.js
     styles:
-        normalize: %cssDir%/normalize.css
-        foundation: %cssDir%/foundation.min.css
+        bootstrap: %cssDir%/bootstrap.min.css
         fontawesome: %cssDir%/font-awesome.min.css
         responsivetables: %cssDir%/responsive-tables.css
+        ratio: %cssDir%/ratio.css
         cms: %cssDir%/cms.css
 services:
 factories:

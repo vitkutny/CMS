@@ -53,10 +53,21 @@ final class NodeRepository extends Repository {
      * @param Table\ActiveRow $node
      * @return array
      */
-    public function getChildNodesIds($node) {
+    public function getIdsOfChildNodes($node) {
         $this->temp = array();
-        $this->compileChildNodes($node);
+        $this->compileIdsOfChildNodes($node);
         return $this->temp;
+    }
+
+    /**
+     * 
+     * @param Table\ActiveRow $node
+     */
+    private function compileIdsOfChildNodes($node) {
+        foreach ($node->related('node') as $child) {
+            $this->temp[] = $child->id;
+            $this->compileIdsOfChildNodes($child);
+        }
     }
 
     /**
@@ -77,22 +88,11 @@ final class NodeRepository extends Repository {
      * 
      * @param Table\ActiveRow $node
      */
-    private function compileChildNodes($node) {
-        foreach ($node->related('node') as $child) {
-            $this->temp[] = $child->id;
-            $this->compileChildNodes($child);
-        }
-    }
-
-    /**
-     * 
-     * @param Table\ActiveRow $node
-     */
     public function getParentNodeSelect($node) {
         $data = $node->list->related('node')->fetchPairs('id', 'title');
         $data[$node->list->node_id] = $node->list->node->title;
         unset($data[$node->id]);
-        foreach ($this->getChildNodesIds($node) as $id) {
+        foreach ($this->getIdsOfChildNodes($node) as $id) {
             unset($data[$id]);
         }
         return $data;
@@ -106,7 +106,7 @@ final class NodeRepository extends Repository {
      * @param string $list
      * @return Table\ActiveRow
      */
-    public function addNode($list, $title, $link, $link_id = NULL) {
+    public function insertNode($list, $title, $link, $link_id = NULL) {
         $data = array(
             'node_id' => $list->node_id,
             'list_id' => $list->id,

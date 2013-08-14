@@ -17,7 +17,7 @@ final class MenuControl extends BaseControl {
      * @var CMS\Menu\Model\NodeRepository
      */
     public $nodeRepository;
-    private $current;
+    private $activeNode;
     private $breadcrumb = array();
 
     public function render($type, $style = 'navbar') {
@@ -49,15 +49,15 @@ final class MenuControl extends BaseControl {
         $template->render();
     }
 
-    public function getHome($type) {
+    public function getRootNode($type) {
         return $this->listRepository->getListByType($type)->node;
     }
 
-    public function setCurrent($link, $link_id = NULL) {
+    public function setActive($link, $link_id = NULL) {
         if (is_string($link)) {
-            $this->current = $this->nodeRepository->getNodeByLink($link, $link_id);
+            $this->activeNode = $this->nodeRepository->getNodeByLink($link, $link_id);
         } else {
-            $this->current = $link;
+            $this->activeNode = $link;
         }
     }
 
@@ -72,10 +72,10 @@ final class MenuControl extends BaseControl {
 
     public function getBreadcrumb() {
         $breadcrumb = array();
-        foreach ($this->nodeRepository->getParentNodes($this->current) as $node) {
+        foreach ($this->nodeRepository->getParentNodes($this->activeNode) as $node) {
             $breadcrumb[$node->id] = $node;
         }
-        $breadcrumb[$this->current->id] = $this->current;
+        $breadcrumb[$this->activeNode->id] = $this->activeNode;
         foreach ($this->breadcrumb as $key => $node) {
             $breadcrumb[$key] = $node;
         }
@@ -84,7 +84,7 @@ final class MenuControl extends BaseControl {
 
     public function insert($type, $title, $link, $link_id = NULL) {
         $list = $this->listRepository->getListByType($type);
-        return $this->nodeRepository->addNode($list, $title, $link, $link_id);
+        return $this->nodeRepository->insertNode($list, $title, $link, $link_id);
     }
 
     public function update($node, $data) {

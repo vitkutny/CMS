@@ -1,3 +1,2 @@
-iframe,img,textarea{max-width: 100%}
+iframe,img{border:0}
 body{overflow-y: scroll;}
-.breadcrumbs{margin-bottom: 1em}
