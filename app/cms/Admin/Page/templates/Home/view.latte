@@ -1,0 +1,20 @@
+{block content}
+{if $pages->count()}
+    <div n:foreach="$pages as $page" class="panel">
+        <div class="panel-heading">
+            <div class="panel-title clearfix">
+                {$page->node->title}
+                <a n:href="Page:edit, id=>$page->id" class="btn btn-small btn-default pull-right">
+                    <i class="icon-edit"></i> Edit
+                </a>
+            </div>
+        </div>
+        <div class="panel-content">
+            <p>{$page->content|striptags|truncate:200}</p>
+        </div>
+    </div>
+{else}
+    <div class="alert alert-info">
+        There's no page already.
+    </div>
+{/if}

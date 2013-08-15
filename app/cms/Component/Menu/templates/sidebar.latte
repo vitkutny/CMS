@@ -2,18 +2,28 @@
     <div class="panel-heading">
         <span class="panel-title">{$home->title}</span>
     </div>
-    <div class="panel-body">
-        <ul n:block="nav" n:inner-foreach="$menu as $node">
-            {var $data = $node['data']}
-            {var $children = $node['children']}
-            <li n:class="isset($breadcrumb[$data->id])?active">
-                <a href="{plink $data->link,id=>$data->link_id}">
-                    {$data->title}
-                </a>
-                {if count($children)}
-                    {include #nav,menu=>$children}
-                {/if}
-            </li>
-        </ul>
+    <div class="list-group" n:inner-foreach="$menu as $node">
+        {var $data = $node['data']}
+        {var $children = $node['children']}
+        <a n:class="isset($breadcrumb[$data->id])?active,list-group-item" href="{plink $data->link,id=>$data->link_id}">
+            {$data->title}
+        </a>
+        {if count($children) AND isset($breadcrumb[$data->id])}
+            {include #nav,menu=>$children}
+        {/if}
     </div>
 </div>
+{define #nav}
+<ul n:inner-foreach="$menu as $node">
+    {var $data = $node['data']}
+    {var $children = $node['children']}
+    <li n:class="isset($breadcrumb[$data->id])?active">
+        <a href="{plink $data->link,id=>$data->link_id}">
+            {$data->title}
+        </a>
+        {if count($children) AND isset($breadcrumb[$data->id])}
+            {include #nav,menu=>$children}
+        {/if}
+    </li>
+</ul>
+{/define}

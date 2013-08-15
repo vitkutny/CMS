@@ -1,0 +1,18 @@
+{layout $adminLayout}
+{#module}
+{define #sidebar}
+<div class="list-group">
+    <a n:href="Home:view" n:class="$presenter->isLinkCurrent('Home:view')?active,list-group-item">
+        <strong class="list-group-item-heading">Overview</strong>
+    </a>
+    <a n:href="Page:add" n:class="$presenter->isLinkCurrent('Page:add')?active,list-group-item">
+        <strong class="list-group-item-heading">Add new page</strong>
+    </a>
+    {foreach $pages as $page}
+        <a n:href="Page:edit,id=>$page->id" n:class="$presenter->isLinkCurrent('Page:edit',array('id'=>$page->id))?active,list-group-item">
+            <span class="list-group-item-heading">{$page->node->title}</span>
+        </a>
+    {/foreach}
+</div>
+{/define}
+{include #content}

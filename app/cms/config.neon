@@ -21,6 +21,7 @@ services:
     cms.model.listrepository: CMS\Model\ListRepository
     cms.model.noderepository: CMS\Model\NodeRepository
     cms.component.menu.menucontrol: CMS\Component\Menu\MenuControl
+    cms.page.model.pagerepository: CMS\Model\PageRepository
 factories:
 nette:
     application:
