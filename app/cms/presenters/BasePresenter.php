@@ -22,7 +22,7 @@ abstract class BasePresenter extends Presenter {
 
     /**
      * @inject
-     * @var \CMS\Menu\Component\Menu\MenuControl
+     * @var \CMS\Component\Menu\MenuControl
      */
     public $menu;
 

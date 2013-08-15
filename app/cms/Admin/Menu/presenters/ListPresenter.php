@@ -5,7 +5,7 @@ namespace CMS\Admin\Menu;
 final class ListPresenter extends BasePresenter {
 
     /**
-     * @var Nette\Database\Table\ActiveRow 
+     * @var \Nette\Database\Table\ActiveRow 
      */
     private $list;
 

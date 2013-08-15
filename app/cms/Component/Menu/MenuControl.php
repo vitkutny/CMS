@@ -1,6 +1,6 @@
 <?php
 
-namespace CMS\Menu\Component\Menu;
+namespace CMS\Component\Menu;
 
 use CMS\Component\BaseControl;
 
@@ -8,13 +8,13 @@ final class MenuControl extends BaseControl {
 
     /**
      * @inject
-     * @var CMS\Menu\Model\ListRepository
+     * @var \CMS\Model\ListRepository
      */
     public $listRepository;
 
     /**
      * @inject
-     * @var CMS\Menu\Model\NodeRepository
+     * @var \CMS\Model\NodeRepository
      */
     public $nodeRepository;
     private $activeNode;

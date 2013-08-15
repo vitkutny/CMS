@@ -18,6 +18,9 @@ parameters:
         ratio: %cssDir%/ratio.css
         cms: %cssDir%/cms.css
 services:
+    cms.model.listrepository: CMS\Model\ListRepository
+    cms.model.noderepository: CMS\Model\NodeRepository
+    cms.component.menu.menucontrol: CMS\Component\Menu\MenuControl
 factories:
 nette:
     application:

@@ -8,8 +8,7 @@ use CMS\Component\Form\FormRenderer;
 final class NodePresenter extends BasePresenter {
 
     /**
-     *
-     * @var Nette\Database\Table\ActiveRow
+     * @var \Nette\Database\Table\ActiveRow
      */
     private $node;
 

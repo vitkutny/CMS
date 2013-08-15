@@ -1,11 +1,10 @@
 <?php
 
-namespace CMS\Menu\Model;
+namespace CMS\Model;
 
-use CMS\Model\BaseRepository as Repository;
 use Nette\Database\Table;
 
-final class NodeRepository extends Repository {
+final class NodeRepository extends BaseRepository {
 
     private $temp;
 

@@ -1,5 +1,0 @@
-parameters:
-services:
-    - CMS\Menu\Model\ListRepository
-    - CMS\Menu\Model\NodeRepository
-    - CMS\Menu\Component\Menu\MenuControl

@@ -1,11 +1,10 @@
 <?php
 
-namespace CMS\Menu\Model;
+namespace CMS\Model;
 
-use CMS\Model\BaseRepository as Repository;
 use Nette\Database\Table;
 
-final class ListRepository extends Repository {
+final class ListRepository extends BaseRepository {
 
     /**
      * @param int $id
