@@ -3,24 +3,31 @@
 namespace CMS\Component\Menu;
 
 use CMS\Component\BaseControl;
+use CMS\Model\ListRepository;
+use CMS\Model\NodeRepository;
 
 final class MenuControl extends BaseControl {
 
     /**
-     * @inject
-     * @var \CMS\Model\ListRepository
+     * @var ListRepository
      */
-    public $listRepository;
+    private $listRepository;
 
     /**
-     * @inject
-     * @var \CMS\Model\NodeRepository
+     * @var NodeRepository
      */
-    public $nodeRepository;
+    private $nodeRepository;
     private $activeNode;
     private $breadcrumb = array();
+    private $temp;
 
-    public function render($type, $style = 'navbar') {
+    public function __construct(ListRepository $listRepository, NodeRepository $nodeRepository) {
+        parent::__construct();
+        $this->listRepository = $listRepository;
+        $this->nodeRepository = $nodeRepository;
+    }
+
+    public function render($type, $style = 'list') {
         $list = $this->listRepository->getListByType($type);
         $template = $this->template;
         $template->type = $type;

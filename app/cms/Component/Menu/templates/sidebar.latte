@@ -1,0 +1,19 @@
+<div class="panel panel-{$type}">
+    <div class="panel-heading">
+        <span class="panel-title">{$home->title}</span>
+    </div>
+    <div class="panel-body">
+        <ul n:block="nav" n:inner-foreach="$menu as $node">
+            {var $data = $node['data']}
+            {var $children = $node['children']}
+            <li n:class="isset($breadcrumb[$data->id])?active">
+                <a href="{plink $data->link,id=>$data->link_id}">
+                    {$data->title}
+                </a>
+                {if count($children)}
+                    {include #nav,menu=>$children}
+                {/if}
+            </li>
+        </ul>
+    </div>
+</div>

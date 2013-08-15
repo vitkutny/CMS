@@ -13,15 +13,18 @@
         </div>
         <div class="collapse navbar-collapse navbar-{$type}">
             <ul class="nav navbar-nav" n:inner-foreach="$menu as $node">
-                {var $subMenu=$node->related('node')->where('list_id',$node->list_id)}
-                <li n:class="isset($breadcrumb[$node->id])?active,$subMenu->count()?dropdown">
-                    <a href="{plink $node->link,id=>$node->link_id}"{if $subMenu->count()} class="dropdown-toggle" data-toggle="dropdown"{/if}>
-                        {$node->title} <b class="caret" n:tag-if="$subMenu->count()"></b>
+                {var $data=$node['data']}
+                {var $children=$node['children']}
+                <li n:class="isset($breadcrumb[$data->id])?active,count($children)?dropdown">
+                    <a href="{plink $data->link,id=>$data->link_id}"{if count($children)} class="dropdown-toggle" data-toggle="dropdown"{/if}>
+                        {$data->title} <b class="caret" n:tag-if="count($children)"></b>
                     </a>
-                    <ul n:if="$subMenu->count()" class="dropdown-menu" n:inner-foreach="$subMenu as $node">
-                        <li n:class="isset($breadcrumb[$node->id])?active">
-                            <a href="{plink $node->link,id=>$node->link_id}">
-                                {$node->title}
+                    <ul n:if="count($children)" class="dropdown-menu" n:inner-foreach="$children as $node">
+                        {var $data=$node['data']}
+                        {var $children=$node['children']}
+                        <li n:class="isset($breadcrumb[$data->id])?active">
+                            <a href="{plink $data->link,id=>$data->link_id}">
+                                {$data->title}
                             </a>
                         </li>
                     </ul>

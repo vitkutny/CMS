@@ -27,12 +27,34 @@ final class NodeRepository extends BaseRepository {
         return $this->table()->where(array('link' => $link, 'link_id' => $link_id))->fetch();
     }
 
+    public function getNodesInList($list) {
+        return $this->table()->where('list_id', $list->id)->fetchAll();
+    }
+
     /**
      * @param Table\ActiveRow $list
      * @return Table\Selection
      */
     public function getMenu($list) {
-        return $list->node->related('node')->where('list_id', $list->id);
+        $this->temp = $this->getNodesInList($list);
+        return $this->compileMenu($list->node->id);
+    }
+
+    /**
+     * @param int $id
+     * @return array
+     */
+    public function compileMenu($id) {
+        $tree = array();
+        foreach ($this->temp as $node) {
+            if ($node->node_id == $id) {
+                $tree[] = array(
+                    'data' => $node,
+                    'children' => $this->compileMenu($node->id),
+                );
+            }
+        }
+        return $tree;
     }
 
     /**
