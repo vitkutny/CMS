@@ -1,12 +1,13 @@
 {block #content}
 <ul n:block="menu">
     <li n:foreach="$menu as $node">
-        {var $subMenu=$node->related('node')->where('list_id',$node->list_id)}
-        <a n:href="Node:edit, id=>$node->id">
-            {$node->title}
+        {var $data=$node['data']}
+        {var $children=$node['children']}
+        <a n:href="Node:edit, id=>$data->id">
+            {$data->title}
         </a>
-        {if $subMenu->count()}
-            {include #menu, menu=>$subMenu}
+        {if count($children)}
+            {include #menu, menu=>$children}
         {/if}
     </li>
 </ul>

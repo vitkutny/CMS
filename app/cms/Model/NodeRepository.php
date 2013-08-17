@@ -28,7 +28,7 @@ final class NodeRepository extends BaseRepository {
     }
 
     public function getNodesInList($list) {
-        return $this->table()->where('list_id', $list->id)->fetchAll();
+        return $this->table()->where('list_id', $list->id);
     }
 
     /**
@@ -36,7 +36,7 @@ final class NodeRepository extends BaseRepository {
      * @return Table\Selection
      */
     public function getMenu($list) {
-        $this->temp = $this->getNodesInList($list);
+        $this->temp = $this->getNodesInList($list)->order('position')->order('title')->fetchAll();
         return $this->compileMenu($list->node->id);
     }
 

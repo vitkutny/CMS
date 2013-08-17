@@ -10,12 +10,12 @@ $configurator->createRobotLoader()
         ->addDirectory(__DIR__ . '/../vendor/others')
         ->register();
 
-foreach (new DirectoryIterator(__DIR__) as $file) {
-    if ($file->isDot() OR $file->getFilename() === 'cms') {
+foreach (new DirectoryIterator(__DIR__ . '/modules') as $file) {
+    if ($file->isDot()) {
         continue;
     }
     if ($file->isDir()) {
-        $configurator->addConfig(__DIR__ . "/$file/config.neon");
+        $configurator->addConfig(__DIR__ . "/modules/$file/config.neon");
     }
 }
 $configurator->addConfig(__DIR__ . '/cms/config.neon');
