@@ -1,14 +1,14 @@
-.ratio {
+[class*="ratio-"] {
     position: relative;
 }
 
-.ratio:before {
+[class*="ratio-"]:before {
     content: '';
     display: block;
     padding-top: 56.25%;
 }
 
-.ratio > * {
+[class*="ratio-"] > * {
     position: absolute;
     top: 0;
     bottom: 0;

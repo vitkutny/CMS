@@ -1,35 +1,37 @@
-<nav class="navbar navbar-{$type}" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-{$type}-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{plink $home->link, id=>$home->link_id}">
-                {$home->title}
-            </a>
+<div class="component-menu-navbar">
+    <nav class="navbar navbar-{$type}" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-{$type}-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{plink $home->link, id=>$home->link_id}">
+                    {$home->title}
+                </a>
+            </div>
+            <div class="collapse navbar-collapse navbar-{$type}-collapse">
+                <ul class="nav navbar-nav" n:inner-foreach="$menu as $node">
+                    {var $data=$node['data']}
+                    {var $children=$node['children']}
+                    <li n:class="isset($breadcrumb[$data->id])?active,count($children)?dropdown">
+                        <a href="{plink $data->link,id=>$data->link_id}"{if count($children)} class="dropdown-toggle" data-toggle="dropdown"{/if}>
+                            {$data->title} <b class="caret" n:tag-if="count($children)"></b>
+                        </a>
+                        <ul n:if="count($children)" class="dropdown-menu" n:inner-foreach="$children as $node">
+                            {var $data=$node['data']}
+                            {var $children=$node['children']}
+                            <li n:class="isset($breadcrumb[$data->id])?active">
+                                <a href="{plink $data->link,id=>$data->link_id}">
+                                    {$data->title}
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="collapse navbar-collapse navbar-{$type}-collapse">
-            <ul class="nav navbar-nav" n:inner-foreach="$menu as $node">
-                {var $data=$node['data']}
-                {var $children=$node['children']}
-                <li n:class="isset($breadcrumb[$data->id])?active,count($children)?dropdown">
-                    <a href="{plink $data->link,id=>$data->link_id}"{if count($children)} class="dropdown-toggle" data-toggle="dropdown"{/if}>
-                        {$data->title} <b class="caret" n:tag-if="count($children)"></b>
-                    </a>
-                    <ul n:if="count($children)" class="dropdown-menu" n:inner-foreach="$children as $node">
-                        {var $data=$node['data']}
-                        {var $children=$node['children']}
-                        <li n:class="isset($breadcrumb[$data->id])?active">
-                            <a href="{plink $data->link,id=>$data->link_id}">
-                                {$data->title}
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    </nav>
+</div>

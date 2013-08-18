@@ -1,34 +1,36 @@
-<div class="panel panel-primary panel-{$type}">
-    <div class="panel-heading clearfix">
-        <span class="panel-title">{$home->title}</span>
-        <button class="btn btn-xs btn-default pull-right" href="#" data-toggle="collapse" data-target=".panel-{$type}-collapse">
-            Toggle <i class="icon-caret-down"></i>
-        </button>
+<div class="component-menu-sidebar">
+    <div class="panel panel-primary panel-{$type}">
+        <div class="panel-heading clearfix">
+            <span class="panel-title">{$home->title}</span>
+            <button class="btn btn-xs btn-default pull-right visible-xs" href="#" data-toggle="collapse" data-target=".panel-{$type}-collapse">
+                Toggle <i class="icon-caret-down"></i>
+            </button>
+        </div>
+        <div class="collapse in panel-{$type}-collapse">
+            <div class="list-group" n:inner-foreach="$menu as $node">
+                {var $data = $node['data']}
+                {var $children = $node['children']}
+                <a n:class="isset($breadcrumb[$data->id])?active,list-group-item" href="{plink $data->link,id=>$data->link_id}">
+                    {$data->title}
+                </a>
+                {if count($children) AND isset($breadcrumb[$data->id])}
+                    {include #nav,menu=>$children}
+                {/if}
+            </div>
+        </div>
     </div>
-    <div class="collapse panel-{$type}-collapse">
-        <div class="list-group" n:inner-foreach="$menu as $node">
-            {var $data = $node['data']}
-            {var $children = $node['children']}
-            <a n:class="isset($breadcrumb[$data->id])?active,list-group-item" href="{plink $data->link,id=>$data->link_id}">
+    {define #nav}
+    <ul n:inner-foreach="$menu as $node">
+        {var $data = $node['data']}
+        {var $children = $node['children']}
+        <li n:class="isset($breadcrumb[$data->id])?active">
+            <a href="{plink $data->link,id=>$data->link_id}">
                 {$data->title}
             </a>
             {if count($children) AND isset($breadcrumb[$data->id])}
                 {include #nav,menu=>$children}
             {/if}
-        </div>
-    </div>
+        </li>
+    </ul>
+    {/define}
 </div>
-{define #nav}
-<ul n:inner-foreach="$menu as $node">
-    {var $data = $node['data']}
-    {var $children = $node['children']}
-    <li n:class="isset($breadcrumb[$data->id])?active">
-        <a href="{plink $data->link,id=>$data->link_id}">
-            {$data->title}
-        </a>
-        {if count($children) AND isset($breadcrumb[$data->id])}
-            {include #nav,menu=>$children}
-        {/if}
-    </li>
-</ul>
-{/define}

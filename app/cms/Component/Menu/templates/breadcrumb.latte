@@ -1,5 +1,7 @@
-<ul class="breadcrumb" n:inner-foreach="$breadcrumb as $node">
-    <li n:class="$iterator->last?active">
-        <a n:tag-if="!$iterator->last" href="{plink $node->link, id=>$node->link_id}">{$node->title}</a>
-    </li>
-</ul>
+<div class="component-menu-breadcrumb">
+    <ul class="breadcrumb" n:inner-foreach="$breadcrumb as $node">
+        <li n:class="$iterator->last?active">
+            <a n:tag-if="!$iterator->last" href="{plink $node->link, id=>$node->link_id}">{$node->title}</a>
+        </li>
+    </ul>
+</div>

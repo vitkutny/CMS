@@ -1,27 +1,35 @@
 includes:
     - config.local.neon
 parameters:
-    cmsDir: %appDir%/cms
-    jsDir: %cmsDir%/templates/js
-    cssDir: %cmsDir%/templates/css
+    modules:
+        directory: %appDir%/modules
+    components:
+        menu:
+            directory: %appDir%/cms/Component/Menu
     scripts:
-        jquery: %jsDir%/jquery-2.0.3.min.js
-        bootstrap: %jsDir%/bootstrap.min.js
-        responsivetables: %jsDir%/responsive-tables.js
-        netteforms: %jsDir%/netteForms.js
-        respondjs: %jsDir%/respond.min.js
-        cms: %jsDir%/cms.js
+        directory: %appDir%/cms/scripts
+        files:
+            - %scripts.directory%/jquery-2.0.3.min.js
+            - %scripts.directory%/bootstrap.min.js
+            - %scripts.directory%/responsive-tables.js
+            - %scripts.directory%/netteForms.js
+            - %scripts.directory%/respond.min.js
+            - %scripts.directory%/cms.js
     styles:
-        bootstrap: %cssDir%/bootstrap.min.css
-        fontawesome: %cssDir%/font-awesome.min.css
-        responsivetables: %cssDir%/responsive-tables.css
-        ratio: %cssDir%/ratio.css
-        cms: %cssDir%/cms.css
+        directory: %appDir%/cms/styles
+        files:
+            - %styles.directory%/bootstrap.min.css
+            - %styles.directory%/bootstrap-blockgrid.css
+            - %styles.directory%/font-awesome.min.css
+            - %styles.directory%/responsive-tables.css
+            - %styles.directory%/ratio.css
+            - %components.menu.directory%/styles/sidebar.css
+            - %styles.directory%/cms.css
 services:
+    cms.model.pagerepository: CMS\Model\PageRepository
     cms.model.listrepository: CMS\Model\ListRepository
     cms.model.noderepository: CMS\Model\NodeRepository
     cms.component.menu.menucontrol: CMS\Component\Menu\MenuControl
-    cms.page.model.pagerepository: CMS\Model\PageRepository
 factories:
 nette:
     application:
