@@ -10,7 +10,7 @@ $configurator->createRobotLoader()
         ->addDirectory(__DIR__ . '/../vendor/others')
         ->register();
 
-$configurator->addConfig(__DIR__ . '/cms/config.neon');
+$configurator->addConfig(__DIR__ . '/core/config.neon');
 foreach (new DirectoryIterator(__DIR__ . '/modules') as $file) {
     if ($file->isDot()) {
         continue;

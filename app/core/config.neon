@@ -1,13 +1,15 @@
 includes:
     - config.local.neon
 parameters:
+    core:
+        directory: %appDir%/core
     modules:
         directory: %appDir%/modules
     components:
         menu:
-            directory: %appDir%/cms/Component/Menu
+            directory: %core.directory%/Component/Menu
     scripts:
-        directory: %appDir%/cms/scripts
+        directory: %core.directory%/scripts
         files:
             - %scripts.directory%/jquery-2.0.3.min.js
             - %scripts.directory%/bootstrap.min.js
@@ -16,7 +18,7 @@ parameters:
             - %scripts.directory%/respond.min.js
             - %scripts.directory%/cms.js
     styles:
-        directory: %appDir%/cms/styles
+        directory: %core.directory%/styles
         files:
             - %styles.directory%/bootstrap.min.css
             - %styles.directory%/bootstrap-blockgrid.css
