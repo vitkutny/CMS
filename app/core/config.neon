@@ -25,7 +25,6 @@ parameters:
             - %styles.directory%/font-awesome.min.css
             - %styles.directory%/responsive-tables.css
             - %styles.directory%/ratio.css
-            - %components.menu.directory%/styles/sidebar.css
             - %styles.directory%/cms.css
 services:
     cms.model.pagerepository: CMS\Model\PageRepository

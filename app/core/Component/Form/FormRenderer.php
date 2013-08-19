@@ -11,13 +11,13 @@ class FormRenderer extends DefaultFormRenderer {
 
     public function __construct() {
         $this->wrappers['form']['container'] = 'table class="responsive small-12 columns"';
-        $this->wrappers['form']['class'] = 'custom';
+        $this->wrappers['form']['class'] = 'form-horizontal';
         $this->wrappers['controls']['container'] = NULL;
-        $this->wrappers['pair']['container'] = 'tr';
-        $this->wrappers['label']['container'] = 'th class="small-3"';
-        $this->wrappers['label']['class'] = 'right inline';
+        $this->wrappers['pair']['container'] = 'div class="form-group"';
+        $this->wrappers['label']['container'] = NULL;
+        $this->wrappers['label']['class'] = 'control-label col-xs-2';
         $this->wrappers['label']['suffix'] = ':';
-        $this->wrappers['control']['container'] = 'td class="small-9"';
+        $this->wrappers['control']['container'] = 'div class="col-xs-10"';
         $this->wrappers['control']['errorcontainer'] = 'small class="error"';
     }
 

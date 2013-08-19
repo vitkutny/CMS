@@ -19,10 +19,8 @@ final class MenuControl extends BaseControl {
     private $nodeRepository;
     private $activeNode;
     private $breadcrumb = array();
-    private $temp;
 
     public function __construct(ListRepository $listRepository, NodeRepository $nodeRepository) {
-        parent::__construct();
         $this->listRepository = $listRepository;
         $this->nodeRepository = $nodeRepository;
     }

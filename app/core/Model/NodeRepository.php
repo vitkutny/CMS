@@ -48,9 +48,9 @@ final class NodeRepository extends BaseRepository {
         $tree = array();
         foreach ($this->temp as $node) {
             if ($node->node_id == $id) {
-                $tree[] = array(
-                    'data' => $node,
-                    'children' => $this->compileMenu($node->id),
+                $tree[] = (object) array(
+                            'data' => $node,
+                            'children' => $this->compileMenu($node->id),
                 );
             }
         }

@@ -1,34 +1,34 @@
 <div class="component-menu-sidebar">
     <div class="panel panel-primary panel-{$type}">
         <div class="panel-heading clearfix">
-            <span class="panel-title">{$home->title}</span>
+            <span class="panel-title">
+                <a href="{plink $home->link,id=>$home->link_id}">
+                    {$home->title}
+                </a>
+            </span>
             <button class="btn btn-xs btn-default pull-right visible-xs" href="#" data-toggle="collapse" data-target=".panel-{$type}-collapse">
                 Toggle <i class="icon-caret-down"></i>
             </button>
         </div>
-        <div class="collapse in panel-{$type}-collapse">
-            <div class="list-group" n:inner-foreach="$menu as $node">
-                {var $data = $node['data']}
-                {var $children = $node['children']}
-                <a n:class="isset($breadcrumb[$data->id])?active,list-group-item" href="{plink $data->link,id=>$data->link_id}">
-                    {$data->title}
+        <div class="list-group">
+            <div class="collapse in panel-{$type}-collapse" n:inner-foreach="$menu as $node">
+                <a n:class="isset($breadcrumb[$node->data->id])?active,list-group-item" href="{plink $node->data->link,id=>$node->data->link_id}">
+                    {$node->data->title}
                 </a>
-                {if count($children) AND isset($breadcrumb[$data->id])}
-                    {include #nav,menu=>$children}
+                {if count($node->children) AND isset($breadcrumb[$node->data->id])}
+                    {include #nav,menu=>$node->children}
                 {/if}
             </div>
         </div>
     </div>
     {define #nav}
     <ul n:inner-foreach="$menu as $node">
-        {var $data = $node['data']}
-        {var $children = $node['children']}
-        <li n:class="isset($breadcrumb[$data->id])?active">
-            <a href="{plink $data->link,id=>$data->link_id}">
-                {$data->title}
+        <li n:class="isset($breadcrumb[$node->data->id])?active">
+            <a href="{plink $node->data->link,id=>$node->data->link_id}">
+                {$node->data->title}
             </a>
-            {if count($children) AND isset($breadcrumb[$data->id])}
-                {include #nav,menu=>$children}
+            {if count($node->children) AND isset($breadcrumb[$node->data->id])}
+                {include #nav,menu=>$node->children}
             {/if}
         </li>
     </ul>
