@@ -35,22 +35,22 @@ final class NodeRepository extends BaseRepository {
      * @param Table\ActiveRow $list
      * @return Table\Selection
      */
-    public function getMenu($list) {
+    public function getTree($list) {
         $this->temp = $this->getNodesInList($list)->order('position')->order('title')->fetchAll();
-        return $this->compileMenu($list->node->id);
+        return $this->compileTree($list->node->id);
     }
 
     /**
      * @param int $id
      * @return array
      */
-    public function compileMenu($id) {
+    public function compileTree($id) {
         $tree = array();
         foreach ($this->temp as $node) {
             if ($node->node_id == $id) {
                 $tree[] = (object) array(
                             'data' => $node,
-                            'children' => $this->compileMenu($node->id),
+                            'children' => $this->compileTree($node->id),
                 );
             }
         }

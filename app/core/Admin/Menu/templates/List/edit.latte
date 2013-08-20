@@ -1,13 +1,11 @@
 {block #content}
 <ul n:block="menu">
-    <li n:foreach="$menu as $node">
-        {var $data=$node['data']}
-        {var $children=$node['children']}
-        <a n:href="Node:edit, id=>$data->id">
-            {$data->title}
+    <li n:foreach="$tree as $node">
+        <a n:href="Node:edit, id=>$node->data->id">
+            {$node->data->title}
         </a>
-        {if count($children)}
-            {include #menu, menu=>$children}
+        {if count($node->children)}
+            {include #menu, tree=>$node->children}
         {/if}
     </li>
 </ul>

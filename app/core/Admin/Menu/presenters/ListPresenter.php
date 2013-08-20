@@ -18,7 +18,7 @@ final class ListPresenter extends BasePresenter {
 
     public function renderEdit() {
         $this->menu->breadcrumbAdd('Edit list: ' . $this->list->title);
-        $this->template->menu = $this->nodeRepository->getMenu($this->list);
+        $this->template->tree = $this->nodeRepository->getTree($this->list);
     }
 
 }

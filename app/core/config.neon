@@ -1,5 +1,3 @@
-includes:
-    - config.local.neon
 parameters:
     core:
         directory: %appDir%/core
@@ -8,6 +6,7 @@ parameters:
     components:
         menu:
             directory: %core.directory%/Component/Menu
+            control: CMS\Component\Menu\MenuControl
     scripts:
         directory: %core.directory%/scripts
         files:
@@ -30,7 +29,7 @@ services:
     cms.model.pagerepository: CMS\Model\PageRepository
     cms.model.listrepository: CMS\Model\ListRepository
     cms.model.noderepository: CMS\Model\NodeRepository
-    cms.component.menu.menucontrol: CMS\Component\Menu\MenuControl
+    cms.component.menu: %components.menu.control%
 factories:
 nette:
     application:
@@ -45,3 +44,5 @@ nette:
                 action: view
     session:
         expiration: 14 days
+includes:
+    - config.local.neon

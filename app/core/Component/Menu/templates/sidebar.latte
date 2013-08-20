@@ -1,3 +1,4 @@
+{var collapseId = uniqid('panel-collapse-')}
 <div class="component-menu-sidebar">
     <div class="panel panel-primary panel-{$type}">
         <div class="panel-heading clearfix">
@@ -6,29 +7,29 @@
                     {$home->title}
                 </a>
             </span>
-            <button class="btn btn-xs btn-default pull-right visible-xs" href="#" data-toggle="collapse" data-target=".panel-{$type}-collapse">
+            <button class="btn btn-xs btn-default pull-right visible-xs" href="#" data-toggle="collapse" data-target=".{$collapseId}">
                 Toggle <i class="icon-caret-down"></i>
             </button>
         </div>
         <div class="list-group">
-            <div class="collapse in panel-{$type}-collapse" n:inner-foreach="$menu as $node">
+            <div class="collapse in panel-collapse {$collapseId}" n:inner-foreach="$tree as $node">
                 <a n:class="isset($breadcrumb[$node->data->id])?active,list-group-item" href="{plink $node->data->link,id=>$node->data->link_id}">
                     {$node->data->title}
                 </a>
                 {if count($node->children) AND isset($breadcrumb[$node->data->id])}
-                    {include #nav,menu=>$node->children}
+                    {include #nav,tree=>$node->children}
                 {/if}
             </div>
         </div>
     </div>
     {define #nav}
-    <ul n:inner-foreach="$menu as $node">
+    <ul n:inner-foreach="$tree as $node">
         <li n:class="isset($breadcrumb[$node->data->id])?active">
             <a href="{plink $node->data->link,id=>$node->data->link_id}">
                 {$node->data->title}
             </a>
             {if count($node->children) AND isset($breadcrumb[$node->data->id])}
-                {include #nav,menu=>$node->children}
+                {include #nav,tree=>$node->children}
             {/if}
         </li>
     </ul>
