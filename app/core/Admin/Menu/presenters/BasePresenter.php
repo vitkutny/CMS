@@ -14,9 +14,9 @@ abstract class BasePresenter extends Presenter {
 
     /**
      * @inject
-     * @var \CMS\Model\ListRepository
+     * @var \CMS\Model\TreeRepository
      */
-    public $listRepository;
+    public $treeRepository;
 
     protected function startup() {
         parent::startup();

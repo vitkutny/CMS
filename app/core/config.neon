@@ -27,7 +27,7 @@ parameters:
             - %styles.directory%/cms.css
 services:
     cms.model.pagerepository: CMS\Model\PageRepository
-    cms.model.listrepository: CMS\Model\ListRepository
+    cms.model.treerepository: CMS\Model\TreeRepository
     cms.model.noderepository: CMS\Model\NodeRepository
     cms.component.menu: %components.menu.control%
 factories:
@@ -46,3 +46,11 @@ nette:
         expiration: 14 days
 includes:
     - config.local.neon
+extensions:
+    dibi: DibiNette21Extension
+dibi:
+    host: localhost
+    username: root
+    password: root
+    database: cms
+    lazy: TRUE

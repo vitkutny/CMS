@@ -2,13 +2,11 @@
 
 namespace CMS\Model;
 
-use CMS\Model\BaseRepository as Repository;
 use Nette\Database\Table;
 use Nette\Database\SelectionFactory;
-use Nette\Utils\Strings;
 use CMS\Component\Menu\MenuControl;
 
-final class PageRepository extends Repository {
+final class PageRepository extends BaseRepository {
 
     /**
      * @var MenuControl 
@@ -72,26 +70,6 @@ final class PageRepository extends Repository {
         } else {
             return false;
         }
-    }
-
-    /**
-     * 
-     * @param string $title
-     * @return int
-     */
-    public function filterIn($title) {
-        $id = substr($title, strrpos($title, '/') + 1);
-        return $id;
-    }
-
-    /**
-     * 
-     * @param int $id
-     * @return string
-     */
-    public function filterOut($id) {
-        $page = $this->getPage($id);
-        return Strings::webalize($page->node->title) . '/' . $id;
     }
 
 }

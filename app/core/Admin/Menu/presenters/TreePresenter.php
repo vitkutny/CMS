@@ -7,10 +7,10 @@ final class ListPresenter extends BasePresenter {
     /**
      * @var \Nette\Database\Table\ActiveRow 
      */
-    private $list;
+    private $tree;
 
     public function actionEdit($id) {
-        $this->list = $this->listRepository->getList($id);
+        $this->list = $this->treeRepository->getTree($id);
         if (!$this->list) {
             $this->error();
         }

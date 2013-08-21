@@ -27,8 +27,8 @@ final class NodeRepository extends BaseRepository {
         return $this->table()->where(array('link' => $link, 'link_id' => $link_id))->fetch();
     }
 
-    public function getNodesInList($list) {
-        return $this->table()->where('list_id', $list->id);
+    public function getNodesInTree($tree) {
+        return $this->table()->where('tree_id', $tree->id);
     }
 
     /**
@@ -36,7 +36,7 @@ final class NodeRepository extends BaseRepository {
      * @return Table\Selection
      */
     public function getTree($list) {
-        $this->temp = $this->getNodesInList($list)->order('position')->order('title')->fetchAll();
+        $this->temp = $this->getNodesInTree($list)->order('position')->order('title')->fetchAll();
         return $this->compileTree($list->node->id);
     }
 
@@ -72,7 +72,7 @@ final class NodeRepository extends BaseRepository {
     /**
      * 
      * @param Table\ActiveRow $node
-     * @return array
+     * @return int[]
      */
     public function getIdsOfChildNodes($node) {
         $this->temp = array();
@@ -81,7 +81,6 @@ final class NodeRepository extends BaseRepository {
     }
 
     /**
-     * 
      * @param Table\ActiveRow $node
      */
     private function compileIdsOfChildNodes($node) {

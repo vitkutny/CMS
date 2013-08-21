@@ -3,15 +3,15 @@
 namespace CMS\Component\Menu;
 
 use CMS\Component\BaseControl;
-use CMS\Model\ListRepository;
+use CMS\Model\TreeRepository;
 use CMS\Model\NodeRepository;
 
 final class MenuControl extends BaseControl {
 
     /**
-     * @var ListRepository
+     * @var TreeRepository
      */
-    private $listRepository;
+    private $treeRepository;
 
     /**
      * @var NodeRepository
@@ -20,13 +20,13 @@ final class MenuControl extends BaseControl {
     private $activeNode;
     private $breadcrumb = array();
 
-    public function __construct(ListRepository $listRepository, NodeRepository $nodeRepository) {
-        $this->listRepository = $listRepository;
+    public function __construct(TreeRepository $treeRepository, NodeRepository $nodeRepository) {
+        $this->treeRepository = $treeRepository;
         $this->nodeRepository = $nodeRepository;
     }
 
     public function render($type, $style = 'list') {
-        $list = $this->listRepository->getListByType($type);
+        $list = $this->treeRepository->getTreeByType($type);
         $template = $this->template;
         $template->type = $type;
         $template->tree = $this->nodeRepository->getTree($list);
@@ -55,7 +55,7 @@ final class MenuControl extends BaseControl {
     }
 
     public function getRootNode($type) {
-        return $this->listRepository->getListByType($type)->node;
+        return $this->treeRepository->getTreeByType($type)->node;
     }
 
     public function setActive($link, $link_id = NULL) {
@@ -67,8 +67,7 @@ final class MenuControl extends BaseControl {
     }
 
     public function breadcrumbAdd($title, $link = NULL, $link_id = NULL) {
-        $key = md5($title . $link . $link_id);
-        $this->breadcrumb[$key] = (object) array(
+        $this->breadcrumb[uniqid()] = (object) array(
                     'title' => $title,
                     'link' => $link,
                     'link_id' => $link_id,
@@ -88,7 +87,7 @@ final class MenuControl extends BaseControl {
     }
 
     public function insert($type, $title, $link, $link_id = NULL) {
-        $list = $this->listRepository->getListByType($type);
+        $list = $this->treeRepository->getTreeByType($type);
         return $this->nodeRepository->insertNode($list, $title, $link, $link_id);
     }
 
