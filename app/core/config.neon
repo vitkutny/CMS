@@ -46,11 +46,3 @@ nette:
         expiration: 14 days
 includes:
     - config.local.neon
-extensions:
-    dibi: DibiNette21Extension
-dibi:
-    host: localhost
-    username: root
-    password: root
-    database: cms
-    lazy: TRUE

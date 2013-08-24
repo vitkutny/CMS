@@ -2,8 +2,6 @@
 
 namespace CMS\Model;
 
-use Nette\Database\Table;
-use Nette\Database\SelectionFactory;
 use CMS\Component\Menu\MenuControl;
 
 final class PageRepository extends BaseRepository {
@@ -13,35 +11,21 @@ final class PageRepository extends BaseRepository {
      */
     private $menu;
 
-    public function __construct(SelectionFactory $db, MenuControl $menu) {
-        parent::__construct($db);
+    public function __construct(\DibiConnection $connection, MenuControl $menu) {
+        parent::__construct($connection);
         $this->menu = $menu;
     }
 
-    /**
-     * 
-     * @param int $id
-     * @return Table\ActiveRow
-     */
     public function getPage($id) {
-        return $this->table()->get($id);
+        return $this->find($id);
     }
 
-    /**
-     * 
-     * @return Table\Selection
-     */
     public function getPages() {
-        return $this->table();
+        return $this->findAll();
     }
 
-    /**
-     * 
-     * @param array $data
-     * @return Table\ActiveRow
-     */
     public function addPage(array $data) {
-        $node = $this->menu->insert('front', $data['title'], ':Front:Page:view');
+        $node = $this->menu->insert($data['title'], ':Front:Page:view');
         unset($data['title']);
         $data['node_id'] = $node->id;
         $page = $this->table()->insert($data);
@@ -49,21 +33,10 @@ final class PageRepository extends BaseRepository {
         return $page;
     }
 
-    /**
-     * 
-     * @param Table\ActiveRow $page
-     * @param array $data
-     * @return Table\ActiveRow
-     */
     public function editPage($page, array $data) {
         return $page->update($data);
     }
 
-    /**
-     * 
-     * @param Table\ActiveRow $page
-     * @return boolean
-     */
     public function removePage($page) {
         if ($this->menu->remove($page->node)) {
             return $page->delete();

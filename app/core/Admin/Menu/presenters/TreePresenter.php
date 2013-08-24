@@ -10,15 +10,15 @@ final class ListPresenter extends BasePresenter {
     private $tree;
 
     public function actionEdit($id) {
-        $this->list = $this->treeRepository->getTree($id);
-        if (!$this->list) {
+        $this->tree = $this->treeRepository->getTree($id);
+        if (!$this->tree) {
             $this->error();
         }
     }
 
     public function renderEdit() {
-        $this->menu->breadcrumbAdd('Edit list: ' . $this->list->title);
-        $this->template->tree = $this->nodeRepository->getTree($this->list);
+        $this->menu->breadcrumbAdd('Edit list: ' . $this->tree->title);
+        $this->template->tree = $this->nodeRepository->getTree($this->tree);
     }
 
 }

@@ -38,10 +38,10 @@ final class PagePresenter extends BasePresenter {
         $form = new Form();
         $form->setRenderer(new FormRenderer);
         $form->addTextArea('content', 'Content')->setRequired();
-        $form->setDefaults($this->page);
+        $form->setDefaults($this->page->getRowData());
         $form->onSuccess[] = $this->pageEditFormSuccess;
         $form->addSubmit('edit', 'Edit page');
-        if ($this->page->node->node_id) {
+        if ($this->page->node->node) {
             $form->addSubmit('remove', 'Remove page')->setAttribute('class', 'alert');
         }
         return $form;

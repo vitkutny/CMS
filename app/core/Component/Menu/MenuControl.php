@@ -26,12 +26,12 @@ final class MenuControl extends BaseControl {
     }
 
     public function render($type, $style = 'list') {
-        $list = $this->treeRepository->getTreeByType($type);
+        $tree = $this->treeRepository->getTreeByType($type);
         $template = $this->template;
         $template->type = $type;
-        $template->tree = $this->nodeRepository->getTree($list);
+        $template->tree = $this->nodeRepository->getTree($tree);
         $template->breadcrumb = $this->getBreadcrumb();
-        $template->home = $list->node;
+        $template->home = $tree->node;
         $template->setFile(__DIR__ . "/templates/$style.latte");
         $template->render();
     }
@@ -86,7 +86,7 @@ final class MenuControl extends BaseControl {
         return $breadcrumb;
     }
 
-    public function insert($type, $title, $link, $link_id = NULL) {
+    public function insert($title, $link, $link_id = NULL, $type = 'front') {
         $list = $this->treeRepository->getTreeByType($type);
         return $this->nodeRepository->insertNode($list, $title, $link, $link_id);
     }

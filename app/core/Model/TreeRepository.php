@@ -2,7 +2,7 @@
 
 namespace CMS\Model;
 
-final class TreeRepository extends BaseRepositoryLM {
+final class TreeRepository extends BaseRepository {
 
     public function getTree($id) {
         return $this->find($id);
