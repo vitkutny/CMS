@@ -3,6 +3,7 @@
 namespace CMS\Model;
 
 use CMS\Component\Menu\MenuControl;
+use Nette\Database\SelectionFactory;
 
 final class PageRepository extends BaseRepository {
 
@@ -11,17 +12,17 @@ final class PageRepository extends BaseRepository {
      */
     private $menu;
 
-    public function __construct(\DibiConnection $connection, MenuControl $menu) {
+    public function __construct(SelectionFactory $connection, MenuControl $menu) {
         parent::__construct($connection);
         $this->menu = $menu;
     }
 
     public function getPage($id) {
-        return $this->find($id);
+        return $this->table()->get($id);
     }
 
     public function getPages() {
-        return $this->findAll();
+        return $this->table()->fetchAll();
     }
 
     public function addPage(array $data) {

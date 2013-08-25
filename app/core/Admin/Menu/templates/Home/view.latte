@@ -1,8 +1,8 @@
 {block #content}
-<ul n:inner-foreach="$lists as $list">
+<ul n:inner-foreach="$trees as $tree">
     <li>
-        <a n:href="List:Edit, id=>$list->id">
-            {$list->title}
+        <a n:href="Tree:Edit, id=>$tree->id">
+            {$tree->title}
         </a>
     </li>
 </ul>

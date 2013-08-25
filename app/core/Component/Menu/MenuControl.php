@@ -17,7 +17,7 @@ final class MenuControl extends BaseControl {
      * @var NodeRepository
      */
     private $nodeRepository;
-    private $activeNode;
+    private $active;
     private $breadcrumb = array();
 
     public function __construct(TreeRepository $treeRepository, NodeRepository $nodeRepository) {
@@ -60,9 +60,9 @@ final class MenuControl extends BaseControl {
 
     public function setActive($link, $link_id = NULL) {
         if (is_string($link)) {
-            $this->activeNode = $this->nodeRepository->getNodeByLink($link, $link_id);
+            $this->active = $this->nodeRepository->getNodeByLink($link, $link_id);
         } else {
-            $this->activeNode = $link;
+            $this->active = $link;
         }
     }
 
@@ -76,10 +76,10 @@ final class MenuControl extends BaseControl {
 
     public function getBreadcrumb() {
         $breadcrumb = array();
-        foreach ($this->nodeRepository->getParentNodes($this->activeNode) as $node) {
+        foreach ($this->nodeRepository->getParentNodes($this->active) as $node) {
             $breadcrumb[$node->id] = $node;
         }
-        $breadcrumb[$this->activeNode->id] = $this->activeNode;
+        $breadcrumb[$this->active->id] = $this->active;
         foreach ($this->breadcrumb as $key => $node) {
             $breadcrumb[$key] = $node;
         }

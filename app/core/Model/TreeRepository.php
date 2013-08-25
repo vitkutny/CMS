@@ -5,16 +5,15 @@ namespace CMS\Model;
 final class TreeRepository extends BaseRepository {
 
     public function getTree($id) {
-        return $this->find($id);
+        return $this->table()->get($id);
     }
 
     public function getTreeByType($type) {
-        $row = $this->connection->select('*')->from($this->getTable())->where('type = %s', $type)->fetch();
-        return $this->createEntity($row);
+        return $this->table()->where('type', $type)->fetch();
     }
 
     public function getAllTrees() {
-        return $this->findAll();
+        return $this->table()->fetchAll();
     }
 
 }

@@ -2,7 +2,7 @@
 
 namespace CMS\Admin\Menu;
 
-final class ListPresenter extends BasePresenter {
+final class TreePresenter extends BasePresenter {
 
     /**
      * @var \Nette\Database\Table\ActiveRow 

@@ -5,7 +5,7 @@ namespace CMS\Admin\Menu;
 final class HomePresenter extends BasePresenter {
 
     public function renderView() {
-        $this->template->lists = $this->treeRepository->getAllTrees();
+        $this->template->trees = $this->treeRepository->getAllTrees();
     }
 
 }

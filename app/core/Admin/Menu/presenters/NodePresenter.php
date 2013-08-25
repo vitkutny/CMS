@@ -17,7 +17,7 @@ final class NodePresenter extends BasePresenter {
     }
 
     public function renderEdit() {
-        $this->menu->breadcrumbAdd('Edit list: ' . $this->node->tree->title, ':Admin:Menu:List:edit', $this->node->tree->id);
+        $this->menu->breadcrumbAdd('Edit list: ' . $this->node->tree->title, ':Admin:Menu:List:edit', $this->node->tree_id);
         $this->menu->breadcrumbAdd('Edit node: ' . $this->node->title);
     }
 
@@ -29,7 +29,7 @@ final class NodePresenter extends BasePresenter {
             $form->addSelect('node_id', 'Parent node', $this->nodeRepository->getParentNodeSelectData($this->node))->setRequired();
         }
         $form->addText('position', 'Position number')->addRule(Form::INTEGER)->setType('number')->setRequired();
-        $form->setDefaults($this->node->getRowData());
+        $form->setDefaults($this->node);
         $form->addSubmit('save', 'Save');
         $form->onSuccess = $this->nodeEditFormSuccess;
         return $form;
@@ -38,7 +38,7 @@ final class NodePresenter extends BasePresenter {
     public function nodeEditFormSuccess(Form $form) {
         $data = $form->getValues(TRUE);
         $this->nodeRepository->updateNode($this->node, $data);
-        $this->redirect('List:edit', array('id' => $this->node->list->id));
+        $this->redirect('Tree:edit', array('id' => $this->node->tree_id));
     }
 
 }
