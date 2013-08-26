@@ -2,9 +2,25 @@
 
 /**
  * TODO:
- * Shared components:
- * User, Photo/Video, Comments
  * ACL
+ * 
+ * Gallery
+ *  -photo
+ *  -video
+ * {control gallery:photo $product->gallery}
+ * {control gallery:video $product->gallery}
+ * {control photo:xs $product->gallery->photo}
+ * 
+ * Social
+ *  -comments
+ *  -reviews
+ *  -rating
+ * {control social:comments $product->social}
+ * {control social:reviews $product->social}
+ * {control social:rating $product->social}
+ * 
+ * User
+ * ex. in shop module extend $this->user->related('shop_user')->adress
  */
 
 namespace CMS;
