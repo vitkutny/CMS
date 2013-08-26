@@ -15,24 +15,22 @@ final class NodeRepository extends BaseRepository {
     }
 
     public function getNodesInTree($tree) {
-        return $this->table()->where('tree_id', $tree->id)->order('position')->order('title')->fetchAll();
+        return $this->table()->where('tree_id', $tree->id)->order('position')->order('title');
     }
 
     public function getTree($tree) {
-        $this->temp = $this->getNodesInTree($tree);
+        $this->temp = $this->getNodesInTree($tree)->fetchAll();
         return $this->compileTree($tree->node_id);
     }
 
     public function compileTree($id) {
         $tree = array();
         foreach ($this->temp as $node) {
-            if ($node->node) {
-                if ($node->node_id == $id) {
-                    $tree[] = (object) array(
-                                'data' => $node,
-                                'children' => $this->compileTree($node->id),
-                    );
-                }
+            if ($node->node_id === $id) {
+                $tree[] = (object) array(
+                            'data' => $node,
+                            'children' => $this->compileTree($node->id),
+                );
             }
         }
         return $tree;
@@ -70,7 +68,7 @@ final class NodeRepository extends BaseRepository {
     }
 
     public function getParentNodeSelectData($node) {
-        $data = $this->table()->where('tree_id', $node->tree_id)->fetchPairs('id', 'title');
+        $data = $this->getNodesInTree($node->tree)->fetchPairs('id', 'title');
         $data[$node->tree->node_id] = $node->tree->node->title;
         unset($data[$node->id]);
         foreach ($this->getIdsOfChildNodes($node) as $id) {
