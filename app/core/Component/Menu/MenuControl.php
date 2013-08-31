@@ -29,7 +29,7 @@ final class MenuControl extends BaseControl {
         $tree = $this->treeRepository->getTreeByType($type);
         $template = $this->template;
         $template->type = $type;
-        $template->tree = $this->nodeRepository->getTree($tree);
+        $template->tree = $this->treeRepository->getTreeData($tree);
         $template->breadcrumb = $this->getBreadcrumb();
         $template->home = $tree->node;
         $template->setFile(__DIR__ . "/templates/$style.latte");

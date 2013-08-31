@@ -186,6 +186,9 @@ Nette.validators = {
     filled: function(elem, arg, val) {
         return val !== '' && val !== false && val !== null;
     },
+    blank: function(elem, arg, val) {
+        return !Nette.validators.filled(elem, arg, val);
+    },
     valid: function(elem, arg, val) {
         return Nette.validateControl(elem, null, true);
     },
@@ -200,6 +203,9 @@ Nette.validators = {
             }
         }
         return false;
+    },
+    notEqual: function(elem, arg, val) {
+        return arg === undefined ? null : !Nette.validators.equal(elem, arg, val);
     },
     minLength: function(elem, arg, val) {
         return val.length >= arg;
