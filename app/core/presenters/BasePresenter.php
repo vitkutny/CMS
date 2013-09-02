@@ -2,25 +2,32 @@
 
 /**
  * TODO:
+ * remove node refactor
+ * 
+ * Menu
+ *  - přesouvání stromů (home node) nebo nastavení node_id na NULL
+ * 
  * ACL
  * 
  * Gallery
  *  -photo
  *  -video
- * {control gallery:photo $product->gallery}
- * {control gallery:video $product->gallery}
+ * {control gallery $product->gallery} //all photos + videos
+ * {control gallery:photo $product->gallery} //all photos
+ * {control gallery:video $product->gallery} //all videos
  * {control photo:xs $product->gallery->photo}
+ * {control video:youtube aSdXzWs3gkI}
  * 
  * Social
  *  -comments
  *  -reviews
  *  -rating
  * {control social:comments $product->social}
- * {control social:reviews $product->social}
- * {control social:rating $product->social}
+ * {control social:reviews $product->social} //positive + negative + include social:rating
+ * {control social:rating $product->social} //just 5 star bar
  * 
  * User
- * ex. in shop module extend $this->user->related('shop_user')->adress
+ * modules will (Create column if not exist) instead of extending user table by another table
  */
 
 namespace CMS;

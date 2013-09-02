@@ -26,7 +26,7 @@ final class NodePresenter extends BasePresenter {
         $form->setRenderer(new FormRenderer);
         $form->addText('title', 'Title')->setRequired();
         if ($this->node->node) {
-            $form->addSelect('node_id', 'Parent node', $this->nodeRepository->getParentNodeSelectData($this->node))->setRequired();
+            $form->addSelect('node_id', 'Parent node', $this->menu->getParentNodeSelectData($this->node->tree, $this->node))->setRequired();
         }
         $form->addText('position', 'Position number')->addRule(Form::INTEGER)->setType('number')->setRequired();
         $form->setDefaults($this->node);

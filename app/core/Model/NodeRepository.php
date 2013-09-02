@@ -45,25 +45,7 @@ final class NodeRepository extends BaseRepository {
         return array_reverse($this->temp);
     }
 
-    public function getParentNodeSelectData($node) {
-        $data = $node->tree->related('node')->fetchPairs('id', 'title');
-        $data[$node->tree->node_id] = $node->tree->node->title;
-        unset($data[$node->id]);
-        foreach ($this->getIdsOfChildNodes($node) as $id) {
-            unset($data[$id]);
-        }
-        return $data;
-    }
-
-    public function insertNode($tree, $title, $link, $link_id = NULL) {
-        $data = array(
-            'node_id' => $tree->node_id,
-            'tree_id' => $tree->id,
-            'title' => $title,
-            'link' => $link,
-            'link_id' => $link_id,
-            'position' => 0
-        );
+    public function insertNode($data) {
         return $this->table()->insert($data);
     }
 

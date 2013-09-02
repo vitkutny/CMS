@@ -25,15 +25,38 @@ final class MenuControl extends BaseControl {
         $this->nodeRepository = $nodeRepository;
     }
 
-    public function render($type, $style = 'list') {
-        $tree = $this->treeRepository->getTreeByType($type);
+    public function render($group, $file, $directory = NULL) {
+        if (!$directory) {
+            $directory = __DIR__ . '/templates';
+        }
+        $tree = $this->treeRepository->getTreeByGroup($group);
         $template = $this->template;
-        $template->type = $type;
+        $template->group = $group;
         $template->tree = $this->treeRepository->getTreeData($tree);
         $template->breadcrumb = $this->getBreadcrumb();
         $template->home = $tree->node;
-        $template->setFile(__DIR__ . "/templates/$style.latte");
+        $template->setFile($directory . '/' . $file . '.latte');
         $template->render();
+    }
+
+    public function renderNavbar($group) {
+        $this->render($group, 'navbar');
+    }
+
+    public function renderSidebar($group) {
+        $this->render($group, 'sidebar');
+    }
+
+    public function renderUl($group) {
+        $this->render($group, 'ul');
+    }
+
+    public function renderOl($group) {
+        $this->render($group, 'ol');
+    }
+
+    public function renderAdmin($group) {
+        $this->render($group, 'admin');
     }
 
     public function renderBreadcrumb() {
@@ -54,8 +77,8 @@ final class MenuControl extends BaseControl {
         $template->render();
     }
 
-    public function getRootNode($type) {
-        return $this->treeRepository->getTreeByType($type)->node;
+    public function getHomeNode($group) {
+        return $this->treeRepository->getTreeByGroup($group)->node;
     }
 
     public function setActive($link, $link_id = NULL) {
@@ -86,9 +109,25 @@ final class MenuControl extends BaseControl {
         return $breadcrumb;
     }
 
-    public function insert($title, $link, $link_id = NULL, $type = 'front') {
-        $list = $this->treeRepository->getTreeByType($type);
-        return $this->nodeRepository->insertNode($list, $title, $link, $link_id);
+    public function getParentNodeSelectData($tree, $node = NULL) {
+        if (is_string($tree)) {
+            $tree = $this->treeRepository->getTreeByGroup($tree);
+        }
+        $data = $tree->related('node')->fetchPairs('id', 'title');
+        $data[$tree->node_id] = $tree->node->title;
+        if ($node) {
+            unset($data[$node->id]);
+            foreach ($this->nodeRepository->getIdsOfChildNodes($node) as $id) {
+                unset($data[$id]);
+            }
+        }
+        return $data;
+    }
+
+    public function insert($data) {
+        $node = $this->nodeRepository->getNode($data['node_id']);
+        $data['tree_id'] = $node->tree_id;
+        return $this->nodeRepository->insertNode($data);
     }
 
     public function update($node, $data) {

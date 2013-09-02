@@ -10,8 +10,8 @@ final class TreeRepository extends BaseRepository {
         return $this->table()->get($id);
     }
 
-    public function getTreeByType($type) {
-        return $this->table()->where('type', $type)->fetch();
+    public function getTreeByGroup($group) {
+        return $this->table()->where('group', $group)->fetch();
     }
 
     public function getTreeData($tree) {

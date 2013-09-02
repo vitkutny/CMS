@@ -1,6 +1,6 @@
 {layout $baseLayout}
 {#layout}
-{control menu admin,navbar}
+{control menu:navbar admin}
 <div class="container">
     <div class="row">
         <div class="col-sm-9 col-sm-push-3">
@@ -11,7 +11,8 @@
             {include #module}
         </div>
         <div class="col-sm-3 col-sm-pull-9">
-            {block #sidebar}{/block}
+            {control menu:admin front}
+            {control menu:admin shop_category}
         </div>
     </div>
 </div>

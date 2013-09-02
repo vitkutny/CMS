@@ -26,16 +26,18 @@ final class PageRepository extends BaseRepository {
     }
 
     public function addPage(array $data) {
-        $node = $this->menu->insert($data['title'], ':Front:Page:view');
-        unset($data['title']);
-        $data['node_id'] = $node->id;
-        $page = $this->table()->insert($data);
+        $data['node']['link'] = ':Front:Page:view';
+        $data['node']['link_admin'] = ':Admin:Page:Page:Edit';
+        $node = $this->menu->insert($data['node']);
+        $data['page']['node_id'] = $node->id;
+        $page = $this->table()->insert($data['page']);
         $this->menu->update($node, array('link_id' => $page->id));
         return $page;
     }
 
     public function editPage($page, array $data) {
-        return $page->update($data);
+        $this->menu->update($page->node, $data['node']);
+        return $page->update($data['page']);
     }
 
     public function removePage($page) {

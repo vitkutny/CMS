@@ -27,8 +27,15 @@ final class PagePresenter extends BasePresenter {
     protected function createComponentPageAddForm() {
         $form = new Form();
         $form->setRenderer(new FormRenderer);
-        $form->addText('title', 'Title')->setRequired();
-        $form->addTextArea('content', 'Content')->setRequired();
+
+        $node = $form->addContainer('node');
+        $node->addText('title', 'Title')->setRequired();
+        $parent = $this->menu->getParentNodeSelectData('front');
+        $node->addSelect('node_id', 'Parent node', $parent)->setRequired();
+
+        $page = $form->addContainer('page');
+        $page->addTextArea('content', 'Content')->setRequired();
+
         $form->onSuccess[] = $this->pageAddFormSuccess;
         $form->addSubmit('add', 'Add page');
         return $form;
@@ -37,12 +44,23 @@ final class PagePresenter extends BasePresenter {
     protected function createComponentPageEditForm() {
         $form = new Form();
         $form->setRenderer(new FormRenderer);
-        $form->addTextArea('content', 'Content')->setRequired();
-        $form->setDefaults($this->page);
+
+        $node = $form->addContainer('node');
+        $node->addText('title', 'Title')->setRequired();
+        $parent = $this->menu->getParentNodeSelectData('front', $this->page->node);
+        if ($parent) {
+            $node->addSelect('node_id', 'Parent node', $parent)->setRequired();
+        }
+        $node->setDefaults($this->page->node);
+
+        $page = $form->addContainer('page');
+        $page->addTextArea('content', 'Content')->setRequired();
+        $page->setDefaults($this->page);
+
         $form->onSuccess[] = $this->pageEditFormSuccess;
         $form->addSubmit('edit', 'Edit page');
-        if ($this->page->node->node_id) {
-            $form->addSubmit('remove', 'Remove page')->setAttribute('class', 'alert');
+        if ($parent) {
+            $form->addSubmit('remove', 'Remove page')->setAttribute('class', 'btn-danger');
         }
         return $form;
     }
@@ -52,8 +70,8 @@ final class PagePresenter extends BasePresenter {
      * @param Form $form
      */
     public function pageAddFormSuccess(Form $form) {
-        $this->pageRepository->addPage($form->getValues(TRUE));
-        $this->redirect('Home:view');
+        $page = $this->pageRepository->addPage($form->getValues(TRUE));
+        $this->redirect($page->node->link_admin, array('id' => $page->node->link_id));
     }
 
     /**
@@ -63,10 +81,11 @@ final class PagePresenter extends BasePresenter {
     public function pageEditFormSuccess(Form $form) {
         if ($form->getHttpData('remove')) {
             $this->pageRepository->removePage($this->page);
+            $this->redirect('Home:view');
         } else {
             $this->pageRepository->editPage($this->page, $form->getValues(TRUE));
+            $this->redirect('this');
         }
-        $this->redirect('Home:view');
     }
 
 }

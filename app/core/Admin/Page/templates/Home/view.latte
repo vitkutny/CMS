@@ -1,4 +1,8 @@
 {block content}
+<a n:href=":Admin:Page:Page:add" class="btn btn-primary btn-block btn-lg">
+    <i class="icon-plus-sign-alt"></i> Create new page
+</a>
+<hr>
 {if count($pages)}
     <div n:foreach="$pages as $page" class="panel panel-default">
         <div class="panel-heading">

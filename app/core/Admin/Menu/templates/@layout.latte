@@ -1,10 +1,3 @@
 {layout $adminLayout}
 {#module}
-{define #sidebar}
-<div class="list-group">
-    <a n:href="Home:view" n:class="$presenter->isLinkCurrent('Home:view')?active,list-group-item">
-        <strong class="list-group-item-heading">Overview</strong>
-    </a>
-</div>
-{/define}
 {include #content}
