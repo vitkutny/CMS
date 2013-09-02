@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.8.1deb1
+-- version 3.4.10.1deb1
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Aug 27, 2013 at 07:50 PM
--- Server version: 5.5.32-0ubuntu0.13.04.1
--- PHP Version: 5.4.9-4ubuntu2.2
+-- Počítač: localhost
+-- Vygenerováno: Úte 03. zář 2013, 00:38
+-- Verze MySQL: 5.5.32
+-- Verze PHP: 5.3.10-1ubuntu3.7
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `cms`
+-- Databáze: `cms`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `gallery`
+-- Struktura tabulky `gallery`
 --
 
 CREATE TABLE IF NOT EXISTS `gallery` (
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `gallery` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `node`
+-- Struktura tabulky `node`
 --
 
 CREATE TABLE IF NOT EXISTS `node` (
@@ -43,42 +43,43 @@ CREATE TABLE IF NOT EXISTS `node` (
   `node_id` int(11) DEFAULT NULL,
   `tree_id` int(11) NOT NULL,
   `link` text,
+  `link_admin` text,
   `link_id` int(11) DEFAULT NULL,
   `title` text NOT NULL,
   `position` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=103 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=112 ;
 
 --
--- Dumping data for table `node`
+-- Vypisuji data pro tabulku `node`
 --
 
-INSERT INTO `node` (`id`, `node_id`, `tree_id`, `link`, `link_id`, `title`, `position`) VALUES
-(44, 87, 2, ':Admin:Page:Home:view', NULL, 'Page', NULL),
-(46, 87, 2, ':Admin:Menu:Home:view', NULL, 'Menu', NULL),
-(61, 77, 1, ':Front:Page:view', 51, 'Obchodní podmínky', 0),
-(77, NULL, 1, ':Front:Page:view', 68, 'KissCMS', NULL),
-(87, NULL, 2, ':Admin:Home:view', NULL, 'Administration', NULL),
-(88, 77, 1, ':Shop:Home:view', NULL, 'Katalog zboží', 0),
-(89, 88, 3, ':Shop:Category:view', 1, 'Počítače', 1),
-(90, 88, 3, ':Shop:Category:view', 2, 'Komponenty', 1),
-(91, 88, 3, ':Shop:Category:view', 3, 'Příslušenství', 1),
-(92, 88, 3, ':Shop:Category:view', 4, 'Mobily a navigace', 1),
-(93, 88, 3, ':Shop:Category:view', 5, 'TV a elektronika', 1),
-(94, 88, 3, ':Shop:Category:view', 6, 'Foto / Video', 1),
-(95, 88, 3, ':Shop:Category:view', 7, 'Hry a hračky', 1),
-(96, 88, 3, ':Shop:Category:view', 8, 'Baterie a napájení', 1),
-(97, 88, 3, ':Shop:Category:view', 9, 'Doplňky', 1),
-(98, 89, 3, ':Shop:Category:view', 10, 'Stolní PC', NULL),
-(99, 89, 3, ':Shop:Category:view', 11, 'Notebooky', 0),
-(100, 89, 3, ':Shop:Category:view', 12, 'Ultrabooky', 0),
-(101, 89, 3, ':Shop:Category:view', 13, 'Tablety', 0),
-(102, 89, 3, ':Shop:Category:view', 14, 'All in One PC', 0);
+INSERT INTO `node` (`id`, `node_id`, `tree_id`, `link`, `link_admin`, `link_id`, `title`, `position`) VALUES
+(44, 87, 2, ':Admin:Page:Home:view', NULL, NULL, 'Page', 0),
+(46, 87, 2, ':Admin:Menu:Home:view', NULL, NULL, 'Menu', NULL),
+(61, 77, 1, ':Front:Page:view', ':Admin:Page:Page:edit', 51, 'Obchodní podmínky', 0),
+(77, NULL, 1, ':Front:Page:view', ':Admin:Page:Page:edit', 68, 'KissCMS', NULL),
+(87, NULL, 2, ':Admin:Home:view', NULL, NULL, 'Administration', NULL),
+(88, 77, 1, ':Shop:Home:view', NULL, NULL, 'Katalog zboží', 0),
+(89, 88, 3, ':Shop:Category:view', NULL, 1, 'Počítače', 1),
+(90, 88, 3, ':Shop:Category:view', NULL, 2, 'Komponenty', 1),
+(91, 88, 3, ':Shop:Category:view', NULL, 3, 'Příslušenství', 1),
+(92, 88, 3, ':Shop:Category:view', NULL, 4, 'Mobily a navigace', 1),
+(93, 88, 3, ':Shop:Category:view', NULL, 5, 'TV a elektronika', 1),
+(94, 88, 3, ':Shop:Category:view', NULL, 6, 'Foto / Video', 1),
+(95, 88, 3, ':Shop:Category:view', NULL, 7, 'Hry a hračky', 1),
+(96, 88, 3, ':Shop:Category:view', NULL, 8, 'Baterie a napájení', 1),
+(97, 88, 3, ':Shop:Category:view', NULL, 9, 'Doplňky', 1),
+(98, 89, 3, ':Shop:Category:view', NULL, 10, 'Stolní PC', NULL),
+(99, 89, 3, ':Shop:Category:view', NULL, 11, 'Notebooky', 0),
+(100, 89, 3, ':Shop:Category:view', NULL, 12, 'Ultrabooky', 0),
+(101, 89, 3, ':Shop:Category:view', NULL, 13, 'Tablety', 0),
+(102, 89, 3, ':Shop:Category:view', NULL, 14, 'All in One PC', 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `page`
+-- Struktura tabulky `page`
 --
 
 CREATE TABLE IF NOT EXISTS `page` (
@@ -86,20 +87,20 @@ CREATE TABLE IF NOT EXISTS `page` (
   `node_id` int(11) NOT NULL,
   `content` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=69 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=78 ;
 
 --
--- Dumping data for table `page`
+-- Vypisuji data pro tabulku `page`
 --
 
 INSERT INTO `page` (`id`, `node_id`, `content`) VALUES
 (51, 61, '<div id="articlePage" class="article">\nVšeobecné obchodní podmínky (dále jen VOP) společnosti Alza.cz a.s.\n<h2>I. Základní ustanovení</h2><p style="text-align: justify">Tyto VOP upravují vztahy mezi smluvními stranami kupní smlouvy, kdy na jedné straně je společnost <strong>Alza.cz&nbsp;a.s.</strong>, IČ 27082440, DIČ CZ27082440, se sídlem Jateční 33a, 170 00 Praha 7, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze v oddíle B, vložka 8573 jako prodávající a/nebo poskytovatel služby a/nebo licenčních oprávnění (dále jen „<strong>prodávající</strong>“)&nbsp;a na straně druhé je kupující a/nebo objednatel, který může být i spotřebitelem (dále jen&nbsp;„<b>kupující</b>“). Další informace o prodávajícím jsou uvedeny na webové stránce <a href="http://www.alza.cz/">www.alza.cz</a> v sekci „<a href="/article/3815.htm">O nás</a>“.<br><br>V případě, kdy společnost Alza.cz a.s. vystupuje jako poskytovatel, poskytuje služby a/nebo licenční oprávnění dle své aktuální nabídky jednotlivým kupujícím dle jejich požadavků za cenu a podmínek uvedených u konkrétní nabídky služby a/nebo licenčních oprávnění, přičemž se ve vztahu k příslušné smlouvě uplatní tyto VOP, nebude-li uvedeno jinak.&nbsp;<br>&nbsp;</p><p><strong>Kupujícím</strong> je spotřebitel nebo podnikatel.</p><p style="text-align: justify"><br><strong>Spotřebitelem</strong>&nbsp;je fyzická osoba, která při uzavírání a plnění kupní smlouvy s prodávajícím nejedná v rámci své obchodní nebo jiné podnikatelské činnosti nebo v rámci samostatného výkonu svého povolání.<br>&nbsp;</p><p style="text-align: justify">Právní vztahy prodávajícího se spotřebitelem výslovně neupravené těmito VOP se řídí příslušnými ustanoveními zák. č. 40/1964 Sb., občanský zákoník a zák. č. 634/1992 Sb., o ochraně spotřebitele, oba v platném a účinném znění, jakož i předpisy souvisejícími.<br>&nbsp;</p><p><strong>Podnikatelem</strong>&nbsp;se rozumí:</p><ul><li>osoba zapsaná v obchodním rejstříku,&nbsp;</li><li>osoba, která podniká na základě živnostenského oprávnění,&nbsp;</li><li>osoba, která podniká na základě jiného než živnostenského oprávnění podle zvláštních předpisů, a&nbsp;</li><li>osoba, která provozuje zemědělskou výrobu a je zapsána do evidence podle zvláštního předpisu.</li></ul>Právní vztahy prodávajícího s kupujícím, který je podnikatel, výslovně neupravené těmito VOP ani smlouvou mezi prodávajícím a kupujícím se řídí příslušnými ustanoveními zák. č. 513/1991 Sb., obchodní zákoník ve znění pozdějších předpisů, jakož i předpisy souvisejícími.&nbsp;V případě jakýchkoliv rozdílů mezi VOP a individuální smlouvou, má přednost text smlouvy.<br>&nbsp;<div style="text-align: justify">Kupující podáním objednávky potvrzuje, že se seznámil s těmito VOP, jejichž nedílnou součást tvoří <a href="/article/13.htm">reklamační řád</a> a dokument „<a href="/articke/1456.htm">Způsoby dopravy</a><strong>“</strong>, podmínkami objednávané služby a/nebo poskytovaného licenčního oprávnění&nbsp;a že s nimi souhlasí, a to ve znění platném a účinném v&nbsp;momentě odeslání objednávky. Kopii VOP obdrží kupující jako přílohu potvrzení objednávky na zadanou emailovou adresu.</div>&nbsp;<div style="text-align: justify">Kupující si je vědom, že mu koupí produktů, jež jsou v obchodní nabídce prodávajícího, nevznikají žádná práva na používání registrovaných značek, obchodních názvů, firemních log či patentů prodávajícího nebo dalších firem, není-li v konkrétním případě zvláštní smlouvou sjednáno jinak.</div><h3>Kupní smlouva&nbsp;</h3><p style="text-align: justify">Je-li kupujícím spotřebitel, návrhem k uzavření kupní smlouvy je umístění nabízeného zboží prodávajícím na stránky, kupní smlouva vzniká odesláním objednávky kupujícím spotřebitelem a přijetím objednávky prodávajícím. Toto přijetí prodávající neprodleně potvrdí kupujícímu informativním emailem na zadaný email, na vznik smlouvy však toto potvrzení nemá vliv. Přílohou tohoto potvrzení je aktuální znění VOP a reklamačního řádu prodávajícího. Vzniklou smlouvu (včetně dohodnuté ceny) lze měnit nebo rušit pouze na základě dohody stran nebo na základě zákonných důvodů. Pro výjimku z&nbsp;tohoto postupu viz bod V. Objednávání.</p><p><br>Je-li kupujícím podnikatel, návrhem na uzavření kupní smlouvy je odeslaná objednávka zboží kupujícím podnikatelem a samotná kupní smlouva je uzavřena momentem doručení závazného souhlasu prodávajícího kupujícímu podnikateli s tímto jeho návrhem.</p><p style="text-align: justify"><br>Vztahy a případné spory, které vzniknou na základě smlouvy, budou řešeny výhradně podle platného práva České republiky a budou řešeny soudy České republiky. Tím nejsou dotčeny případy, kdy kupujícím bude spotřebitel a bude mít obvyklé bydliště v&nbsp;jiném státě než České republice a volba práva či prorogace soudu nebudou přípustné. &nbsp; &nbsp; &nbsp;</p><p>&nbsp;</p><p style="text-align: justify">Smlouva je uzavírána v českém jazyce. Pokud vznikne pro potřebu kupujícího překlad textu smlouvy, platí, že v případě sporu o výklad pojmů platí výklad smlouvy v českém jazyce.<br>&nbsp;</p><p style="text-align: justify">Uzavřená smlouva je prodávajícím archivována po dobu nejméně pěti let od jejího uzavření, nejdéle však na dobu dle příslušných právních předpisů, za účelem jejího úspěšného splnění a není přístupná třetím nezúčastněným stranám. Informace o jednotlivých technických krocích vedoucích k uzavření smlouvy jsou patrné z těchto obchodních podmínek, kde je tento proces srozumitelně popsán. Kupující má možnost před vlastním odesláním objednávky ji zkontrolovat a případně opravit. Tyto VOP jsou k&nbsp;dispozici na jednotlivých portálech prodávajícího a je tak umožněna jejich archivace a reprodukce kupujícím.&nbsp;<br>&nbsp;</p><p>Náklady na použití komunikačních prostředků na dálku (telefon, internet atd.) pro uskutečnění objednávky jsou v běžné výši, závislé na tarifu telekomunikačních služeb, které kupující používá.<br>&nbsp;</p><h2>II. Bezpečnost a ochrana informací</h2><p style="text-align: justify">Prodávající prohlašuje, že veškeré osobní údaje jsou důvěrné, budou použity pouze k uskutečnění plnění smlouvy s kupujícím a marketingových akcí prodávajícího a nebudou jinak zveřejněny, poskytnuty třetí osobě apod. s výjimkou situace související s distribucí či platebním stykem týkajícího se objednaného zboží (sdělení jména a adresy dodání). Prodávající postupuje tak, aby subjekt údajů neutrpěl újmu na svých právech, zejména na právu na zachování lidské důstojnosti, a také dbá na ochranu před neoprávněným zasahováním do soukromého a osobního života subjektu údajů. Osobní údaje, které jsou poskytnuty dobrovolně kupujícím prodávajícímu za účelem splnění objednávky a marketingových akcí prodávajícího, jsou shromažďovány, zpracovávány a uchovávány v souladu s platnými zákony České republiky, zejména se zákonem č. 101/2000 Sb., o ochraně osobních údajů, v platném a účinném znění. Kupující dává prodávajícímu svůj souhlas ke shromažďování a zpracování těchto osobních údajů pro účely splnění předmětu uzavírané kupní smlouvy a využití pro marketingové účely prodávajícího (zejm. pro zasílání obchodních sdělení, telemarketing, sms), a to až do doby jeho písemného vyjádření nesouhlasu s tímto zpracováním zaslaným na adresu <strong>Alza.cz a.s., IČ 27082440, Jateční 33a, 170 00 Praha 7</strong>. Za písemné vyjádření se v&nbsp;tomto případě považuje i forma elektronická, zejména prostřednictvím kontaktního formuláře na webových stránkách alza.cz. Kupující má právo přístupu ke svým osobním údajům a právo na jejich opravu (prostřednictvím citovaného kontaktního formuláře včetně práva požadovat vysvětlení a odstranění závadného stavu a dalších zákonných práv k těmto údajům.<br>&nbsp;</p><h2>&nbsp;III. Provozní doba</h2><p>Objednávky přes internetové obchody prodávajícího: &nbsp;24 hodin denně, 7 dní v týdnu&nbsp;<br><br>Příjem objednávek pro expedici do druhého pracovního dne po ČR: do 18:00 hodin<br><br>Příjem objednávek pro expedici ještě týž den po Praze: do 18:00 hodin<br>&nbsp;</p><h2>IV. Ceny</h2><p style="text-align: justify">Všechny ceny jsou smluvní. V on-line e-shopu jsou vždy aktuální a platné ceny. Ceny jsou konečné, tj. včetně DPH, popř. všech dalších daní a poplatků, které musí spotřebitel pro získání zboží zaplatit, to se netýká případných poplatků za dopravné apod.<br>&nbsp;</p><p>Akční ceny platí do vyprodání zásob při uvedení počtu kusů akčního zboží nebo po dobu časově určenou.<br>&nbsp;</p><h2>V. Objednávání</h2><p style="text-align: justify">Kupující dostane zboží za cenu platnou v době objednání. Kupující spotřebitel má možnost se před provedením objednávky seznámit s celkovou cenou včetně DPH a všemi dalšími poplatky (PHE apod.). Tato cena bude uvedena v objednávce a ve zprávě potvrzující přijetí objednávky zboží. Kupující spotřebitel má možnost se před provedením objednávky seznámit se skutečností, po jakou dobu zůstává nabídka nebo cena v platnosti.<br>&nbsp;</p><p>Objednávat je možno následujícími způsoby:</p><ul><li>prostřednictvím elektronického obchodu na www.alza.cz (dále jen „e-shop“)</li><li>elektronickou poštou na adrese obchod@alza.cz</li><li>osobně v&nbsp;provozovnách prodávajícího</li><li>faxem</li><li>telefonicky</li></ul>Prodávající doporučuje kupujícímu provádět objednávky přes elektronický obchod.<p>&nbsp;</p><h2>VI. Odstoupení od smlouvy</h2><h3><strong>Odstoupení od smlouvy kupujícím, který je spotřebitel</strong></h3><p style="text-align: justify">Kupující spotřebitel má právo v souladu § 53 odst. 7 obč. z. odstoupit od smlouvy ve lhůtě 14 dní od převzetí zboží, pokud byla smlouva uzavřena pomocí prostředků komunikace na dálku. Rozhodne-li se spotřebitel využít tohoto práva, musí odstoupení od smlouvy doručit prodávajícímu nejpozději do 14. dne od převzetí zboží. Prodávající má právo pouze na náhradu skutečně vynaložených nákladů spojených s vrácením zboží.<br>&nbsp;</p><p><strong>Odstoupení a zboží zasílejte na adresu:</strong><br><span style="font-family: Verdana, sans-serif, Arial; background-color: rgb(255, 255, 253); ">Alza.cz<br>logistické centrum Horní Počernice VGP Park, hala E<br>Do Čertous 2759/4<br>193 00 Praha 9</span><br>&nbsp;</p><p style="text-align: justify">Zboží by měl kupující spotřebitel vrátit úplné, s kompletní dokumentací, nepoškozené, čisté, pokud možno včetně originálního obalu, ve stavu a hodnotě, v jakém zboží převzal. V případě, že bude vrácené zboží nekompletní či poškozené, může prodávající vracenou kupní cenu snížit o tomu odpovídající částku (v souladu s § 458 odst. 1 obč. z.).<br>&nbsp;</p><p>Peníze za vrácené zboží budou kupujícímu spotřebiteli vráceny do 30 dnů od odstoupení.<br><br><br>Kromě případů, kdy je odstoupení od smlouvy výslovně ujednáno, nemůže spotřebitel odstoupit od smluv:</p><ol style="list-style-type: lower-alpha"><li>na poskytování služeb, jestliže s jejich plněním bylo s jeho souhlasem započato před uplynutím lhůty 14 dnů od převzetí plnění,</li><li>na dodávku zboží nebo služeb, jejichž cena závisí na výchylkách finančního trhu nezávisle na vůli prodávajícího,</li><li>na dodávku zboží upraveného podle přání spotřebitele nebo pro jeho osobu, jakož i zboží, které podléhá rychlé zkáze, opotřebení nebo zastarání,</li><li>na dodávku audio a video nahrávek a počítačových programů, porušil-li spotřebitel jejich originální obal,</li><li>na dodávku novin, periodik a časopisů,</li><li>spočívajících ve hře nebo loterii,</li></ol><p>Rozhodne-li se kupující pro odstoupení v uvedené lhůtě, doporučujeme pro urychlení vyřízení odstoupení zboží doručit na adresu prodávajícího spolu s přiloženým průvodním dopisem s případným důvodem odstoupení od kupní smlouvy (není podmínkou), s číslem nákupního dokladu a uvedeným číslem bankovního účtu nebo s uvedením, zdali částka bude odebrána v hotovosti nebo zdali bude čerpána pro další nákup.&nbsp;</p><p style="text-align: justify"><br>Kupující bere na vědomí skutečnost, že jsou-li se zbožím poskytovány dárky, je darovací smlouva mezi prodávajícím a kupujícím uzavřena s podmínkou, že dojde-li k využití práva spotřebitele odstoupit od smlouvy dle § 53 odst. 7 obč. z., darovací smlouva pozbývá účinnosti a kupující je povinen spolu s vráceným zbožím vrátit i s ním související poskytnuté dárky. V&nbsp;případě, že tyto nebudou vráceny zpět, budou tyto hodnoty chápány jako bezdůvodné obohacení kupujícího.&nbsp;</p><p style="text-align: justify"><br>Při splnění všech výše uvedených podmínek pro vrácení zboží vznikne kupujícímu nárok na vrácení zaplacených finančních částek spojených s&nbsp;vráceným zbožím, které budou vráceny kupujícímu nejpozději do 30 dnů od odstoupení od smlouvy. &nbsp;Při neuvedení čísla účtu je částka v téže lhůtě automaticky připravena k čerpání pomocí dalšího nákupu nebo k vyzvednutí v hotovosti na základě předložení originálního dobropisu, který je bez zbytečného odkladu po vyřešení odstoupení od kupní smlouvy zákazníkovi zaslán.&nbsp;</p><h3><strong>Odstoupení od smlouvy kupujícím, který je podnikatel</strong></h3><p style="text-align: justify">V případě, že kupující je podnikatel, uplatní se ustanovení § 436 a násl. zákona č. 513/1991 Sb., obchodní zákoník, ve znění pozdějších předpisů. Prodávající uvádí, že kupujícímu může být nabídnuta dohoda o ukončení kupní smlouvy v závislosti na stavu vráceného zboží, ušlé záruce a aktuální ceně vráceného zboží. Stav zboží je zhodnocen prodávajícím. V případě nedohodnutí podmínek akceptovatelných pro obě strany bude zboží vráceno na náklady prodávajícího zpět. Prodávající je oprávněn účtovat kupujícímu případné další vzniklé náklady.&nbsp;<br>&nbsp;</p><p style="text-align: justify">Při vystavení dobropisu &nbsp;může být po kupujícím vyžadován občanský průkaz za účelem ochrany vlastnických práv kupujícího. Předložením OP kupující souhlasí se zpracováním osobních údajů dle bodu II. (osobních údajů ve smyslu § 4 písm. a) zákona 101/2000 Sb., o ochraně osobních údajů).<br>&nbsp;</p><h2>VII. Platební podmínky</h2><p>Prodávající akceptuje následující platební podmínky:</p><ol style="list-style-type: lower-alpha"><li>platba v hotovosti při nákupu,</li><li>platba předem bankovním převodem,</li><li>platba přes internetové rozhraní banky,</li><li>platba kartou MasterCard nebo Visa prostřednictvím internetového platebního portálu,</li><li>na dobírku při doručení zboží (hotovost přebírá od zákazníka přepravce – kupující hradí navíc tzv. dobírečné – viz „<a href="/article/1456.htm">Způsoby dopravy</a>“),</li><li>platba na fakturu se splatností (pouze při splnění podmínek pro poskytnutí kreditu uvedených na webové stránce alza.cz v&nbsp;sekci „<a href="/nakup-se-splatnosti-art2923.htm">Nákup se splatností</a>“),</li><li>na splátky (pouze v případě, že kupující splní podmínky společnosti poskytující splátkový prodej uvedených na webové stránce alza.cz resp. stránce poskytovatele),</li><li>na leasing (platí pouze pro podnikatele). Podmínkou je jednorázový nákup v hodnotě minimálně 20.000,- Kč bez DPH a splnění podmínek leasingové společnosti,</li><li>platba Aura kartou.</li></ol>Zboží zůstává do úplného zaplacení a převzetí majetkem prodávajícího, avšak nebezpečí škody na věci přechází převzetím zboží kupujícím.<p>&nbsp;</p><h2>VIII. Dodací podmínky</h2><h3>Osobní odběr:</h3><p>Zboží může převzít pouze kupující. Tato osoba se musí dostatečně identifikovat a prokázat platným občanským průkazem nebo platným cestovním pasem.&nbsp;</p><h3>Zasílání přepravní službou - ČR:</h3><p style="text-align: justify">Zboží je možno kupujícímu zaslat přepravní službou, např. PPL, nebo Českou poštou s.p.. Podmínkou je objednávka přijatá do 18:00. Přepravce běžně dodává zásilky kamkoliv do ČR do 24 &nbsp;hodin. Cena přepravy se řídí dle ceníku aktuálního v den objednávky. Pokud nebude zboží doručeno kupujícímu z&nbsp;důvodů ležících na straně prodávajícího do dvou pracovních dnů (při splnění podmínek a po učinění všech nutných kroků ze strany spotřebitele, zejména zaplacení předem, je-li tato forma zvolena), má kupující právo od smlouvy odstoupit (tím nejsou dotčena jeho jiná práva, jako např. právo na náhradu škody).</p><h3>Zasílání kurýrem (po Praze):</h3><p style="text-align: justify">Platí pro objednávky přijaté do 18:00 pracovního dne, které budou doručeny po Praze do 5 hodin (respektive 90 minut – dle zvolené možnosti) od potvrzení objednávky obchodníkem ze strany prodávajícího. Cena přepravy se řídí dle ceníku aktuálního v den objednávky.&nbsp;Pokud nebude zboží v&nbsp;této lhůtě doručeno kupujícímu z&nbsp;důvodů ležících na straně prodávajícího (při splnění podmínek a po učinění všech nutných kroků ze strany spotřebitele, zejména zaplacení předem, je-li tato forma zvolena), má kupující právo od smlouvy odstoupit (tím nejsou dotčena jeho jiná práva, jako např. právo na náhradu škody).</p><h3>Zasílání přepravní službou - SR:</h3><p style="text-align: justify">Zboží je možno kupujícímu zaslat přepravní službou, např. DPD. Podmínkou je objednávka přijatá do 12:00. Přepravce garantuje doručení zásilky kamkoliv do SR do 24 hodin. Cena přepravy se řídí dle ceníku aktuálního v den objednávky. Pokud nebude zboží doručeno kupujícímu do 24 hodin (při splnění podmínek a po učinění všech nutných kroků ze strany spotřebitele, zejména zaplacení předem, je-li tato forma zvolena) z&nbsp;důvodů ležících na straně prodávajícího, má kupující právo od smlouvy odstoupit (tím nejsou dotčena jeho jiná práva, jako např. právo na náhradu škody).<br>&nbsp;</p><p>Ceny dopravy naleznete na webové stránce <a href="/article/1456.htm">alza.cz</a>.</p><p style="text-align: justify"><br>Kupující, který je podnikatelem, je povinen (kupujícímu, který je spotřebitelem, je tento postup doporučen), aby bezprostředně při dodání překontroloval spolu s dopravcem stav zásilky (počet balíků, neporušenost pásky s firemním logem, poškození krabice) podle přiloženého přepravního listu. Kupující je oprávněn odmítnout převzetí zásilky, která není ve shodě s kupní smlouvou tím, že zásilka je např. neúplná nebo poškozená. Pokud takto poškozenou zásilku kupující od přepravce převezme, je nezbytné poškození popsat v předávacím protokolu přepravce.</p><p>&nbsp;</p><p style="text-align: justify">Neúplnou nebo poškozenou zásilku je nutno neprodleně oznámit e-mailem na adresu <strong>poskozeni.zasilky@alza.cz</strong>, sepsat s dopravcem škodní protokol a tento bez zbytečného odkladu zaslat faxem, e-mailem, nebo poštou prodávajícímu. Dodatečná reklamace neúplnosti nebo vnějšího poškození zásilky nezbavuje kupujícího práva věc reklamovat, dává však prodávajícímu možnost prokázat, že se nejedná o rozpor s kupní smlouvou.<br>&nbsp;</p><h2>&nbsp;IX. Záruční podmínky</h2><p>Záruční podmínky na zboží se řídí <a href="/article/13.htm">Reklamačním řádem</a> prodávajícího a platnými a účinnými právními předpisy ČR. &nbsp;Jako záruční list obvykle slouží nákupní doklad (podrobnosti viz Reklamační řád).<br>&nbsp;</p><h2>&nbsp;X. Závěrečná ustanovení</h2><p>Tyto Všeobecné obchodní podmínky jsou platné a účinné od 27.9.2012 a ruší předchozí znění VOP. Prodávající si vyhrazuje právo změnit VOP bez předchozího upozornění.</p>\n<br clear="all">\n<div id="surveyInfoForm">\n<span class="author" id="surveyInfo">PRODEJ - Ředitel prodeje, 81% (564/694)</span>\n<div class="body">\n<span>Pomohla vám tato informace?</span>\n<input type="hidden" id="surveyObjectId" value="10">\n<input type="hidden" id="surveyObjectType" value="1">\n<div class="btns">\n<div class="aButton">\n<a class="btn" id="lblSurveyYes" href="javascript:ArticleSurveyInfoSend(true);"><span>Ano</span></a>\n</div>\n<div class="aButton">\n<a class="btn" id="lblSurveyNo" href="javascript:ArticleSurveyInfoSend(false);"><span>Ne</span></a>\n</div>\n</div>\n</div>\n<div class="clear"></div>\n</div>\n</div>'),
-(68, 77, 'Vítejte');
+(68, 77, 'WELCOME EVERYONE!');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `photo`
+-- Struktura tabulky `photo`
 --
 
 CREATE TABLE IF NOT EXISTS `photo` (
@@ -112,7 +113,7 @@ CREATE TABLE IF NOT EXISTS `photo` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `shop_category`
+-- Struktura tabulky `shop_category`
 --
 
 CREATE TABLE IF NOT EXISTS `shop_category` (
@@ -123,7 +124,7 @@ CREATE TABLE IF NOT EXISTS `shop_category` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
 
 --
--- Dumping data for table `shop_category`
+-- Vypisuji data pro tabulku `shop_category`
 --
 
 INSERT INTO `shop_category` (`id`, `node_id`, `description`) VALUES
@@ -145,7 +146,7 @@ INSERT INTO `shop_category` (`id`, `node_id`, `description`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `shop_product`
+-- Struktura tabulky `shop_product`
 --
 
 CREATE TABLE IF NOT EXISTS `shop_product` (
@@ -159,7 +160,7 @@ CREATE TABLE IF NOT EXISTS `shop_product` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 --
--- Dumping data for table `shop_product`
+-- Vypisuji data pro tabulku `shop_product`
 --
 
 INSERT INTO `shop_product` (`id`, `node_id`, `title`, `description`, `content`, `price`) VALUES
@@ -172,24 +173,22 @@ INSERT INTO `shop_product` (`id`, `node_id`, `title`, `description`, `content`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tree`
+-- Struktura tabulky `tree`
 --
 
 CREATE TABLE IF NOT EXISTS `tree` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `node_id` int(11) NOT NULL,
-  `type` text NOT NULL,
+  `group` text NOT NULL,
   `title` text NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `id` (`id`),
-  KEY `id_2` (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
--- Dumping data for table `tree`
+-- Vypisuji data pro tabulku `tree`
 --
 
-INSERT INTO `tree` (`id`, `node_id`, `type`, `title`) VALUES
+INSERT INTO `tree` (`id`, `node_id`, `group`, `title`) VALUES
 (1, 77, 'front', 'Main menu'),
 (2, 87, 'admin', 'Administration'),
 (3, 88, 'shop_category', 'Shop categories');
