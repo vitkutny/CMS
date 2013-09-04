@@ -54,11 +54,8 @@ final class NodeRepository extends BaseRepository {
     }
 
     public function removeNode($node) {
-        if ($node->id !== $node->tree->node_id) {
-            $node->related('node')->update(array('node_id' => $node->node_id));
-            return $node->delete();
-        }
-        return false;
+        $node->related('node')->update(array('node_id' => $node->node_id));
+        return $node->delete();
     }
 
 }

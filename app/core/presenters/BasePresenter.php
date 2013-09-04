@@ -2,7 +2,8 @@
 
 /**
  * TODO:
- * remove node refactor
+ * 
+ * separate forms and presenters
  * 
  * Menu
  *  - přesouvání stromů (home node) nebo nastavení node_id na NULL

@@ -4,9 +4,14 @@ namespace CMS\Admin\Page;
 
 use Nette\Application\UI\Form;
 use CMS\Component\Form\FormRenderer;
+use Nette\Application\BadRequestException;
 
 final class PagePresenter extends BasePresenter {
 
+    /**
+     * @persistent int|NULL
+     */
+    public $id;
     private $page;
 
     public function renderAdd() {
@@ -16,7 +21,7 @@ final class PagePresenter extends BasePresenter {
     public function actionEdit($id) {
         $this->page = $this->pageRepository->getPage($id);
         if (!$this->page) {
-            $this->error();
+            throw new BadRequestException;
         }
     }
 
@@ -28,15 +33,17 @@ final class PagePresenter extends BasePresenter {
         $form = new Form();
         $form->setRenderer(new FormRenderer);
 
+        //$form['node'] = new NodeFormContainer();
         $node = $form->addContainer('node');
         $node->addText('title', 'Title')->setRequired();
         $parent = $this->menu->getParentNodeSelectData('front');
         $node->addSelect('node_id', 'Parent node', $parent)->setRequired();
 
+        //$form['page'] = new PageFormContainer();
         $page = $form->addContainer('page');
         $page->addTextArea('content', 'Content')->setRequired();
 
-        $form->onSuccess[] = $this->pageAddFormSuccess;
+        $form->onSuccess[] = $this->processPageForm;
         $form->addSubmit('add', 'Add page');
         return $form;
     }
@@ -45,6 +52,7 @@ final class PagePresenter extends BasePresenter {
         $form = new Form();
         $form->setRenderer(new FormRenderer);
 
+        //$form['node'] = new NodeFormContainer($this->page->node);
         $node = $form->addContainer('node');
         $node->addText('title', 'Title')->setRequired();
         $parent = $this->menu->getParentNodeSelectData('front', $this->page->node);
@@ -53,11 +61,12 @@ final class PagePresenter extends BasePresenter {
         }
         $node->setDefaults($this->page->node);
 
+        //$form['page'] = new PageFormContainer($this->page);
         $page = $form->addContainer('page');
         $page->addTextArea('content', 'Content')->setRequired();
         $page->setDefaults($this->page);
 
-        $form->onSuccess[] = $this->pageEditFormSuccess;
+        $form->onSuccess[] = $this->processPageForm;
         $form->addSubmit('edit', 'Edit page');
         if ($parent) {
             $form->addSubmit('remove', 'Remove page')->setAttribute('class', 'btn-danger');
@@ -66,25 +75,24 @@ final class PagePresenter extends BasePresenter {
     }
 
     /**
-     * 
      * @param Form $form
      */
-    public function pageAddFormSuccess(Form $form) {
-        $page = $this->pageRepository->addPage($form->getValues(TRUE));
-        $this->redirect($page->node->link_admin, array('id' => $page->node->link_id));
-    }
+    public function processPageForm(Form $form) {
+        if ($this->id AND !$this->page) {
+            throw new BadRequestException;
+        }
 
-    /**
-     * 
-     * @param Form $form
-     */
-    public function pageEditFormSuccess(Form $form) {
-        if ($form->getHttpData('remove')) {
-            $this->pageRepository->removePage($this->page);
-            $this->redirect('Home:view');
+        if ($this->id) {
+            if ($form->getHttpData('remove')) {
+                $this->pageRepository->removePage($this->page);
+                $this->redirect('Home:view');
+            } else {
+                $this->pageRepository->editPage($this->page, $form->getValues(TRUE));
+                $this->redirect('this');
+            }
         } else {
-            $this->pageRepository->editPage($this->page, $form->getValues(TRUE));
-            $this->redirect('this');
+            $page = $this->pageRepository->addPage($form->getValues(TRUE));
+            $this->redirect($page->node->link_admin, array('id' => $page->node->link_id));
         }
     }
 

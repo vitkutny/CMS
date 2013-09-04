@@ -43,8 +43,6 @@ final class PageRepository extends BaseRepository {
     public function removePage($page) {
         if ($this->menu->remove($page->node)) {
             return $page->delete();
-        } else {
-            return false;
         }
     }
 
