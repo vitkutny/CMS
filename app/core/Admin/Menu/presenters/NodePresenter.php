@@ -3,7 +3,8 @@
 namespace CMS\Admin\Menu;
 
 use Nette\Application\UI\Form;
-use CMS\Component\Form\FormRenderer;
+use CMS\Form\FormRenderer;
+use CMS\Admin\Menu\Form\NodeFormContainer;
 
 final class NodePresenter extends BasePresenter {
 
@@ -17,27 +18,22 @@ final class NodePresenter extends BasePresenter {
     }
 
     public function renderEdit() {
-        $this->menu->breadcrumbAdd('Edit list: ' . $this->node->tree->title, ':Admin:Menu:List:edit', $this->node->tree_id);
+        $this->menu->breadcrumbAdd('Edit list: ' . $this->node->tree->title, ':Admin:Menu:Tree:edit', $this->node->tree_id);
         $this->menu->breadcrumbAdd('Edit node: ' . $this->node->title);
     }
 
-    protected function createComponentNodeEditForm() {
+    protected function createComponentNodeFormEdit() {
         $form = new Form;
         $form->setRenderer(new FormRenderer);
-        $form->addText('title', 'Title')->setRequired();
-        if ($this->node->node) {
-            $form->addSelect('node_id', 'Parent node', $this->menu->getParentNodeSelectData($this->node->tree, $this->node))->setRequired();
-        }
-        $form->addText('position', 'Position number')->addRule(Form::INTEGER)->setType('number')->setRequired();
-        $form->setDefaults($this->node);
+        $form['node'] = new NodeFormContainer($this->menu, $this->node);
         $form->addSubmit('save', 'Save');
-        $form->onSuccess = $this->nodeEditFormSuccess;
+        $form->onSuccess = $this->processNodeForm;
         return $form;
     }
 
-    public function nodeEditFormSuccess(Form $form) {
+    public function processNodeForm(Form $form) {
         $data = $form->getValues(TRUE);
-        $this->nodeRepository->updateNode($this->node, $data);
+        $this->nodeRepository->updateNode($this->node, $data['node']);
         $this->redirect('Tree:edit', array('id' => $this->node->tree_id));
     }
 

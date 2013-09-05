@@ -1,6 +1,6 @@
 <?php
 
-namespace CMS\Component\Form;
+namespace CMS\Form;
 
 use Nette\Forms\Rendering\DefaultFormRenderer;
 use Nette\Forms\Form;

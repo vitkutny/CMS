@@ -72,8 +72,8 @@ abstract class BasePresenter extends Presenter {
         $files->addFiles($this->context->parameters['styles']['files']);
         $compiler = WebLoader\Compiler::createCssCompiler($files, $dir);
         $compiler->addFilter(function($css) {
-                    return str_replace(array("\r\n", "\r", "\n", "\t", '  ', '    ', '    '), '', str_replace(': ', ':', preg_replace('!/\*[^*]*\*+([^/][^*]*\*+)*/!', '', $css)));
-                });
+            return str_replace(array("\r\n", "\r", "\n", "\t", '  ', '    ', '    '), '', str_replace(': ', ':', preg_replace('!/\*[^*]*\*+([^/][^*]*\*+)*/!', '', $css)));
+        });
         return new WebLoader\Nette\CssLoader($compiler, $this->template->basePath . '/temp');
     }
 
@@ -86,9 +86,9 @@ abstract class BasePresenter extends Presenter {
         $files->addFiles($this->context->parameters['scripts']['files']);
         $compiler = WebLoader\Compiler::createJsCompiler($files, $dir);
         $compiler->addFilter(function($js) {
-                    $packer = new JavaScriptPacker($js);
-                    return $packer->pack();
-                });
+            $packer = new JavaScriptPacker($js);
+            return $packer->pack();
+        });
         return new WebLoader\Nette\JavaScriptLoader($compiler, $this->template->basePath . '/temp');
     }
 

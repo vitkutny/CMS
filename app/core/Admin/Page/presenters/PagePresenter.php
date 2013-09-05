@@ -3,8 +3,10 @@
 namespace CMS\Admin\Page;
 
 use Nette\Application\UI\Form;
-use CMS\Component\Form\FormRenderer;
 use Nette\Application\BadRequestException;
+use CMS\Form\FormRenderer;
+use CMS\Admin\Menu\Form\NodeFormContainer;
+use CMS\Admin\Page\Form\PageFormContainer;
 
 final class PagePresenter extends BasePresenter {
 
@@ -29,46 +31,24 @@ final class PagePresenter extends BasePresenter {
         $this->menu->breadcrumbAdd('Edit page: ' . $this->page->node->title);
     }
 
-    protected function createComponentPageAddForm() {
+    protected function createComponentPageFormAdd() {
         $form = new Form();
         $form->setRenderer(new FormRenderer);
-
-        //$form['node'] = new NodeFormContainer();
-        $node = $form->addContainer('node');
-        $node->addText('title', 'Title')->setRequired();
-        $parent = $this->menu->getParentNodeSelectData('front');
-        $node->addSelect('node_id', 'Parent node', $parent)->setRequired();
-
-        //$form['page'] = new PageFormContainer();
-        $page = $form->addContainer('page');
-        $page->addTextArea('content', 'Content')->setRequired();
-
+        $form['node'] = new NodeFormContainer($this->menu, 'front');
+        $form['page'] = new PageFormContainer();
         $form->onSuccess[] = $this->processPageForm;
         $form->addSubmit('add', 'Add page');
         return $form;
     }
 
-    protected function createComponentPageEditForm() {
+    protected function createComponentPageFormEdit() {
         $form = new Form();
         $form->setRenderer(new FormRenderer);
-
-        //$form['node'] = new NodeFormContainer($this->page->node);
-        $node = $form->addContainer('node');
-        $node->addText('title', 'Title')->setRequired();
-        $parent = $this->menu->getParentNodeSelectData('front', $this->page->node);
-        if ($parent) {
-            $node->addSelect('node_id', 'Parent node', $parent)->setRequired();
-        }
-        $node->setDefaults($this->page->node);
-
-        //$form['page'] = new PageFormContainer($this->page);
-        $page = $form->addContainer('page');
-        $page->addTextArea('content', 'Content')->setRequired();
-        $page->setDefaults($this->page);
-
+        $form['node'] = new NodeFormContainer($this->menu, $this->page->node->tree, $this->page->node);
+        $form['page'] = new PageFormContainer($this->page);
         $form->onSuccess[] = $this->processPageForm;
         $form->addSubmit('edit', 'Edit page');
-        if ($parent) {
+        if ($this->page->node->node_id) {
             $form->addSubmit('remove', 'Remove page')->setAttribute('class', 'btn-danger');
         }
         return $form;
