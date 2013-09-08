@@ -6,15 +6,12 @@ parameters:
     components:
         menu:
             directory: %core.directory%/Component/Menu
-            control: CMS\Component\Menu\MenuControl
     scripts:
         directory: %core.directory%/scripts
         files:
             - %scripts.directory%/jquery-2.0.3.min.js
             - %scripts.directory%/bootstrap.min.js
-            - %scripts.directory%/responsive-tables.js
             - %scripts.directory%/netteForms.js
-            - %scripts.directory%/respond.min.js
             - %scripts.directory%/cms.js
     styles:
         directory: %core.directory%/styles
@@ -22,14 +19,15 @@ parameters:
             - %styles.directory%/bootstrap.min.css
             - %styles.directory%/bootstrap-blockgrid.css
             - %styles.directory%/font-awesome.min.css
-            - %styles.directory%/responsive-tables.css
             - %styles.directory%/ratio.css
             - %styles.directory%/cms.css
 services:
-    cms.model.pagerepository: CMS\Model\PageRepository
-    cms.model.treerepository: CMS\Model\TreeRepository
-    cms.model.noderepository: CMS\Model\NodeRepository
-    cms.component.menu: %components.menu.control%
+    CMS\Model\PageRepository: self
+    CMS\Model\TreeRepository: self
+    CMS\Model\NodeRepository: self
+    CMS\Component\Menu\MenuControl: self
+    CMS\Admin\Menu\Form\NodeFormFactory: self
+    CMS\Admin\Page\Form\PageFormFactory: self
 factories:
 nette:
     application:

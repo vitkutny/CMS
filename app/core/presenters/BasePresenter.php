@@ -3,8 +3,6 @@
 /**
  * TODO:
  * 
- * separate forms and presenters
- * 
  * Menu
  *  - přesouvání stromů (home node) nebo nastavení node_id na NULL
  * 
@@ -14,8 +12,6 @@
  *  -photo
  *  -video
  * {control gallery $product->gallery} //all photos + videos
- * {control gallery:photo $product->gallery} //all photos
- * {control gallery:video $product->gallery} //all videos
  * {control photo:xs $product->gallery->photo}
  * {control video:youtube aSdXzWs3gkI}
  * 
