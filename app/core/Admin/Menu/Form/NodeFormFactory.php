@@ -18,14 +18,14 @@ final class NodeFormFactory extends BaseFormFactory {
         $this->nodeRepository = $nodeRepository;
     }
 
-    protected function createEdit($node) {
-        $form = parent::createEdit($node);
+    protected function editForm($node) {
+        $form = parent::editForm($node);
         $form['node'] = new NodeFormContainer($this->menu, $node->tree, $node);
         $form->addSubmit('save', 'Save');
         return $form;
     }
 
-    public function successEdit(Form $form, $node) {
+    public function editFormSuccess(Form $form, $node) {
         $data = $form->getValues(TRUE);
         $this->nodeRepository->updateNode($node, $data['node']);
         $this->presenter->redirect('this');

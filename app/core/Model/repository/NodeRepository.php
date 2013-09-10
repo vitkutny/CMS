@@ -54,7 +54,6 @@ final class NodeRepository extends BaseRepository {
     }
 
     public function removeNode($node) {
-        $node->related('node')->update(array('node_id' => $node->node_id));
         return $node->delete();
     }
 

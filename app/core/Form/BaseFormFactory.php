@@ -15,46 +15,46 @@ abstract class BaseFormFactory extends Object {
 
     public function create($row = NULL) {
         if ($row) {
-            return $this->createEdit($row);
+            return $this->editForm($row);
         } else {
-            return $this->createAdd();
+            return $this->addForm();
         }
     }
 
-    protected function createBase() {
+    protected function baseForm() {
         $form = new Form();
         $form->setRenderer(new FormRenderer());
-        $form->onValidate[] = $this->validate;
+        $form->onValidate[] = $this->setPresenter;
         $form->onSuccess[] = $this->success;
         $form->onError[] = $this->error;
         $form->onSubmit[] = $this->submit;
         return $form;
     }
 
-    protected function createAdd() {
-        $form = $this->createBase();
-        $form->onSuccess[] = $this->successAdd;
-        $form->onError[] = $this->errorAdd;
-        $form->onSubmit[] = $this->submitAdd;
+    protected function addForm() {
+        $form = $this->baseForm();
+        $form->onSuccess[] = $this->addFormSuccess;
+        $form->onError[] = $this->addFormError;
+        $form->onSubmit[] = $this->addFormSubmit;
         return $form;
     }
 
-    protected function createEdit($row) {
-        $form = $this->createBase();
+    protected function editForm($row) {
+        $form = $this->baseForm();
         $that = $this;
         $form->onSuccess[] = function($form) use ($that, $row) {
-            $that->successEdit($form, $row);
+            $that->editFormSuccess($form, $row);
         };
         $form->onError[] = function($form) use ($that, $row) {
-            $that->errorEdit($form, $row);
+            $that->editFormError($form, $row);
         };
         $form->onSubmit[] = function($form) use ($that, $row) {
-            $that->submitEdit($form, $row);
+            $that->editFormSubmit($form, $row);
         };
         return $form;
     }
 
-    public function validate(Form $form) {
+    public function setPresenter(Form $form) {
         $this->presenter = $form->getPresenter(TRUE);
     }
 
@@ -70,27 +70,27 @@ abstract class BaseFormFactory extends Object {
         
     }
 
-    public function successAdd(Form $form) {
+    public function addFormSuccess(Form $form) {
         
     }
 
-    public function successEdit(Form $form, $row) {
+    public function editFormSuccess(Form $form, $row) {
         
     }
 
-    public function errorAdd(Form $form) {
+    public function addFormError(Form $form) {
         
     }
 
-    public function errorEdit(Form $form, $row) {
+    public function editFormError(Form $form, $row) {
         
     }
 
-    public function submitAdd(Form $form) {
+    public function addFormSubmit(Form $form) {
         
     }
 
-    public function submitEdit(Form $form, $row) {
+    public function editFormSubmit(Form $form, $row) {
         
     }
 

@@ -89,10 +89,6 @@ final class MenuControl extends BaseControl {
         }
     }
 
-    public function getActive() {
-        return $this->active;
-    }
-
     public function breadcrumbAdd($title, $link = NULL, $link_id = NULL) {
         $this->breadcrumb[uniqid()] = (object) array(
                     'title' => $title,
@@ -111,37 +107,6 @@ final class MenuControl extends BaseControl {
             $breadcrumb[$id] = $node;
         }
         return $breadcrumb;
-    }
-
-    public function getParentNodeSelectData($tree, $node = NULL) {
-        if (is_string($tree)) {
-            $tree = $this->treeRepository->getTreeByGroup($tree);
-        }
-        $data = $tree->related('node')->fetchPairs('id', 'title');
-        $data[$tree->node_id] = $tree->node->title;
-        if ($node) {
-            unset($data[$node->id]);
-            foreach ($this->nodeRepository->getIdsOfChildNodes($node) as $id) {
-                unset($data[$id]);
-            }
-        }
-        return $data;
-    }
-
-    public function insert($data) {
-        $node = $this->nodeRepository->getNode($data['node_id']);
-        $data['tree_id'] = $node->tree_id;
-        return $this->nodeRepository->insertNode($data);
-    }
-
-    public function update($node, $data) {
-        return $this->nodeRepository->updateNode($node, $data);
-    }
-
-    public function remove($node) {
-        if ($node->id !== $node->tree->node_id) {
-            return $this->nodeRepository->removeNode($node);
-        }
     }
 
 }

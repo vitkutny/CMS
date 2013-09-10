@@ -22,7 +22,9 @@ parameters:
             - %styles.directory%/ratio.css
             - %styles.directory%/cms.css
 services:
+    CMS\Model\PageFacade: self
     CMS\Model\PageRepository: self
+    CMS\Model\MenuFacade: self
     CMS\Model\TreeRepository: self
     CMS\Model\NodeRepository: self
     CMS\Component\Menu\MenuControl: self
