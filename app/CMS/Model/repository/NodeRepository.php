@@ -36,15 +36,6 @@ final class NodeRepository extends BaseRepository {
         }
     }
 
-    public function getParentNodes($node) {
-        $this->temp = array();
-        while ($node->node) {
-            $this->temp[] = $node->node;
-            $node = $node->node;
-        }
-        return array_reverse($this->temp);
-    }
-
     public function insertNode($data) {
         return $this->table()->insert($data);
     }

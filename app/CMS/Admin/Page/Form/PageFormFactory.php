@@ -2,19 +2,19 @@
 
 namespace CMS\Admin\Page\Form;
 
-use CMS\Form\BaseFormFactory;
+use CMS\Form\FormFactory;
 use Nette\Application\UI\Form;
-use CMS\Model\MenuFacade;
+use CMS\Model\NodeFacade;
 use CMS\Model\PageFacade;
 use CMS\Admin\Menu\Form\NodeFormContainer;
 use CMS\Admin\Page\Form\PageFormContainer;
 
-final class PageFormFactory extends BaseFormFactory {
+final class PageFormFactory extends FormFactory {
 
     private $menuFacade;
     private $pageFacade;
 
-    public function __construct(MenuFacade $menuFacade, PageFacade $pageFacade) {
+    public function __construct(NodeFacade $menuFacade, PageFacade $pageFacade) {
         $this->menuFacade = $menuFacade;
         $this->pageFacade = $pageFacade;
     }

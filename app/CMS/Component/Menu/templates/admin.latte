@@ -1,4 +1,3 @@
-{var collapseId = uniqid('panel-collapse-')}
 <div class="component-menu-sidebar">
     <div class="panel panel-primary panel-{$group}">
         <div class="panel-heading clearfix">
@@ -7,19 +6,14 @@
                     {$home->title}
                 </a>
             </span>
-            <button class="btn btn-xs btn-default pull-right" href="#" data-toggle="collapse" data-target=".{$collapseId}">
-                Toggle <i class="icon-caret-down"></i>
-            </button>
         </div>
-        <div class="list-group">
-            <div class="collapse panel-collapse {$collapseId}" n:inner-foreach="$tree as $node">
-                <a n:class="$presenter->isLinkCurrent($node->data->link_admin,array('id'=>$node->data->link_id))?active,list-group-item" href="{plink $node->data->link_admin,id=>$node->data->link_id}">
-                    {$node->data->title}
-                </a>
-                {if count($node->children)}
-                    {include #nav,tree=>$node->children}
-                {/if}
-            </div>
+        <div class="list-group" n:inner-foreach="$tree as $node">
+            <a n:class="$presenter->isLinkCurrent($node->data->link_admin,array('id'=>$node->data->link_id))?active,list-group-item" href="{plink $node->data->link_admin,id=>$node->data->link_id}">
+                {$node->data->title}
+            </a>
+            {if count($node->children)}
+                {include #nav,tree=>$node->children}
+            {/if}
         </div>
     </div>
     {define #nav}

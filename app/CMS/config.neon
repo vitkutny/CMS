@@ -1,20 +1,20 @@
 parameters:
-    core:
-        directory: %appDir%/core
+    cms:
+        directory: %appDir%/CMS
     modules:
         directory: %appDir%/modules
     components:
         menu:
-            directory: %core.directory%/Component/Menu
+            directory: %cms.directory%/Component/Menu
     scripts:
-        directory: %core.directory%/scripts
+        directory: %cms.directory%/scripts
         files:
             - %scripts.directory%/jquery-2.0.3.min.js
             - %scripts.directory%/bootstrap.min.js
             - %scripts.directory%/netteForms.js
             - %scripts.directory%/cms.js
     styles:
-        directory: %core.directory%/styles
+        directory: %cms.directory%/styles
         files:
             - %styles.directory%/bootstrap.min.css
             - %styles.directory%/bootstrap-blockgrid.css
@@ -24,8 +24,9 @@ parameters:
 services:
     CMS\Model\PageFacade: self
     CMS\Model\PageRepository: self
-    CMS\Model\MenuFacade: self
+    CMS\Model\TreeFacade: self
     CMS\Model\TreeRepository: self
+    CMS\Model\NodeFacade: self
     CMS\Model\NodeRepository: self
     CMS\Component\Menu\MenuControl: self
     CMS\Admin\Menu\Form\NodeFormFactory: self

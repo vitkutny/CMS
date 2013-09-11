@@ -6,7 +6,7 @@ use Nette\Object;
 use Nette\Application\UI\Form;
 use Nette\Application\UI\Presenter;
 
-abstract class BaseFormFactory extends Object {
+abstract class FormFactory extends Object {
 
     /**
      * @var Presenter

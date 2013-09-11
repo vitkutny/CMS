@@ -2,13 +2,13 @@
 
 namespace CMS\Admin\Menu\Form;
 
-use CMS\Form\BaseFormFactory;
+use CMS\Form\FormFactory;
 use Nette\Application\UI\Form;
 use CMS\Component\Menu\MenuControl;
 use CMS\Model\NodeRepository;
 use CMS\Admin\Menu\Form\NodeFormContainer;
 
-final class NodeFormFactory extends BaseFormFactory {
+final class NodeFormFactory extends FormFactory {
 
     private $menu;
     private $nodeRepository;

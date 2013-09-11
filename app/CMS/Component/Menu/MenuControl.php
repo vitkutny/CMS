@@ -4,7 +4,7 @@ namespace CMS\Component\Menu;
 
 use CMS\Component\BaseControl;
 use CMS\Model\TreeRepository;
-use CMS\Model\NodeRepository;
+use CMS\Model\NodeFacade;
 
 final class MenuControl extends BaseControl {
 
@@ -14,15 +14,15 @@ final class MenuControl extends BaseControl {
     private $treeRepository;
 
     /**
-     * @var NodeRepository
+     * @var NodeFacade
      */
-    private $nodeRepository;
+    private $nodeFacade;
     private $active;
     private $breadcrumb = array();
 
-    public function __construct(TreeRepository $treeRepository, NodeRepository $nodeRepository) {
+    public function __construct(TreeRepository $treeRepository, NodeFacade $nodeFacade) {
         $this->treeRepository = $treeRepository;
-        $this->nodeRepository = $nodeRepository;
+        $this->nodeFacade = $nodeFacade;
     }
 
     public function render($group, $file, $directory = NULL) {
@@ -83,7 +83,7 @@ final class MenuControl extends BaseControl {
 
     public function setActive($link, $link_id = NULL) {
         if (is_string($link)) {
-            $this->active = $this->nodeRepository->getNodeByLink($link, $link_id);
+            $this->active = $this->nodeFacade->repository->getNodeByLink($link, $link_id);
         } else {
             $this->active = $link;
         }
@@ -99,7 +99,7 @@ final class MenuControl extends BaseControl {
 
     public function getBreadcrumb() {
         $breadcrumb = array();
-        foreach ($this->nodeRepository->getParentNodes($this->active) as $node) {
+        foreach ($this->nodeFacade->getParentNodes($this->active) as $node) {
             $breadcrumb[$node->id] = $node;
         }
         $breadcrumb[$this->active->id] = $this->active;
