@@ -6,9 +6,9 @@ final class PagePresenter extends BasePresenter {
 
     /**
      * @inject
-     * @var \CMS\Model\PageRepository
+     * @var \CMS\Model\PageFacade
      */
-    public $pageRepository;
+    public $pageFacade;
 
     /**
      * @var Nette\Database\Table\ActiveRow
@@ -20,7 +20,7 @@ final class PagePresenter extends BasePresenter {
      * @param int $id
      */
     public function actionView($id) {
-        $this->page = $this->pageRepository->getPage($id);
+        $this->page = $this->pageFacade->repository->getPage($id);
         if (!$this->page) {
             $this->error();
         }

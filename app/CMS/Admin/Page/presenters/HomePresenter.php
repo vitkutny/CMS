@@ -6,8 +6,14 @@ final class HomePresenter extends BasePresenter {
 
     private $pages;
 
+    /**
+     * @inject
+     * @var \CMS\Model\PageFacade
+     */
+    public $pageFacade;
+
     public function actionView() {
-        $this->pages = $this->pageRepository->getPages();
+        $this->pages = $this->pageFacade->repository->getPages();
     }
 
     public function renderView() {

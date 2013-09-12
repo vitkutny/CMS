@@ -10,6 +10,12 @@ final class PagePresenter extends BasePresenter {
 
     /**
      * @inject
+     * @var \CMS\Model\PageFacade
+     */
+    public $pageFacade;
+
+    /**
+     * @inject
      * @var \CMS\Admin\Page\Form\PageFormFactory
      */
     public $pageFormFactory;
@@ -19,7 +25,7 @@ final class PagePresenter extends BasePresenter {
     }
 
     public function actionEdit($id) {
-        $this->page = $this->pageRepository->getPage($id);
+        $this->page = $this->pageFacade->repository->getPage($id);
         if (!$this->page) {
             throw new BadRequestException;
         }

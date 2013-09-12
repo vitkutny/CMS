@@ -4,30 +4,28 @@ namespace CMS\Admin\Menu\Form;
 
 use CMS\Form\FormFactory;
 use Nette\Application\UI\Form;
-use CMS\Component\Menu\MenuControl;
-use CMS\Model\NodeRepository;
+use CMS\Model\NodeFacade;
 use CMS\Admin\Menu\Form\NodeFormContainer;
 
 final class NodeFormFactory extends FormFactory {
 
-    private $menu;
-    private $nodeRepository;
+    private $nodeFacade;
 
-    public function __construct(MenuControl $menu, NodeRepository $nodeRepository) {
-        $this->menu = $menu;
-        $this->nodeRepository = $nodeRepository;
+    public function __construct(NodeFacade $nodeFacade) {
+        $this->nodeFacade = $nodeFacade;
     }
 
     protected function editForm($node) {
         $form = parent::editForm($node);
-        $form['node'] = new NodeFormContainer($this->menu, $node->tree, $node);
+        $data = $this->nodeFacade->getParentNodeSelectData($node->tree, $node);
+        $form['node'] = new NodeFormContainer($data, $node);
         $form->addSubmit('save', 'Save');
         return $form;
     }
 
     public function editFormSuccess(Form $form, $node) {
         $data = $form->getValues(TRUE);
-        $this->nodeRepository->updateNode($node, $data['node']);
+        $this->nodeFacade->editNode($node, $data['node']);
         $this->presenter->redirect('this');
     }
 

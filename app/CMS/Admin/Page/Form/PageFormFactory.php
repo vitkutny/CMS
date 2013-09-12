@@ -11,17 +11,17 @@ use CMS\Admin\Page\Form\PageFormContainer;
 
 final class PageFormFactory extends FormFactory {
 
-    private $menuFacade;
+    private $nodeFacade;
     private $pageFacade;
 
-    public function __construct(NodeFacade $menuFacade, PageFacade $pageFacade) {
-        $this->menuFacade = $menuFacade;
+    public function __construct(NodeFacade $nodeFacade, PageFacade $pageFacade) {
+        $this->nodeFacade = $nodeFacade;
         $this->pageFacade = $pageFacade;
     }
 
     protected function addForm() {
         $form = parent::addForm();
-        $data = $this->menuFacade->getParentNodeSelectData('front');
+        $data = $this->nodeFacade->getParentNodeSelectData('front');
         $form['node'] = new NodeFormContainer($data);
         $form['page'] = new PageFormContainer();
         $form->addSubmit('add', 'Add page');
@@ -30,7 +30,7 @@ final class PageFormFactory extends FormFactory {
 
     protected function editForm($page) {
         $form = parent::editForm($page);
-        $data = $this->menuFacade->getParentNodeSelectData($page->node->tree, $page->node);
+        $data = $this->nodeFacade->getParentNodeSelectData($page->node->tree, $page->node);
         $form['node'] = new NodeFormContainer($data, $page->node);
         $form['page'] = new PageFormContainer($page);
         $form->addSubmit('edit', 'Edit page');

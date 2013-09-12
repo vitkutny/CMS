@@ -2,7 +2,6 @@
 
 /**
  * TODO:
- * 
  * Menu
  *  - přesouvání stromů (home node) nebo nastavení node_id na NULL
  * 

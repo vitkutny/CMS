@@ -8,12 +8,18 @@ final class NodePresenter extends BasePresenter {
 
     /**
      * @inject
+     * @var \CMS\Model\NodeFacade
+     */
+    public $nodeFacade;
+
+    /**
+     * @inject
      * @var \CMS\Admin\Menu\Form\NodeFormFactory
      */
     public $nodeFormFactory;
 
     public function actionEdit($id) {
-        $this->node = $this->nodeRepository->getNode($id);
+        $this->node = $this->nodeFacade->repository->getNode($id);
         if (!$this->node) {
             $this->error();
         }

@@ -9,8 +9,14 @@ final class TreePresenter extends BasePresenter {
      */
     private $tree;
 
+    /**
+     * @inject
+     * @var \CMS\Model\TreeFacade
+     */
+    public $treeFacade;
+
     public function actionEdit($id) {
-        $this->tree = $this->treeRepository->getTree($id);
+        $this->tree = $this->treeFacade->repository->getTree($id);
         if (!$this->tree) {
             $this->error();
         }
@@ -18,7 +24,7 @@ final class TreePresenter extends BasePresenter {
 
     public function renderEdit() {
         $this->menu->breadcrumbAdd('Edit list: ' . $this->tree->title);
-        $this->template->tree = $this->treeRepository->getTreeData($this->tree);
+        $this->template->tree = $this->treeFacade->repository->getTreeData($this->tree);
     }
 
 }

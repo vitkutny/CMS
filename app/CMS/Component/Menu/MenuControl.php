@@ -3,15 +3,15 @@
 namespace CMS\Component\Menu;
 
 use CMS\Component\BaseControl;
-use CMS\Model\TreeRepository;
+use CMS\Model\TreeFacade;
 use CMS\Model\NodeFacade;
 
 final class MenuControl extends BaseControl {
 
     /**
-     * @var TreeRepository
+     * @var TreeFacade
      */
-    private $treeRepository;
+    private $treeFacade;
 
     /**
      * @var NodeFacade
@@ -20,8 +20,8 @@ final class MenuControl extends BaseControl {
     private $active;
     private $breadcrumb = array();
 
-    public function __construct(TreeRepository $treeRepository, NodeFacade $nodeFacade) {
-        $this->treeRepository = $treeRepository;
+    public function __construct(TreeFacade $treeFacade, NodeFacade $nodeFacade) {
+        $this->treeFacade = $treeFacade;
         $this->nodeFacade = $nodeFacade;
     }
 
@@ -29,10 +29,10 @@ final class MenuControl extends BaseControl {
         if (!$directory) {
             $directory = __DIR__ . '/templates';
         }
-        $tree = $this->treeRepository->getTreeByGroup($group);
+        $tree = $this->treeFacade->repository->getTreeByGroup($group);
         $template = $this->template;
         $template->group = $group;
-        $template->tree = $this->treeRepository->getTreeData($tree);
+        $template->tree = $this->treeFacade->repository->getTreeData($tree);
         $template->breadcrumb = $this->getBreadcrumb();
         $template->home = $tree->node;
         $template->setFile($directory . '/' . $file . '.latte');
@@ -78,7 +78,7 @@ final class MenuControl extends BaseControl {
     }
 
     public function getHome($group) {
-        return $this->treeRepository->getTreeByGroup($group)->node;
+        return $this->treeFacade->repository->getTreeByGroup($group)->node;
     }
 
     public function setActive($link, $link_id = NULL) {
