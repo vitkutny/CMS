@@ -35,6 +35,7 @@ final class MenuControl extends BaseControl {
         $template->tree = $this->treeFacade->repository->getTreeData($tree);
         $template->breadcrumb = $this->getBreadcrumb();
         $template->home = $tree->node;
+        $template->active = $this->active;
         $template->setFile($directory . '/' . $file . '.latte');
         $template->render();
     }

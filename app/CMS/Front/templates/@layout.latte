@@ -1,9 +1,16 @@
 {layout $baseLayout}
 {#layout}
-{control menu:navbar front}
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
+            <header>
+                <h1>
+                    <a n:href=":Front:Home:view">KissCMS</a>
+                    <small style="display:block">Keep It Simple, Stupid!</small>
+                </h1>
+            </header>
+            {control menu:navbar front}
+
             {control menu:breadcrumb}
             <div n:foreach="$flashes as $flash" class="alert alert-{$flash->type}">
                 <strong>{$flash->type|capitalize}!</strong> {$flash->message}
