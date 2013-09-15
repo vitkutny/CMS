@@ -12,4 +12,8 @@ class TreeFacade extends BaseFacade {
         $this->repository = $repository;
     }
 
+    public function getHome($group) {
+        return $this->repository->getTreeByGroup($group)->node;
+    }
+
 }

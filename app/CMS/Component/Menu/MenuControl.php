@@ -78,10 +78,6 @@ final class MenuControl extends BaseControl {
         $template->render();
     }
 
-    public function getHome($group) {
-        return $this->treeFacade->repository->getTreeByGroup($group)->node;
-    }
-
     public function setActive($link, $link_id = NULL) {
         if (is_string($link)) {
             $this->active = $this->nodeFacade->repository->getNodeByLink($link, $link_id);
@@ -99,15 +95,9 @@ final class MenuControl extends BaseControl {
     }
 
     public function getBreadcrumb() {
-        $breadcrumb = array();
-        foreach ($this->nodeFacade->getParentNodes($this->active) as $node) {
-            $breadcrumb[$node->id] = $node;
-        }
+        $breadcrumb = $this->nodeFacade->getParentNodes($this->active);
         $breadcrumb[$this->active->id] = $this->active;
-        foreach ($this->breadcrumb as $id => $node) {
-            $breadcrumb[$id] = $node;
-        }
-        return $breadcrumb;
+        return $breadcrumb + $this->breadcrumb;
     }
 
 }

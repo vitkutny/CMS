@@ -1,7 +1,16 @@
 {layout $baseLayout}
 {#layout}
-{control menu:navbar admin}
 <div class="container">
+    <header class="row">
+        <div class="col-xs-12">
+            <header>
+                <h1>
+                    <a n:href=":Admin:Home:view">Administration</a>
+                </h1>
+            </header>
+            {control menu:navbar admin}
+        </div>
+    </header>
     <div class="row">
         <div class="col-sm-9 col-sm-push-3">
             {control menu:breadcrumb}

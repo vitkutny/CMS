@@ -18,10 +18,10 @@ class NodeFacade extends BaseFacade {
     public function getParentNodes($node) {
         $nodes = array();
         while ($node->node) {
-            $nodes[] = $node->node;
+            $nodes[$node->node->id] = $node->node;
             $node = $node->node;
         }
-        return array_reverse($nodes);
+        return array_reverse($nodes, TRUE);
     }
 
     public function getParentNodeSelectData($tree, $node = NULL) {
