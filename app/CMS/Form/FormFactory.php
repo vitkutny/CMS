@@ -5,6 +5,7 @@ namespace CMS\Form;
 use Nette\Object;
 use Nette\Application\UI\Form;
 use Nette\Application\UI\Presenter;
+use CMS\Form\BaseFormRenderer;
 
 abstract class FormFactory extends Object {
 
@@ -23,7 +24,7 @@ abstract class FormFactory extends Object {
 
     protected function baseForm() {
         $form = new Form();
-        $form->setRenderer(new FormRenderer());
+        $form->setRenderer(new BaseFormRenderer());
         $form->onValidate[] = $this->setPresenter;
         $form->onSuccess[] = $this->success;
         $form->onError[] = $this->error;

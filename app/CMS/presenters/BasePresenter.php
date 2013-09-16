@@ -3,7 +3,7 @@
 /**
  * TODO:
  * Menu
- *  - přesouvání stromů (home node) nebo nastavení node_id na NULL
+ *  - moving with ALL nodes inside front tree
  * 
  * ACL
  * 
@@ -41,7 +41,7 @@ abstract class BasePresenter extends Presenter {
 
     /**
      * @inject
-     * @var \CMS\Component\Menu\MenuControl
+     * @var \CMS\Menu\Component\Menu\MenuControl
      */
     public $menu;
 

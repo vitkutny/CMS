@@ -7,7 +7,7 @@ use Nette\Forms\Form;
 use Nette\Forms\IControl;
 use Nette\Utils\Html;
 
-class FormRenderer extends DefaultFormRenderer {
+class BaseFormRenderer extends DefaultFormRenderer {
 
     public function __construct() {
         $this->wrappers['form']['container'] = 'table class="responsive small-12 columns"';

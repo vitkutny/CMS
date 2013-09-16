@@ -21,17 +21,6 @@ parameters:
             - %styles.directory%/font-awesome.min.css
             - %styles.directory%/ratio.css
             - %styles.directory%/cms.css
-services:
-    CMS\Model\PageFacade: self
-    CMS\Model\PageRepository: self
-    CMS\Model\TreeFacade: self
-    CMS\Model\TreeRepository: self
-    CMS\Model\NodeFacade: self
-    CMS\Model\NodeRepository: self
-    CMS\Component\Menu\MenuControl: self
-    CMS\Admin\Menu\Form\NodeFormFactory: self
-    CMS\Admin\Page\Form\PageFormFactory: self
-factories:
 nette:
     application:
         mapping:
