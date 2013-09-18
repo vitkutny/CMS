@@ -2,10 +2,8 @@
 
 namespace CMS\Menu\Form;
 
-use Nette\Application\UI\Form;
 use CMS\Form\FormFactory;
 use CMS\Menu\Model\NodeFacade;
-use CMS\Menu\Form\NodeFormContainer;
 
 final class NodeFormFactory extends FormFactory {
 
@@ -16,15 +14,11 @@ final class NodeFormFactory extends FormFactory {
     }
 
     protected function editForm($node) {
-        $form = parent::editForm($node);
-        $data = $this->nodeFacade->getParentNodeSelectData($node->tree, $node);
-        $form['node'] = new NodeFormContainer($data, $node);
-        $form->addSubmit('save', 'Save');
-        return $form;
+        $this->form->addComponent($this->nodeFacade->getFormContainer($node->tree, $node), 'node');
+        $this->form->addSubmit('save', 'Save');
     }
 
-    public function editFormSuccess(Form $form, $node) {
-        $data = $form->getValues(TRUE);
+    protected function edit($node, $data) {
         $this->nodeFacade->editNode($node, $data['node']);
         $this->presenter->redirect('this');
     }

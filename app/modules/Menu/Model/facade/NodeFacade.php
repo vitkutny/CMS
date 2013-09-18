@@ -5,6 +5,7 @@ namespace CMS\Menu\Model;
 use CMS\Model\Facade;
 use CMS\Menu\Model\NodeRepository;
 use CMS\Menu\Model\TreeFacade;
+use CMS\Menu\Form\NodeFormContainer;
 
 class NodeFacade extends Facade {
 
@@ -14,6 +15,11 @@ class NodeFacade extends Facade {
     public function __construct(NodeRepository $repository, TreeFacade $treeFacade) {
         $this->repository = $repository;
         $this->treeFacade = $treeFacade;
+    }
+
+    public function getFormContainer($tree, $node = NULL) {
+        $data = $this->getParentNodeSelectData($tree, $node);
+        return new NodeFormContainer($data, $node);
     }
 
     public function getParentNodes($node) {

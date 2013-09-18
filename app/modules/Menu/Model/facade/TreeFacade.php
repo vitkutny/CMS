@@ -13,4 +13,9 @@ class TreeFacade extends Facade {
         $this->repository = $repository;
     }
 
+    public function getHomeNode($group) {
+        $tree = $this->repository->getTreeByGroup($group);
+        return $tree->node;
+    }
+
 }

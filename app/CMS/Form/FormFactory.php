@@ -13,44 +13,25 @@ abstract class FormFactory extends Object {
      * @var Presenter
      */
     protected $presenter;
+    protected $form;
 
     public function create($row = NULL) {
+        $this->form = $this->baseForm($row);
         if ($row) {
-            return $this->editForm($row);
+            $this->editForm($row);
         } else {
-            return $this->addForm();
+            $this->addForm();
         }
+        return $this->form;
     }
 
-    protected function baseForm() {
+    private function baseForm($row = NULL) {
         $form = new Form();
         $form->setRenderer(new BaseFormRenderer());
         $form->onValidate[] = $this->setPresenter;
-        $form->onSuccess[] = $this->success;
-        $form->onError[] = $this->error;
-        $form->onSubmit[] = $this->submit;
-        return $form;
-    }
-
-    protected function addForm() {
-        $form = $this->baseForm();
-        $form->onSuccess[] = $this->addFormSuccess;
-        $form->onError[] = $this->addFormError;
-        $form->onSubmit[] = $this->addFormSubmit;
-        return $form;
-    }
-
-    protected function editForm($row) {
-        $form = $this->baseForm();
         $that = $this;
         $form->onSuccess[] = function($form) use ($that, $row) {
-            $that->editFormSuccess($form, $row);
-        };
-        $form->onError[] = function($form) use ($that, $row) {
-            $that->editFormError($form, $row);
-        };
-        $form->onSubmit[] = function($form) use ($that, $row) {
-            $that->editFormSubmit($form, $row);
+            $that->success($form, $row);
         };
         return $form;
     }
@@ -59,40 +40,16 @@ abstract class FormFactory extends Object {
         $this->presenter = $form->getPresenter(TRUE);
     }
 
-    public function success(Form $form) {
-        
-    }
-
-    public function error(Form $form) {
-        
-    }
-
-    public function submit(Form $form) {
-        
-    }
-
-    public function addFormSuccess(Form $form) {
-        
-    }
-
-    public function editFormSuccess(Form $form, $row) {
-        
-    }
-
-    public function addFormError(Form $form) {
-        
-    }
-
-    public function editFormError(Form $form, $row) {
-        
-    }
-
-    public function addFormSubmit(Form $form) {
-        
-    }
-
-    public function editFormSubmit(Form $form, $row) {
-        
+    public function success(Form $form, $row = NULL) {
+        if ($row) {
+            if ($form->isSubmitted()->getHtmlName() == 'delete') {
+                $this->delete($row);
+            } else {
+                $this->edit($row, $form->getValues(TRUE));
+            }
+        } else {
+            $this->add($form->getValues(TRUE));
+        }
     }
 
 }

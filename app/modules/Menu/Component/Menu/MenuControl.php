@@ -92,14 +92,10 @@ final class MenuControl extends BaseControl {
         );
     }
 
-    public function getBreadcrumb() {
+    private function getBreadcrumb() {
         $breadcrumb = $this->nodeFacade->getParentNodes($this->active);
         $breadcrumb[$this->active->id] = $this->active;
         return $breadcrumb + $this->breadcrumb;
-    }
-
-    public function getHome($group) {
-        return $this->treeFacade->repository->getTreeByGroup($group)->node;
     }
 
 }

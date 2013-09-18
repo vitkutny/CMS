@@ -5,6 +5,7 @@ namespace CMS\Page\Model;
 use CMS\Model\Facade;
 use CMS\Page\Model\PageRepository;
 use CMS\Menu\Model\NodeFacade;
+use CMS\Page\Form\PageFormContainer;
 
 class PageFacade extends Facade {
 
@@ -14,6 +15,10 @@ class PageFacade extends Facade {
     public function __construct(PageRepository $repository, NodeFacade $nodeFacade) {
         $this->repository = $repository;
         $this->nodeFacade = $nodeFacade;
+    }
+
+    public function getFormContainer($page = NULL) {
+        return new PageFormContainer($page);
     }
 
     public function addPage(array $data) {
