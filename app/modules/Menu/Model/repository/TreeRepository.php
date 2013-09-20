@@ -2,9 +2,9 @@
 
 namespace CMS\Menu\Model;
 
-use CMS\Model\Repository;
+use CMS\Model\DatabaseRepository;
 
-final class TreeRepository extends Repository {
+final class TreeRepository extends DatabaseRepository {
 
     private $temp;
 

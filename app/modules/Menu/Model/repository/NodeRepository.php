@@ -2,9 +2,9 @@
 
 namespace CMS\Menu\Model;
 
-use CMS\Model\Repository;
+use CMS\Model\DatabaseRepository;
 
-final class NodeRepository extends Repository {
+final class NodeRepository extends DatabaseRepository {
 
     private $temp;
 
@@ -36,18 +36,6 @@ final class NodeRepository extends Repository {
             $this->temp[] = $child->id;
             $this->compileIdsOfChildNodes($child);
         }
-    }
-
-    public function insertNode($data) {
-        return $this->table()->insert($data);
-    }
-
-    public function updateNode($node, $data) {
-        return $node->update($data);
-    }
-
-    public function removeNode($node) {
-        return $node->delete();
     }
 
 }

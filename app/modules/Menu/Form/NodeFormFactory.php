@@ -15,7 +15,7 @@ final class NodeFormFactory extends FormFactory {
 
     protected function editForm($node) {
         $this->form->addComponent($this->nodeFacade->getFormContainer($node->tree, $node), 'node');
-        $this->form->addSubmit('save', 'Save');
+        parent::editForm($node);
     }
 
     protected function edit($node, $data) {

@@ -2,9 +2,9 @@
 
 namespace CMS\Page\Model;
 
-use CMS\Model\Repository;
+use CMS\Model\DatabaseRepository;
 
-final class PageRepository extends Repository {
+final class PageRepository extends DatabaseRepository {
 
     public function getPage($id) {
         return $this->table()->get($id);
@@ -12,18 +12,6 @@ final class PageRepository extends Repository {
 
     public function getPages() {
         return $this->table()->fetchAll();
-    }
-
-    public function insertPage(array $data) {
-        return $this->table()->insert($data);
-    }
-
-    public function updatePage($page, array $data) {
-        return $page->update($data);
-    }
-
-    public function removePage($page) {
-        return $page->delete();
     }
 
 }

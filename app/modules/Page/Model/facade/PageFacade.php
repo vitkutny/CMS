@@ -26,19 +26,19 @@ class PageFacade extends Facade {
         $data['node']['link_admin'] = ':Admin:Page:Page:edit';
         $node = $this->nodeFacade->addNode($data['node']);
         $data['page']['node_id'] = $node->id;
-        $page = $this->repository->insertPage($data['page']);
+        $page = $this->repository->insert($data['page']);
         $this->nodeFacade->editNode($node, array('link_id' => $page->id));
         return $page;
     }
 
     public function editPage($page, array $data) {
         $this->nodeFacade->editNode($page->node, $data['node']);
-        return $this->repository->updatePage($page, $data['page']);
+        return $this->repository->update($page, $data['page']);
     }
 
     public function deletePage($page) {
         if ($this->nodeFacade->deleteNode($page->node)) {
-            return $this->repository->removePage($page);
+            return $this->repository->remove($page);
         }
     }
 

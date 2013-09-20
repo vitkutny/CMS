@@ -6,7 +6,7 @@ use Nette;
 use Nette\Database\SelectionFactory;
 use Nette\Database\Table;
 
-abstract class Repository extends Nette\Object {
+abstract class DatabaseRepository extends Nette\Object {
 
     /**
      * @var SelectionFactory
@@ -34,6 +34,18 @@ abstract class Repository extends Nette\Object {
             preg_match('#(\w+)Repository$#', get_class($this), $m);
             return $this->connection->table(lcfirst($m[1]));
         }
+    }
+
+    public function insert(array $data) {
+        return $this->table()->insert($data);
+    }
+
+    public function update($row, array $data) {
+        return $row->update($data);
+    }
+
+    public function remove($row) {
+        return $row->delete();
     }
 
 }
