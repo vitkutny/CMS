@@ -32,7 +32,8 @@ abstract class DatabaseRepository extends Nette\Object {
             return $this->connection->table($this->name);
         } else {
             preg_match('#(\w+)Repository$#', get_class($this), $m);
-            return $this->connection->table(lcfirst($m[1]));
+            $name = trim(strtolower(preg_replace('/([A-Z])/', '_$1', $m[1])), '_');
+            return $this->connection->table($name);
         }
     }
 

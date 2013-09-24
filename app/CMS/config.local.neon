@@ -1,11 +1,12 @@
 nette:
     database:
-        dsn: 'mysql:host=127.0.0.1;dbname=cms'
-        user: 'root'
-        password: 'root'
-        options:
-            lazy: yes
-        reflection: conventional
+        default:
+            dsn: 'mysql:host=127.0.0.1;dbname=cms'
+            user: 'root'
+            password: 'root'
+            options:
+                lazy: yes
+            reflection: conventional
     container:
         debugger: TRUE
     session:
