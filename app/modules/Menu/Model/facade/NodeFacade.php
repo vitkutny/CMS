@@ -18,7 +18,7 @@ class NodeFacade extends Facade {
     }
 
     public function getFormContainer($tree, $node = NULL, $home = TRUE) {
-        $data = array(NULL => '- select one -') + $this->getParentNodeSelectData($tree, $node, $home);
+        $data = $this->getParentNodeSelectData($tree, $node, $home);
         return new NodeFormContainer($data, $node);
     }
 
@@ -35,10 +35,13 @@ class NodeFacade extends Facade {
         if (is_string($tree)) {
             $tree = $this->treeFacade->repository->getTreeByGroup($tree);
         }
-        $data = $tree->related('node')->fetchPairs('id', 'title');
-        if ($home) {
+		$data = array();
+		        if ($home) {
             $data[$tree->node_id] = $tree->node->title;
-        }
+        }else{
+		$data[NULL]='- select one -';
+		}
+        $data += $tree->related('node')->fetchPairs('id', 'title');
         if ($node) {
             unset($data[$node->id]);
             foreach ($this->repository->getIdsOfChildNodes($node) as $id) {
@@ -50,7 +53,7 @@ class NodeFacade extends Facade {
 
     public function addNode($data) {
         $node = $this->repository->getNode($data['node_id']);
-        $data['tree_id'] = $node->tree_id;
+        $data['tree_id'] = $node->tree_id; //TODO: when adding category into catalog main page its placed in front tree
         return $this->repository->insert($data);
     }
 
