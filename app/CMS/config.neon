@@ -3,9 +3,6 @@ parameters:
         directory: %appDir%/CMS
     modules:
         directory: %appDir%/modules
-    components:
-        menu:
-            directory: %cms.directory%/Component/Menu
     scripts:
         directory: %cms.directory%/scripts
         files:

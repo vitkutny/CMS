@@ -1,0 +1,8 @@
+parameters:
+    modules:
+        page:
+            directory: %modules.directory%/Page
+services:
+    CMS\Page\Model\PageFacade: self
+    CMS\Page\Model\PageRepository: self
+    CMS\Page\Form\PageFormFactory: self

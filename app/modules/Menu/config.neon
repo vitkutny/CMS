@@ -1,0 +1,14 @@
+parameters:
+    modules:
+        menu:
+            directory: %modules.directory%/Menu
+    components:
+        menu:
+            directory: %modules.menu.directory%/Component/Menu
+services:
+    CMS\Menu\Model\NodeFacade: self
+    CMS\Menu\Model\NodeRepository: self
+    CMS\Menu\Form\NodeFormFactory: self
+    CMS\Menu\Model\TreeFacade: self
+    CMS\Menu\Model\TreeRepository: self
+    CMS\Menu\Component\Menu\MenuControl: self
