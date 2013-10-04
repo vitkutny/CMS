@@ -24,7 +24,7 @@ class PageFacade extends Facade {
     public function addPage(array $data) {
         $data['node']['link'] = ':Front:Page:view';
         $data['node']['link_admin'] = ':Admin:Page:Page:edit';
-        $node = $this->nodeFacade->addNode($data['node']);
+        $node = $this->nodeFacade->addNode($data['node'], 'front');
         $data['page']['node_id'] = $node->id;
         $page = $this->repository->insert($data['page']);
         $this->nodeFacade->editNode($node, array('link_id' => $page->id));

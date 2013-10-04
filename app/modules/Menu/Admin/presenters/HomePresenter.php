@@ -11,7 +11,7 @@ final class HomePresenter extends BasePresenter {
     public $treeFacade;
 
     public function renderView() {
-        $this->template->trees = $this->treeFacade->repository->getAllTrees();
+        $this->template->trees = $this->treeFacade->repository->getTrees();
     }
 
 }

@@ -9,19 +9,27 @@ final class NodeRepository extends DatabaseRepository {
     private $temp;
 
     public function getNode($id) {
-        return $this->table()->get($id);
+        return $this->getOne($id);
     }
 
     public function getNodeByLink($link, $link_id = NULL) {
-        return $this->table()->where('link', $link)->where('link_id', $link_id)->fetch();
+        return $this->getOne(array('link' => $link, 'link_id' => $link_id));
+    }
+
+    public function getNodesInNode($node) {
+        return $this->getRelated($node, 'node');
+    }
+
+    public function getNodesInTree($tree) {
+        return $this->getRelated($tree, 'node', FALSE)->fetchPairs('id', 'title');
     }
 
     /*
       public function setRootNode($node) {
       $rootNode = $node->list->node;
-      $rootNode->related('node')->update(array('node_id' => $node->id));
-      $node->update(array('node_id' => $rootNode->node_id));
-      $rootNode->update(array('node_id' => $node->id));
+      $this->update($this->getRelated($rootNode),array('node_id' => $node->id));
+      $this->update($node,array('node_id' => $rootNode->node_id));
+      $this->update($rootNode,array('node_id' => $node->id));
       }
      */
 
@@ -32,7 +40,7 @@ final class NodeRepository extends DatabaseRepository {
     }
 
     private function compileIdsOfChildNodes($node) {
-        foreach ($node->related('node') as $child) {
+        foreach ($this->getNodesInNode($node) as $child) {
             $this->temp[] = $child->id;
             $this->compileIdsOfChildNodes($child);
         }

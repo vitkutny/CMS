@@ -9,15 +9,15 @@ final class TreeRepository extends DatabaseRepository {
     private $temp;
 
     public function getTree($id) {
-        return $this->table()->get($id);
+        return $this->getOne($id);
     }
 
     public function getTreeByGroup($group) {
-        return $this->table()->where('group', $group)->fetch();
+        return $this->getOne(array('group' => $group));
     }
 
     public function getTreeData($tree) {
-        $this->temp = $tree->related('node')->order('position')->order('title')->fetchAll();
+        $this->temp = $this->getRelated($tree, 'node'); //TODO: order position, title
         return $this->compileTreeData($tree->node_id);
     }
 
@@ -34,8 +34,8 @@ final class TreeRepository extends DatabaseRepository {
         return $tree;
     }
 
-    public function getAllTrees() {
-        return $this->table()->fetchAll();
+    public function getTrees() { //TODO: remove
+        return $this->getAll();
     }
 
 }

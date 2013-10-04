@@ -35,13 +35,13 @@ class NodeFacade extends Facade {
         if (is_string($tree)) {
             $tree = $this->treeFacade->repository->getTreeByGroup($tree);
         }
-		$data = array();
-		        if ($home) {
+        $data = array();
+        if ($home) {
             $data[$tree->node_id] = $tree->node->title;
-        }else{
-		$data[NULL]='- select one -';
-		}
-        $data += $tree->related('node')->fetchPairs('id', 'title');
+        } else {
+            $data[NULL] = '- select one -';
+        }
+        $data += $this->repository->getNodesInTree($tree);
         if ($node) {
             unset($data[$node->id]);
             foreach ($this->repository->getIdsOfChildNodes($node) as $id) {
@@ -51,9 +51,8 @@ class NodeFacade extends Facade {
         return $data;
     }
 
-    public function addNode($data) {
-        $node = $this->repository->getNode($data['node_id']);
-        $data['tree_id'] = $node->tree_id; //TODO: when adding category into catalog main page its placed in front tree
+    public function addNode($data, $group) {
+        $data['tree_id'] = $this->treeFacade->repository->getTreeByGroup($group)->id;
         return $this->repository->insert($data);
     }
 
@@ -63,7 +62,9 @@ class NodeFacade extends Facade {
 
     public function deleteNode($node) {
         if ($node->id !== $node->tree->node_id) {
-            $node->related('node')->update(array('node_id' => $node->node_id));
+            $selection = $this->repository->getRelated($node, 'node', FALSE);
+            $data = array('node_id' => $node->node_id);
+            $this->repository->update($selection, $data);
             return $this->repository->remove($node);
         }
     }
