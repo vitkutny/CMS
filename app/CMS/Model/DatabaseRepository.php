@@ -73,10 +73,20 @@ abstract class DatabaseRepository extends Nette\Object {
     }
 
     public function insert(array $data) {
+        foreach ($data as $key => $value) {
+            if (!$value) {
+                $data[$key] = NULL; //TODO: temp fix
+            }
+        }
         return $this->table()->insert($data);
     }
 
     public function update($selection, array $data) {
+        foreach ($data as $key => $value) {
+            if (!$value) {
+                $data[$key] = NULL; //TODO: temp fix
+            }
+        }
         return $selection->update($data);
     }
 
