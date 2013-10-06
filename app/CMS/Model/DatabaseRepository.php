@@ -44,8 +44,10 @@ abstract class DatabaseRepository extends Nette\Object {
         }
     }
 
-    protected function getSelection($where = NULL, $order = NULL) {
-        $selection = $this->table();
+    protected function getSelection($where = NULL, $order = NULL, $selection = NULL) {
+        if (!$selection) {
+            $selection = $this->table();
+        }
         if ($where) {
             $selection->where($where);
         }
@@ -59,8 +61,17 @@ abstract class DatabaseRepository extends Nette\Object {
         return $this->getSelection($where, $order)->fetchAll();
     }
 
-    public function getRelated($row, $related, $fetch = TRUE) {
+    public function getRelated($row, $related, $fetch = TRUE, $order = NULL) {
         $selection = $row->related($related);
+        if ($order) {
+            if (is_array($order)) {
+                foreach ($order as $column) {
+                    $selection->order($column);
+                }
+            } else {
+                $selection->order($order);
+            }
+        }
         if ($fetch) {
             return $selection->fetchAll();
         } else {
