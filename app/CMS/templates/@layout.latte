@@ -9,7 +9,19 @@
 
     <body class="{$presenter->getName()} {$presenter->getAction()}">
         {include #layout}
-
+        <footer>
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="text-right">
+                            <strong>KissCMS</strong> - &copy;2013 - All rights reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </footer>
         {control js}
     </body>
 </html>

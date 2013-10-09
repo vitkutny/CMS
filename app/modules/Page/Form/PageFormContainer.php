@@ -2,9 +2,9 @@
 
 namespace CMS\Page\Form;
 
-use Nette\Forms\Container;
+use CMS\Form\FormContainer;
 
-class PageFormContainer extends Container {
+class PageFormContainer extends FormContainer {
 
     public function __construct($page = NULL) {
         $this->addTextArea('content', 'Content')->setRequired();

@@ -13,7 +13,19 @@
     </header>
     <div class="row">
         <div class="col-sm-9 col-sm-push-3">
+            {#header}
+            {#header-navigation}{/#}
             {control menu:breadcrumb}
+            <div class="page-header" n:block="header-content">
+                {#header-content-prepend}{/#}
+                <h2>
+                    {#header-title}{$current->title}{/#}
+                    {#header-inside}{/#}
+                </h2>
+                {#header-content-append}{/#}
+            </div>
+            {#header-append}{/#}
+            {/#}
             <div n:foreach="$flashes as $flash" data-alert class="alert alert-{$flash->type}">
                 <strong>{$flash->type|capitalize}!</strong> {$flash->message}
             </div>
@@ -21,7 +33,6 @@
         </div>
         <div class="col-sm-3 col-sm-pull-9">
             {control menu:admin front}
-            {control menu:admin shop_category}
         </div>
     </div>
 </div>

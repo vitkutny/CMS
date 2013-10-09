@@ -32,7 +32,8 @@ final class PagePresenter extends BasePresenter {
     }
 
     public function renderEdit() {
-        $this->menu->breadcrumbAdd('Edit page: ' . $this->page->node->title);
+        $this->menu->breadcrumbAdd('Edit page');
+        $this->template->page = $this->page;
     }
 
     protected function createComponentPageFormAdd() {

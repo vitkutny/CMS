@@ -18,20 +18,6 @@ class NodeFacade extends Facade {
     }
 
     public function getFormContainer($tree, $node = NULL, $home = TRUE) {
-        $data = $this->getParentNodeSelectData($tree, $node, $home);
-        return new NodeFormContainer($data, $node);
-    }
-
-    public function getParentNodes($node) {
-        $nodes = array();
-        while ($node->node) {
-            $nodes[$node->node->id] = $node->node;
-            $node = $node->node;
-        }
-        return array_reverse($nodes, TRUE);
-    }
-
-    public function getParentNodeSelectData($tree, $node = NULL, $home = TRUE) {
         if (is_string($tree)) {
             $tree = $this->treeFacade->repository->getTreeByGroup($tree);
         }
@@ -48,7 +34,16 @@ class NodeFacade extends Facade {
                 unset($data[$id]);
             }
         }
-        return $data;
+        return new NodeFormContainer($data, $node);
+    }
+
+    public function getParentNodes($node) {
+        $nodes = array();
+        while ($node->node) {
+            $nodes[$node->node->id] = $node->node;
+            $node = $node->node;
+        }
+        return array_reverse($nodes, TRUE);
     }
 
     public function addNode($data, $group) {
@@ -62,7 +57,7 @@ class NodeFacade extends Facade {
 
     public function deleteNode($node) {
         if ($node->id !== $node->tree->node_id) {
-            $selection = $this->repository->getRelated($node, 'node', FALSE);
+            $selection = $this->repository->getRelated($node, 'node', NULL, FALSE);
             $data = array('node_id' => $node->node_id);
             $this->repository->update($selection, $data);
             return $this->repository->remove($node);

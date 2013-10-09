@@ -70,8 +70,7 @@ final class MenuControl extends BaseControl {
     public function renderTitle() {
         $template = $this->template;
         $template->home = 'KissCMS';
-        $breadcrumb = $this->getBreadcrumb();
-        $template->current = array_pop($breadcrumb);
+        $template->current = $this->getCurrent();
         $template->setFile(__DIR__ . '/templates/title.latte');
         $template->render();
     }
@@ -82,6 +81,11 @@ final class MenuControl extends BaseControl {
         } else {
             $this->active = $link;
         }
+    }
+
+    public function getCurrent() {
+        $breadcrumb = $this->getBreadcrumb();
+        return array_pop($breadcrumb);
     }
 
     public function breadcrumbAdd($title, $link = NULL, $link_id = NULL) {

@@ -17,7 +17,7 @@ final class TreeRepository extends DatabaseRepository {
     }
 
     public function getTreeData($tree) {
-        $this->temp = $this->getRelated($tree, 'node', TRUE, array('position', 'title'));
+        $this->temp = $this->getRelated($tree, 'node', array('position', 'title'));
         return $this->compileTreeData($tree->node_id);
     }
 

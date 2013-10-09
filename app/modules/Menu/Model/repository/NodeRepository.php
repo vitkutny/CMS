@@ -21,7 +21,8 @@ final class NodeRepository extends DatabaseRepository {
     }
 
     public function getNodesInTree($tree) {
-        return $this->getRelated($tree, 'node', FALSE)->fetchPairs('id', 'title');
+        $related = $this->getRelated($tree, 'node', NULL, FALSE);
+        return $this->getPairs('id', 'title', $related);
     }
 
     /*

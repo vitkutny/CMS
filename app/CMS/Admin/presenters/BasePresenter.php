@@ -17,4 +17,9 @@ abstract class BasePresenter extends Presenter {
         $this->template->home = $this->treeFacade->getHomeNode('admin');
     }
 
+    protected function afterRender() {
+        parent::afterRender();
+        $this->template->current = $this->menu->getCurrent();
+    }
+
 }

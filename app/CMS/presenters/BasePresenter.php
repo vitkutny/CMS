@@ -4,6 +4,10 @@
  * TODO:
  * Menu
  *  - moving with ALL nodes inside front tree
+ * Tsgs
+ *  - node x tags
+ *  tag/view
+ *      tag -> related nodes with node->tree->title
  * 
  * ACL
  * 
