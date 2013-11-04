@@ -34,8 +34,4 @@ final class TreeRepository extends DatabaseRepository {
         return $tree;
     }
 
-    public function getTrees() { //TODO: remove
-        return $this->getAll();
-    }
-
 }

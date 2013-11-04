@@ -25,15 +25,6 @@ final class NodeRepository extends DatabaseRepository {
         return $this->getPairs('id', 'title', $related);
     }
 
-    /*
-      public function setRootNode($node) {
-      $rootNode = $node->list->node;
-      $this->update($this->getRelated($rootNode),array('node_id' => $node->id));
-      $this->update($node,array('node_id' => $rootNode->node_id));
-      $this->update($rootNode,array('node_id' => $node->id));
-      }
-     */
-
     public function getIdsOfChildNodes($node) {
         $this->temp = array();
         $this->compileIdsOfChildNodes($node);
