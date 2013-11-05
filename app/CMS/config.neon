@@ -1,23 +1,23 @@
 parameters:
     cms:
         directory: %appDir%/CMS
+        styles:
+            directory: %cms.directory%/styles
+        scripts:
+            directory: %cms.directory%/scripts
     modules:
         directory: %appDir%/modules
     scripts:
-        directory: %cms.directory%/scripts
-        files:
-            - %scripts.directory%/jquery-2.0.3.min.js
-            - %scripts.directory%/bootstrap.min.js
-            - %scripts.directory%/netteForms.js
-            - %scripts.directory%/cms.js
+        - %cms.scripts.directory%/jquery-2.0.3.min.js
+        - %cms.scripts.directory%/bootstrap.min.js
+        - %cms.scripts.directory%/netteForms.js
+        - %cms.scripts.directory%/cms.js
     styles:
-        directory: %cms.directory%/styles
-        files:
-            - %styles.directory%/bootstrap.min.css
-            - %styles.directory%/bootstrap-blockgrid.css
-            - %styles.directory%/font-awesome.min.css
-            - %styles.directory%/ratio.css
-            - %styles.directory%/cms.css
+        - %cms.styles.directory%/bootstrap.min.css
+        - %cms.styles.directory%/bootstrap-blockgrid.css
+        - %cms.styles.directory%/font-awesome.min.css
+        - %cms.styles.directory%/ratio.css
+        - %cms.styles.directory%/cms.css
 nette:
     application:
         mapping:

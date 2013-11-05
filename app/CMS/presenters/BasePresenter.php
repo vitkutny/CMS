@@ -68,7 +68,7 @@ abstract class BasePresenter extends Presenter {
     protected function createComponentCss() {
         $dir = $this->context->parameters['wwwDir'] . '/temp';
         $files = new WebLoader\FileCollection();
-        $files->addFiles($this->context->parameters['styles']['files']);
+        $files->addFiles($this->context->parameters['styles']);
         $compiler = WebLoader\Compiler::createCssCompiler($files, $dir);
         $compiler->addFilter(function($css) {
             return str_replace(array("\r\n", "\r", "\n", "\t", '  ', '    ', '    '), '', str_replace(': ', ':', preg_replace('!/\*[^*]*\*+([^/][^*]*\*+)*/!', '', $css)));
@@ -82,7 +82,7 @@ abstract class BasePresenter extends Presenter {
     protected function createComponentJs() {
         $dir = $this->context->parameters['wwwDir'] . '/temp';
         $files = new WebLoader\FileCollection();
-        $files->addFiles($this->context->parameters['scripts']['files']);
+        $files->addFiles($this->context->parameters['scripts']);
         $compiler = WebLoader\Compiler::createJsCompiler($files, $dir);
         $compiler->addFilter(function($js) {
             $packer = new JavaScriptPacker($js);

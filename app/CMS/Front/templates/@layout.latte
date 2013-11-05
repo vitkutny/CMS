@@ -10,7 +10,9 @@
                 </h1>
             </header>
             {control menu:navbar front}
+            {#menu-breadcrumb}
             {control menu:breadcrumb}
+            {/#}
             <div n:foreach="$flashes as $flash" class="alert alert-{$flash->type}">
                 <strong>{$flash->type|capitalize}!</strong> {$flash->message}
             </div>
