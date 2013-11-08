@@ -1,2 +1,3 @@
-cache
-btfj.dat
+*
+!.htaccess
+!web.config
