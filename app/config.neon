@@ -1,12 +1,12 @@
 parameters:
     cms:
-        directory: %appDir%/CMS
+        directory: %appDir%
         styles:
             directory: %cms.directory%/styles
         scripts:
             directory: %cms.directory%/scripts
     modules:
-        directory: %appDir%/modules
+        directory: %cms.directory%/../vendor/vitkutny
     scripts:
         - %cms.scripts.directory%/jquery-2.0.3.min.js
         - %cms.scripts.directory%/bootstrap.min.js
@@ -33,3 +33,5 @@ nette:
         expiration: 14 days
 includes:
     - config.local.neon
+    - Menu/config.neon
+    - Page/config.neon

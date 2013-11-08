@@ -1,7 +1,7 @@
 parameters:
     modules:
         menu:
-            directory: %modules.directory%/Menu
+            directory: %cms.directory%/Menu
     components:
         menu:
             directory: %modules.menu.directory%/Component/Menu
