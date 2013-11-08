@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "62e8ba6853fcb91722e42827f36857df",
+    "hash": "d6f4abb8de9ab7a4575bdc73ad1348ab",
     "packages": [
         {
             "name": "janmarek/webloader",

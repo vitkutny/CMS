@@ -1,4 +1,8 @@
 {
+	"name": "vitkutny/cms",
+	"description": "KissCMS - Keep It Simple Stupid!",
+	"keywords": ["cms","kiss"],
+	"homepage": "http://github.com/vitkutny/cms",
 	"require":{
 		"nette/nette": "dev-master",
 		"janmarek/webloader" : "dev-master"
