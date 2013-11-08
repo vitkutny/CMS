@@ -10,13 +10,13 @@ $configurator->createRobotLoader()
         ->addDirectory(__DIR__ . '/../vendor/others')
         ->register();
 
-$configurator->addConfig(__DIR__ . '/CMS/config.neon');
-foreach (new DirectoryIterator(__DIR__ . '/modules') as $file) {
+$configurator->addConfig(__DIR__ . '/config.neon');
+foreach (new DirectoryIterator(__DIR__ . '/../vendor/vitkutny') as $file) {
     if ($file->isDot()) {
         continue;
     }
     if ($file->isDir()) {
-        $configurator->addConfig(__DIR__ . "/modules/$file/config.neon");
+        $configurator->addConfig(__DIR__ . "/../vendor/vitkutny/$file/config.neon");
     }
 }
 

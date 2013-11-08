@@ -3,8 +3,81 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "d6f4abb8de9ab7a4575bdc73ad1348ab",
+    "hash": "dbd3de0130d5551784f57f876b98f3a9",
     "packages": [
+        {
+            "name": "composer/installers",
+            "version": "v1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "b3bd071ea114a57212c75aa6a2eef5cfe0cc798f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/b3bd071ea114a57212c75aa6a2eef5cfe0cc798f",
+                "reference": "b3bd071ea114a57212c75aa6a2eef5cfe0cc798f",
+                "shasum": ""
+            },
+            "replace": {
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": "Composer\\Installers\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Composer\\Installers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "http://dontkry.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "http://composer.github.com/installers/",
+            "keywords": [
+                "TYPO3 CMS",
+                "TYPO3 Flow",
+                "TYPO3 Neos",
+                "agl",
+                "cakephp",
+                "codeigniter",
+                "drupal",
+                "fuelphp",
+                "installer",
+                "joomla",
+                "kohana",
+                "laravel",
+                "li3",
+                "lithium",
+                "mako",
+                "modulework",
+                "phpbb",
+                "ppi",
+                "silverstripe",
+                "symfony",
+                "wordpress",
+                "zend"
+            ],
+            "time": "2013-08-20 04:37:09"
+        },
         {
             "name": "janmarek/webloader",
             "version": "dev-master",
@@ -32,7 +105,7 @@
                     "WebLoader": ""
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -95,7 +168,7 @@
                     "Nette/loader.php"
                 ]
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause",
                 "GPL-2.0",
@@ -128,6 +201,30 @@
                 "templating"
             ],
             "time": "2013-11-06 12:24:57"
+        },
+        {
+            "name": "vitkutny/cms-shop",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vitkutny/cms-shop.git",
+                "reference": "a0c23e219b2a93bd8888c8ed71c9bfe99bcdf916"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vitkutny/cms-shop/zipball/a0c23e219b2a93bd8888c8ed71c9bfe99bcdf916",
+                "reference": "a0c23e219b2a93bd8888c8ed71c9bfe99bcdf916",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "cms-module",
+            "extra": {
+                "installer-name": "Shop"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2013-11-08 03:34:27"
         }
     ],
     "packages-dev": [
@@ -139,7 +236,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "nette/nette": 20,
-        "janmarek/webloader": 20
+        "janmarek/webloader": 20,
+        "vitkutny/cms-shop": 20
     },
     "platform": [
 

@@ -1,0 +1,22 @@
+{layout $baseLayout}
+{#layout}
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <header>
+                <h1>
+                    <a n:href="$home->link, id=>$home->link_id">KissCMS</a>
+                    <small>Keep It Simple, Stupid!</small>
+                </h1>
+            </header>
+            {control menu:navbar front}
+            {#menu-breadcrumb}
+            {control menu:breadcrumb}
+            {/#}
+            <div n:foreach="$flashes as $flash" class="alert alert-{$flash->type}">
+                <strong>{$flash->type|capitalize}!</strong> {$flash->message}
+            </div>
+            {include #module}
+        </div>
+    </div>
+</div>

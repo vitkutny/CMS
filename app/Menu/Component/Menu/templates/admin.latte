@@ -1,0 +1,61 @@
+{var $tabId = uniqid('-tab-')}
+<div class="component-menu-admin">
+    <ul class="nav nav-tabs nav-justified">
+        <li class="active"><a href="#content{$tabId}" data-toggle="tab">Content</a></li>
+        <li><a href="#files{$tabId}" data-toggle="tab">Files</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="content{$tabId}">
+            {define #dropdown-menu}
+            <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">
+                    {$node->title}
+                </li>
+                <li>
+                    <a href="{plink $node->link,id=>$node->link_id}" target="_blank">
+                        <i class="icon-eye-open"></i> Preview
+                    </a>
+                </li>
+            </ul>
+            {/define}
+            <ul>
+                <li>
+                    <div class="dropdown btn-group btn-group-xs">
+                        <a data-toggle="dropdown" href="#" class="btn btn-primary">
+                            <i class="icon-caret-down"></i>
+                        </a>
+                        {include #dropdown-menu, node=>$home}
+                        <span class="btn btn-default" disabled>
+                            <i class="icon-home"></i>
+                        </span>
+                    </div>
+                    <a href="{plink $home->link_admin,id=>$home->link_id}">
+                        {$home->title}
+                    </a>
+                </li>
+            </ul>
+            <ul n:block="nav" n:inner-foreach="$tree as $node">
+                <li n:class="isset($breadcrumb[$node->data->id])?active">
+                    <div class="dropdown btn-group btn-group-xs">
+                        <a data-toggle="dropdown" href="#" class="btn btn-primary">
+                            <i class="icon-caret-down"></i>
+                        </a>
+                        {include #dropdown-menu, node=>$node->data}
+                        <span class="btn btn-default" disabled>
+                            <i class="icon-file-text"></i>
+                        </span>
+                    </div>
+                    <a href="{plink $node->data->link_admin,id=>$node->data->link_id}">
+                        {$node->data->title}
+                    </a>
+                    {if count($node->children)}
+                        {include #nav,tree=>$node->children}
+                    {/if}
+                </li>
+            </ul>
+        </div>
+        <div class="tab-pane" id="files{$tabId}">
+            files
+        </div>
+    </div>
+</div>
