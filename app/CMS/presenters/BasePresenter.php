@@ -2,9 +2,11 @@
 
 /**
  * TODO:
+ * Default front layout 
+ *
  * Menu
  *  - moving with ALL nodes inside front tree
- * Tsgs
+ * Tags
  *  - node x tags
  *  tag/view
  *      tag -> related nodes with node->tree->title

@@ -5,6 +5,12 @@
 	"homepage": "http://github.com/vitkutny/cms",
 	"require":{
 		"nette/nette": "dev-master",
-		"janmarek/webloader" : "dev-master"
+		"janmarek/webloader" : "dev-master",
+		"vitkutny/cms-shop" : "dev-master"
+	}
+	"extra":{
+		"installer-paths":{
+			"app/modules/{$name}/":["type:cms-module"]
+		}
 	}
 }
