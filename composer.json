@@ -4,8 +4,9 @@
 	"keywords": ["cms","kiss"],
 	"homepage": "http://github.com/vitkutny/cms",
 	"require":{
-		"nette/nette": "dev-master",
-		"janmarek/webloader" : "dev-master",
-		"vitkutny/cms-shop" : "dev-master"
+		"nette/nette": "@dev",
+		"janmarek/webloader" : "@dev",
+		"vitkutny/cms-shop" : "@dev",
+		"kdyby/translation": "@dev"
 	}
 }

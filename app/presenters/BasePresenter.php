@@ -51,6 +51,17 @@ abstract class BasePresenter extends Presenter {
      */
     public $menu;
 
+    /**
+     * @inject
+     * @var \Kdyby\Translation\Translator
+     */
+    public $translator;
+
+    /**
+     * @persistent
+     */
+    public $locale;
+
     protected function startup() {
         parent::startup();
         $this->baseBacklink = $this->storeRequest();
@@ -62,6 +73,13 @@ abstract class BasePresenter extends Presenter {
         $this->template->baseLayout = dirname(__DIR__) . '/templates/@layout.latte';
         $this->template->frontLayout = dirname(__DIR__) . '/Front/templates/@layout.latte';
         $this->template->adminLayout = dirname(__DIR__) . '/Admin/templates/@layout.latte';
+    }
+
+    protected function createTemplate($class = NULL) {
+        $template = parent::createTemplate($class);
+        $template->registerHelperLoader(callback($this->translator->createTemplateHelpers(), 'loader'));
+
+        return $template;
     }
 
     /**

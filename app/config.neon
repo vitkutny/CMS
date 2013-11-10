@@ -7,6 +7,8 @@ parameters:
             directory: %cms.directory%/scripts
     modules:
         directory: %cms.directory%/../vendor/vitkutny
+    locale:
+        - %cms.directory%/locale
     scripts:
         - %cms.scripts.directory%/jquery-2.0.3.min.js
         - %cms.scripts.directory%/bootstrap.min.js
@@ -25,12 +27,17 @@ nette:
         errorPresenter: Error
     routing:
         routes:
-            '[<module>/]<presenter>[/<action>][/<id>]':
+            '[<locale=en_US [a-z]{2}(_[A-Z]{2})?>/][<module>/]<presenter>[/<action>][/<id>]':
                 module: Front
                 presenter: Home
                 action: view
     session:
         expiration: 14 days
+extensions:
+    translation: Kdyby\Translation\DI\TranslationExtension
+translation:
+    fallback: [en_US]
+    dirs: %locale%
 includes:
     - config.local.neon
     - Menu/config.neon
