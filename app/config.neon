@@ -9,6 +9,7 @@ parameters:
         directory: %cms.directory%/../vendor/vitkutny
     locale:
         - %cms.directory%/locale
+        - %cms.directory%/Admin/locale
     scripts:
         - %cms.scripts.directory%/jquery-2.0.3.min.js
         - %cms.scripts.directory%/bootstrap.min.js

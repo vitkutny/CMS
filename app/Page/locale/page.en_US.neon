@@ -1,0 +1,7 @@
+admin:
+    overview: Overview
+    no_page: "There's no page already."
+    page_add: Add new page
+    page_edit: 'Edit page: %page%'
+form:
+    content: Content

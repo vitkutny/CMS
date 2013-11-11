@@ -5,6 +5,8 @@ parameters:
     components:
         menu:
             directory: %modules.menu.directory%/Component/Menu
+    locale:
+        - %modules.menu.directory%/locale
 services:
     CMS\Menu\Model\NodeFacade: self
     CMS\Menu\Model\NodeRepository: self

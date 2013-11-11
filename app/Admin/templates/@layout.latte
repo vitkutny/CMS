@@ -5,7 +5,7 @@
         <div class="col-xs-12">
             <header>
                 <h1>
-                    <a n:href="$home->link,id=>$home->link_id">{$home->title}</a>
+                    <a n:href=":Admin:Home:view">{_application.administration}</a>
                 </h1>
             </header>
             {control menu:navbar admin}
@@ -13,26 +13,26 @@
     </header>
     <div class="row">
         <div class="col-sm-9 col-sm-push-3">
-            {control menu:breadcrumb}
-            {#header}
-            {#header-prepend}{/#}
-            <div class="page-header" n:block="header-content">
-                {#header-content-prepend}{/#}
-                <h2>
-                    {#header-title}{$current->title}{/#}
-                    {#header-inside}{/#}
-                </h2>
-                {#header-content-append}{/#}
-            </div>
-            {#header-append}{/#}
-            {/#}
+            {control menu:breadcrumb true}
             <div n:foreach="$flashes as $flash" data-alert class="alert alert-{$flash->type}">
                 <strong>{$flash->type|capitalize}!</strong> {$flash->message}
             </div>
             {include #module}
         </div>
         <div class="col-sm-3 col-sm-pull-9">
-            {control menu:admin front}
+            {var $tabId = uniqid('-tab-')}
+            <ul class="nav nav-tabs nav-justified">
+                <li class="active"><a href="#content{$tabId}" data-toggle="tab">{_admin.content}</a></li>
+                <li><a href="#files{$tabId}" data-toggle="tab">{_admin.files}</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="content{$tabId}">
+                    {control menu:sidebar front, TRUE}
+                </div>
+                <div class="tab-pane" id="files{$tabId}">
+                    files
+                </div>
+            </div>
         </div>
     </div>
 </div>

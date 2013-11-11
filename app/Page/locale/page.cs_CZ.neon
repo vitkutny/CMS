@@ -1,0 +1,7 @@
+admin:
+    overview: Přehled
+    no_page: "Nevytvořili jste žádnou stránku."
+    page_add: Přidat stránku
+    page_edit: 'Upravit stránku: %page%'
+form:
+    content: Obsah

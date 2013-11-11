@@ -7,9 +7,9 @@ use CMS\Form\FormContainer;
 class NodeFormContainer extends FormContainer {
 
     public function __construct($data, $node = NULL) {
-        $this->addText('title', 'Title')->setRequired();
+        $this->addText('title', 'menu.form.title')->setRequired();
         if ($data) {
-            $this->addSelect('node_id', 'Parent node', $data)->setRequired();
+            $this->addSelect('node_id', 'menu.form.parent', $data)->setRequired();
         }
         if ($node) {
             $this->setDefaults($node);

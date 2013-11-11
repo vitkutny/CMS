@@ -16,7 +16,7 @@ final class PagePresenter extends BasePresenter {
      * @var Nette\Database\Table\ActiveRow
      */
     private $page;
-    private $pageTemplate;
+    private $content;
 
     /**
      * @param int $id
@@ -26,14 +26,14 @@ final class PagePresenter extends BasePresenter {
         if (!$this->page) {
             $this->error();
         }
-        $this->pageTemplate = $this->createTemplate('Nette\Templating\Template');
-        $this->pageTemplate->setSource($this->page->content);
+        $this->content = $this->createTemplate('Nette\Templating\Template');
+        $this->content->setSource($this->page->content);
         $this->menu->setActive($this->page->node);
     }
 
     public function renderView() {
         $this->template->page = $this->page;
-        $this->template->pageTemplate = $this->pageTemplate;
+        $this->template->content = $this->content;
     }
 
 }

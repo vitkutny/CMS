@@ -2,6 +2,8 @@ parameters:
     modules:
         page:
             directory: %cms.directory%/Page
+    locale:
+        - %modules.page.directory%/locale
 services:
     CMS\Page\Model\PageFacade: self
     CMS\Page\Model\PageRepository: self

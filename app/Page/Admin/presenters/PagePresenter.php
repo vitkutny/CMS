@@ -21,7 +21,8 @@ final class PagePresenter extends BasePresenter {
     public $pageFormFactory;
 
     public function renderAdd() {
-        $this->menu->breadcrumbAdd('Add new page');
+        $this->menu->breadcrumbAdd(
+                $this->translator->translate('page.admin.page_add'), 'Page:add');
     }
 
     public function actionEdit($id) {
@@ -32,7 +33,8 @@ final class PagePresenter extends BasePresenter {
     }
 
     public function renderEdit() {
-        $this->menu->breadcrumbAdd('Edit page');
+        $this->menu->breadcrumbAdd(
+                $this->translator->translate('page.admin.page_edit', NULL, ['page' => $this->page->node->title]), 'Page:edit', $this->page->id);
         $this->template->page = $this->page;
     }
 

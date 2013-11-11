@@ -25,51 +25,46 @@ final class MenuControl extends BaseControl {
         $this->nodeFacade = $nodeFacade;
     }
 
-    public function render($group, $file, $directory = NULL) {
-        if (!$directory) {
-            $directory = __DIR__ . '/templates';
-        }
+    public function renderNavbar($group) {
         $tree = $this->treeFacade->repository->getTreeByGroup($group);
         $template = $this->template;
         $template->group = $group;
         $template->tree = $this->treeFacade->repository->getTreeData($tree);
         $template->breadcrumb = $this->getBreadcrumb();
         $template->home = $tree->node;
-        $template->active = $this->active;
-        $template->setFile($directory . '/' . $file . '.latte');
+        $template->setFile(__DIR__ . '/templates/navbar.latte');
         $template->render();
     }
 
-    public function renderNavbar($group) {
-        $this->render($group, 'navbar');
-    }
-
-    public function renderSidebar($group) {
-        $this->render($group, 'sidebar');
-    }
-
-    public function renderUl($group) {
-        $this->render($group, 'ul');
-    }
-
-    public function renderOl($group) {
-        $this->render($group, 'ol');
-    }
-
-    public function renderAdmin($group) {
-        $this->render($group, 'admin');
-    }
-
-    public function renderBreadcrumb() {
+    public function renderSidebar($group, $admin = NULL) {
+        $tree = $this->treeFacade->repository->getTreeByGroup($group);
         $template = $this->template;
+        $template->group = $group;
+        $template->tree = $this->treeFacade->repository->getTreeData($tree);
         $template->breadcrumb = $this->getBreadcrumb();
-        $template->setFile(__DIR__ . '/templates/breadcrumb.latte');
+        $template->home = $tree->node;
+        if ($admin) {
+            $template->setFile(__DIR__ . '/templates/sidebar_admin.latte');
+        } else {
+            $template->setFile(__DIR__ . '/templates/sidebar.latte');
+        }
+        $template->render();
+    }
+
+    public function renderBreadcrumb($admin = NULL) {
+        $template = $this->template;
+        $template->breadcrumb = $admin ? $this->breadcrumb : $this->getBreadcrumb();
+        if ($admin) {
+            $template->setFile(__DIR__ . '/templates/breadcrumb_admin.latte');
+        } else {
+            $template->setFile(__DIR__ . '/templates/breadcrumb.latte');
+        }
         $template->render();
     }
 
     public function renderTitle() {
         $template = $this->template;
-        $template->home = 'KissCMS';
+        $template->active = $this->active;
         $template->current = $this->getCurrent();
         $template->setFile(__DIR__ . '/templates/title.latte');
         $template->render();
@@ -83,8 +78,13 @@ final class MenuControl extends BaseControl {
         }
     }
 
-    public function getCurrent() {
+    private function getCurrent() {
         $breadcrumb = $this->getBreadcrumb();
+        foreach ($breadcrumb as $node) {
+            if ($this->presenter->isLinkCurrent($node->link, ['id' => $node->link_id])) {
+                return $node;
+            }
+        }
         return array_pop($breadcrumb);
     }
 
