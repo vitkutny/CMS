@@ -8,8 +8,8 @@ parameters:
     locale:
         - %modules.menu.directory%/locale
 services:
-    CMS\Menu\Model\NodeFacade: self
-    CMS\Menu\Model\NodeRepository: self
-    CMS\Menu\Model\TreeFacade: self
-    CMS\Menu\Model\TreeRepository: self
-    CMS\Menu\Component\Menu\MenuControl: self
+    - CMS\Menu\Model\NodeFacade
+    - CMS\Menu\Model\NodeRepository
+    - CMS\Menu\Model\TreeFacade
+    - CMS\Menu\Model\TreeRepository
+    - CMS\Menu\Component\Menu\MenuControl

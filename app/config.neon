@@ -34,6 +34,8 @@ nette:
                 action: view
     session:
         expiration: 14 days
+    container:
+        accessors: true
 extensions:
     translation: Kdyby\Translation\DI\TranslationExtension
 translation:

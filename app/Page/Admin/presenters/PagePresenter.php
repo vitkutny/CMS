@@ -22,7 +22,7 @@ final class PagePresenter extends BasePresenter {
 
     public function renderAdd() {
         $this->menu->breadcrumbAdd(
-                $this->translator->translate('page.admin.page_add'), 'Page:add');
+                $this->translator->translate('page.admin.page.add'), 'Page:add');
     }
 
     public function actionEdit($id) {
@@ -34,7 +34,7 @@ final class PagePresenter extends BasePresenter {
 
     public function renderEdit() {
         $this->menu->breadcrumbAdd(
-                $this->translator->translate('page.admin.page_edit', NULL, ['page' => $this->page->node->title]), 'Page:edit', $this->page->id);
+                $this->translator->translate('page.admin.page.edit', NULL, ['page' => $this->page->node->title]), 'Page:edit', $this->page->id);
         $this->template->page = $this->page;
     }
 

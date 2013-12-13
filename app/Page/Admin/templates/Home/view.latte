@@ -1,24 +1,21 @@
-{#content}
+{block content}
 <a n:href=":Admin:Page:Page:add" class="btn btn-primary btn-block btn-lg">
-    <i class="icon-plus-sign-alt"></i> {_page.admin.page_add}
+    <i class="icon-plus-sign-alt"></i> {_page.admin.page.add}
 </a>
 <hr>
-{if count($pages)}
-    <div n:foreach="$pages as $page" class="panel panel-default">
-        <div class="panel-heading">
-            <div class="panel-title clearfix">
-                {$page->node->title}
-                <a n:href="Page:edit, id=>$page->id" class="btn btn-small btn-default pull-right">
-                    <i class="icon-edit"></i> {_form.edit}
-                </a>
-            </div>
-        </div>
-        <div class="panel-body">
-            <p>{$page->content|striptags|truncate:200}</p>
+<div n:foreach="$pages as $page" class="panel panel-default">
+    <div class="panel-heading">
+        <div class="panel-title clearfix">
+            {$page->node->title}
+            <a n:href="Page:edit, id=>$page->id" class="btn btn-small btn-default pull-right">
+                <i class="icon-edit"></i> {_form.edit}
+            </a>
         </div>
     </div>
-{else}
-    <div class="alert alert-info">
-        {_page.admin.no_page}
-        </div>
-        {/if}
+    <div class="panel-body">
+        <p>{$page->content|striptags|truncate:200}</p>
+    </div>
+</div>
+<div class="alert alert-info" n:if="!count($pages)">
+    {_page.admin.page.empty}
+    </div>

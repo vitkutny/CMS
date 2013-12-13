@@ -4,6 +4,7 @@ namespace CMS\Model;
 
 use Nette;
 use Nette\Database\SelectionFactory;
+use Nette\Database\Context;
 use Nette\Database\Table;
 
 abstract class DatabaseRepository extends Nette\Object {
@@ -17,7 +18,7 @@ abstract class DatabaseRepository extends Nette\Object {
     /**
      * @param SelectionFactory $db
      */
-    public function __construct(SelectionFactory $db) {
+    public function __construct(Context $db) {
         $this->connection = $db;
         if (!$this->name) {
             preg_match('#(\w+)Repository$#', get_class($this), $m);

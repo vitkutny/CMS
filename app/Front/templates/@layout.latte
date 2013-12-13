@@ -1,5 +1,5 @@
 {layout $baseLayout}
-{#layout}
+{block layout}
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
@@ -10,9 +10,9 @@
                 </h1>
             </header>
             {control menu:navbar front}
-            {#menu-breadcrumb}
+            {block menu-breadcrumb}
             {control menu:breadcrumb}
-            {/#}
+            {/block}
             <div n:foreach="$flashes as $flash" class="alert alert-{$flash->type}">
                 <strong>{$flash->type|capitalize}!</strong> {$flash->message}
             </div>

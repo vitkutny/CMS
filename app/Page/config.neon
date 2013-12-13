@@ -5,6 +5,6 @@ parameters:
     locale:
         - %modules.page.directory%/locale
 services:
-    CMS\Page\Model\PageFacade: self
-    CMS\Page\Model\PageRepository: self
-    CMS\Page\Form\PageFormFactory: self
+    - CMS\Page\Model\PageFacade
+    - CMS\Page\Model\PageRepository
+    - CMS\Page\Form\PageFormFactory
