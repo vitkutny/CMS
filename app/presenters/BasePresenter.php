@@ -34,9 +34,7 @@
 
 namespace CMS;
 
-use WebLoader;
 use Nette\Application\UI\Presenter;
-use \JavaScriptPacker;
 
 abstract class BasePresenter extends Presenter {
 
@@ -47,9 +45,9 @@ abstract class BasePresenter extends Presenter {
 
     /**
      * @inject
-     * @var \CMS\Menu\Component\Menu\MenuControl
+     * @var \CMS\Component\ResourcesControl
      */
-    public $menu;
+    public $resources;
 
     /**
      * @inject
@@ -78,37 +76,11 @@ abstract class BasePresenter extends Presenter {
     protected function createTemplate($class = NULL) {
         $template = parent::createTemplate($class);
         $template->registerHelperLoader(callback($this->translator->createTemplateHelpers(), 'loader'));
-
         return $template;
     }
 
-    /**
-     * @return \WebLoader\Nette\CssLoader
-     */
-    protected function createComponentCss() {
-        $dir = $this->context->parameters['wwwDir'] . '/temp';
-        $files = new WebLoader\FileCollection();
-        $files->addFiles($this->context->parameters['styles']);
-        $compiler = WebLoader\Compiler::createCssCompiler($files, $dir);
-        $compiler->addFilter(function($css) {
-            return str_replace(array("\r\n", "\r", "\n", "\t", '  ', '    ', '    '), '', str_replace(': ', ':', preg_replace('!/\*[^*]*\*+([^/][^*]*\*+)*/!', '', $css)));
-        });
-        return new WebLoader\Nette\CssLoader($compiler, $this->template->basePath . '/temp');
-    }
-
-    /**
-     * @return \WebLoader\Nette\JavaScriptLoader
-     */
-    protected function createComponentJs() {
-        $dir = $this->context->parameters['wwwDir'] . '/temp';
-        $files = new WebLoader\FileCollection();
-        $files->addFiles($this->context->parameters['scripts']);
-        $compiler = WebLoader\Compiler::createJsCompiler($files, $dir);
-        $compiler->addFilter(function($js) {
-            $packer = new JavaScriptPacker($js);
-            return $packer->pack();
-        });
-        return new WebLoader\Nette\JavaScriptLoader($compiler, $this->template->basePath . '/temp');
+    protected function createComponentResources() {
+        return $this->resources;
     }
 
     /**

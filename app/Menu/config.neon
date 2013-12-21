@@ -10,6 +10,9 @@ parameters:
 services:
     - CMS\Menu\Model\NodeFacade
     - CMS\Menu\Model\NodeRepository
+
     - CMS\Menu\Model\TreeFacade
     - CMS\Menu\Model\TreeRepository
-    - CMS\Menu\Component\Menu\MenuControl
+
+    - CMS\Menu\Component\Menu\AdminMenuControl
+    - CMS\Menu\Component\Menu\FrontMenuControl

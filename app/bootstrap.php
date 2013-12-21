@@ -21,4 +21,5 @@ foreach (new DirectoryIterator(__DIR__ . '/../vendor/vitkutny') as $file) {
 }
 
 $container = $configurator->createContainer();
-$container->application->run();
+$application = $container->getService('application');
+$application->run();

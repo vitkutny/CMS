@@ -21,6 +21,8 @@ parameters:
         - %cms.styles.directory%/font-awesome.min.css
         - %cms.styles.directory%/ratio.css
         - %cms.styles.directory%/cms.css
+services:
+    - CMS\Component\ResourcesControl(%styles%,%scripts%,%wwwDir%/temp)
 nette:
     application:
         mapping:
@@ -28,14 +30,13 @@ nette:
         errorPresenter: Error
     routing:
         routes:
-            '[<locale=en_US [a-z]{2}(_[A-Z]{2})?>/][<module>/]<presenter>[/<action>][/<id>]':
+            '[<locale [a-z]{2}(_[A-Z]{2})?>/][<module>/]<presenter>[/<action>][/<id>]':
+                locale: en_US
                 module: Front
                 presenter: Home
                 action: view
     session:
         expiration: 14 days
-    container:
-        accessors: true
 extensions:
     translation: Kdyby\Translation\DI\TranslationExtension
 translation:
@@ -45,3 +46,4 @@ includes:
     - config.local.neon
     - Menu/config.neon
     - Page/config.neon
+    - Gallery/config.neon

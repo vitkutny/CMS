@@ -13,7 +13,7 @@
     </header>
     <div class="row">
         <div class="col-sm-9 col-sm-push-3">
-            {control menu:breadcrumb true}
+            {control menu:breadcrumb}
             <div n:foreach="$flashes as $flash" data-alert class="alert alert-{$flash->type}">
                 <strong>{$flash->type|capitalize}!</strong> {$flash->message}
             </div>
@@ -27,7 +27,7 @@
             </ul>
             <div class="tab-content">
                 <div class="tab-pane active" id="content{$tabId}">
-                    {control menu:sidebar front, TRUE}
+                    {control menu:sidebar front}
                 </div>
                 <div class="tab-pane" id="files{$tabId}">
                     files

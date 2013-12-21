@@ -37,9 +37,8 @@ class PageFacade extends Facade {
     }
 
     public function deletePage($page) {
-        if ($this->nodeFacade->deleteNode($page->node)) {
-            return $this->repository->remove($page);
-        }
+        $this->nodeFacade->deleteNode($page->node);
+        return $this->repository->remove($page);
     }
 
 }

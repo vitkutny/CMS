@@ -6,6 +6,7 @@ use CMS\Model\Facade;
 use CMS\Menu\Model\NodeRepository;
 use CMS\Menu\Model\TreeFacade;
 use CMS\Menu\Form\NodeFormContainer;
+use CMS\Model\Exception\ModelException;
 
 class NodeFacade extends Facade {
 
@@ -56,12 +57,13 @@ class NodeFacade extends Facade {
     }
 
     public function deleteNode($node) {
-        if ($node->id !== $node->tree->node_id) {
-            $selection = $this->repository->getRelated($node, 'node', NULL, FALSE);
-            $data = array('node_id' => $node->node_id);
-            $this->repository->update($selection, $data);
-            return $this->repository->remove($node);
+        if ($node->id === $node->tree->node_id) {
+            throw new ModelException("It's not possible to delete root node.");
         }
+        $selection = $this->repository->getRelated($node, 'node', NULL, FALSE);
+        $data = array('node_id' => $node->node_id);
+        $this->repository->update($selection, $data);
+        return $this->repository->remove($node);
     }
 
 }

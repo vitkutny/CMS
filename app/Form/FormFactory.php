@@ -5,7 +5,8 @@ namespace CMS\Form;
 use Nette\Object;
 use Nette\Application\UI\Form;
 use Nette\Application\UI\Presenter;
-use CMS\Form\BaseFormRenderer;
+use CMS\Form\FormRenderer;
+use CMS\Model\Exception\ModelException;
 
 abstract class FormFactory extends Object {
 
@@ -23,7 +24,7 @@ abstract class FormFactory extends Object {
     protected $renderer;
 
     public function create($row = NULL, $delete = NULL) {
-        $this->renderer = new BaseFormRenderer();
+        $this->renderer = new FormRenderer();
         $this->form = $this->baseForm($row);
         if ($row) {
             if ($delete) {
@@ -42,23 +43,28 @@ abstract class FormFactory extends Object {
         $form->setRenderer($this->renderer);
         $form->setTranslator($this->translator);
         $form->onValidate[] = $this->setPresenter;
-        $that = $this;
-        $form->onSuccess[] = function($form) use ($that, $row) {
-            $that->success($form, $row);
+        $self = $this;
+        $form->onSuccess[] = function($form) use ($self, $row) {
+            try {
+                $self->success($form, $row);
+            } catch (ModelException $ex) {
+                $self->presenter->flashMessage($ex->getMessage(), 'warning');
+                $self->presenter->redirect('this');
+            }
         };
         return $form;
     }
 
     protected function addForm() {
-        $this->form->addSubmit('add', $this->translator->translate('form.add'))->setAttribute('class', 'btn btn-primary');
+        $this->form->addSubmit('add', 'form.add')->setAttribute('class', 'btn btn-primary');
     }
 
     protected function editForm($row) {
-        $this->form->addSubmit('edit', $this->translator->translate('form.save'))->setAttribute('class', 'btn btn-warning');
+        $this->form->addSubmit('edit', 'form.save')->setAttribute('class', 'btn btn-warning');
     }
 
     protected function deleteForm($row) {
-        $this->form->addSubmit('delete', $this->translator->translate('form.delete'))->setAttribute('class', 'btn btn-danger');
+        $this->form->addSubmit('delete', 'form.delete')->setAttribute('class', 'btn btn-danger');
     }
 
     public function setPresenter(Form $form) {

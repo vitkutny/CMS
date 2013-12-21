@@ -6,7 +6,7 @@ use CMS\Component\BaseControl;
 use CMS\Menu\Model\TreeFacade;
 use CMS\Menu\Model\NodeFacade;
 
-final class MenuControl extends BaseControl {
+abstract class MenuControl extends BaseControl {
 
     /**
      * @var TreeFacade
@@ -18,7 +18,7 @@ final class MenuControl extends BaseControl {
      */
     private $nodeFacade;
     private $active;
-    private $breadcrumb = array();
+    protected $breadcrumb = array();
 
     public function __construct(TreeFacade $treeFacade, NodeFacade $nodeFacade) {
         $this->treeFacade = $treeFacade;
@@ -36,30 +36,14 @@ final class MenuControl extends BaseControl {
         $template->render();
     }
 
-    public function renderSidebar($group, $admin = NULL) {
+    protected function sidebar($group) {
         $tree = $this->treeFacade->repository->getTreeByGroup($group);
         $template = $this->template;
         $template->group = $group;
         $template->tree = $this->treeFacade->repository->getTreeData($tree);
         $template->breadcrumb = $this->getBreadcrumb();
         $template->home = $tree->node;
-        if ($admin) {
-            $template->setFile(__DIR__ . '/templates/sidebar_admin.latte');
-        } else {
-            $template->setFile(__DIR__ . '/templates/sidebar.latte');
-        }
-        $template->render();
-    }
-
-    public function renderBreadcrumb($admin = NULL) {
-        $template = $this->template;
-        $template->breadcrumb = $admin ? $this->breadcrumb : $this->getBreadcrumb();
-        if ($admin) {
-            $template->setFile(__DIR__ . '/templates/breadcrumb_admin.latte');
-        } else {
-            $template->setFile(__DIR__ . '/templates/breadcrumb.latte');
-        }
-        $template->render();
+        return $template;
     }
 
     public function renderTitle() {
@@ -96,7 +80,7 @@ final class MenuControl extends BaseControl {
         );
     }
 
-    private function getBreadcrumb() {
+    protected function getBreadcrumb() {
         $breadcrumb = $this->nodeFacade->getParentNodes($this->active);
         $breadcrumb[$this->active->id] = $this->active;
         return $breadcrumb + $this->breadcrumb;
