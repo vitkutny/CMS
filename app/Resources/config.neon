@@ -1,0 +1,2 @@
+services:
+    - CMS\Resources\Control(%styles%,%scripts%,%wwwDir%/temp)

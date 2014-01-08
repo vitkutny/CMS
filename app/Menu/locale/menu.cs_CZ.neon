@@ -1,3 +1,7 @@
-form:
-    title: Název
-    parent: Zařadit do
+admin:
+    node:
+        form:
+            title:
+                label: Název
+            parent:
+                label: Zatřídit do

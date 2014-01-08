@@ -1,8 +1,0 @@
-admin:
-    overview: Overview
-    page:
-        add: Add new page
-        edit: 'Edit page: %page%'
-        empty: "There's no page already."
-form:
-    content: Content

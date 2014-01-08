@@ -1,0 +1,48 @@
+{var collapseId = uniqid('panel-collapse-')}
+<div class="component-menu-sidebar-admin">
+    {define dropdown-menu}
+    <ul class="dropdown-menu" role="menu">
+        <li class="dropdown-header">
+            {$node->title}
+        </li>
+        <li>
+            <a href="{plink $node->link,id=>$node->link_id}" target="_blank">
+                <i class="icon-eye-open"></i> {_cms.admin.preview}
+            </a>
+        </li>
+    </ul>
+    {/define}
+    <div class="panel panel-primary panel-{$group}">
+        <div class="panel-heading clearfix">
+            <span class="panel-title">
+                <a href="{plink $home->link_admin, id=>$home->link_id}">{$home->title}</a>
+            </span>
+            <button class="btn btn-xs btn-default pull-right visible-xs" href="#" data-toggle="collapse" data-target=".{$collapseId}">
+                Toggle <i class="icon-caret-down"></i>
+            </button>
+        </div>
+        <div class="list-group">
+            <div class="collapse in panel-collapse {$collapseId}">
+                <ol n:block="nav" n:inner-foreach="$tree as $node">
+                    <li n:class="isset($breadcrumb[$node->data->id])?active">
+                        <div class="dropdown btn-group btn-group-xs">
+                            <a data-toggle="dropdown" href="#" class="btn btn-primary">
+                                <i class="icon-caret-down"></i>
+                            </a>
+                            {include dropdown-menu, node=>$node->data}
+                            <span class="btn btn-default" disabled>
+                                <i class="icon-file-text"></i>
+                            </span>
+                        </div>
+                        <a href="{plink $node->data->link_admin,id=>$node->data->link_id}">
+                            {$node->data->title}
+                        </a>
+                        {if count($node->children)}
+                            {include nav,tree=>$node->children}
+                        {/if}
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>

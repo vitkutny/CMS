@@ -1,0 +1,7 @@
+<div class="component-menu-breadcrumb">
+    <ol class="breadcrumb" n:inner-foreach="$breadcrumb as $node">
+        <li n:class="$iterator->last?active,!$node->link?text-muted">
+            <a n:tag-if="!$iterator->last && $node->link" href="{if $iterator->first}{plink :Front:Home:view}{else}{plink $node->link, id=>$node->link_id}{/if}">{$node->title}</a>
+        </li>
+    </ol>
+</div>

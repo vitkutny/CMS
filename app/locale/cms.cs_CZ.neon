@@ -1,0 +1,11 @@
+admin:
+    dashboard: Dashboard
+    content: Obsah
+    files: Soubory
+    preview: Zobrazit
+    page:
+        add: Přidat stránku
+        edit: 'Upravit stránku: %page%'
+        form:
+            content:
+                label: Obsah

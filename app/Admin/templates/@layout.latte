@@ -1,16 +1,7 @@
 {layout $baseLayout}
 {block layout}
+{control menu:navbar admin}
 <div class="container">
-    <header class="row">
-        <div class="col-xs-12">
-            <header>
-                <h1>
-                    <a n:href=":Admin:Home:view">{_application.administration}</a>
-                </h1>
-            </header>
-            {control menu:navbar admin}
-        </div>
-    </header>
     <div class="row">
         <div class="col-sm-9 col-sm-push-3">
             {control menu:breadcrumb}
@@ -22,12 +13,14 @@
         <div class="col-sm-3 col-sm-pull-9">
             {var $tabId = uniqid('-tab-')}
             <ul class="nav nav-tabs nav-justified">
-                <li class="active"><a href="#content{$tabId}" data-toggle="tab">{_admin.content}</a></li>
-                <li><a href="#files{$tabId}" data-toggle="tab">{_admin.files}</a></li>
+                <li class="active"><a href="#content{$tabId}" data-toggle="tab">{_cms.admin.content}</a></li>
+                <li><a href="#files{$tabId}" data-toggle="tab">{_cms.admin.files}</a></li>
             </ul>
             <div class="tab-content">
                 <div class="tab-pane active" id="content{$tabId}">
                     {control menu:sidebar front}
+                    {control menu:sidebar shop-category}
+                    {control menu:sidebar world-info}
                 </div>
                 <div class="tab-pane" id="files{$tabId}">
                     files

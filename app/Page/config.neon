@@ -1,10 +1,4 @@
-parameters:
-    modules:
-        page:
-            directory: %cms.directory%/Page
-    locale:
-        - %modules.page.directory%/locale
 services:
-    - CMS\Page\Model\PageFacade
-    - CMS\Page\Model\PageRepository
-    - CMS\Page\Form\PageFormFactory
+    - CMS\Page\Model\Facade
+    - CMS\Page\Model\Repository
+    - CMS\Page\Form\Factory

@@ -1,0 +1,11 @@
+admin:
+    dashboard: Dashboard
+    content: Content
+    files: Files
+    preview: Preview
+    page:
+        add: Add new page
+        edit: 'Edit page: %page%'
+        form:
+            content:
+                label: Content

@@ -1,3 +1,7 @@
-form:
-    title: Title
-    parent: Parent node
+admin:
+    node:
+        form:
+            title:
+                label: Title
+            parent:
+                label: Parent node
