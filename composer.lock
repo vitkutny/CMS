@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "0f91f835b9ff4027a26f0892e88a6fbe",
+    "hash": "8cd62d889a75b1997ff38efc38f69978",
     "packages": [
         {
             "name": "janmarek/webloader",
@@ -11,20 +11,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/janmarek/WebLoader.git",
-                "reference": "d48cc80a6cf8d939daca1551a687db82f4da5603"
+                "reference": "5e62831fe7ba5779b97ebd0c23439dbcef80d102"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/janmarek/WebLoader/zipball/d48cc80a6cf8d939daca1551a687db82f4da5603",
-                "reference": "d48cc80a6cf8d939daca1551a687db82f4da5603",
+                "url": "https://api.github.com/repos/janmarek/WebLoader/zipball/5e62831fe7ba5779b97ebd0c23439dbcef80d102",
+                "reference": "5e62831fe7ba5779b97ebd0c23439dbcef80d102",
                 "shasum": ""
             },
             "require": {
-                "nette/nette": "~2.0"
+                "nette/nette": "~2.0@rc"
             },
             "require-dev": {
                 "mockery/mockery": "0.7.*",
                 "phpunit/phpunit": "3.7.*"
+            },
+            "suggest": {
+                "leafo/lessphp": "Lessphp is a composer for LESS written in PHP."
             },
             "type": "library",
             "autoload": {
@@ -53,7 +56,7 @@
                 "nette",
                 "webloader"
             ],
-            "time": "2013-07-03 22:23:40"
+            "time": "2014-01-01 16:54:25"
         },
         {
             "name": "kdyby/translation",
@@ -61,12 +64,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/Translation.git",
-                "reference": "ddff95a87692792be1148c28a6b6176017a95e0f"
+                "reference": "a0359ff16a3854d886a9f336ad86acd7e54ec099"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/Translation/zipball/ddff95a87692792be1148c28a6b6176017a95e0f",
-                "reference": "ddff95a87692792be1148c28a6b6176017a95e0f",
+                "url": "https://api.github.com/repos/Kdyby/Translation/zipball/a0359ff16a3854d886a9f336ad86acd7e54ec099",
+                "reference": "a0359ff16a3854d886a9f336ad86acd7e54ec099",
                 "shasum": ""
             },
             "require": {
@@ -76,7 +79,7 @@
             },
             "require-dev": {
                 "nette/tester": "@dev",
-                "symfony/console": "~2.2"
+                "symfony/console": "~2.3"
             },
             "suggest": {
                 "kdyby/console": "If you wanna use extract command and much others, install also console.",
@@ -85,7 +88,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -115,7 +118,7 @@
                 "nette",
                 "translation"
             ],
-            "time": "2013-11-03 00:57:36"
+            "time": "2013-12-18 22:15:31"
         },
         {
             "name": "nette/nette",
@@ -123,18 +126,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/nette.git",
-                "reference": "89e2eaef206e0625e74c8089c6382236e0b74849"
+                "reference": "48df31e21d7c3e12b2f0c4d471ddd81b52d3df29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/nette/zipball/89e2eaef206e0625e74c8089c6382236e0b74849",
-                "reference": "89e2eaef206e0625e74c8089c6382236e0b74849",
+                "url": "https://api.github.com/repos/nette/nette/zipball/48df31e21d7c3e12b2f0c4d471ddd81b52d3df29",
+                "reference": "48df31e21d7c3e12b2f0c4d471ddd81b52d3df29",
                 "shasum": ""
             },
             "require": {
                 "ext-iconv": "*",
                 "ext-tokenizer": "*",
-                "php": ">=5.3.0"
+                "php": ">=5.3.1"
             },
             "require-dev": {
                 "nette/tester": "@dev"
@@ -143,18 +146,20 @@
                 "ext-fileinfo": "*",
                 "ext-gd": "*",
                 "ext-mbstring": "*",
-                "ext-memcache": "*",
                 "ext-pdo": "*"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
+                "classmap": [
+                    "Nette/"
+                ],
                 "files": [
-                    "Nette/loader.php"
+                    "Nette/common/shortcuts.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -178,32 +183,27 @@
             "keywords": [
                 "Forms",
                 "database",
-                "dbal",
                 "debugging",
                 "framework",
-                "images",
-                "latte",
                 "mailing",
-                "micro",
                 "mvc",
-                "neon",
                 "templating"
             ],
-            "time": "2013-11-08 22:00:11"
+            "time": "2014-01-03 14:13:40"
         },
         {
             "name": "symfony/config",
-            "version": "v2.3.6",
+            "version": "v2.4.1",
             "target-dir": "Symfony/Component/Config",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Config.git",
-                "reference": "1ced3d6c88b22df8cd1fe5209dbd6a89df362a29"
+                "reference": "27d0b35879ebefcfee6d218512c32ab2d6cd6a6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Config/zipball/1ced3d6c88b22df8cd1fe5209dbd6a89df362a29",
-                "reference": "1ced3d6c88b22df8cd1fe5209dbd6a89df362a29",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/27d0b35879ebefcfee6d218512c32ab2d6cd6a6a",
+                "reference": "27d0b35879ebefcfee6d218512c32ab2d6cd6a6a",
                 "shasum": ""
             },
             "require": {
@@ -213,7 +213,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -237,21 +237,21 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "http://symfony.com",
-            "time": "2013-09-19 09:45:20"
+            "time": "2014-01-01 08:14:50"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v2.3.6",
+            "version": "v2.4.1",
             "target-dir": "Symfony/Component/Filesystem",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "2b8995042086c5552c94d33b5553c492e9cfc00e"
+                "reference": "b3c3b5a8108b3e5d604dc23241b4ea84a067fc78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/2b8995042086c5552c94d33b5553c492e9cfc00e",
-                "reference": "2b8995042086c5552c94d33b5553c492e9cfc00e",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/b3c3b5a8108b3e5d604dc23241b4ea84a067fc78",
+                "reference": "b3c3b5a8108b3e5d604dc23241b4ea84a067fc78",
                 "shasum": ""
             },
             "require": {
@@ -260,7 +260,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -284,21 +284,21 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "http://symfony.com",
-            "time": "2013-09-19 09:45:20"
+            "time": "2013-12-31 13:43:26"
         },
         {
             "name": "symfony/translation",
-            "version": "v2.3.6",
+            "version": "v2.4.1",
             "target-dir": "Symfony/Component/Translation",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Translation.git",
-                "reference": "6aedcff5ea623316dbf2112b78f2f63a257aab01"
+                "reference": "7f76dffd7eaf2c9a3a8f47649404c71440d18c8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Translation/zipball/6aedcff5ea623316dbf2112b78f2f63a257aab01",
-                "reference": "6aedcff5ea623316dbf2112b78f2f63a257aab01",
+                "url": "https://api.github.com/repos/symfony/Translation/zipball/7f76dffd7eaf2c9a3a8f47649404c71440d18c8b",
+                "reference": "7f76dffd7eaf2c9a3a8f47649404c71440d18c8b",
                 "shasum": ""
             },
             "require": {
@@ -315,7 +315,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -339,7 +339,30 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "http://symfony.com",
-            "time": "2013-10-10 13:12:30"
+            "time": "2013-12-31 13:43:26"
+        },
+        {
+            "name": "vitkutny/cms-gallery",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vitkutny/cms-gallery.git",
+                "reference": "25d0579daef301b9dcf57753492c50b932f710f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vitkutny/cms-gallery/zipball/25d0579daef301b9dcf57753492c50b932f710f6",
+                "reference": "25d0579daef301b9dcf57753492c50b932f710f6",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "CMS\\Gallery": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2014-01-08 07:44:18"
         },
         {
             "name": "vitkutny/cms-shop",
@@ -347,26 +370,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vitkutny/cms-shop.git",
-                "reference": "191e97a04abc6466967cf8ba4de3192d524b19c0"
+                "reference": "672d9c647a66ffe618c00336acff8e74ea9fa57e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vitkutny/cms-shop/zipball/191e97a04abc6466967cf8ba4de3192d524b19c0",
-                "reference": "191e97a04abc6466967cf8ba4de3192d524b19c0",
+                "url": "https://api.github.com/repos/vitkutny/cms-shop/zipball/672d9c647a66ffe618c00336acff8e74ea9fa57e",
+                "reference": "672d9c647a66ffe618c00336acff8e74ea9fa57e",
                 "shasum": ""
             },
-            "type": "cms-module",
+            "type": "library",
             "autoload": {
-                "classmap": [
-                    "presenters/",
-                    "Model/",
-                    "Form/",
-                    "Component/",
-                    "Admin/presenters/"
-                ]
+                "psr-0": {
+                    "CMS\\Shop": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2013-11-08 11:52:56"
+            "time": "2014-01-08 07:48:36"
         }
     ],
     "packages-dev": [
@@ -379,8 +398,9 @@
     "stability-flags": {
         "nette/nette": 20,
         "janmarek/webloader": 20,
+        "kdyby/translation": 20,
         "vitkutny/cms-shop": 20,
-        "kdyby/translation": 20
+        "vitkutny/cms-gallery": 20
     },
     "platform": [
 

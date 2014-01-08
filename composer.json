@@ -6,7 +6,8 @@
 	"require":{
 		"nette/nette": "@dev",
 		"janmarek/webloader" : "@dev",
+		"kdyby/translation": "@dev",
 		"vitkutny/cms-shop" : "@dev",
-		"kdyby/translation": "@dev"
+		"vitkutny/cms-gallery" : "@dev"
 	}
 }
