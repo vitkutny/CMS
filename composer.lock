@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "b7acd808c39303bab16eb377c6716688",
+    "hash": "b162b6030e9c4d9d3aebed84bd965cfb",
     "packages": [
         {
             "name": "janmarek/webloader",
@@ -163,12 +163,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/nette.git",
-                "reference": "48df31e21d7c3e12b2f0c4d471ddd81b52d3df29"
+                "reference": "cb0500a19f14f98f9e9a95c6d7ef547c88e130c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/nette/zipball/48df31e21d7c3e12b2f0c4d471ddd81b52d3df29",
-                "reference": "48df31e21d7c3e12b2f0c4d471ddd81b52d3df29",
+                "url": "https://api.github.com/repos/nette/nette/zipball/cb0500a19f14f98f9e9a95c6d7ef547c88e130c2",
+                "reference": "cb0500a19f14f98f9e9a95c6d7ef547c88e130c2",
                 "shasum": ""
             },
             "require": {
@@ -226,7 +226,64 @@
                 "mvc",
                 "templating"
             ],
-            "time": "2014-01-03 14:13:40"
+            "time": "2014-01-08 14:10:23"
+        },
+        {
+            "name": "nextras/forms",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nextras/forms.git",
+                "reference": "625010b42d96c05240124d9c78ebf73e53cef929"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nextras/forms/zipball/625010b42d96c05240124d9c78ebf73e53cef929",
+                "reference": "625010b42d96c05240124d9c78ebf73e53cef929",
+                "shasum": ""
+            },
+            "require": {
+                "nette/nette": "~2.1@rc",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Nextras\\Forms": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "http://davidgrudl.com"
+                },
+                {
+                    "name": "Jan Škrášek",
+                    "email": "hrach.cz@gmail.com",
+                    "homepage": "http://jan.skrasek.com"
+                },
+                {
+                    "name": "Nextras Community",
+                    "homepage": "https://github.com/nextras/forms/graphs/contributors"
+                }
+            ],
+            "description": "Extra form components for Nette Framework.",
+            "keywords": [
+                "form",
+                "nette"
+            ],
+            "time": "2013-12-30 22:48:02"
         },
         {
             "name": "symfony/config",
@@ -434,6 +491,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "nette/nette": 20,
+        "nextras/forms": 20,
         "janmarek/webloader": 20,
         "meenie/javascript-packer": 20,
         "kdyby/translation": 20,

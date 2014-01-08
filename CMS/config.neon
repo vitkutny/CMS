@@ -39,9 +39,3 @@ extensions:
 translation:
     fallback: [en_US]
     dirs: %locale%
-includes:
-    - config.local.neon
-    - Menu/config.neon
-    - Page/config.neon
-    - Resources/config.neon
-    - Form/config.neon

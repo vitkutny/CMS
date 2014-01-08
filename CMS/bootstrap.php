@@ -6,13 +6,24 @@ $configurator = new Nette\Configurator;
 $configurator->enableDebugger(__DIR__ . '/../log');
 $configurator->setTempDirectory(__DIR__ . '/../temp');
 
-$configurator->addConfig(__DIR__ . '/config.neon');
+$configurator->extensionMethod('configLoader', function($configurator, $directory, $deep = FALSE) {
+    foreach (new DirectoryIterator($directory) as $node) {
+        if ($node->isDir() && !$node->isDot()) {
+            if ($deep) {
+                $configurator->configLoader($node->getPathname(), $deep);
+            } elseif (file_exists($config = $node->getPathname() . '/config.neon')) {
+                $configurator->addConfig($config);
+            }
+        } elseif ($node->getBasename() === 'config.neon') {
+            $configurator->addConfig($node->getPathname());
+        }
+    }
+});
 
-$directory = __DIR__ . '/../vendor/vitkutny';
-foreach (new DirectoryIterator($directory) as $node) {
-    $config = $directory . '/' . $node . '/CMS/config.neon';
-    if ($node->isDir() && !$node->isDot() && file_exists($config)) {
-        $configurator->addConfig($config);
+$configurator->configLoader(__DIR__);
+foreach (new DirectoryIterator(__DIR__ . '/../vendor/vitkutny') as $module) {
+    if ($module->isDir() && !$module->isDot()) {
+        $configurator->configLoader($module->getPathname());
     }
 }
 

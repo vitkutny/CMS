@@ -2,39 +2,8 @@
 
 namespace CMS\Form;
 
-use Nette\Forms\Rendering\DefaultFormRenderer,
-    Nette\Forms\Form,
-    Nette\Forms\Controls,
-    Nette\Forms\Container;
+use Nextras\Forms\Rendering\Bs3FormRenderer;
 
-class Renderer extends DefaultFormRenderer {
-
-    public function __construct() {
-        $this->wrappers['controls']['container'] = NULL;
-        $this->wrappers['pair']['container'] = 'div class=form-group';
-        $this->wrappers['pair']['.error'] = 'has-error';
-        $this->wrappers['control']['container'] = 'div class=col-sm-9';
-        $this->wrappers['label']['container'] = 'div class="col-sm-3 control-label"';
-        $this->wrappers['control']['description'] = 'span class=help-block';
-        $this->wrappers['control']['errorcontainer'] = 'span class=help-block';
-    }
-
-    public function render(Form $form) {
-        $form->getElementPrototype()->class('form-horizontal');
-        $this->enhance($form);
-        return parent::render($form);
-    }
-
-    public function enhance($container) {
-        foreach ($container->getComponents() as $control) {
-            if ($control instanceof Container) {
-                $this->enhance($control);
-            } elseif ($control instanceof Controls\TextBase || $control instanceof Controls\SelectBox || $control instanceof Controls\MultiSelectBox) {
-                $control->setAttribute('class', 'form-control');
-            } elseif ($control instanceof Controls\Checkbox || $control instanceof Controls\CheckboxList || $control instanceof Controls\RadioList) {
-                $control->getSeparatorPrototype()->setName('div')->class($control->getControlPrototype()->type);
-            }
-        }
-    }
-
+class Renderer extends Bs3FormRenderer {
+    
 }

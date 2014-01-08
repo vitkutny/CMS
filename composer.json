@@ -5,6 +5,7 @@
 	"homepage": "http://github.com/vitkutny/cms",
 	"require":{
 		"nette/nette": "@dev",
+		"nextras/forms": "@dev",
 		"janmarek/webloader" : "@dev",
 		"meenie/javascript-packer": "@dev",
 		"kdyby/translation": "@dev",
