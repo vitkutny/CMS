@@ -6,8 +6,12 @@
 	"require":{
 		"nette/nette": "@dev",
 		"janmarek/webloader" : "@dev",
+		"meenie/javascript-packer": "@dev",
 		"kdyby/translation": "@dev",
 		"vitkutny/cms-shop" : "@dev",
 		"vitkutny/cms-gallery" : "@dev"
-	}
+	},
+	 "autoload": {
+        "psr-0": {"CMS\\": ""}
+    }
 }

@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "8cd62d889a75b1997ff38efc38f69978",
+    "hash": "b7acd808c39303bab16eb377c6716688",
     "packages": [
         {
             "name": "janmarek/webloader",
@@ -119,6 +119,43 @@
                 "translation"
             ],
             "time": "2013-12-18 22:15:31"
+        },
+        {
+            "name": "meenie/javascript-packer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/meenie/javascript-packer.git",
+                "reference": "dcab0159ae1ed9d7535c034fb8afe1e4c3495d22"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/meenie/javascript-packer/zipball/dcab0159ae1ed9d7535c034fb8afe1e4c3495d22",
+                "reference": "dcab0159ae1ed9d7535c034fb8afe1e4c3495d22",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "class.JavaScriptPacker.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL 2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Martin",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Composer hosted mirror of the PHP Version of Dean Edwards' JavaScript Packer",
+            "homepage": "http://joliclic.free.fr/php/javascript-packer/en/",
+            "keywords": [
+                "javascript packer"
+            ],
+            "time": "2013-03-25 21:54:33"
         },
         {
             "name": "nette/nette",
@@ -398,6 +435,7 @@
     "stability-flags": {
         "nette/nette": 20,
         "janmarek/webloader": 20,
+        "meenie/javascript-packer": 20,
         "kdyby/translation": 20,
         "vitkutny/cms-shop": 20,
         "vitkutny/cms-gallery": 20
