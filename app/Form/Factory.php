@@ -7,7 +7,7 @@ use Nette\Object,
     Nette\Application\UI\Presenter;
 use Kdyby\Translation\Translator;
 use CMS\Form\Renderer,
-    CMS;
+    CMS\Model;
 
 abstract class Factory extends Object {
 
@@ -56,7 +56,7 @@ abstract class Factory extends Object {
         $form->onSuccess[] = function($form) use ($self, $row) {
             try {
                 $self->success($form, $row);
-            } catch (CMS\Model\Exception $ex) {
+            } catch (Model\Exception $ex) {
                 $self->presenter->flashMessage($ex->getMessage(), 'warning');
                 $self->presenter->redirect('this');
             }
