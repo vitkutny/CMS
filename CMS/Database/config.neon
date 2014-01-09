@@ -7,11 +7,3 @@ nette:
             options:
                 lazy: yes
             reflection: conventional
-    container:
-        debugger: TRUE
-    session:
-        debugger: TRUE
-    debugger:
-        strictMode: TRUE
-php:
-    date.timezone: Europe/Prague

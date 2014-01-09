@@ -2,11 +2,10 @@ parameters:
     modules:
         menu:
             directory: %cms.directory%/Menu
-    components:
-        menu:
-            directory: %modules.menu.directory%/Component/Menu
+            locale:
+                directory: %modules.menu.directory%/locale
     locale:
-        - %modules.menu.directory%/locale
+        - %modules.menu.locale.directory%
 services:
     - CMS\Menu\Node\Model\Facade
     - CMS\Menu\Node\Model\Repository

@@ -1,14 +1,16 @@
 parameters:
     cms:
-        directory: %appDir%
+        directory: %appDir%/CMS
+        locale:
+            directory: %cms.directory%/locale
         styles:
             directory: %cms.directory%/styles
         scripts:
             directory: %cms.directory%/scripts
     modules:
-        directory: %cms.directory%/../vendor/vitkutny
+        directory: %appDir%/vendor/vitkutny
     locale:
-        - %cms.directory%/locale
+        - %cms.locale.directory%
     scripts:
         - %cms.scripts.directory%/jquery-2.0.3.min.js
         - %cms.scripts.directory%/bootstrap.min.js
@@ -20,7 +22,19 @@ parameters:
         - %cms.styles.directory%/font-awesome.min.css
         - %cms.styles.directory%/ratio.css
         - %cms.styles.directory%/cms.css
+extensions:
+    translation: Kdyby\Translation\DI\TranslationExtension
+translation:
+    fallback: [en_US]
+    dirs: %locale%
 nette:
+    container:
+        debugger: TRUE
+    session:
+        expiration: 14 days
+        debugger: TRUE
+    debugger:
+        strictMode: TRUE
     application:
         mapping:
             *: CMS\*\Presenter\*
@@ -32,10 +46,5 @@ nette:
                 module: Front
                 presenter: Home
                 action: view
-    session:
-        expiration: 14 days
-extensions:
-    translation: Kdyby\Translation\DI\TranslationExtension
-translation:
-    fallback: [en_US]
-    dirs: %locale%
+php:
+    date.timezone: Europe/Prague
