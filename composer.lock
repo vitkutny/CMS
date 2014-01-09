@@ -163,12 +163,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/nette.git",
-                "reference": "cb0500a19f14f98f9e9a95c6d7ef547c88e130c2"
+                "reference": "c5017b907002801b60627f5dbf29b99b4a0a4605"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/nette/zipball/cb0500a19f14f98f9e9a95c6d7ef547c88e130c2",
-                "reference": "cb0500a19f14f98f9e9a95c6d7ef547c88e130c2",
+                "url": "https://api.github.com/repos/nette/nette/zipball/c5017b907002801b60627f5dbf29b99b4a0a4605",
+                "reference": "c5017b907002801b60627f5dbf29b99b4a0a4605",
                 "shasum": ""
             },
             "require": {
@@ -226,7 +226,7 @@
                 "mvc",
                 "templating"
             ],
-            "time": "2014-01-08 14:10:23"
+            "time": "2014-01-08 23:28:46"
         },
         {
             "name": "nextras/forms",
@@ -441,22 +441,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vitkutny/cms-gallery.git",
-                "reference": "25d0579daef301b9dcf57753492c50b932f710f6"
+                "reference": "e7f55bd8a8f55d00e258d65e793a6fa8d6986f70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vitkutny/cms-gallery/zipball/25d0579daef301b9dcf57753492c50b932f710f6",
-                "reference": "25d0579daef301b9dcf57753492c50b932f710f6",
+                "url": "https://api.github.com/repos/vitkutny/cms-gallery/zipball/e7f55bd8a8f55d00e258d65e793a6fa8d6986f70",
+                "reference": "e7f55bd8a8f55d00e258d65e793a6fa8d6986f70",
                 "shasum": ""
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "CMS\\Gallery": ""
+                "psr-4": {
+                    "CMS\\Gallery\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-01-08 07:44:18"
+            "time": "2014-01-09 12:33:24"
         },
         {
             "name": "vitkutny/cms-shop",
@@ -464,22 +464,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vitkutny/cms-shop.git",
-                "reference": "672d9c647a66ffe618c00336acff8e74ea9fa57e"
+                "reference": "846785e4b4900822b18b14f55f346371f0ddafff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vitkutny/cms-shop/zipball/672d9c647a66ffe618c00336acff8e74ea9fa57e",
-                "reference": "672d9c647a66ffe618c00336acff8e74ea9fa57e",
+                "url": "https://api.github.com/repos/vitkutny/cms-shop/zipball/846785e4b4900822b18b14f55f346371f0ddafff",
+                "reference": "846785e4b4900822b18b14f55f346371f0ddafff",
                 "shasum": ""
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "CMS\\Shop": ""
+                "psr-4": {
+                    "CMS\\Shop\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-01-08 07:48:36"
+            "time": "2014-01-09 12:32:45"
         }
     ],
     "packages-dev": [
