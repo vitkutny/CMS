@@ -1,0 +1,2 @@
+services:
+    - WebEdit\Resources\Control(%styles%,%scripts%,%wwwDir%/temp)

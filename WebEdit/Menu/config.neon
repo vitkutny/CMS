@@ -1,0 +1,17 @@
+parameters:
+    modules:
+        menu:
+            directory: %webedit.directory%/Menu
+            locale:
+                directory: %modules.menu.directory%/locale
+    locale:
+        - %modules.menu.locale.directory%
+services:
+    - WebEdit\Menu\Node\Model\Facade
+    - WebEdit\Menu\Node\Model\Repository
+
+    - WebEdit\Menu\Tree\Model\Facade
+    - WebEdit\Menu\Tree\Model\Repository
+
+    - WebEdit\Menu\AdminControl
+    - WebEdit\Menu\FrontControl

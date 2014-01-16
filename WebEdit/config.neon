@@ -1,0 +1,50 @@
+parameters:
+    webedit:
+        directory: %appDir%/WebEdit
+        locale:
+            directory: %webedit.directory%/locale
+        styles:
+            directory: %webedit.directory%/styles
+        scripts:
+            directory: %webedit.directory%/scripts
+    modules:
+        directory: %appDir%/vendor/vitkutny
+    locale:
+        - %webedit.locale.directory%
+    scripts:
+        - %webedit.scripts.directory%/jquery-2.0.3.min.js
+        - %webedit.scripts.directory%/bootstrap.min.js
+        - %webedit.scripts.directory%/netteForms.js
+        - %webedit.scripts.directory%/webedit.js
+    styles:
+        - %webedit.styles.directory%/bootstrap.min.css
+        - %webedit.styles.directory%/bootstrap-blockgrid.css
+        - %webedit.styles.directory%/font-awesome.min.css
+        - %webedit.styles.directory%/ratio.css
+        - %webedit.styles.directory%/webedit.css
+extensions:
+    translation: Kdyby\Translation\DI\TranslationExtension
+translation:
+    fallback: [en_US]
+    dirs: %locale%
+nette:
+    container:
+        debugger: TRUE
+    session:
+        expiration: 14 days
+        debugger: TRUE
+    debugger:
+        strictMode: TRUE
+    application:
+        mapping:
+            *: WebEdit\*\Presenter\*
+        errorPresenter: Error
+    routing:
+        routes:
+            '[<locale [a-z]{2}(_[A-Z]{2})?>/][<module>/]<presenter>[/<action>][/<id>]':
+                locale: en_US
+                module: Front
+                presenter: Home
+                action: view
+php:
+    date.timezone: Europe/Prague

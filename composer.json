@@ -1,18 +1,18 @@
 {
-	"name": "vitkutny/cms",
-	"description": "KissCMS - Keep It Simple Stupid!",
-	"keywords": ["cms","kiss"],
-	"homepage": "http://github.com/vitkutny/cms",
+	"name": "vitkutny/webedit",
+	"description": "WebEdit CMS",
+	"keywords": ["webedit","web","edit"],
+	"homepage": "http://github.com/vitkutny/webedit",
 	"require":{
 		"nette/nette": "@dev",
 		"nextras/forms": "@dev",
 		"janmarek/webloader" : "@dev",
 		"meenie/javascript-packer": "@dev",
 		"kdyby/translation": "@dev",
-		"vitkutny/cms-shop" : "@dev",
-		"vitkutny/cms-gallery" : "@dev"
+		"webedit/shop" : "@dev",
+		"webedit/gallery" : "@dev"
 	},
 	 "autoload": {
-        "psr-0": {"CMS\\": ""}
+        "psr-0": {"WebEdit\\": ""}
     }
 }

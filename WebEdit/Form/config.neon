@@ -1,0 +1,3 @@
+parameters:
+    locale:
+        - %webedit.directory%/Form/locale

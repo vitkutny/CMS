@@ -1,0 +1,9 @@
+nette:
+    database:
+        default:
+            dsn: 'mysql:host=127.0.0.1;dbname=webedit'
+            user: 'root'
+            password: ''
+            options:
+                lazy: yes
+            reflection: conventional

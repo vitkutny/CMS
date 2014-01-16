@@ -1,4 +1,0 @@
-services:
-    - CMS\Page\Model\Facade
-    - CMS\Page\Model\Repository
-    - CMS\Page\Form\Factory

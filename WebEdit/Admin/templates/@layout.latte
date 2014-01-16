@@ -1,0 +1,31 @@
+{layout $baseLayout}
+{block layout}
+{control menu:navbar admin}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9 col-sm-push-3">
+            {control menu:breadcrumb}
+            <div n:foreach="$flashes as $flash" data-alert class="alert alert-{$flash->type}">
+                <strong>{$flash->type|capitalize}!</strong> {$flash->message}
+            </div>
+            {include #module}
+        </div>
+        <div class="col-sm-3 col-sm-pull-9">
+            {var $tabId = uniqid('-tab-')}
+            <ul class="nav nav-tabs nav-justified">
+                <li class="active"><a href="#content{$tabId}" data-toggle="tab">{_webedit.admin.content}</a></li>
+                <li><a href="#files{$tabId}" data-toggle="tab">{_webedit.admin.files}</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="content{$tabId}">
+                    {control menu:sidebar front}
+                    {control menu:sidebar shop-category}
+                    {control menu:sidebar world-info}
+                </div>
+                <div class="tab-pane" id="files{$tabId}">
+                    files
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
