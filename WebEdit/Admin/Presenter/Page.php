@@ -20,6 +20,11 @@ final class Page extends Base {
      */
     public $pageFormFactory;
 
+    protected function startup() {
+        parent::startup();
+        $this->menu->setActive(':Admin:Page:list');
+    }
+
     public function renderAdd() {
         $this->menu->breadcrumbAdd(
                 $this->translator->translate('webedit.admin.page.add'), 'Page:add');

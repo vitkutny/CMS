@@ -6,7 +6,7 @@ use WebEdit,
     WebEdit\Menu\Tree,
     WebEdit\Menu\Node;
 
-abstract class Control extends WebEdit\Control {
+class Control extends WebEdit\Control {
 
     private $treeFacade;
     private $nodeFacade;
@@ -32,6 +32,31 @@ abstract class Control extends WebEdit\Control {
         $template->breadcrumb = $this->getBreadcrumb();
         $template->home = $tree->node;
         return $template;
+    }
+
+    public function renderNavbar($group) {
+        $template = $this->getMenuTemplate($group);
+        $template->setFile(__DIR__ . '/templates/navbar.latte');
+        $template->render();
+    }
+
+    public function renderNavbarNav($group) {
+        $template = $this->getMenuTemplate($group);
+        $template->setFile(__DIR__ . '/templates/navbar-nav.latte');
+        $template->render();
+    }
+
+    public function renderSidebar($group) {
+        $template = $this->getMenuTemplate($group);
+        $template->setFile(__DIR__ . '/templates/sidebar.latte');
+        $template->render();
+    }
+
+    public function renderBreadcrumb() {
+        $template = $this->template;
+        $template->breadcrumb = $this->getBreadcrumb();
+        $template->setFile(__DIR__ . '/templates/breadcrumb.latte');
+        $template->render();
     }
 
     public function renderTitle() {
@@ -80,7 +105,7 @@ abstract class Control extends WebEdit\Control {
     protected function getTreeData($tree) { //TODO: refactor this shit!
         $this->tempNodes = $this->nodeFacade->repository->getAllNodes();
         $this->tempTrees = $this->treeFacade->repository->getAllTrees();
-        if ($tree->group == 'front') {
+        if ($tree->group == 'front' || $tree->group == 'admin') {
             foreach ($this->tempTrees as $tempTree) {
                 foreach ($this->tempNodes as $tempNode) {
                     if ($tempTree->node_id == $tempNode->node_id) {

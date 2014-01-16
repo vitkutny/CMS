@@ -1,35 +1,11 @@
 {layout $baseLayout}
 {block layout}
 <div class="container">
-    <header class="row">
-        <h1 class="col-sm-4 col-md-5 col-lg-6">
+    <header>
+        <h1>
             <a n:href=":Front:Home:view">{_site.title}</a>
             <small>{_site.slogan}</small>
         </h1>
-        <div class="col-sm-3 col-md-3 col-lg-3">
-            <form class="form-inline">
-                <div class="form-group">
-                    <div class="input-group">
-                        <input type="search" class="form-control" placeholder="Hledaný výraz">
-                        <span class="input-group-btn">
-                            <button class="btn btn-primary" type="submit">
-                                <i class="icon-search"></i>
-                            </button>
-                        </span>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="col-sm-5 col-md-4 col-lg-3">
-            <div class="well well-sm clearfix">
-                <i class="icon-shopping-cart icon-3x pull-left"></i>
-                <p>
-                    V košíku máte <strong>4 položky</strong><br>
-                    v hodnotě <strong>29990 Kč</strong>.<br>
-                    <a href="#" class="btn btn-block btn-primary pull-left ">Zobrazit košík</a>
-                </p>
-            </div>
-        </div>
     </header>
     {control menu:navbar front}
     <div class="row">

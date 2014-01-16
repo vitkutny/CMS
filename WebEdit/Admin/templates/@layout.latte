@@ -1,6 +1,23 @@
 {layout $baseLayout}
 {block layout}
-{control menu:navbar admin}
+<nav class="navbar navbar-static-top navbar-default navbar-admin" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-admin-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" n:href=":Admin:Home:view">
+                Administration
+            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-admin-collapse">
+            {control menu:navbarnav admin}
+        </div>
+    </div>
+</nav>
 <div class="container">
     <div class="row">
         <div class="col-sm-9 col-sm-push-3">
@@ -11,21 +28,8 @@
             {include #module}
         </div>
         <div class="col-sm-3 col-sm-pull-9">
-            {var $tabId = uniqid('-tab-')}
-            <ul class="nav nav-tabs nav-justified">
-                <li class="active"><a href="#content{$tabId}" data-toggle="tab">{_webedit.admin.content}</a></li>
-                <li><a href="#files{$tabId}" data-toggle="tab">{_webedit.admin.files}</a></li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane active" id="content{$tabId}">
-                    {control menu:sidebar front}
-                    {control menu:sidebar shop-category}
-                    {control menu:sidebar world-info}
-                </div>
-                <div class="tab-pane" id="files{$tabId}">
-                    files
-                </div>
-            </div>
+            {control menu:sidebar page-module}
+            {control menu:sidebar shop-module}
         </div>
     </div>
 </div>

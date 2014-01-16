@@ -1,7 +1,0 @@
-<div class="component-menu-tabs">
-    <ul class="nav nav-tabs" n:inner-foreach="$breadcrumb as $node">
-        <li{ifCurrent $node->link,id=>$node->link_id} class="active"{/ifCurrent}>
-            <a href="{plink $node->link, id=>$node->link_id}">{$node->title}</a>
-        </li>
-    </ul>
-</div>

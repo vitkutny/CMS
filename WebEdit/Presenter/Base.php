@@ -40,6 +40,12 @@ abstract class Base extends Presenter {
 
     /**
      * @inject
+     * @var \WebEdit\Menu\Control
+     */
+    public $menu;
+
+    /**
+     * @inject
      * @var \WebEdit\Resources\Control
      */
     public $resources;
@@ -72,9 +78,6 @@ abstract class Base extends Presenter {
         return $this->resources;
     }
 
-    /**
-     * @return MenuControl
-     */
     protected function createComponentMenu() {
         return $this->menu;
     }

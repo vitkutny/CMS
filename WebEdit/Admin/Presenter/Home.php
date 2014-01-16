@@ -8,7 +8,7 @@ final class Home extends Base {
 
     protected function startup() {
         parent::startup();
-        $this->menu->breadcrumbAdd($this->translator->translate('webedit.admin.dashboard'), 'Home:view');
+        $this->menu->setActive(':Admin:Home:view');
     }
 
 }
