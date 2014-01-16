@@ -8,7 +8,7 @@ parameters:
         scripts:
             directory: %webedit.directory%/scripts
     modules:
-        directory: %appDir%/vendor/vitkutny
+        directory: %appDir%/vendor/webedit
     locale:
         - %webedit.locale.directory%
     scripts:
