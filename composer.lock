@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "b162b6030e9c4d9d3aebed84bd965cfb",
+    "hash": "4c963561bab7c81f86e2ba2d99277fb3",
     "packages": [
         {
             "name": "janmarek/webloader",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/janmarek/WebLoader.git",
-                "reference": "5e62831fe7ba5779b97ebd0c23439dbcef80d102"
+                "reference": "3d44d306d59591dc94f6fdcb98f55c0990d98326"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/janmarek/WebLoader/zipball/5e62831fe7ba5779b97ebd0c23439dbcef80d102",
-                "reference": "5e62831fe7ba5779b97ebd0c23439dbcef80d102",
+                "url": "https://api.github.com/repos/janmarek/WebLoader/zipball/3d44d306d59591dc94f6fdcb98f55c0990d98326",
+                "reference": "3d44d306d59591dc94f6fdcb98f55c0990d98326",
                 "shasum": ""
             },
             "require": {
@@ -56,7 +56,7 @@
                 "nette",
                 "webloader"
             ],
-            "time": "2014-01-01 16:54:25"
+            "time": "2014-01-10 14:11:42"
         },
         {
             "name": "kdyby/translation",
@@ -64,22 +64,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/Translation.git",
-                "reference": "a0359ff16a3854d886a9f336ad86acd7e54ec099"
+                "reference": "f495b54252fb51ae954f64459b51031cf6787823"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/Translation/zipball/a0359ff16a3854d886a9f336ad86acd7e54ec099",
-                "reference": "a0359ff16a3854d886a9f336ad86acd7e54ec099",
+                "url": "https://api.github.com/repos/Kdyby/Translation/zipball/f495b54252fb51ae954f64459b51031cf6787823",
+                "reference": "f495b54252fb51ae954f64459b51031cf6787823",
                 "shasum": ""
             },
             "require": {
-                "nette/nette": "@dev",
-                "symfony/config": "~2.3",
-                "symfony/translation": "~2.3"
+                "nette/nette": "~2.1@dev",
+                "symfony/config": "~2.4",
+                "symfony/translation": "~2.4"
             },
             "require-dev": {
                 "nette/tester": "@dev",
-                "symfony/console": "~2.3"
+                "symfony/console": "~2.4"
             },
             "suggest": {
                 "kdyby/console": "If you wanna use extract command and much others, install also console.",
@@ -118,7 +118,7 @@
                 "nette",
                 "translation"
             ],
-            "time": "2013-12-18 22:15:31"
+            "time": "2014-01-07 20:23:53"
         },
         {
             "name": "meenie/javascript-packer",
@@ -163,12 +163,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/nette.git",
-                "reference": "c5017b907002801b60627f5dbf29b99b4a0a4605"
+                "reference": "b2bf9b66a8a66cfdcfe837d82742e1aae47475e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/nette/zipball/c5017b907002801b60627f5dbf29b99b4a0a4605",
-                "reference": "c5017b907002801b60627f5dbf29b99b4a0a4605",
+                "url": "https://api.github.com/repos/nette/nette/zipball/b2bf9b66a8a66cfdcfe837d82742e1aae47475e5",
+                "reference": "b2bf9b66a8a66cfdcfe837d82742e1aae47475e5",
                 "shasum": ""
             },
             "require": {
@@ -226,7 +226,7 @@
                 "mvc",
                 "templating"
             ],
-            "time": "2014-01-08 23:28:46"
+            "time": "2014-01-15 21:34:30"
         },
         {
             "name": "nextras/forms",
@@ -436,50 +436,50 @@
             "time": "2013-12-31 13:43:26"
         },
         {
-            "name": "vitkutny/cms-gallery",
+            "name": "webedit/gallery",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/vitkutny/cms-gallery.git",
-                "reference": "e7f55bd8a8f55d00e258d65e793a6fa8d6986f70"
+                "url": "https://github.com/webedit/gallery.git",
+                "reference": "491b87ee5e3c9d422d25f8a4791404f7e77fb805"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vitkutny/cms-gallery/zipball/e7f55bd8a8f55d00e258d65e793a6fa8d6986f70",
-                "reference": "e7f55bd8a8f55d00e258d65e793a6fa8d6986f70",
+                "url": "https://api.github.com/repos/webedit/gallery/zipball/491b87ee5e3c9d422d25f8a4791404f7e77fb805",
+                "reference": "491b87ee5e3c9d422d25f8a4791404f7e77fb805",
                 "shasum": ""
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "CMS\\Gallery\\": ""
+                    "WebEdit\\Gallery\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-01-09 12:33:24"
+            "time": "2014-01-16 07:32:24"
         },
         {
-            "name": "vitkutny/cms-shop",
+            "name": "webedit/shop",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/vitkutny/cms-shop.git",
-                "reference": "846785e4b4900822b18b14f55f346371f0ddafff"
+                "url": "https://github.com/webedit/shop.git",
+                "reference": "b0ef2e043b91dabc2267adac9a6f054c0c17d7f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vitkutny/cms-shop/zipball/846785e4b4900822b18b14f55f346371f0ddafff",
-                "reference": "846785e4b4900822b18b14f55f346371f0ddafff",
+                "url": "https://api.github.com/repos/webedit/shop/zipball/b0ef2e043b91dabc2267adac9a6f054c0c17d7f3",
+                "reference": "b0ef2e043b91dabc2267adac9a6f054c0c17d7f3",
                 "shasum": ""
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "CMS\\Shop\\": ""
+                    "WebEdit\\Shop\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-01-09 12:32:45"
+            "time": "2014-01-16 07:33:00"
         }
     ],
     "packages-dev": [
@@ -495,8 +495,8 @@
         "janmarek/webloader": 20,
         "meenie/javascript-packer": 20,
         "kdyby/translation": 20,
-        "vitkutny/cms-shop": 20,
-        "vitkutny/cms-gallery": 20
+        "webedit/shop": 20,
+        "webedit/gallery": 20
     },
     "platform": [
 
