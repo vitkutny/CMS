@@ -441,12 +441,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/gallery.git",
-                "reference": "491b87ee5e3c9d422d25f8a4791404f7e77fb805"
+                "reference": "66094d4573b082afacc3f57c15a64450a334ee4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/gallery/zipball/491b87ee5e3c9d422d25f8a4791404f7e77fb805",
-                "reference": "491b87ee5e3c9d422d25f8a4791404f7e77fb805",
+                "url": "https://api.github.com/repos/webedit/gallery/zipball/66094d4573b082afacc3f57c15a64450a334ee4f",
+                "reference": "66094d4573b082afacc3f57c15a64450a334ee4f",
                 "shasum": ""
             },
             "type": "library",
@@ -456,7 +456,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-01-16 07:32:24"
+            "time": "2014-01-16 07:47:07"
         },
         {
             "name": "webedit/shop",
@@ -464,12 +464,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/shop.git",
-                "reference": "b0ef2e043b91dabc2267adac9a6f054c0c17d7f3"
+                "reference": "9e72ed7c1f8cd75edf04eacc2d8d279e0c7519d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/shop/zipball/b0ef2e043b91dabc2267adac9a6f054c0c17d7f3",
-                "reference": "b0ef2e043b91dabc2267adac9a6f054c0c17d7f3",
+                "url": "https://api.github.com/repos/webedit/shop/zipball/9e72ed7c1f8cd75edf04eacc2d8d279e0c7519d5",
+                "reference": "9e72ed7c1f8cd75edf04eacc2d8d279e0c7519d5",
                 "shasum": ""
             },
             "type": "library",
@@ -479,7 +479,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-01-16 07:33:00"
+            "time": "2014-01-16 07:46:17"
         }
     ],
     "packages-dev": [
