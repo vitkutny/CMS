@@ -16,7 +16,6 @@ $configurator->extensionMethod('configLoader', function($configurator, $director
     }
 });
 
-$configurator->configLoader(__DIR__ . '/WebEdit');
 foreach (new DirectoryIterator(__DIR__ . '/vendor/webedit') as $module) {
     if ($module->isDir() && !$module->isDot()) {
         $configurator->configLoader($module->getPathname());

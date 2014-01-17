@@ -1,7 +1,0 @@
-button:
-    add: Přidat
-    edit: Upravit
-    delete: Smazat
-    save: Uložit změny
-select:
-    empty: '- vyberte -'
