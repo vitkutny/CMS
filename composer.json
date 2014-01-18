@@ -1,4 +1,5 @@
 {
+	"minimum-stability": "dev",
 	"name": "webedit/sandbox",
 	"description": "WebEdit CMS",
 	"keywords": ["webedit","web","edit"],
