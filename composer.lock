@@ -436,17 +436,59 @@
             "time": "2014-01-07 13:29:57"
         },
         {
+            "name": "twbs/bootstrap",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "2a75e559f64bf536423cbf63bce433cdfb2f9976"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/2a75e559f64bf536423cbf63bce433cdfb2f9976",
+                "reference": "2a75e559f64bf536423cbf63bce433cdfb2f9976",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jacob Thornton",
+                    "email": "jacobthornton@gmail.com"
+                },
+                {
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
+                }
+            ],
+            "description": "Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.",
+            "homepage": "http://getbootstrap.com",
+            "keywords": [
+                "bootstrap",
+                "css"
+            ],
+            "time": "2014-01-19 16:15:10"
+        },
+        {
             "name": "webedit/core",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/core.git",
-                "reference": "4c8675cdb0b00090af434c295e0f9aaf8b039d27"
+                "reference": "bd5572ed21e008545c0811f5e3fe9ba472751d3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/core/zipball/4c8675cdb0b00090af434c295e0f9aaf8b039d27",
-                "reference": "4c8675cdb0b00090af434c295e0f9aaf8b039d27",
+                "url": "https://api.github.com/repos/webedit/core/zipball/bd5572ed21e008545c0811f5e3fe9ba472751d3c",
+                "reference": "bd5572ed21e008545c0811f5e3fe9ba472751d3c",
                 "shasum": ""
             },
             "require": {
@@ -454,7 +496,8 @@
                 "kdyby/translation": "dev-master",
                 "meenie/javascript-packer": "dev-master",
                 "nette/nette": "dev-master",
-                "nextras/forms": "dev-master"
+                "nextras/forms": "dev-master",
+                "twbs/bootstrap": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -463,7 +506,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-01-17 16:39:45"
+            "time": "2014-01-20 00:19:51"
         },
         {
             "name": "webedit/gallery",
