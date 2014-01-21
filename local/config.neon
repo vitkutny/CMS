@@ -1,0 +1,8 @@
+parameters:
+    database:
+        host: 127.0.0.1
+        name: webedit
+        user: root
+        password: NULL
+    styles:
+        - %appDir%/local/styles/base.css

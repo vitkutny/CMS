@@ -21,6 +21,7 @@ foreach (new DirectoryIterator(__DIR__ . '/vendor/webedit') as $module) {
         $configurator->configLoader($module->getPathname());
     }
 }
+$configurator->configLoader(__DIR__ . '/local');
 
 $container = $configurator->createContainer();
 $application = $container->getService('application');
