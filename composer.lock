@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "25c788e438229f2559a44e24c495fbc6",
+    "hash": "9ef2455f5acb8399eff995d53830f695",
     "packages": [
         {
             "name": "janmarek/webloader",
@@ -483,12 +483,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/core.git",
-                "reference": "bd5572ed21e008545c0811f5e3fe9ba472751d3c"
+                "reference": "424094d8d39271ccaa95a6cddce52a309ecd545c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/core/zipball/bd5572ed21e008545c0811f5e3fe9ba472751d3c",
-                "reference": "bd5572ed21e008545c0811f5e3fe9ba472751d3c",
+                "url": "https://api.github.com/repos/webedit/core/zipball/424094d8d39271ccaa95a6cddce52a309ecd545c",
+                "reference": "424094d8d39271ccaa95a6cddce52a309ecd545c",
                 "shasum": ""
             },
             "require": {
@@ -506,7 +506,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-01-20 00:19:51"
+            "time": "2014-01-22 13:50:28"
         },
         {
             "name": "webedit/gallery",
@@ -514,12 +514,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/gallery.git",
-                "reference": "b75180232a447ff843713be75fd520528c5932c6"
+                "reference": "abf3c08bee2d495064dba5baf7b1abe71fc8aca0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/gallery/zipball/b75180232a447ff843713be75fd520528c5932c6",
-                "reference": "b75180232a447ff843713be75fd520528c5932c6",
+                "url": "https://api.github.com/repos/webedit/gallery/zipball/abf3c08bee2d495064dba5baf7b1abe71fc8aca0",
+                "reference": "abf3c08bee2d495064dba5baf7b1abe71fc8aca0",
                 "shasum": ""
             },
             "type": "library",
@@ -529,7 +529,30 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-01-16 07:53:18"
+            "time": "2014-01-21 00:51:25"
+        },
+        {
+            "name": "webedit/page",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webedit/page.git",
+                "reference": "d96319fa1edcc058edb8fcc7942b2159c724528b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webedit/page/zipball/d96319fa1edcc058edb8fcc7942b2159c724528b",
+                "reference": "d96319fa1edcc058edb8fcc7942b2159c724528b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WebEdit\\Page\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2014-01-22 13:44:17"
         },
         {
             "name": "webedit/shop",
@@ -537,12 +560,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/shop.git",
-                "reference": "23748002d0560f18d346361dc2a4e45c7259cacd"
+                "reference": "ca4be535f3a2a80e4af9ec8a9eab99c454aec010"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/shop/zipball/23748002d0560f18d346361dc2a4e45c7259cacd",
-                "reference": "23748002d0560f18d346361dc2a4e45c7259cacd",
+                "url": "https://api.github.com/repos/webedit/shop/zipball/ca4be535f3a2a80e4af9ec8a9eab99c454aec010",
+                "reference": "ca4be535f3a2a80e4af9ec8a9eab99c454aec010",
                 "shasum": ""
             },
             "type": "library",
@@ -552,7 +575,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-01-16 22:59:30"
+            "time": "2014-01-22 13:51:05"
         }
     ],
     "packages-dev": [
@@ -564,6 +587,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "webedit/core": 20,
+        "webedit/page": 20,
         "webedit/shop": 20,
         "webedit/gallery": 20
     },
