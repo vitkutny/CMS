@@ -1,4 +1,5 @@
 iframe{border:0}
 body{overflow-y: scroll;}
 .nav.nav-tabs{margin-bottom:20px}
-header h1 small {display: block}
+header.jumbotron, footer.jumbotron{margin:0}
+footer.jumbotron{margin-top:20px;}

@@ -163,12 +163,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/nette.git",
-                "reference": "8559b781fa79ca7b7ab62c4693c58b23305108b9"
+                "reference": "5a93ae5981532c090fc88212a88a02d039f7c8c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/nette/zipball/8559b781fa79ca7b7ab62c4693c58b23305108b9",
-                "reference": "8559b781fa79ca7b7ab62c4693c58b23305108b9",
+                "url": "https://api.github.com/repos/nette/nette/zipball/5a93ae5981532c090fc88212a88a02d039f7c8c3",
+                "reference": "5a93ae5981532c090fc88212a88a02d039f7c8c3",
                 "shasum": ""
             },
             "require": {
@@ -226,7 +226,7 @@
                 "mvc",
                 "templating"
             ],
-            "time": "2014-01-17 17:24:13"
+            "time": "2014-01-21 18:40:27"
         },
         {
             "name": "nextras/forms",
@@ -441,12 +441,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "2a75e559f64bf536423cbf63bce433cdfb2f9976"
+                "reference": "7938134fd1382deb7b300da1672559fe2afb3706"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/2a75e559f64bf536423cbf63bce433cdfb2f9976",
-                "reference": "2a75e559f64bf536423cbf63bce433cdfb2f9976",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/7938134fd1382deb7b300da1672559fe2afb3706",
+                "reference": "7938134fd1382deb7b300da1672559fe2afb3706",
                 "shasum": ""
             },
             "type": "library",
@@ -475,7 +475,7 @@
                 "bootstrap",
                 "css"
             ],
-            "time": "2014-01-19 16:15:10"
+            "time": "2014-01-21 11:15:49"
         },
         {
             "name": "webedit/core",
