@@ -1,0 +1,9 @@
+nette:
+    database:
+        default:
+            dsn: 'mysql:host=%database.host%;dbname=%database.name%'
+            user: %database.user%
+            password: %database.password%
+            options:
+                lazy: yes
+            reflection: conventional

@@ -1,0 +1,49 @@
+parameters:
+    vendor:
+        directory: %appDir%/vendor
+        webedit:
+            directory: %vendor.directory%/webedit
+    webedit:
+        directory: %appDir%/webedit
+        styles:
+            directory: %webedit.directory%/styles
+        scripts:
+            directory: %webedit.directory%/scripts
+    locale:
+        - %webedit.directory%/locale
+    scripts:
+        - %webedit.scripts.directory%/jquery-2.0.3.min.js
+        - %vendor.directory%/twbs/bootstrap/dist/js/bootstrap.min.js
+        - %vendor.directory%/nette/nette/client-side/netteForms.js
+    styles:
+        - %vendor.directory%/twbs/bootstrap/dist/css/bootstrap.min.css
+        - %webedit.styles.directory%/base.css
+        - %webedit.styles.directory%/bootstrap-blockgrid.css
+        - %webedit.styles.directory%/ratio.css
+nette:
+    container:
+        debugger: TRUE
+    session:
+        expiration: 14 days
+        debugger: TRUE
+    debugger:
+        strictMode: TRUE
+    application:
+        mapping:
+            *: WebEdit\*\*
+        errorPresenter: Error
+    routing:
+        routes:
+            '[<locale [a-z]{2}(_[A-Z]{2})?>]':
+                locale: en_US
+                module: Home
+                presenter: Presenter
+                action: view
+            '[<locale [a-z]{2}(_[A-Z]{2})?>/]<module>[/<action>][/<id>]':
+                locale: en_US
+                presenter: Presenter
+                action: view
+php:
+    date.timezone: Europe/Prague
+includes:
+    - config.local.neon

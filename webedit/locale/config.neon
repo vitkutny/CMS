@@ -1,0 +1,5 @@
+extensions:
+    translation: Kdyby\Translation\DI\TranslationExtension
+translation:
+    fallback: [en_US]
+    dirs: %locale%

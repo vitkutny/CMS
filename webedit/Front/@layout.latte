@@ -1,0 +1,49 @@
+{layout $baseLayout}
+{block layout}
+<header class="jumbotron">
+    <div class="container">
+        <h1>{_site.title}</h1>
+        <p>{_site.slogan}</p>
+    </div>
+</header>
+<section class="middle">
+    <nav class="navbar navbar-static-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-front-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-front-collapse">
+                {control menu:navbar front}
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-sm-push-3">
+                {control menu:header}
+                <aside n:inner-foreach="$flashes as $flash">
+                    <div class="alert alert-{$flash->type}">
+                        <strong>{$flash->type|capitalize}!</strong> {$flash->message}
+                    </div>
+                </aside>
+                <div class="content">
+                    {include module}
+                </div>
+            </div>
+            <aside class="col-sm-3 col-sm-pull-9">
+                {control menu:sidebar}
+            </aside>
+        </div>
+    </div>
+</section>
+<footer class="jumbotron">
+    <div class="container">
+        <p class="text-right">
+            {_site.title} - {_site.copyright}
+        </p>
+    </div>
+</footer>

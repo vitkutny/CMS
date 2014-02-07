@@ -5,9 +5,18 @@
 	"keywords": ["webedit","web","edit"],
 	"homepage": "http://github.com/webedit",
 	"require":{
-		"webedit/core" : "@dev",
+        "nette/nette": "dev-master",
+        "nextras/forms": "dev-master",
+        "janmarek/webloader": "dev-master",
+        "meenie/javascript-packer": "dev-master",
+        "kdyby/translation": "dev-master",
+        "twbs/bootstrap": "dev-master",
+		"webedit/menu" : "@dev",
 		"webedit/page" : "@dev",
 		"webedit/shop" : "@dev",
 		"webedit/gallery" : "@dev"
-	}
+	},
+    "autoload": {
+        "psr-0": {"WebEdit\\": "app/"}
+    }
 }

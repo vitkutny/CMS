@@ -4,5 +4,3 @@ parameters:
         name: webedit
         user: root
         password: NULL
-    styles:
-        - %appDir%/local/styles/base.css
