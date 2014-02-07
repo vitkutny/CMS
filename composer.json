@@ -11,12 +11,12 @@
         "meenie/javascript-packer": "dev-master",
         "kdyby/translation": "dev-master",
         "twbs/bootstrap": "dev-master",
-		"webedit/menu" : "@dev",
-		"webedit/page" : "@dev",
-		"webedit/shop" : "@dev",
-		"webedit/gallery" : "@dev"
+		"webedit/menu" : "dev-master",
+		"webedit/page" : "dev-master",
+		"webedit/shop" : "dev-master",
+		"webedit/gallery" : "dev-master"
 	},
     "autoload": {
-        "psr-0": {"WebEdit\\": "app/"}
+        "psr-4": {"WebEdit\\": "webedit/"}
     }
 }
