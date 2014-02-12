@@ -13,7 +13,10 @@ abstract class Repository extends Model\Repository {
     public function __construct(Context $context) {
         $this->context = $context;
         if (!$this->table) {
-            throw new Model\Exception('Table name is not specified.');
+            $reflection = $this->getReflection();
+            $namespace = $reflection->getNameSpaceName();
+            preg_match('#^WebEdit\\\\(?<table>[\w\\\\]+)\\\\Model$#', $namespace, $matches);
+            $this->table = str_replace('\\', '_', strtolower($matches['table']));
         }
     }
 

@@ -1,4 +1,4 @@
 services:
     -
-        implement: WebEdit\Resources\Control\Factory
         class: WebEdit\Resources\Control(%styles%,%scripts%,%wwwDir%/temp)
+        implement: WebEdit\Resources\Control\Factory

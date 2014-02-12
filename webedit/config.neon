@@ -3,6 +3,10 @@ parameters:
         directory: %appDir%/vendor
         webedit:
             directory: %vendor.directory%/webedit
+        bootstrap:
+            directory: %vendor.directory%/twbs/bootstrap
+        nette:
+            directory: %vendor.directory%/nette/nette
     webedit:
         directory: %appDir%/webedit
         styles:
@@ -13,10 +17,10 @@ parameters:
         - %webedit.directory%/locale
     scripts:
         - %webedit.scripts.directory%/jquery-2.0.3.min.js
-        - %vendor.directory%/twbs/bootstrap/dist/js/bootstrap.min.js
-        - %vendor.directory%/nette/nette/client-side/netteForms.js
+        - %vendor.bootstrap.directory%/dist/js/bootstrap.min.js
+        - %vendor.nette.directory%/client-side/netteForms.js
     styles:
-        - %vendor.directory%/twbs/bootstrap/dist/css/bootstrap.min.css
+        - %vendor.bootstrap.directory%/dist/css/bootstrap.min.css
         - %webedit.styles.directory%/base.css
         - %webedit.styles.directory%/bootstrap-blockgrid.css
         - %webedit.styles.directory%/ratio.css
