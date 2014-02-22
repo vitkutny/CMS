@@ -28,6 +28,7 @@ nette:
     container:
         debugger: TRUE
     session:
+        autoStart: TRUE
         expiration: 14 days
         debugger: TRUE
     debugger:
@@ -38,13 +39,12 @@ nette:
         errorPresenter: Error
     routing:
         routes:
-            '[<locale [a-z]{2}(_[A-Z]{2})?>]':
-                locale: en_US
-                module: Home
+            'admin':
+                module: Home:Admin
                 presenter: Presenter
                 action: view
             '[<locale [a-z]{2}(_[A-Z]{2})?>/]<module>[/<action>][/<id>]':
-                locale: en_US
+                module: Home
                 presenter: Presenter
                 action: view
 php:

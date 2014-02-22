@@ -2,36 +2,40 @@
 
 namespace WebEdit\Database;
 
-use WebEdit\Model;
+use WebEdit;
 use Nette\Database\Context;
 
-abstract class Repository extends Model\Repository {
+abstract class Repository extends WebEdit\Repository {
 
     private $context;
-    protected $table;
 
     public function __construct(Context $context) {
+        parent::__construct();
         $this->context = $context;
-        if (!$this->table) {
-            $reflection = $this->getReflection();
-            $namespace = $reflection->getNameSpaceName();
-            preg_match('#^WebEdit\\\\(?<table>[\w\\\\]+)\\\\Model$#', $namespace, $matches);
-            $this->table = str_replace('\\', '_', strtolower($matches['table']));
-        }
     }
 
-    protected function table($name = NULL) {
+    protected function storage($name = NULL) {
         if (!$name) {
-            $name = $this->table;
+            $name = $this->name;
         }
         return $this->context->table($name);
     }
 
+    public function tempFix(&$data) { //TODO
+        array_walk_recursive($data, function($item, $key) use (&$data) {
+            if ($item === '') {
+                $data[$key] = NULL;
+            }
+        });
+    }
+
     public function insert(array $data) {
-        return $this->table()->insert($data);
+        $this->tempFix($data);
+        return $this->storage()->insert($data);
     }
 
     public function update($selection, array $data) {
+        $this->tempFix($data);
         return $selection->update($data);
     }
 

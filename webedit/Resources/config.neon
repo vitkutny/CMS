@@ -1,4 +1,4 @@
 services:
     -
-        class: WebEdit\Resources\Control(%styles%,%scripts%,%wwwDir%/temp)
         implement: WebEdit\Resources\Control\Factory
+        arguments: [%styles%,%scripts%,%wwwDir%/temp]

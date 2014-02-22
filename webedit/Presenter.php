@@ -22,12 +22,10 @@ abstract class Presenter extends UI\Presenter {
      * @persistent
      */
     public $locale;
-    protected $menu;
 
     protected function startup() {
         parent::startup();
-        $this->menu = $this->getComponent('menu');
-        $this->menu->breadcrumb->fromLink(':' . $this->getName() . ':view');
+        $this['menu']['breadcrumb'][] = array('link' => ':' . $this->getName() . ':view');
     }
 
     protected function beforeRender() {
@@ -35,14 +33,15 @@ abstract class Presenter extends UI\Presenter {
         $this->template->baseLayout = __DIR__ . '/@layout.latte';
     }
 
-    protected function createTemplate($class = NULL) {
-        $template = parent::createTemplate($class);
-        $template->registerHelperLoader(callback($this->translator->createTemplateHelpers(), 'loader'));
-        return $template;
-    }
-
     protected function createComponentResources() {
         return $this->resourcesFactory->create();
+    }
+
+    public function formatTemplateFiles() {
+        $list = array();
+        $reflection = $this->getReflection();
+        $list[] = dirname($reflection->getFileName()) . '/Presenter/' . $this->view . '.latte';
+        return $list;
     }
 
     public function formatLayoutTemplateFiles() {
@@ -55,11 +54,10 @@ abstract class Presenter extends UI\Presenter {
         return $list;
     }
 
-    public function formatTemplateFiles() {
-        $list = array();
-        $reflection = $this->getReflection();
-        $list[] = dirname($reflection->getFileName()) . '/Presenter/' . $this->view . '.latte';
-        return $list;
+    protected function createTemplate($class = NULL) {
+        $template = parent::createTemplate($class);
+        $template->registerHelperLoader(callback($this->translator->createTemplateHelpers(), 'loader'));
+        return $template;
     }
 
 }

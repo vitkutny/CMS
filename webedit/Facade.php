@@ -1,6 +1,6 @@
 <?php
 
-namespace WebEdit\Model;
+namespace WebEdit;
 
 use Nette\Object;
 

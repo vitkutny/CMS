@@ -13,7 +13,7 @@ final class Presenter extends Front\Presenter {
     public $productControlFactory;
 
     public function renderView() {
-        $this->menu->showHeader(FALSE);
+        $this['menu']->showHeader(FALSE);
     }
 
     protected function createComponentProduct() {

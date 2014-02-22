@@ -82,11 +82,6 @@ abstract class Factory extends Object {
 
     public function success(Form $form, $row = NULL) {
         $data = $form->getValues(TRUE);
-        foreach ($data as $key => $value) {
-            if ($value === '') {
-                $data[$key] = NULL;
-            }
-        }
         if ($row) {
             if ($form->isSubmitted()->getHtmlName() === 'delete') {
                 $this->delete($row);
