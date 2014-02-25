@@ -1,53 +1,22 @@
 parameters:
-    vendor:
-        directory: %appDir%/vendor
-        webedit:
-            directory: %vendor.directory%/webedit
-        bootstrap:
-            directory: %vendor.directory%/twbs/bootstrap
-        nette:
-            directory: %vendor.directory%/nette/nette
     webedit:
-        directory: %appDir%/webedit
-        styles:
-            directory: %webedit.directory%/styles
-        scripts:
-            directory: %webedit.directory%/scripts
+        database:
+            host: 127.0.0.1
+            name: webedit
+            user: root
+            password: NULL
     locale:
         - %webedit.directory%/locale
     scripts:
         - %webedit.scripts.directory%/jquery-2.0.3.min.js
         - %vendor.bootstrap.directory%/dist/js/bootstrap.min.js
-        - %vendor.nette.directory%/client-side/netteForms.js
     styles:
         - %vendor.bootstrap.directory%/dist/css/bootstrap.min.css
         - %webedit.styles.directory%/base.css
         - %webedit.styles.directory%/bootstrap-blockgrid.css
         - %webedit.styles.directory%/ratio.css
-nette:
-    container:
-        debugger: TRUE
-    session:
-        autoStart: TRUE
-        expiration: 14 days
-        debugger: TRUE
-    debugger:
-        strictMode: TRUE
-    application:
-        mapping:
-            *: WebEdit\*\*
-        errorPresenter: Error
-    routing:
-        routes:
-            'admin':
-                module: Home:Admin
-                presenter: Presenter
-                action: view
-            '[<locale [a-z]{2}(_[A-Z]{2})?>/]<module>[/<action>][/<id>]':
-                module: Home
-                presenter: Presenter
-                action: view
+    vendor:
+        bootstrap:
+            directory: %vendor.directory%/twbs/bootstrap
 php:
     date.timezone: Europe/Prague
-includes:
-    - config.local.neon

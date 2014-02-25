@@ -1,7 +1,0 @@
-button:
-    add: Add
-    edit: Edit
-    delete: Delete
-    save: Save changes
-select:
-    empty: '- select one -'

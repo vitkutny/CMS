@@ -1,4 +1,0 @@
-services:
-    -
-        implement: WebEdit\Resources\Control\Factory
-        arguments: [%styles%,%scripts%,%wwwDir%/temp]

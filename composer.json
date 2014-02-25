@@ -5,17 +5,12 @@
     "keywords": ["webedit", "web", "edit"],
     "homepage": "http://github.com/webedit",
     "require": {
-        "nette/nette": "dev-master",
-        "nextras/forms": "dev-master",
-        "janmarek/webloader": "dev-master",
-        "meenie/javascript-packer": "dev-master",
-        "kdyby/translation": "dev-master",
-        "twbs/bootstrap": "dev-master",
-        "webedit/menu": "dev-master",
+        "webedit/core": "dev-master",
         "webedit/page": "dev-master",
         "webedit/shop": "dev-master",
         "webedit/gallery": "dev-master",
-        "webedit/sitemap": "dev-master"
+        "webedit/sitemap": "dev-master",
+        "twbs/bootstrap": "dev-master"
     },
     "autoload": {
         "psr-4": {"WebEdit\\": "webedit/"}
