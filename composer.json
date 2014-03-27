@@ -13,6 +13,8 @@
         "twbs/bootstrap": "dev-master"
     },
     "autoload": {
-        "psr-4": {"WebEdit\\": "webedit/"}
+        "psr-0": {
+            "WebEdit\\": "local/"
+        }
     }
 }
