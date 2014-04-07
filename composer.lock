@@ -64,12 +64,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/Translation.git",
-                "reference": "55e1ae2f24db5411cedb61e54f35a1096bb2dd56"
+                "reference": "ace82f9001f57edd2fb3add717ed7fdfc7a76f82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/Translation/zipball/55e1ae2f24db5411cedb61e54f35a1096bb2dd56",
-                "reference": "55e1ae2f24db5411cedb61e54f35a1096bb2dd56",
+                "url": "https://api.github.com/repos/Kdyby/Translation/zipball/ace82f9001f57edd2fb3add717ed7fdfc7a76f82",
+                "reference": "ace82f9001f57edd2fb3add717ed7fdfc7a76f82",
                 "shasum": ""
             },
             "require": {
@@ -108,7 +108,7 @@
             ],
             "authors": [
                 {
-                    "name": "Filip ProchÃ¡zka",
+                    "name": "Filip Procházka",
                     "email": "filip@prochazka.su",
                     "homepage": "http://filip-prochazka.com"
                 }
@@ -120,7 +120,7 @@
                 "nette",
                 "translation"
             ],
-            "time": "2014-03-24 23:37:29"
+            "time": "2014-04-07 18:16:46"
         },
         {
             "name": "meenie/javascript-packer",
@@ -294,12 +294,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Config.git",
-                "reference": "fed7f04d8e6f51d3e66b5e29aac399d2f2139b94"
+                "reference": "5dea300292c6c1e87e5e98e0418764a6682c0b1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Config/zipball/fed7f04d8e6f51d3e66b5e29aac399d2f2139b94",
-                "reference": "fed7f04d8e6f51d3e66b5e29aac399d2f2139b94",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/5dea300292c6c1e87e5e98e0418764a6682c0b1a",
+                "reference": "5dea300292c6c1e87e5e98e0418764a6682c0b1a",
                 "shasum": ""
             },
             "require": {
@@ -335,7 +335,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "http://symfony.com",
-            "time": "2014-03-26 11:51:10"
+            "time": "2014-04-03 05:23:50"
         },
         {
             "name": "symfony/filesystem",
@@ -449,12 +449,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "8c95ff748f3c290949e79bbc248dc3fed8e9cf37"
+                "reference": "bfb99413eefbbe2e8fbb1e477cbfa63ea7d36140"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/8c95ff748f3c290949e79bbc248dc3fed8e9cf37",
-                "reference": "8c95ff748f3c290949e79bbc248dc3fed8e9cf37",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/bfb99413eefbbe2e8fbb1e477cbfa63ea7d36140",
+                "reference": "bfb99413eefbbe2e8fbb1e477cbfa63ea7d36140",
                 "shasum": ""
             },
             "type": "library",
@@ -489,7 +489,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2014-04-01 05:26:47"
+            "time": "2014-04-07 03:49:22"
         },
         {
             "name": "webedit/core",

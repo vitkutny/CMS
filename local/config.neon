@@ -7,7 +7,7 @@ parameters:
             password: NULL
     resources:
         scripts:
-            - %local.directory%/scripts/jquery-2.0.3.min.js
+            - %local.directory%/scripts/jquery-2.1.0.min.js
             - %vendor.twbs.bootstrap.directory%/dist/js/bootstrap.min.js
         styles:
             - %vendor.twbs.bootstrap.directory%/dist/css/bootstrap.min.css
