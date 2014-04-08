@@ -64,12 +64,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/Translation.git",
-                "reference": "ace82f9001f57edd2fb3add717ed7fdfc7a76f82"
+                "reference": "a4b005febf9acc65dc6b7a4640105b1755f4ceff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/Translation/zipball/ace82f9001f57edd2fb3add717ed7fdfc7a76f82",
-                "reference": "ace82f9001f57edd2fb3add717ed7fdfc7a76f82",
+                "url": "https://api.github.com/repos/Kdyby/Translation/zipball/a4b005febf9acc65dc6b7a4640105b1755f4ceff",
+                "reference": "a4b005febf9acc65dc6b7a4640105b1755f4ceff",
                 "shasum": ""
             },
             "require": {
@@ -120,7 +120,7 @@
                 "nette",
                 "translation"
             ],
-            "time": "2014-04-07 18:16:46"
+            "time": "2014-04-08 16:36:06"
         },
         {
             "name": "meenie/javascript-packer",
@@ -449,12 +449,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "bfb99413eefbbe2e8fbb1e477cbfa63ea7d36140"
+                "reference": "f159ce8b9ee84f885222a48c856a0f64269ba079"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/bfb99413eefbbe2e8fbb1e477cbfa63ea7d36140",
-                "reference": "bfb99413eefbbe2e8fbb1e477cbfa63ea7d36140",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/f159ce8b9ee84f885222a48c856a0f64269ba079",
+                "reference": "f159ce8b9ee84f885222a48c856a0f64269ba079",
                 "shasum": ""
             },
             "type": "library",
@@ -489,7 +489,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2014-04-07 03:49:22"
+            "time": "2014-04-08 05:59:37"
         },
         {
             "name": "webedit/core",
@@ -497,12 +497,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/core.git",
-                "reference": "cef60498cf15a10f520b889a5f877e98ce63a418"
+                "reference": "d67826c1d8eb9a8af046a1e70c3b630e33df8af0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/core/zipball/cef60498cf15a10f520b889a5f877e98ce63a418",
-                "reference": "cef60498cf15a10f520b889a5f877e98ce63a418",
+                "url": "https://api.github.com/repos/webedit/core/zipball/d67826c1d8eb9a8af046a1e70c3b630e33df8af0",
+                "reference": "d67826c1d8eb9a8af046a1e70c3b630e33df8af0",
                 "shasum": ""
             },
             "require": {
@@ -519,7 +519,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-04-01 18:07:11"
+            "time": "2014-04-07 21:24:33"
         },
         {
             "name": "webedit/gallery",
@@ -527,12 +527,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/gallery.git",
-                "reference": "1a8dc5fa2a49cbe0af8a07a666fe7902dac96109"
+                "reference": "ffe19571679f9cd2fa7bb61c2762b0c83efafa96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/gallery/zipball/1a8dc5fa2a49cbe0af8a07a666fe7902dac96109",
-                "reference": "1a8dc5fa2a49cbe0af8a07a666fe7902dac96109",
+                "url": "https://api.github.com/repos/webedit/gallery/zipball/ffe19571679f9cd2fa7bb61c2762b0c83efafa96",
+                "reference": "ffe19571679f9cd2fa7bb61c2762b0c83efafa96",
                 "shasum": ""
             },
             "type": "library",
@@ -542,7 +542,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-03-26 21:06:58"
+            "time": "2014-04-07 20:35:45"
         },
         {
             "name": "webedit/menu",
@@ -596,12 +596,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/resources.git",
-                "reference": "72001355e3f6cf7d20dc2e1e92e248d28ed51282"
+                "reference": "06a093b938ebc42926710a86e59777bd5d15b866"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/resources/zipball/72001355e3f6cf7d20dc2e1e92e248d28ed51282",
-                "reference": "72001355e3f6cf7d20dc2e1e92e248d28ed51282",
+                "url": "https://api.github.com/repos/webedit/resources/zipball/06a093b938ebc42926710a86e59777bd5d15b866",
+                "reference": "06a093b938ebc42926710a86e59777bd5d15b866",
                 "shasum": ""
             },
             "require": {
@@ -615,7 +615,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-03-26 21:08:11"
+            "time": "2014-04-07 21:24:12"
         },
         {
             "name": "webedit/shop",
@@ -623,12 +623,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/shop.git",
-                "reference": "9fdf29616fe46224f626d8dd109bc90d631a04ba"
+                "reference": "2e9a0e65a14ed7adf7523564f605d6ac4af0f14a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/shop/zipball/9fdf29616fe46224f626d8dd109bc90d631a04ba",
-                "reference": "9fdf29616fe46224f626d8dd109bc90d631a04ba",
+                "url": "https://api.github.com/repos/webedit/shop/zipball/2e9a0e65a14ed7adf7523564f605d6ac4af0f14a",
+                "reference": "2e9a0e65a14ed7adf7523564f605d6ac4af0f14a",
                 "shasum": ""
             },
             "type": "library",
@@ -638,7 +638,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-04-01 18:29:08"
+            "time": "2014-04-07 20:35:57"
         },
         {
             "name": "webedit/sitemap",
