@@ -22,5 +22,11 @@ parameters:
 nette:
     session:
         expiration: 14 days
+    routing:
+        routes:
+            '[<locale [a-z]{2}(_[A-Z]{2})?>/]<module>[/<action>][/<id>]':
+                module: Home
+                presenter: Presenter
+                action: view
 php:
     date.timezone: Europe/Prague
