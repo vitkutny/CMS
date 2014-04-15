@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "cdebdbf2acf9b1a2bb3b5671aae345f1",
+    "hash": "ca9bfbbfa2faf11bfc0c99233bef7ac6",
     "packages": [
         {
             "name": "janmarek/webloader",
@@ -558,12 +558,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/forms.git",
-                "reference": "a8d199b0edf7f4f2523fa5fc85890476cd2deba0"
+                "reference": "27f81f50172805a69b0f218e3638d39482b48708"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/forms/zipball/a8d199b0edf7f4f2523fa5fc85890476cd2deba0",
-                "reference": "a8d199b0edf7f4f2523fa5fc85890476cd2deba0",
+                "url": "https://api.github.com/repos/nette/forms/zipball/27f81f50172805a69b0f218e3638d39482b48708",
+                "reference": "27f81f50172805a69b0f218e3638d39482b48708",
                 "shasum": ""
             },
             "require": {
@@ -606,7 +606,7 @@
             ],
             "description": "Nette Forms: greatly facilitates web forms",
             "homepage": "http://nette.org",
-            "time": "2014-04-14 00:31:12"
+            "time": "2014-04-15 16:20:36"
         },
         {
             "name": "nette/http",
@@ -1121,12 +1121,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tokenizer.git",
-                "reference": "d9992d06cf4f974250ea5905d403a9a88db7c785"
+                "reference": "bcc2b15c896ca816e55d7d1627b40faeda6ea716"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tokenizer/zipball/d9992d06cf4f974250ea5905d403a9a88db7c785",
-                "reference": "d9992d06cf4f974250ea5905d403a9a88db7c785",
+                "url": "https://api.github.com/repos/nette/tokenizer/zipball/bcc2b15c896ca816e55d7d1627b40faeda6ea716",
+                "reference": "bcc2b15c896ca816e55d7d1627b40faeda6ea716",
                 "shasum": ""
             },
             "require": {
@@ -1164,7 +1164,7 @@
             ],
             "description": "Nette Tokenizer",
             "homepage": "http://nette.org",
-            "time": "2014-04-09 20:09:43"
+            "time": "2014-04-15 14:38:57"
         },
         {
             "name": "nette/utils",
@@ -1172,12 +1172,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "6e9c27a938ea2c4b2ddf8c7f5d16f0df12b8b47e"
+                "reference": "a09560a24e339885e42408a3ef183d2c77742955"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/6e9c27a938ea2c4b2ddf8c7f5d16f0df12b8b47e",
-                "reference": "6e9c27a938ea2c4b2ddf8c7f5d16f0df12b8b47e",
+                "url": "https://api.github.com/repos/nette/utils/zipball/a09560a24e339885e42408a3ef183d2c77742955",
+                "reference": "a09560a24e339885e42408a3ef183d2c77742955",
                 "shasum": ""
             },
             "require": {
@@ -1215,7 +1215,7 @@
             ],
             "description": "Nette Utility Classes",
             "homepage": "http://nette.org",
-            "time": "2014-04-07 19:48:21"
+            "time": "2014-04-15 12:53:44"
         },
         {
             "name": "nextras/forms",
@@ -1223,12 +1223,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nextras/forms.git",
-                "reference": "c1522e7ead033e7875e9ded6e2228cdeb6c11bee"
+                "reference": "c8ce33f7cd84d964afbf410a0756e8ae6aade574"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nextras/forms/zipball/c1522e7ead033e7875e9ded6e2228cdeb6c11bee",
-                "reference": "c1522e7ead033e7875e9ded6e2228cdeb6c11bee",
+                "url": "https://api.github.com/repos/nextras/forms/zipball/c8ce33f7cd84d964afbf410a0756e8ae6aade574",
+                "reference": "c8ce33f7cd84d964afbf410a0756e8ae6aade574",
                 "shasum": ""
             },
             "require": {
@@ -1258,7 +1258,7 @@
                     "homepage": "http://davidgrudl.com"
                 },
                 {
-                    "name": "Jan Å krÃ¡Å¡ek",
+                    "name": "Jan Škrášek",
                     "email": "hrach.cz@gmail.com",
                     "homepage": "http://jan.skrasek.com"
                 },
@@ -1272,7 +1272,7 @@
                 "form",
                 "nette"
             ],
-            "time": "2014-03-20 17:34:21"
+            "time": "2014-04-15 12:47:32"
         },
         {
             "name": "symfony/config",
