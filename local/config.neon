@@ -5,20 +5,15 @@ parameters:
             name: webedit
             user: root
             password: NULL
-    resources:
-        scripts:
-            - %local.directory%/scripts/jquery-2.1.0.min.js
-            - %vendor.twbs.bootstrap.directory%/dist/js/bootstrap.min.js
-        styles:
-            - %vendor.twbs.bootstrap.directory%/dist/css/bootstrap.min.css
-            - %local.directory%/styles/base.css
-            - %local.directory%/styles/bootstrap-blockgrid.css
-            - %local.directory%/styles/ratio.css
-    vendor:
-        twbs:
-            directory: %vendor.directory%/twbs
-            bootstrap:
-                directory: %vendor.twbs.directory%/bootstrap
+resources:
+    scripts:
+        - %local.directory%/scripts/jquery-2.1.0.min.js
+        - %vendor.directory%/twbs/bootstrap/dist/js/bootstrap.min.js
+    styles:
+        - %vendor.directory%/twbs/bootstrap/dist/css/bootstrap.min.css
+        - %local.directory%/styles/base.css
+        - %local.directory%/styles/bootstrap-blockgrid.css
+        - %local.directory%/styles/ratio.css
 nette:
     session:
         expiration: 14 days

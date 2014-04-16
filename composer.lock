@@ -1281,12 +1281,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Config.git",
-                "reference": "fdf9e0ea0f66128301f7fc4f6ffa758812a26db6"
+                "reference": "0d4d8166dcbca36f6bf8a982886d6087800087eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Config/zipball/fdf9e0ea0f66128301f7fc4f6ffa758812a26db6",
-                "reference": "fdf9e0ea0f66128301f7fc4f6ffa758812a26db6",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/0d4d8166dcbca36f6bf8a982886d6087800087eb",
+                "reference": "0d4d8166dcbca36f6bf8a982886d6087800087eb",
                 "shasum": ""
             },
             "require": {
@@ -1322,7 +1322,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "http://symfony.com",
-            "time": "2014-04-11 18:34:16"
+            "time": "2014-04-16 10:36:21"
         },
         {
             "name": "symfony/filesystem",
@@ -1331,12 +1331,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "fe66eed49c7bbfc312978ef0f86e490127a345b2"
+                "reference": "98e831eac836a0a5911626ce82684155f21d0e4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/fe66eed49c7bbfc312978ef0f86e490127a345b2",
-                "reference": "fe66eed49c7bbfc312978ef0f86e490127a345b2",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/98e831eac836a0a5911626ce82684155f21d0e4d",
+                "reference": "98e831eac836a0a5911626ce82684155f21d0e4d",
                 "shasum": ""
             },
             "require": {
@@ -1371,7 +1371,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "http://symfony.com",
-            "time": "2014-03-26 12:01:00"
+            "time": "2014-04-16 10:36:21"
         },
         {
             "name": "symfony/translation",
@@ -1540,12 +1540,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/core.git",
-                "reference": "38838c583af8098a234d65417753a22ff37a7fe9"
+                "reference": "f5b1e1b0197fa1c8ee7155c777443f390da51aea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/core/zipball/38838c583af8098a234d65417753a22ff37a7fe9",
-                "reference": "38838c583af8098a234d65417753a22ff37a7fe9",
+                "url": "https://api.github.com/repos/webedit/core/zipball/f5b1e1b0197fa1c8ee7155c777443f390da51aea",
+                "reference": "f5b1e1b0197fa1c8ee7155c777443f390da51aea",
                 "shasum": ""
             },
             "require": {
@@ -1562,7 +1562,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-04-13 19:56:59"
+            "time": "2014-04-16 16:57:19"
         },
         {
             "name": "webedit/gallery",
@@ -1570,12 +1570,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/gallery.git",
-                "reference": "3959c6775d8a753999f2bbb9e662c38aa30ee9bf"
+                "reference": "84d1154de397d1b9521fb283f0e28b086ff45f52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/gallery/zipball/3959c6775d8a753999f2bbb9e662c38aa30ee9bf",
-                "reference": "3959c6775d8a753999f2bbb9e662c38aa30ee9bf",
+                "url": "https://api.github.com/repos/webedit/gallery/zipball/84d1154de397d1b9521fb283f0e28b086ff45f52",
+                "reference": "84d1154de397d1b9521fb283f0e28b086ff45f52",
                 "shasum": ""
             },
             "type": "library",
@@ -1585,7 +1585,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-04-15 10:22:07"
+            "time": "2014-04-16 16:55:48"
         },
         {
             "name": "webedit/menu",
@@ -1639,12 +1639,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/resources.git",
-                "reference": "77efb2251f90aa06eb50c2a96e1a6986977c333f"
+                "reference": "9ea2704b6ec8e58113d4bc09a14c528b8b500716"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/resources/zipball/77efb2251f90aa06eb50c2a96e1a6986977c333f",
-                "reference": "77efb2251f90aa06eb50c2a96e1a6986977c333f",
+                "url": "https://api.github.com/repos/webedit/resources/zipball/9ea2704b6ec8e58113d4bc09a14c528b8b500716",
+                "reference": "9ea2704b6ec8e58113d4bc09a14c528b8b500716",
                 "shasum": ""
             },
             "require": {
@@ -1658,7 +1658,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-04-13 19:55:57"
+            "time": "2014-04-16 16:56:39"
         },
         {
             "name": "webedit/shop",
@@ -1666,12 +1666,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/shop.git",
-                "reference": "9fb49286081c456af324ed1dee0bafc77f905606"
+                "reference": "62122aa3235d6fd2d72389a58cd736a997d11519"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/shop/zipball/9fb49286081c456af324ed1dee0bafc77f905606",
-                "reference": "9fb49286081c456af324ed1dee0bafc77f905606",
+                "url": "https://api.github.com/repos/webedit/shop/zipball/62122aa3235d6fd2d72389a58cd736a997d11519",
+                "reference": "62122aa3235d6fd2d72389a58cd736a997d11519",
                 "shasum": ""
             },
             "type": "library",
@@ -1681,7 +1681,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-04-15 10:22:29"
+            "time": "2014-04-15 21:02:20"
         },
         {
             "name": "webedit/sitemap",
