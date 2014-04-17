@@ -5,23 +5,7 @@ $configurator = new Nette\Configurator;
 //$configurator->setDebugMode(TRUE);
 $configurator->enableDebugger(__DIR__ . '/log');
 $configurator->setTempDirectory(__DIR__ . '/private');
-
-$configurator->extensionMethod('configLoader', function($configurator, $directory) {
-    foreach (new DirectoryIterator($directory) as $node) {
-        if ($node->isDir() && !$node->isDot() && file_exists($config = $node->getPathname() . '/config.neon')) {
-            $configurator->addConfig($config);
-        } elseif ($node->getBasename() === 'config.neon') {
-            $configurator->addConfig($node->getPathname());
-        }
-    }
-});
-
-foreach (new DirectoryIterator(__DIR__ . '/vendor/webedit') as $module) {
-    if ($module->isDir() && !$module->isDot()) {
-        $configurator->configLoader($module->getPathname());
-    }
-}
-$configurator->configLoader(__DIR__ . '/local');
+$configurator->addConfig(__DIR__ . '/config.neon');
 
 $container = $configurator->createContainer();
 $application = $container->getService('application');

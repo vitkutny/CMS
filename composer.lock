@@ -1540,12 +1540,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/core.git",
-                "reference": "f5b1e1b0197fa1c8ee7155c777443f390da51aea"
+                "reference": "f237a9f383b188a61251316fd6ca7723a3a38ab4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/core/zipball/f5b1e1b0197fa1c8ee7155c777443f390da51aea",
-                "reference": "f5b1e1b0197fa1c8ee7155c777443f390da51aea",
+                "url": "https://api.github.com/repos/webedit/core/zipball/f237a9f383b188a61251316fd6ca7723a3a38ab4",
+                "reference": "f237a9f383b188a61251316fd6ca7723a3a38ab4",
                 "shasum": ""
             },
             "require": {
@@ -1562,7 +1562,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-04-16 16:57:19"
+            "time": "2014-04-17 09:45:27"
         },
         {
             "name": "webedit/gallery",
@@ -1570,12 +1570,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/gallery.git",
-                "reference": "84d1154de397d1b9521fb283f0e28b086ff45f52"
+                "reference": "79c757696c64e06e58638cb47a7bf1e5a0b29477"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/gallery/zipball/84d1154de397d1b9521fb283f0e28b086ff45f52",
-                "reference": "84d1154de397d1b9521fb283f0e28b086ff45f52",
+                "url": "https://api.github.com/repos/webedit/gallery/zipball/79c757696c64e06e58638cb47a7bf1e5a0b29477",
+                "reference": "79c757696c64e06e58638cb47a7bf1e5a0b29477",
                 "shasum": ""
             },
             "type": "library",
@@ -1585,7 +1585,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-04-16 16:55:48"
+            "time": "2014-04-17 09:45:51"
         },
         {
             "name": "webedit/menu",
@@ -1593,12 +1593,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/menu.git",
-                "reference": "a794248cc5f743b3701f201f13244c4ea125b18b"
+                "reference": "f8c315a0f35edfb7205629315a23773b922563ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/menu/zipball/a794248cc5f743b3701f201f13244c4ea125b18b",
-                "reference": "a794248cc5f743b3701f201f13244c4ea125b18b",
+                "url": "https://api.github.com/repos/webedit/menu/zipball/f8c315a0f35edfb7205629315a23773b922563ae",
+                "reference": "f8c315a0f35edfb7205629315a23773b922563ae",
                 "shasum": ""
             },
             "type": "library",
@@ -1608,7 +1608,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-04-13 19:56:19"
+            "time": "2014-04-17 09:46:17"
         },
         {
             "name": "webedit/page",
@@ -1616,12 +1616,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/page.git",
-                "reference": "f93f8718853b6947fd01a9892ef4939018f38737"
+                "reference": "46debc330e33c691363d11086602e0ae23749312"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/page/zipball/f93f8718853b6947fd01a9892ef4939018f38737",
-                "reference": "f93f8718853b6947fd01a9892ef4939018f38737",
+                "url": "https://api.github.com/repos/webedit/page/zipball/46debc330e33c691363d11086602e0ae23749312",
+                "reference": "46debc330e33c691363d11086602e0ae23749312",
                 "shasum": ""
             },
             "type": "library",
@@ -1631,7 +1631,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-04-01 18:28:47"
+            "time": "2014-04-17 09:46:40"
         },
         {
             "name": "webedit/resources",
@@ -1639,12 +1639,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/resources.git",
-                "reference": "9ea2704b6ec8e58113d4bc09a14c528b8b500716"
+                "reference": "cfe7cde7f543b0929a2627c5e9532011fd55751d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/resources/zipball/9ea2704b6ec8e58113d4bc09a14c528b8b500716",
-                "reference": "9ea2704b6ec8e58113d4bc09a14c528b8b500716",
+                "url": "https://api.github.com/repos/webedit/resources/zipball/cfe7cde7f543b0929a2627c5e9532011fd55751d",
+                "reference": "cfe7cde7f543b0929a2627c5e9532011fd55751d",
                 "shasum": ""
             },
             "require": {
@@ -1658,7 +1658,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-04-16 16:56:39"
+            "time": "2014-04-17 09:46:54"
         },
         {
             "name": "webedit/shop",
@@ -1666,12 +1666,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/shop.git",
-                "reference": "62122aa3235d6fd2d72389a58cd736a997d11519"
+                "reference": "d9ff1e847be1143964f3030aa731a74ead2731a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/shop/zipball/62122aa3235d6fd2d72389a58cd736a997d11519",
-                "reference": "62122aa3235d6fd2d72389a58cd736a997d11519",
+                "url": "https://api.github.com/repos/webedit/shop/zipball/d9ff1e847be1143964f3030aa731a74ead2731a1",
+                "reference": "d9ff1e847be1143964f3030aa731a74ead2731a1",
                 "shasum": ""
             },
             "type": "library",
@@ -1681,7 +1681,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-04-15 21:02:20"
+            "time": "2014-04-17 09:47:11"
         },
         {
             "name": "webedit/sitemap",
@@ -1689,12 +1689,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/sitemap.git",
-                "reference": "df58774ac84ae456fd52cd8352a4072cc9811490"
+                "reference": "119d28f8df54280d76e589aebc57929e4eaa7118"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/sitemap/zipball/df58774ac84ae456fd52cd8352a4072cc9811490",
-                "reference": "df58774ac84ae456fd52cd8352a4072cc9811490",
+                "url": "https://api.github.com/repos/webedit/sitemap/zipball/119d28f8df54280d76e589aebc57929e4eaa7118",
+                "reference": "119d28f8df54280d76e589aebc57929e4eaa7118",
                 "shasum": ""
             },
             "type": "library",
@@ -1704,7 +1704,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-04-01 18:29:19"
+            "time": "2014-04-17 09:47:33"
         }
     ],
     "packages-dev": [

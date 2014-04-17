@@ -1,27 +1,29 @@
-parameters:
-    core:
-        database:
-            host: 127.0.0.1
-            name: webedit
-            user: root
-            password: NULL
 resources:
     scripts:
         - %local.directory%/scripts/jquery-2.1.0.min.js
         - %vendor.directory%/twbs/bootstrap/dist/js/bootstrap.min.js
+        - %vendor.nette.directory%/forms/src/assets/netteForms.js
     styles:
         - %vendor.directory%/twbs/bootstrap/dist/css/bootstrap.min.css
         - %local.directory%/styles/base.css
         - %local.directory%/styles/bootstrap-blockgrid.css
         - %local.directory%/styles/ratio.css
+translation:
+    fallback: [en_US]
 nette:
+    database:
+        dsn: 'mysql:host=127.0.0.1;dbname=webedit'
+        user: root
+        password: NULL
+        options:
+            lazy: yes
+        reflection: conventional
+    container:
+        debugger: TRUE
     session:
         expiration: 14 days
-    routing:
-        routes:
-            '[<locale [a-z]{2}(_[A-Z]{2})?>/]<module>[/<action>][/<id>]':
-                module: Home
-                presenter: Presenter
-                action: view
+        debugger: TRUE
+    debugger:
+        strictMode: TRUE
 php:
     date.timezone: Europe/Prague
