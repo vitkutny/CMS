@@ -1492,12 +1492,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "ee7498a69366c516ccba01ca7c977fb83ea23a7b"
+                "reference": "c8a8e768510cc1bd9e72d5cade23fba715efb59f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/ee7498a69366c516ccba01ca7c977fb83ea23a7b",
-                "reference": "ee7498a69366c516ccba01ca7c977fb83ea23a7b",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/c8a8e768510cc1bd9e72d5cade23fba715efb59f",
+                "reference": "c8a8e768510cc1bd9e72d5cade23fba715efb59f",
                 "shasum": ""
             },
             "type": "library",
@@ -1532,7 +1532,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2014-04-09 19:07:27"
+            "time": "2014-04-17 08:08:54"
         },
         {
             "name": "webedit/core",
@@ -1570,12 +1570,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/gallery.git",
-                "reference": "79c757696c64e06e58638cb47a7bf1e5a0b29477"
+                "reference": "6b22cb779b5e3d83269b4f5d4fca4cf9437c54b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/gallery/zipball/79c757696c64e06e58638cb47a7bf1e5a0b29477",
-                "reference": "79c757696c64e06e58638cb47a7bf1e5a0b29477",
+                "url": "https://api.github.com/repos/webedit/gallery/zipball/6b22cb779b5e3d83269b4f5d4fca4cf9437c54b4",
+                "reference": "6b22cb779b5e3d83269b4f5d4fca4cf9437c54b4",
                 "shasum": ""
             },
             "type": "library",
@@ -1585,7 +1585,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-04-17 09:45:51"
+            "time": "2014-04-17 10:35:30"
         },
         {
             "name": "webedit/menu",
