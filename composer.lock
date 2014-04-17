@@ -1540,12 +1540,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/core.git",
-                "reference": "f237a9f383b188a61251316fd6ca7723a3a38ab4"
+                "reference": "8377d5dff3a3fc4c57edec31ae882f6ca92be7c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/core/zipball/f237a9f383b188a61251316fd6ca7723a3a38ab4",
-                "reference": "f237a9f383b188a61251316fd6ca7723a3a38ab4",
+                "url": "https://api.github.com/repos/webedit/core/zipball/8377d5dff3a3fc4c57edec31ae882f6ca92be7c8",
+                "reference": "8377d5dff3a3fc4c57edec31ae882f6ca92be7c8",
                 "shasum": ""
             },
             "require": {
@@ -1562,7 +1562,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-04-17 09:45:27"
+            "time": "2014-04-17 10:09:26"
         },
         {
             "name": "webedit/gallery",
