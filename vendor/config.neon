@@ -1,5 +1,4 @@
 extensions:
-    webedit: WebEdit\Extension
     form: WebEdit\Form\Extension
     menu: WebEdit\Menu\Extension
     page: WebEdit\Page\Extension
@@ -7,4 +6,4 @@ extensions:
     shop: WebEdit\Shop\Extension
     resources: WebEdit\Resources\Extension
     sitemap: WebEdit\Sitemap\Extension
-    translation: Kdyby\Translation\DI\TranslationExtension
+    translation: WebEdit\Translation\Extension

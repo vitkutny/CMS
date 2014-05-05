@@ -1,6 +1,7 @@
 {
     "minimum-stability": "dev",
     "name": "webedit/sandbox",
+    "type": "project",
     "description": "WebEdit CMS",
     "keywords": ["webedit", "web", "edit"],
     "homepage": "http://github.com/webedit",
@@ -10,6 +11,7 @@
         "webedit/shop": "dev-master",
         "webedit/gallery": "dev-master",
         "webedit/sitemap": "dev-master",
+        "yiisoft/jquery": "dev-master",
         "twbs/bootstrap": "dev-master"
     },
     "autoload": {

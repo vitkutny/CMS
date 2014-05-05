@@ -3,14 +3,8 @@ parameters:
         directory: %appDir%
     local:
         directory: %application.directory%/local
-    log:
-        directory: %application.directory%/log
     vendor:
         directory: %application.directory%/vendor
-        webedit:
-            directory: %vendor.directory%/webedit
-        nette:
-            directory: %vendor.directory%/nette
     public:
         directory: %wwwDir%
         cache:
@@ -23,11 +17,12 @@ parameters:
             directory: %private.directory%/cache
         upload:
             directory: %private.directory%/upload
+        log:
+            directory: %private.directory%/log
 nette:
     application:
         mapping:
             *: WebEdit\*\*
-        errorPresenter: Error
     routing:
         routes:
             'admin':
@@ -38,10 +33,7 @@ nette:
                 module: Gallery:Photo
                 presenter: Presenter
                 action: view
-            '[<locale [a-z]{2}(_[A-Z]{2})?>/]<module>[/<action>][/<id>]':
+            '[<locale [a-z]{2}(_[A-Z]{2})?>/]<module [a-z.]+>[/<action [a-z]+>][/<id [0-9]+>]':
                 module: Home
                 presenter: Presenter
                 action: view
-includes:
-    - vendor/config.neon
-    - local/config.neon
