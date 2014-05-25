@@ -23,6 +23,8 @@ nette:
     application:
         mapping:
             *: WebEdit\*\*
+    session:
+        autoStart: TRUE
     routing:
         routes:
             'admin':
