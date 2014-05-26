@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b9eb8990c8ab6e2851bc97f171933b08",
+    "hash": "1101dc2b4e41a25f9329687d0516cd94",
     "packages": [
         {
             "name": "janmarek/webloader",
@@ -1844,17 +1844,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/shop.git",
-                "reference": "bf0aad277c7c46cf27d7e3be16afa335217ba917"
+                "reference": "75f1515ed29c86fff4822ef38ccdffa14e8f48ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/shop/zipball/bf0aad277c7c46cf27d7e3be16afa335217ba917",
-                "reference": "bf0aad277c7c46cf27d7e3be16afa335217ba917",
+                "url": "https://api.github.com/repos/webedit/shop/zipball/75f1515ed29c86fff4822ef38ccdffa14e8f48ac",
+                "reference": "75f1515ed29c86fff4822ef38ccdffa14e8f48ac",
                 "shasum": ""
             },
             "require": {
                 "webedit/core": "dev-master",
                 "webedit/form": "dev-master",
+                "webedit/gallery": "dev-master",
                 "webedit/menu": "dev-master"
             },
             "type": "library",
@@ -1864,7 +1865,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-05-26 17:42:37"
+            "time": "2014-05-26 19:43:42"
         },
         {
             "name": "webedit/sitemap",
@@ -1955,7 +1956,6 @@
         "webedit/core": 20,
         "webedit/page": 20,
         "webedit/shop": 20,
-        "webedit/gallery": 20,
         "webedit/sitemap": 20,
         "yiisoft/jquery": 20,
         "twbs/bootstrap": 20
