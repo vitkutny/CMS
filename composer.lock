@@ -1672,17 +1672,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/core.git",
-                "reference": "a4a5d908e52808a087b8660549e285ece9723439"
+                "reference": "3e2a5d3949ff023631b052236bafd6938520de36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/core/zipball/a4a5d908e52808a087b8660549e285ece9723439",
-                "reference": "a4a5d908e52808a087b8660549e285ece9723439",
+                "url": "https://api.github.com/repos/webedit/core/zipball/3e2a5d3949ff023631b052236bafd6938520de36",
+                "reference": "3e2a5d3949ff023631b052236bafd6938520de36",
                 "shasum": ""
             },
             "require": {
                 "nette/application": "dev-master",
-                "nextras/forms": "dev-master",
+                "nette/database": "dev-master",
+                "nette/di": "dev-master",
+                "nette/http": "dev-master",
+                "nette/utils": "dev-master",
                 "webedit/menu": "dev-master",
                 "webedit/resources": "dev-master",
                 "webedit/translation": "dev-master"
@@ -1690,11 +1693,40 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "WebEdit\\": ""
+                    "WebEdit\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-05-25 21:24:47"
+            "time": "2014-05-26 17:37:42"
+        },
+        {
+            "name": "webedit/form",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webedit/form.git",
+                "reference": "15d7748f4f3e2705056ef9af8c440eb79e1be411"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webedit/form/zipball/15d7748f4f3e2705056ef9af8c440eb79e1be411",
+                "reference": "15d7748f4f3e2705056ef9af8c440eb79e1be411",
+                "shasum": ""
+            },
+            "require": {
+                "nette/application": "dev-master",
+                "nette/forms": "dev-master",
+                "nextras/forms": "dev-master",
+                "webedit/core": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WebEdit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2014-05-26 17:37:55"
         },
         {
             "name": "webedit/gallery",
@@ -1702,22 +1734,26 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/gallery.git",
-                "reference": "78758a7c0e6e9025f67a3b8e12527f8c1276d569"
+                "reference": "5c3998506ef73a6ff2c6b8caf548b91923005b43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/gallery/zipball/78758a7c0e6e9025f67a3b8e12527f8c1276d569",
-                "reference": "78758a7c0e6e9025f67a3b8e12527f8c1276d569",
+                "url": "https://api.github.com/repos/webedit/gallery/zipball/5c3998506ef73a6ff2c6b8caf548b91923005b43",
+                "reference": "5c3998506ef73a6ff2c6b8caf548b91923005b43",
                 "shasum": ""
+            },
+            "require": {
+                "webedit/core": "dev-master",
+                "webedit/form": "dev-master"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "WebEdit\\Gallery\\": ""
+                    "WebEdit\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-05-07 13:28:29"
+            "time": "2014-05-26 17:38:09"
         },
         {
             "name": "webedit/menu",
@@ -1725,22 +1761,26 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/menu.git",
-                "reference": "34963cc9dea842c33f38cb8e72bc76170c97469e"
+                "reference": "4f34fb26c36de47bb25f3f0de015accfaeffa3c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/menu/zipball/34963cc9dea842c33f38cb8e72bc76170c97469e",
-                "reference": "34963cc9dea842c33f38cb8e72bc76170c97469e",
+                "url": "https://api.github.com/repos/webedit/menu/zipball/4f34fb26c36de47bb25f3f0de015accfaeffa3c3",
+                "reference": "4f34fb26c36de47bb25f3f0de015accfaeffa3c3",
                 "shasum": ""
+            },
+            "require": {
+                "webedit/core": "dev-master",
+                "webedit/form": "dev-master"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "WebEdit\\Menu\\": ""
+                    "WebEdit\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-05-25 21:25:11"
+            "time": "2014-05-26 17:38:27"
         },
         {
             "name": "webedit/page",
@@ -1748,22 +1788,27 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/page.git",
-                "reference": "dacd39322a2643c3979590506254bef323f2da18"
+                "reference": "4a73488d82129d2d49e4605252aacf744d0a6360"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/page/zipball/dacd39322a2643c3979590506254bef323f2da18",
-                "reference": "dacd39322a2643c3979590506254bef323f2da18",
+                "url": "https://api.github.com/repos/webedit/page/zipball/4a73488d82129d2d49e4605252aacf744d0a6360",
+                "reference": "4a73488d82129d2d49e4605252aacf744d0a6360",
                 "shasum": ""
+            },
+            "require": {
+                "webedit/core": "dev-master",
+                "webedit/form": "dev-master",
+                "webedit/menu": "dev-master"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "WebEdit\\Page\\": ""
+                    "WebEdit\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-05-25 21:25:23"
+            "time": "2014-05-26 17:38:40"
         },
         {
             "name": "webedit/resources",
@@ -1771,26 +1816,27 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/resources.git",
-                "reference": "413a5fa769a40100e1acf9b6ce152a2a1775c85b"
+                "reference": "5247921b59785f57a6db79be3ded406b4e0ab5ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/resources/zipball/413a5fa769a40100e1acf9b6ce152a2a1775c85b",
-                "reference": "413a5fa769a40100e1acf9b6ce152a2a1775c85b",
+                "url": "https://api.github.com/repos/webedit/resources/zipball/5247921b59785f57a6db79be3ded406b4e0ab5ff",
+                "reference": "5247921b59785f57a6db79be3ded406b4e0ab5ff",
                 "shasum": ""
             },
             "require": {
                 "janmarek/webloader": "dev-master",
-                "meenie/javascript-packer": "dev-master"
+                "meenie/javascript-packer": "dev-master",
+                "webedit/core": "dev-master"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "WebEdit\\Resources\\": ""
+                    "WebEdit\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-05-07 13:29:04"
+            "time": "2014-05-26 17:38:55"
         },
         {
             "name": "webedit/shop",
@@ -1798,22 +1844,27 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/shop.git",
-                "reference": "69cb0fafb28b1d981a275a91042d4d36c95e0413"
+                "reference": "bf0aad277c7c46cf27d7e3be16afa335217ba917"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/shop/zipball/69cb0fafb28b1d981a275a91042d4d36c95e0413",
-                "reference": "69cb0fafb28b1d981a275a91042d4d36c95e0413",
+                "url": "https://api.github.com/repos/webedit/shop/zipball/bf0aad277c7c46cf27d7e3be16afa335217ba917",
+                "reference": "bf0aad277c7c46cf27d7e3be16afa335217ba917",
                 "shasum": ""
+            },
+            "require": {
+                "webedit/core": "dev-master",
+                "webedit/form": "dev-master",
+                "webedit/menu": "dev-master"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "WebEdit\\Shop\\": ""
+                    "WebEdit\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-05-25 21:25:49"
+            "time": "2014-05-26 17:42:37"
         },
         {
             "name": "webedit/sitemap",
@@ -1821,22 +1872,27 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/sitemap.git",
-                "reference": "952a2c7859fffb7b0c08fb79f886facece57d382"
+                "reference": "54337bfda2d5f2a7634ad13ac98776145244b46b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/sitemap/zipball/952a2c7859fffb7b0c08fb79f886facece57d382",
-                "reference": "952a2c7859fffb7b0c08fb79f886facece57d382",
+                "url": "https://api.github.com/repos/webedit/sitemap/zipball/54337bfda2d5f2a7634ad13ac98776145244b46b",
+                "reference": "54337bfda2d5f2a7634ad13ac98776145244b46b",
                 "shasum": ""
+            },
+            "require": {
+                "webedit/core": "dev-master",
+                "webedit/form": "dev-master",
+                "webedit/menu": "dev-master"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "WebEdit\\Sitemap\\": ""
+                    "WebEdit\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-05-25 21:25:59"
+            "time": "2014-05-26 17:39:17"
         },
         {
             "name": "webedit/translation",
@@ -1844,12 +1900,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/translation.git",
-                "reference": "16e244ec89ca850716b62a2ed98fc0d1d83da619"
+                "reference": "287942a6bfa9af16b47e8398a48d91d14582c56d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/translation/zipball/16e244ec89ca850716b62a2ed98fc0d1d83da619",
-                "reference": "16e244ec89ca850716b62a2ed98fc0d1d83da619",
+                "url": "https://api.github.com/repos/webedit/translation/zipball/287942a6bfa9af16b47e8398a48d91d14582c56d",
+                "reference": "287942a6bfa9af16b47e8398a48d91d14582c56d",
                 "shasum": ""
             },
             "require": {
@@ -1858,11 +1914,11 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "WebEdit\\Translation\\": ""
+                    "WebEdit\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-05-07 13:29:32"
+            "time": "2014-05-26 17:11:31"
         },
         {
             "name": "yiisoft/jquery",
