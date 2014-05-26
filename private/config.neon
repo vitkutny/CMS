@@ -1,6 +1,6 @@
 parameters:
     application:
-        directory: %appDir%
+        directory: %appDir%/..
     local:
         directory: %application.directory%/local
     vendor:

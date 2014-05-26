@@ -9,7 +9,6 @@
         "webedit/core": "dev-master",
         "webedit/page": "dev-master",
         "webedit/shop": "dev-master",
-        "webedit/gallery": "dev-master",
         "webedit/sitemap": "dev-master",
         "yiisoft/jquery": "dev-master",
         "twbs/bootstrap": "dev-master"
