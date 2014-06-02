@@ -27,12 +27,15 @@ nette:
         autoStart: TRUE
     routing:
         routes:
-            'admin':
-                module: Home:Admin
-                presenter: Presenter
-                action: view
             'cache/gallery/photo[/<id>].jpg':
                 module: Gallery:Photo
+                presenter: Presenter
+                action: view
+            'cache/resources/<action>':
+                module: Resources
+                presenter: Presenter
+            'admin':
+                module: Home:Admin
                 presenter: Presenter
                 action: view
             '[<locale [a-z]{2}(_[A-Z]{2})?>/]<module [a-z.]+>[/<action [a-z]+>][/<id [0-9]+>]':

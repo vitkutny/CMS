@@ -5,9 +5,6 @@ resources:
         - %vendor.directory%/nette/forms/src/assets/netteForms.js
     styles:
         - %vendor.directory%/twbs/bootstrap/dist/css/bootstrap.min.css
-        - %local.directory%/styles/base.css
-        - %local.directory%/styles/bootstrap-blockgrid.css
-        - %local.directory%/styles/ratio.css
 translation:
     fallback: [en_US]
 database:
