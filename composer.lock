@@ -238,12 +238,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/application.git",
-                "reference": "99c70867db75b735e1c3f8199734ac2104f4a84c"
+                "reference": "dcde44dbfa56a0a32670cf760ff9a250f5ce7a5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/application/zipball/99c70867db75b735e1c3f8199734ac2104f4a84c",
-                "reference": "99c70867db75b735e1c3f8199734ac2104f4a84c",
+                "url": "https://api.github.com/repos/nette/application/zipball/dcde44dbfa56a0a32670cf760ff9a250f5ce7a5a",
+                "reference": "dcde44dbfa56a0a32670cf760ff9a250f5ce7a5a",
                 "shasum": ""
             },
             "require": {
@@ -294,7 +294,7 @@
             ],
             "description": "Nette Application MVC Component",
             "homepage": "http://nette.org",
-            "time": "2014-05-27 08:14:00"
+            "time": "2014-06-02 07:37:32"
         },
         {
             "name": "nette/bootstrap",
@@ -478,12 +478,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/database.git",
-                "reference": "6a1f848cdf90130aca1e3fc72002c74b86d8c2a9"
+                "reference": "859eed0440032e896b25ffdd19cc9921704a389a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/database/zipball/6a1f848cdf90130aca1e3fc72002c74b86d8c2a9",
-                "reference": "6a1f848cdf90130aca1e3fc72002c74b86d8c2a9",
+                "url": "https://api.github.com/repos/nette/database/zipball/859eed0440032e896b25ffdd19cc9921704a389a",
+                "reference": "859eed0440032e896b25ffdd19cc9921704a389a",
                 "shasum": ""
             },
             "require": {
@@ -527,7 +527,7 @@
             ],
             "description": "Nette Database Component",
             "homepage": "http://nette.org",
-            "time": "2014-05-25 06:26:56"
+            "time": "2014-06-02 12:07:46"
         },
         {
             "name": "nette/di",
@@ -1672,12 +1672,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/core.git",
-                "reference": "8a168aa82445f0afbc57f3024b5c9033f2be266f"
+                "reference": "2ce237dd912fd23f0bfc425d5758edee4bdb1075"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/core/zipball/8a168aa82445f0afbc57f3024b5c9033f2be266f",
-                "reference": "8a168aa82445f0afbc57f3024b5c9033f2be266f",
+                "url": "https://api.github.com/repos/webedit/core/zipball/2ce237dd912fd23f0bfc425d5758edee4bdb1075",
+                "reference": "2ce237dd912fd23f0bfc425d5758edee4bdb1075",
                 "shasum": ""
             },
             "require": {
@@ -1697,7 +1697,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-05-29 13:18:30"
+            "time": "2014-06-02 01:06:57"
         },
         {
             "name": "webedit/form",
@@ -1761,12 +1761,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/menu.git",
-                "reference": "886601113f02fd1cfdf9fd079e9139169cc47e78"
+                "reference": "d478dde8fa577496b023befaf62021fd9fe097e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/menu/zipball/886601113f02fd1cfdf9fd079e9139169cc47e78",
-                "reference": "886601113f02fd1cfdf9fd079e9139169cc47e78",
+                "url": "https://api.github.com/repos/webedit/menu/zipball/d478dde8fa577496b023befaf62021fd9fe097e9",
+                "reference": "d478dde8fa577496b023befaf62021fd9fe097e9",
                 "shasum": ""
             },
             "require": {
@@ -1780,7 +1780,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-05-29 13:19:14"
+            "time": "2014-06-02 01:06:22"
         },
         {
             "name": "webedit/page",
@@ -1788,12 +1788,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/page.git",
-                "reference": "e9e7b70954c90fc79cc6a405b4d8265b8d036388"
+                "reference": "efe30e0671da4aea10195ec6d6130ff4fa0eff2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/page/zipball/e9e7b70954c90fc79cc6a405b4d8265b8d036388",
-                "reference": "e9e7b70954c90fc79cc6a405b4d8265b8d036388",
+                "url": "https://api.github.com/repos/webedit/page/zipball/efe30e0671da4aea10195ec6d6130ff4fa0eff2a",
+                "reference": "efe30e0671da4aea10195ec6d6130ff4fa0eff2a",
                 "shasum": ""
             },
             "require": {
@@ -1808,7 +1808,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-05-29 13:19:27"
+            "time": "2014-06-02 01:06:40"
         },
         {
             "name": "webedit/resources",
@@ -1816,12 +1816,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/resources.git",
-                "reference": "abb54eefa710874788e6975b9942868f22085635"
+                "reference": "5323e96e813b612c18692916efcac18da90fe5ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/resources/zipball/abb54eefa710874788e6975b9942868f22085635",
-                "reference": "abb54eefa710874788e6975b9942868f22085635",
+                "url": "https://api.github.com/repos/webedit/resources/zipball/5323e96e813b612c18692916efcac18da90fe5ab",
+                "reference": "5323e96e813b612c18692916efcac18da90fe5ab",
                 "shasum": ""
             },
             "require": {
@@ -1836,7 +1836,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-05-27 00:50:15"
+            "time": "2014-06-02 01:05:58"
         },
         {
             "name": "webedit/shop",
@@ -1901,12 +1901,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/translation.git",
-                "reference": "287942a6bfa9af16b47e8398a48d91d14582c56d"
+                "reference": "727a7f5f1d46ae7e676260d62df1ee8b487fc9bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/translation/zipball/287942a6bfa9af16b47e8398a48d91d14582c56d",
-                "reference": "287942a6bfa9af16b47e8398a48d91d14582c56d",
+                "url": "https://api.github.com/repos/webedit/translation/zipball/727a7f5f1d46ae7e676260d62df1ee8b487fc9bc",
+                "reference": "727a7f5f1d46ae7e676260d62df1ee8b487fc9bc",
                 "shasum": ""
             },
             "require": {
@@ -1919,7 +1919,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-05-26 17:11:31"
+            "time": "2014-06-02 01:05:33"
         },
         {
             "name": "yiisoft/jquery",
