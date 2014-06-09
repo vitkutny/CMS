@@ -302,12 +302,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/bootstrap.git",
-                "reference": "ee883bf6db0f9b3d8402abc93890715300d38d84"
+                "reference": "d0e6f073f49eb6231ddfc8bacbce2afd22b027c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/bootstrap/zipball/ee883bf6db0f9b3d8402abc93890715300d38d84",
-                "reference": "ee883bf6db0f9b3d8402abc93890715300d38d84",
+                "url": "https://api.github.com/repos/nette/bootstrap/zipball/d0e6f073f49eb6231ddfc8bacbce2afd22b027c5",
+                "reference": "d0e6f073f49eb6231ddfc8bacbce2afd22b027c5",
                 "shasum": ""
             },
             "require": {
@@ -358,7 +358,7 @@
             ],
             "description": "Nette Bootstrap",
             "homepage": "http://nette.org",
-            "time": "2014-05-25 06:26:42"
+            "time": "2014-06-09 17:15:20"
         },
         {
             "name": "nette/caching",
@@ -1765,12 +1765,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/menu.git",
-                "reference": "d82b00cbf49359a064afe53f274dc37acf18344f"
+                "reference": "0b4a776555f0b12d2d6b2a4eedeea193b103a2ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/menu/zipball/d82b00cbf49359a064afe53f274dc37acf18344f",
-                "reference": "d82b00cbf49359a064afe53f274dc37acf18344f",
+                "url": "https://api.github.com/repos/webedit/menu/zipball/0b4a776555f0b12d2d6b2a4eedeea193b103a2ec",
+                "reference": "0b4a776555f0b12d2d6b2a4eedeea193b103a2ec",
                 "shasum": ""
             },
             "require": {
@@ -1784,7 +1784,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-09 14:46:22"
+            "time": "2014-06-09 20:51:38"
         },
         {
             "name": "webedit/page",
