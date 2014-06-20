@@ -1,7 +1,10 @@
 <?php
 
 require_once __DIR__ . '/../vendor/autoload.php';
-$configurator = new Nette\Configurator;
+
+use WebEdit\Application;
+
+$configurator = new Application\Configurator;
 $configurator->enableDebugger(__DIR__ . '/log');
 $configurator->setTempDirectory(__DIR__);
 

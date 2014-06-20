@@ -4,6 +4,5 @@ extensions:
     page: WebEdit\Page\Extension
     gallery: WebEdit\Gallery\Extension
     shop: WebEdit\Shop\Extension
-    resources: WebEdit\Resources\Extension
     sitemap: WebEdit\Sitemap\Extension
     translation: WebEdit\Translation\Extension

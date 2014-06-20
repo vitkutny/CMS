@@ -4,61 +4,8 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1a03f4c65213e6924bf95719eb4f3482",
+    "hash": "ce5862a47429db8961e6eba0f511d981",
     "packages": [
-        {
-            "name": "janmarek/webloader",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/janmarek/WebLoader.git",
-                "reference": "8112de43da0e4049ebe7f03248e259ab79e44424"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/janmarek/WebLoader/zipball/8112de43da0e4049ebe7f03248e259ab79e44424",
-                "reference": "8112de43da0e4049ebe7f03248e259ab79e44424",
-                "shasum": ""
-            },
-            "require": {
-                "nette/nette": "~2.0@rc"
-            },
-            "require-dev": {
-                "mockery/mockery": "0.7.*",
-                "phpunit/phpunit": "3.7.*"
-            },
-            "suggest": {
-                "leafo/lessphp": "Lessphp is a composer for LESS written in PHP."
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "WebLoader": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jan Marek",
-                    "email": "mail@janmarek.net",
-                    "homepage": "http://www.janmarek.net/",
-                    "role": "Author"
-                }
-            ],
-            "description": "Tool for loading or deploying CSS and JS files into web pages",
-            "homepage": "http://addons.nette.org/cs/webloader",
-            "keywords": [
-                "assets",
-                "css",
-                "javascript",
-                "nette",
-                "webloader"
-            ],
-            "time": "2014-05-20 09:53:48"
-        },
         {
             "name": "kdyby/translation",
             "version": "dev-master",
@@ -194,43 +141,6 @@
                 "twig"
             ],
             "time": "2014-06-19 10:51:12"
-        },
-        {
-            "name": "meenie/javascript-packer",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/meenie/javascript-packer.git",
-                "reference": "dcab0159ae1ed9d7535c034fb8afe1e4c3495d22"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/meenie/javascript-packer/zipball/dcab0159ae1ed9d7535c034fb8afe1e4c3495d22",
-                "reference": "dcab0159ae1ed9d7535c034fb8afe1e4c3495d22",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "class.JavaScriptPacker.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL 2.1"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Martin",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Composer hosted mirror of the PHP Version of Dean Edwards' JavaScript Packer",
-            "homepage": "http://joliclic.free.fr/php/javascript-packer/en/",
-            "keywords": [
-                "javascript packer"
-            ],
-            "time": "2013-03-25 21:54:33"
         },
         {
             "name": "nette/application",
@@ -761,65 +671,6 @@
             "time": "2014-05-25 06:27:17"
         },
         {
-            "name": "nette/mail",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nette/mail.git",
-                "reference": "683f2631f3f0fefac45f11f21da9d21eb24df84c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nette/mail/zipball/683f2631f3f0fefac45f11f21da9d21eb24df84c",
-                "reference": "683f2631f3f0fefac45f11f21da9d21eb24df84c",
-                "shasum": ""
-            },
-            "require": {
-                "ext-iconv": "*",
-                "nette/utils": "~2.2",
-                "php": ">=5.3.1"
-            },
-            "conflict": {
-                "nette/nette": "<2.2"
-            },
-            "require-dev": {
-                "nette/tester": "~1.0"
-            },
-            "suggest": {
-                "ext-fileinfo": "to detect type of attached files"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.3-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause",
-                "GPL-2.0",
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "David Grudl",
-                    "homepage": "http://davidgrudl.com"
-                },
-                {
-                    "name": "Nette Community",
-                    "homepage": "http://nette.org/contributors"
-                }
-            ],
-            "description": "Nette Mail: Sending E-mails",
-            "homepage": "http://nette.org",
-            "time": "2014-06-16 15:16:40"
-        },
-        {
             "name": "nette/neon",
             "version": "dev-master",
             "source": {
@@ -870,88 +721,6 @@
             "description": "Nette NEON: parser & generator for Nette Object Notation",
             "homepage": "http://ne-on.org",
             "time": "2014-05-23 20:15:56"
-        },
-        {
-            "name": "nette/nette",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nette/nette.git",
-                "reference": "13bd6e0198c68771b6e1df73343fb1e254b5ac80"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nette/nette/zipball/13bd6e0198c68771b6e1df73343fb1e254b5ac80",
-                "reference": "13bd6e0198c68771b6e1df73343fb1e254b5ac80",
-                "shasum": ""
-            },
-            "require": {
-                "latte/latte": ">=2.2.0",
-                "nette/application": ">=2.2.0",
-                "nette/bootstrap": ">=2.2.0",
-                "nette/caching": ">=2.2.0",
-                "nette/component-model": ">=2.2.0",
-                "nette/database": ">=2.2.0",
-                "nette/di": ">=2.2.0",
-                "nette/finder": ">=2.2.0",
-                "nette/forms": ">=2.2.0",
-                "nette/http": ">=2.2.0",
-                "nette/mail": ">=2.2.0",
-                "nette/neon": ">=2.2.0",
-                "nette/php-generator": ">=2.2.0",
-                "nette/reflection": ">=2.2.0",
-                "nette/robot-loader": ">=2.2.0",
-                "nette/safe-stream": ">=2.2.0",
-                "nette/security": ">=2.2.0",
-                "nette/tokenizer": ">=2.2.0",
-                "nette/utils": ">=2.2.0",
-                "tracy/tracy": ">=2.2.0"
-            },
-            "require-dev": {
-                "nette/tester": "~1.1"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.3-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "Nette/"
-                ],
-                "files": [
-                    "Nette/loader.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause",
-                "GPL-2.0",
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "David Grudl",
-                    "homepage": "http://davidgrudl.com"
-                },
-                {
-                    "name": "Nette Community",
-                    "homepage": "http://nette.org/contributors"
-                }
-            ],
-            "description": "Nette Framework - innovative framework for fast and easy development of secured web applications in PHP. Write less, have cleaner code and your work will bring you joy.",
-            "homepage": "http://nette.org",
-            "keywords": [
-                "Forms",
-                "database",
-                "debugging",
-                "framework",
-                "mailing",
-                "mvc",
-                "templating"
-            ],
-            "time": "2014-05-25 01:00:46"
         },
         {
             "name": "nette/php-generator",
@@ -1066,117 +835,6 @@
             "time": "2014-05-25 06:27:31"
         },
         {
-            "name": "nette/robot-loader",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nette/robot-loader.git",
-                "reference": "4b8c4226936dd6aec0ff3f623ff4cf8dd44cf92f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nette/robot-loader/zipball/4b8c4226936dd6aec0ff3f623ff4cf8dd44cf92f",
-                "reference": "4b8c4226936dd6aec0ff3f623ff4cf8dd44cf92f",
-                "shasum": ""
-            },
-            "require": {
-                "nette/caching": "~2.2",
-                "nette/finder": "~2.2",
-                "nette/utils": "~2.2",
-                "php": ">=5.3.1"
-            },
-            "conflict": {
-                "nette/nette": "<2.2"
-            },
-            "require-dev": {
-                "nette/tester": "~1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.3-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause",
-                "GPL-2.0",
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "David Grudl",
-                    "homepage": "http://davidgrudl.com"
-                },
-                {
-                    "name": "Nette Community",
-                    "homepage": "http://nette.org/contributors"
-                }
-            ],
-            "description": "Nette RobotLoader: comfortable autoloading",
-            "homepage": "http://nette.org",
-            "time": "2014-05-25 06:27:36"
-        },
-        {
-            "name": "nette/safe-stream",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nette/safe-stream.git",
-                "reference": "46c64184da6a37d226ccc7559e3d818404876844"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nette/safe-stream/zipball/46c64184da6a37d226ccc7559e3d818404876844",
-                "reference": "46c64184da6a37d226ccc7559e3d818404876844",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.1"
-            },
-            "conflict": {
-                "nette/nette": "<2.2"
-            },
-            "require-dev": {
-                "nette/tester": "~1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.3-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause",
-                "GPL-2.0",
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "David Grudl",
-                    "homepage": "http://davidgrudl.com"
-                },
-                {
-                    "name": "Nette Community",
-                    "homepage": "http://nette.org/contributors"
-                }
-            ],
-            "description": "Nette SafeStream: Atomic Operations",
-            "homepage": "http://nette.org",
-            "time": "2014-05-25 06:21:52"
-        },
-        {
             "name": "nette/security",
             "version": "dev-master",
             "source": {
@@ -1230,60 +888,6 @@
             "description": "Nette Security: Access Control Component",
             "homepage": "http://nette.org",
             "time": "2014-05-25 06:30:30"
-        },
-        {
-            "name": "nette/tokenizer",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nette/tokenizer.git",
-                "reference": "937fa5fc9794af7f88be28bc843f06bdc27abacb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nette/tokenizer/zipball/937fa5fc9794af7f88be28bc843f06bdc27abacb",
-                "reference": "937fa5fc9794af7f88be28bc843f06bdc27abacb",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.1"
-            },
-            "conflict": {
-                "nette/nette": "<2.2"
-            },
-            "require-dev": {
-                "nette/tester": "~1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.3-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause",
-                "GPL-2.0",
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "David Grudl",
-                    "homepage": "http://davidgrudl.com"
-                },
-                {
-                    "name": "Nette Community",
-                    "homepage": "http://nette.org/contributors"
-                }
-            ],
-            "description": "Nette Tokenizer",
-            "homepage": "http://nette.org",
-            "time": "2014-05-25 06:18:59"
         },
         {
             "name": "nette/utils",
@@ -1401,12 +1005,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "8ec53ca0a09cf07b58a62590b67166f4a39af81b"
+                "reference": "c5535943b0d48e5cc54f5bc8088bfc0aefda7f39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/8ec53ca0a09cf07b58a62590b67166f4a39af81b",
-                "reference": "8ec53ca0a09cf07b58a62590b67166f4a39af81b",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/c5535943b0d48e5cc54f5bc8088bfc0aefda7f39",
+                "reference": "c5535943b0d48e5cc54f5bc8088bfc0aefda7f39",
                 "shasum": ""
             },
             "require": {
@@ -1441,7 +1045,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "http://symfony.com",
-            "time": "2014-05-23 14:36:49"
+            "time": "2014-06-20 17:41:51"
         },
         {
             "name": "symfony/translation",
@@ -1501,17 +1105,297 @@
             "time": "2014-06-17 05:29:56"
         },
         {
+            "name": "webedit/application",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webedit/application.git",
+                "reference": "00a9ee945b51d9240b67d82a069b28f7629bd0e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webedit/application/zipball/00a9ee945b51d9240b67d82a069b28f7629bd0e3",
+                "reference": "00a9ee945b51d9240b67d82a069b28f7629bd0e3",
+                "shasum": ""
+            },
+            "require": {
+                "nette/application": "dev-master",
+                "nette/bootstrap": "dev-master",
+                "nette/di": "dev-master",
+                "nette/utils": "dev-master",
+                "webedit/menu": "dev-master",
+                "webedit/translation": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WebEdit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2014-06-20 22:32:25"
+        },
+        {
+            "name": "webedit/core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webedit/core.git",
+                "reference": "08b4cd85ec3fa062c2807fe097692ccfcf22aa2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webedit/core/zipball/08b4cd85ec3fa062c2807fe097692ccfcf22aa2f",
+                "reference": "08b4cd85ec3fa062c2807fe097692ccfcf22aa2f",
+                "shasum": ""
+            },
+            "require": {
+                "nette/database": "dev-master",
+                "nette/http": "dev-master",
+                "nette/utils": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WebEdit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2014-06-20 22:32:04"
+        },
+        {
+            "name": "webedit/form",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webedit/form.git",
+                "reference": "0bf60819b559ed4deb7350722df3ed5bbb0f8e28"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webedit/form/zipball/0bf60819b559ed4deb7350722df3ed5bbb0f8e28",
+                "reference": "0bf60819b559ed4deb7350722df3ed5bbb0f8e28",
+                "shasum": ""
+            },
+            "require": {
+                "nette/application": "dev-master",
+                "nette/forms": "dev-master",
+                "webedit/application": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WebEdit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2014-06-20 22:31:47"
+        },
+        {
+            "name": "webedit/gallery",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webedit/gallery.git",
+                "reference": "aec78313e8d8fcdf5f455e772e85e20ce7766b2d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webedit/gallery/zipball/aec78313e8d8fcdf5f455e772e85e20ce7766b2d",
+                "reference": "aec78313e8d8fcdf5f455e772e85e20ce7766b2d",
+                "shasum": ""
+            },
+            "require": {
+                "webedit/application": "dev-master",
+                "webedit/form": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WebEdit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2014-06-20 22:31:35"
+        },
+        {
+            "name": "webedit/home",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webedit/home.git",
+                "reference": "11394c9cfdc24053c05ef6dbc7ce4eeca83f2b57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webedit/home/zipball/11394c9cfdc24053c05ef6dbc7ce4eeca83f2b57",
+                "reference": "11394c9cfdc24053c05ef6dbc7ce4eeca83f2b57",
+                "shasum": ""
+            },
+            "require": {
+                "webedit/application": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WebEdit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2014-06-20 21:22:57"
+        },
+        {
+            "name": "webedit/menu",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webedit/menu.git",
+                "reference": "349e8178bb004ef897cf6b664ab3087884d216a4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webedit/menu/zipball/349e8178bb004ef897cf6b664ab3087884d216a4",
+                "reference": "349e8178bb004ef897cf6b664ab3087884d216a4",
+                "shasum": ""
+            },
+            "require": {
+                "webedit/application": "dev-master",
+                "webedit/form": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WebEdit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2014-06-20 22:31:12"
+        },
+        {
+            "name": "webedit/page",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webedit/page.git",
+                "reference": "ba9e837d744feb04b0c8de257d7b91bb7b94daf2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webedit/page/zipball/ba9e837d744feb04b0c8de257d7b91bb7b94daf2",
+                "reference": "ba9e837d744feb04b0c8de257d7b91bb7b94daf2",
+                "shasum": ""
+            },
+            "require": {
+                "webedit/application": "dev-master",
+                "webedit/form": "dev-master",
+                "webedit/menu": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WebEdit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2014-06-20 22:31:00"
+        },
+        {
+            "name": "webedit/shop",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webedit/shop.git",
+                "reference": "749616d4e89b4e9b1b1465b95cabb52edfb4e9d7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webedit/shop/zipball/749616d4e89b4e9b1b1465b95cabb52edfb4e9d7",
+                "reference": "749616d4e89b4e9b1b1465b95cabb52edfb4e9d7",
+                "shasum": ""
+            },
+            "require": {
+                "webedit/application": "dev-master",
+                "webedit/form": "dev-master",
+                "webedit/gallery": "dev-master",
+                "webedit/menu": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WebEdit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2014-06-20 22:30:46"
+        },
+        {
+            "name": "webedit/sitemap",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webedit/sitemap.git",
+                "reference": "c2870d1f2c31dbdc92796663ce7f6e21b344357a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webedit/sitemap/zipball/c2870d1f2c31dbdc92796663ce7f6e21b344357a",
+                "reference": "c2870d1f2c31dbdc92796663ce7f6e21b344357a",
+                "shasum": ""
+            },
+            "require": {
+                "webedit/application": "dev-master",
+                "webedit/form": "dev-master",
+                "webedit/menu": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WebEdit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2014-06-20 22:29:50"
+        },
+        {
+            "name": "webedit/translation",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webedit/translation.git",
+                "reference": "727a7f5f1d46ae7e676260d62df1ee8b487fc9bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webedit/translation/zipball/727a7f5f1d46ae7e676260d62df1ee8b487fc9bc",
+                "reference": "727a7f5f1d46ae7e676260d62df1ee8b487fc9bc",
+                "shasum": ""
+            },
+            "require": {
+                "kdyby/translation": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WebEdit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2014-06-02 01:05:33"
+        }
+    ],
+    "packages-dev": [
+        {
             "name": "tracy/tracy",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "7bba018d89cefb47e43aa22a7b4e11e47d0cba32"
+                "reference": "320aee1e9571d79a4d5f531dd5b114c7ae24db7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/7bba018d89cefb47e43aa22a7b4e11e47d0cba32",
-                "reference": "7bba018d89cefb47e43aa22a7b4e11e47d0cba32",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/320aee1e9571d79a4d5f531dd5b114c7ae24db7f",
+                "reference": "320aee1e9571d79a4d5f531dd5b114c7ae24db7f",
                 "shasum": ""
             },
             "require": {
@@ -1557,274 +1441,20 @@
                 "debugger",
                 "nette"
             ],
-            "time": "2014-06-20 00:29:15"
-        },
-        {
-            "name": "webedit/core",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webedit/core.git",
-                "reference": "53a4fe24fad7a8d7a41d057b7be3a69d207f2208"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webedit/core/zipball/53a4fe24fad7a8d7a41d057b7be3a69d207f2208",
-                "reference": "53a4fe24fad7a8d7a41d057b7be3a69d207f2208",
-                "shasum": ""
-            },
-            "require": {
-                "nette/application": "dev-master",
-                "nette/database": "dev-master",
-                "nette/di": "dev-master",
-                "nette/http": "dev-master",
-                "nette/utils": "dev-master",
-                "webedit/menu": "dev-master",
-                "webedit/resources": "dev-master",
-                "webedit/translation": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "WebEdit\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-20 03:36:18"
-        },
-        {
-            "name": "webedit/form",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webedit/form.git",
-                "reference": "040719548bd597cb5fa1803086ea1e8e831773d9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webedit/form/zipball/040719548bd597cb5fa1803086ea1e8e831773d9",
-                "reference": "040719548bd597cb5fa1803086ea1e8e831773d9",
-                "shasum": ""
-            },
-            "require": {
-                "nette/application": "dev-master",
-                "nette/forms": "dev-master",
-                "webedit/core": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "WebEdit\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-20 03:36:03"
-        },
-        {
-            "name": "webedit/gallery",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webedit/gallery.git",
-                "reference": "79f3ae058fc5ac6ad681c8ab90619a09b1c60560"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webedit/gallery/zipball/79f3ae058fc5ac6ad681c8ab90619a09b1c60560",
-                "reference": "79f3ae058fc5ac6ad681c8ab90619a09b1c60560",
-                "shasum": ""
-            },
-            "require": {
-                "webedit/core": "dev-master",
-                "webedit/form": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "WebEdit\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-20 03:35:48"
-        },
-        {
-            "name": "webedit/menu",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webedit/menu.git",
-                "reference": "e67aa6ada2e1da8fbbb50f128703fc22d78f156f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webedit/menu/zipball/e67aa6ada2e1da8fbbb50f128703fc22d78f156f",
-                "reference": "e67aa6ada2e1da8fbbb50f128703fc22d78f156f",
-                "shasum": ""
-            },
-            "require": {
-                "webedit/core": "dev-master",
-                "webedit/form": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "WebEdit\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-20 03:35:33"
-        },
-        {
-            "name": "webedit/page",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webedit/page.git",
-                "reference": "3c682f2f4f00be7d24befcf4a89ebfe7067164a0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webedit/page/zipball/3c682f2f4f00be7d24befcf4a89ebfe7067164a0",
-                "reference": "3c682f2f4f00be7d24befcf4a89ebfe7067164a0",
-                "shasum": ""
-            },
-            "require": {
-                "webedit/core": "dev-master",
-                "webedit/form": "dev-master",
-                "webedit/menu": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "WebEdit\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-20 03:35:20"
-        },
-        {
-            "name": "webedit/resources",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webedit/resources.git",
-                "reference": "ff3d388e9e4456470026983c6f0038b41d25efb1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webedit/resources/zipball/ff3d388e9e4456470026983c6f0038b41d25efb1",
-                "reference": "ff3d388e9e4456470026983c6f0038b41d25efb1",
-                "shasum": ""
-            },
-            "require": {
-                "janmarek/webloader": "dev-master",
-                "meenie/javascript-packer": "dev-master",
-                "webedit/core": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "WebEdit\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-19 07:03:15"
-        },
-        {
-            "name": "webedit/shop",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webedit/shop.git",
-                "reference": "cbf9880bb1e26bda6235bf7cd30ba056f709a2aa"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webedit/shop/zipball/cbf9880bb1e26bda6235bf7cd30ba056f709a2aa",
-                "reference": "cbf9880bb1e26bda6235bf7cd30ba056f709a2aa",
-                "shasum": ""
-            },
-            "require": {
-                "webedit/core": "dev-master",
-                "webedit/form": "dev-master",
-                "webedit/gallery": "dev-master",
-                "webedit/menu": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "WebEdit\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-20 03:34:53"
-        },
-        {
-            "name": "webedit/sitemap",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webedit/sitemap.git",
-                "reference": "b580942f5cee2f40ae12902ca00e0f40c0540895"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webedit/sitemap/zipball/b580942f5cee2f40ae12902ca00e0f40c0540895",
-                "reference": "b580942f5cee2f40ae12902ca00e0f40c0540895",
-                "shasum": ""
-            },
-            "require": {
-                "webedit/core": "dev-master",
-                "webedit/form": "dev-master",
-                "webedit/menu": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "WebEdit\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-20 03:34:28"
-        },
-        {
-            "name": "webedit/translation",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webedit/translation.git",
-                "reference": "727a7f5f1d46ae7e676260d62df1ee8b487fc9bc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webedit/translation/zipball/727a7f5f1d46ae7e676260d62df1ee8b487fc9bc",
-                "reference": "727a7f5f1d46ae7e676260d62df1ee8b487fc9bc",
-                "shasum": ""
-            },
-            "require": {
-                "kdyby/translation": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "WebEdit\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-02 01:05:33"
+            "time": "2014-06-20 05:26:17"
         }
-    ],
-    "packages-dev": [
-
     ],
     "aliases": [
 
     ],
     "minimum-stability": "dev",
     "stability-flags": {
+        "webedit/core": 20,
+        "webedit/home": 20,
         "webedit/page": 20,
         "webedit/shop": 20,
-        "webedit/sitemap": 20
+        "webedit/sitemap": 20,
+        "tracy/tracy": 20
     },
     "platform": [
 

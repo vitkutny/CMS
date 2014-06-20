@@ -1,6 +1,3 @@
-resources:
-    scripts:
-        - %vendor.directory%/nette/forms/src/assets/netteForms.js
 translation:
     fallback: [en_US]
 database:
