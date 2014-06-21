@@ -388,12 +388,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/database.git",
-                "reference": "b87adab723cf52766b308d36d54523114d632008"
+                "reference": "a58289b28ab74f51d0d0a92537a21bc9d45f6507"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/database/zipball/b87adab723cf52766b308d36d54523114d632008",
-                "reference": "b87adab723cf52766b308d36d54523114d632008",
+                "url": "https://api.github.com/repos/nette/database/zipball/a58289b28ab74f51d0d0a92537a21bc9d45f6507",
+                "reference": "a58289b28ab74f51d0d0a92537a21bc9d45f6507",
                 "shasum": ""
             },
             "require": {
@@ -438,7 +438,7 @@
             ],
             "description": "Nette Database Component",
             "homepage": "http://nette.org",
-            "time": "2014-06-07 23:02:57"
+            "time": "2014-06-21 10:27:44"
         },
         {
             "name": "nette/di",
@@ -1224,12 +1224,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/home.git",
-                "reference": "11394c9cfdc24053c05ef6dbc7ce4eeca83f2b57"
+                "reference": "a5dabfbea0cbfd6ce865c1f2f692637c55b487ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/home/zipball/11394c9cfdc24053c05ef6dbc7ce4eeca83f2b57",
-                "reference": "11394c9cfdc24053c05ef6dbc7ce4eeca83f2b57",
+                "url": "https://api.github.com/repos/webedit/home/zipball/a5dabfbea0cbfd6ce865c1f2f692637c55b487ee",
+                "reference": "a5dabfbea0cbfd6ce865c1f2f692637c55b487ee",
                 "shasum": ""
             },
             "require": {
@@ -1242,7 +1242,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-20 21:22:57"
+            "time": "2014-06-20 22:50:10"
         },
         {
             "name": "webedit/menu",

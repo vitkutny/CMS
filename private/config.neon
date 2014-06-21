@@ -1,39 +1,34 @@
 parameters:
     application:
-        directory: %appDir%/..
-    local:
-        directory: %application.directory%/local
-    vendor:
-        directory: %application.directory%/vendor
-    public:
-        directory: %wwwDir%
-        cache:
-            directory: %public.directory%/cache
-        upload:
-            directory: %public.directory%/upload
-    private:
-        directory: %application.directory%/private
-        cache:
-            directory: %private.directory%/cache
-        upload:
-            directory: %private.directory%/upload
-        log:
-            directory: %private.directory%/log
+        directory: %application.private.directory%/..
+        local:
+            directory: %application.directory%/local
+        vendor:
+            directory: %application.directory%/vendor
+        public:
+            directory: %wwwDir%
+            cache:
+                directory: %application.public.directory%/cache
+            upload:
+                directory: %application.public.directory%/upload
+        private:
+            directory: %appDir%
+            cache:
+                directory: %tempDir%/cache
+            upload:
+                directory: %application.private.directory%/upload
+            log:
+                directory: %application.private.directory%/log
 nette:
     application:
         mapping:
             *: WebEdit\*\*
-    session:
-        autoStart: TRUE
     routing:
         routes:
             'cache/gallery/photo[/<id>].jpg':
                 module: Gallery:Photo
                 presenter: Presenter
                 action: view
-            'cache/resources/<action>':
-                module: Resources
-                presenter: Presenter
             'admin':
                 module: Home:Admin
                 presenter: Presenter
