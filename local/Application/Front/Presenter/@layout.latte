@@ -1,0 +1,47 @@
+{layout auto}
+{block layout}
+<header>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>{_local.site.title}</h1>
+            <p>{_local.site.slogan}</p>
+        </div>
+    </div>
+    {control menu-group-front:navbar}
+</header>
+<main class="container">
+    {control menu:breadcrumb}
+    <aside n:inner-foreach="$flashes as $flash" n:if="$flashes">
+        <div class="alert alert-{$flash->type}">
+            <p><strong>{$flash->type|capitalize}!</strong> {_$flash->message}</p>
+        </div>
+    </aside>
+    {include module}
+</main>
+<footer>
+    <nav class="navbar navbar-static-top navbar-default">
+        <div class="container">
+            <header class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-footer-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </header>
+            <div class="collapse navbar-collapse navbar-footer-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">Zpět nahoru</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <div class="container">
+            <p class="text-right">
+                {_local.site.title} - {_local.site.copyright}
+            </p>
+        </div>
+    </div>
+</footer>

@@ -10,10 +10,8 @@
         "webedit/home": "dev-master",
         "webedit/page": "dev-master",
         "webedit/shop": "dev-master",
-        "webedit/sitemap": "dev-master"
-    },
-    "require-dev": {
-        "tracy/tracy": "dev-master"
+        "webedit/sitemap": "dev-master",
+        "nextras/forms": "dev-master"
     },
     "autoload": {
         "psr-4": {

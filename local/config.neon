@@ -1,5 +1,8 @@
+form:
+    renderer: Nextras\Forms\Rendering\Bs3FormRenderer
 translation:
     fallback: [en_US]
+    dirs: [%application.local.directory%/locale]
 database:
     dsn: 'mysql:host=127.0.0.1;dbname=webedit'
     user: root
