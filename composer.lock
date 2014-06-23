@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ce5862a47429db8961e6eba0f511d981",
+    "hash": "1741e864a8cd0bbfed9b75e2fbb1c3f7",
     "packages": [
         {
             "name": "kdyby/translation",
@@ -949,6 +949,66 @@
             "time": "2014-06-16 16:18:02"
         },
         {
+            "name": "nextras/forms",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nextras/forms.git",
+                "reference": "eca08a9576151b4c83c4931a2d9734bd89452232"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nextras/forms/zipball/eca08a9576151b4c83c4931a2d9734bd89452232",
+                "reference": "eca08a9576151b4c83c4931a2d9734bd89452232",
+                "shasum": ""
+            },
+            "require": {
+                "nette/application": "~2.2",
+                "nette/component-model": "~2.2",
+                "nette/forms": "~2.2",
+                "nette/utils": "~2.2",
+                "php": "~5.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nextras\\Forms\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "http://davidgrudl.com"
+                },
+                {
+                    "name": "Jan Škrášek",
+                    "email": "hrach.cz@gmail.com",
+                    "homepage": "http://jan.skrasek.com"
+                },
+                {
+                    "name": "Nextras Community",
+                    "homepage": "https://github.com/nextras/forms/graphs/contributors"
+                }
+            ],
+            "description": "Extra form components for Nette Framework.",
+            "keywords": [
+                "form",
+                "nette"
+            ],
+            "time": "2014-05-24 11:17:47"
+        },
+        {
             "name": "symfony/config",
             "version": "dev-master",
             "target-dir": "Symfony/Component/Config",
@@ -1105,17 +1165,76 @@
             "time": "2014-06-17 05:29:56"
         },
         {
+            "name": "tracy/tracy",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/tracy.git",
+                "reference": "320aee1e9571d79a4d5f531dd5b114c7ae24db7f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/320aee1e9571d79a4d5f531dd5b114c7ae24db7f",
+                "reference": "320aee1e9571d79a4d5f531dd5b114c7ae24db7f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.1"
+            },
+            "require-dev": {
+                "nette/tester": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/Tracy"
+                ],
+                "files": [
+                    "src/shortcuts.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "http://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "http://nette.org/contributors"
+                }
+            ],
+            "description": "Tracy: useful PHP debugger",
+            "homepage": "http://tracy.nette.org",
+            "keywords": [
+                "debug",
+                "debugger",
+                "nette"
+            ],
+            "time": "2014-06-20 05:26:17"
+        },
+        {
             "name": "webedit/application",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/application.git",
-                "reference": "00a9ee945b51d9240b67d82a069b28f7629bd0e3"
+                "reference": "6f344b800e32016eff1923babcb2a52f965acd0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/application/zipball/00a9ee945b51d9240b67d82a069b28f7629bd0e3",
-                "reference": "00a9ee945b51d9240b67d82a069b28f7629bd0e3",
+                "url": "https://api.github.com/repos/webedit/application/zipball/6f344b800e32016eff1923babcb2a52f965acd0a",
+                "reference": "6f344b800e32016eff1923babcb2a52f965acd0a",
                 "shasum": ""
             },
             "require": {
@@ -1123,6 +1242,7 @@
                 "nette/bootstrap": "dev-master",
                 "nette/di": "dev-master",
                 "nette/utils": "dev-master",
+                "tracy/tracy": "dev-master",
                 "webedit/menu": "dev-master",
                 "webedit/translation": "dev-master"
             },
@@ -1133,7 +1253,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-20 22:32:25"
+            "time": "2014-06-22 23:51:57"
         },
         {
             "name": "webedit/core",
@@ -1169,12 +1289,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/form.git",
-                "reference": "0bf60819b559ed4deb7350722df3ed5bbb0f8e28"
+                "reference": "424cad83628c258c9665f1892f405ee1926493d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/form/zipball/0bf60819b559ed4deb7350722df3ed5bbb0f8e28",
-                "reference": "0bf60819b559ed4deb7350722df3ed5bbb0f8e28",
+                "url": "https://api.github.com/repos/webedit/form/zipball/424cad83628c258c9665f1892f405ee1926493d5",
+                "reference": "424cad83628c258c9665f1892f405ee1926493d5",
                 "shasum": ""
             },
             "require": {
@@ -1189,7 +1309,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-20 22:31:47"
+            "time": "2014-06-22 23:51:02"
         },
         {
             "name": "webedit/gallery",
@@ -1250,12 +1370,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/menu.git",
-                "reference": "349e8178bb004ef897cf6b664ab3087884d216a4"
+                "reference": "ee2a3e746f1cb3e9ab8e562b8d988f7fca4a2749"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/menu/zipball/349e8178bb004ef897cf6b664ab3087884d216a4",
-                "reference": "349e8178bb004ef897cf6b664ab3087884d216a4",
+                "url": "https://api.github.com/repos/webedit/menu/zipball/ee2a3e746f1cb3e9ab8e562b8d988f7fca4a2749",
+                "reference": "ee2a3e746f1cb3e9ab8e562b8d988f7fca4a2749",
                 "shasum": ""
             },
             "require": {
@@ -1269,7 +1389,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-20 22:31:12"
+            "time": "2014-06-22 23:51:31"
         },
         {
             "name": "webedit/page",
@@ -1384,65 +1504,7 @@
         }
     ],
     "packages-dev": [
-        {
-            "name": "tracy/tracy",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nette/tracy.git",
-                "reference": "320aee1e9571d79a4d5f531dd5b114c7ae24db7f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/320aee1e9571d79a4d5f531dd5b114c7ae24db7f",
-                "reference": "320aee1e9571d79a4d5f531dd5b114c7ae24db7f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.1"
-            },
-            "require-dev": {
-                "nette/tester": "~1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.3-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/Tracy"
-                ],
-                "files": [
-                    "src/shortcuts.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause",
-                "GPL-2.0",
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "David Grudl",
-                    "homepage": "http://davidgrudl.com"
-                },
-                {
-                    "name": "Nette Community",
-                    "homepage": "http://nette.org/contributors"
-                }
-            ],
-            "description": "Tracy: useful PHP debugger",
-            "homepage": "http://tracy.nette.org",
-            "keywords": [
-                "debug",
-                "debugger",
-                "nette"
-            ],
-            "time": "2014-06-20 05:26:17"
-        }
+
     ],
     "aliases": [
 
@@ -1454,7 +1516,7 @@
         "webedit/page": 20,
         "webedit/shop": 20,
         "webedit/sitemap": 20,
-        "tracy/tracy": 20
+        "nextras/forms": 20
     },
     "platform": [
 
