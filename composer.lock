@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1741e864a8cd0bbfed9b75e2fbb1c3f7",
+    "hash": "8b268d57e8e3a0c1e4b60467aa80a39d",
     "packages": [
         {
             "name": "kdyby/translation",
@@ -1229,12 +1229,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/application.git",
-                "reference": "6f344b800e32016eff1923babcb2a52f965acd0a"
+                "reference": "382fa44574667ed1b1d5d3b392fe08ba03dc3cf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/application/zipball/6f344b800e32016eff1923babcb2a52f965acd0a",
-                "reference": "6f344b800e32016eff1923babcb2a52f965acd0a",
+                "url": "https://api.github.com/repos/webedit/application/zipball/382fa44574667ed1b1d5d3b392fe08ba03dc3cf8",
+                "reference": "382fa44574667ed1b1d5d3b392fe08ba03dc3cf8",
                 "shasum": ""
             },
             "require": {
@@ -1253,7 +1253,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-22 23:51:57"
+            "time": "2014-06-23 00:23:15"
         },
         {
             "name": "webedit/core",
@@ -1370,12 +1370,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/menu.git",
-                "reference": "ee2a3e746f1cb3e9ab8e562b8d988f7fca4a2749"
+                "reference": "a26f398af0720b378160c5d66c924ee928e5c9d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/menu/zipball/ee2a3e746f1cb3e9ab8e562b8d988f7fca4a2749",
-                "reference": "ee2a3e746f1cb3e9ab8e562b8d988f7fca4a2749",
+                "url": "https://api.github.com/repos/webedit/menu/zipball/a26f398af0720b378160c5d66c924ee928e5c9d2",
+                "reference": "a26f398af0720b378160c5d66c924ee928e5c9d2",
                 "shasum": ""
             },
             "require": {
@@ -1389,7 +1389,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-22 23:51:31"
+            "time": "2014-06-23 00:23:04"
         },
         {
             "name": "webedit/page",
@@ -1482,12 +1482,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/translation.git",
-                "reference": "727a7f5f1d46ae7e676260d62df1ee8b487fc9bc"
+                "reference": "4e3a938ccf8b50a450c8538a16a33bf459aadb0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/translation/zipball/727a7f5f1d46ae7e676260d62df1ee8b487fc9bc",
-                "reference": "727a7f5f1d46ae7e676260d62df1ee8b487fc9bc",
+                "url": "https://api.github.com/repos/webedit/translation/zipball/4e3a938ccf8b50a450c8538a16a33bf459aadb0e",
+                "reference": "4e3a938ccf8b50a450c8538a16a33bf459aadb0e",
                 "shasum": ""
             },
             "require": {
@@ -1500,7 +1500,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-02 01:05:33"
+            "time": "2014-06-23 00:32:58"
         }
     ],
     "packages-dev": [
