@@ -1229,12 +1229,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/application.git",
-                "reference": "b0e9e5c3b3b7028b911ad0a6be3cee8bec44bfa9"
+                "reference": "35942e13e4d85a077cb878c81049bb09f016fe5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/application/zipball/b0e9e5c3b3b7028b911ad0a6be3cee8bec44bfa9",
-                "reference": "b0e9e5c3b3b7028b911ad0a6be3cee8bec44bfa9",
+                "url": "https://api.github.com/repos/webedit/application/zipball/35942e13e4d85a077cb878c81049bb09f016fe5c",
+                "reference": "35942e13e4d85a077cb878c81049bb09f016fe5c",
                 "shasum": ""
             },
             "require": {
@@ -1253,7 +1253,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-23 01:03:45"
+            "time": "2014-06-23 22:03:41"
         },
         {
             "name": "webedit/core",
