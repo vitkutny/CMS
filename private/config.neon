@@ -1,8 +1,17 @@
+form:
+    renderer: Nextras\Forms\Rendering\Bs3FormRenderer
+translation:
+    fallback: [en_US]
+database:
+    dsn: 'mysql:host=127.0.0.1;dbname=webedit'
+    user: root
+    password: NULL
+    conventions: static
+php:
+    date.timezone: Europe/Prague
 parameters:
     application:
-        directory: %application.private.directory%/..
-        local:
-            directory: %application.directory%/local
+        directory: %appDir%
         vendor:
             directory: %application.directory%/vendor
         public:
@@ -16,9 +25,9 @@ parameters:
             cache:
                 directory: %tempDir%/cache
             upload:
-                directory: %application.private.directory%/upload
+                directory: %tempDir%/upload
             log:
-                directory: %application.private.directory%/log
+                directory: %tempDir%/log
 nette:
     application:
         mapping:

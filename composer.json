@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "WebEdit\\": "local/"
+            "WebEdit\\": "private/source/"
         }
     }
 }
