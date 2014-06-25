@@ -17,9 +17,9 @@ parameters:
         public:
             directory: %wwwDir%
             cache:
-                directory: %application.public.directory%/cache
+                directory: %application.public.directory%/temp/cache
             upload:
-                directory: %application.public.directory%/upload
+                directory: %application.public.directory%/temp/upload
         private:
             directory: %appDir%
             cache:
@@ -27,12 +27,9 @@ parameters:
             upload:
                 directory: %tempDir%/upload
             log:
-                directory: %tempDir%/log
+                directory: %tempDir%
 nette:
-    application:
-        mapping:
-            *: WebEdit\*\*
-    routing:
+    routing: #TODO: replace with Route\Provider in extension
         routes:
             'cache/gallery/photo[/<id>].jpg':
                 module: Gallery:Photo
