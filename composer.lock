@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "aa64c3128b68123a03bafb2916ec9ab1",
+    "hash": "c33961a8f8662b182d5e06a8238c2366",
     "packages": [
         {
             "name": "kdyby/translation",
@@ -1248,12 +1248,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/application.git",
-                "reference": "35942e13e4d85a077cb878c81049bb09f016fe5c"
+                "reference": "f0e96d575a19fddb992a058f22641ac7bbbbf2d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/application/zipball/35942e13e4d85a077cb878c81049bb09f016fe5c",
-                "reference": "35942e13e4d85a077cb878c81049bb09f016fe5c",
+                "url": "https://api.github.com/repos/webedit/application/zipball/f0e96d575a19fddb992a058f22641ac7bbbbf2d5",
+                "reference": "f0e96d575a19fddb992a058f22641ac7bbbbf2d5",
                 "shasum": ""
             },
             "require": {
@@ -1272,7 +1272,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-23 22:03:41"
+            "time": "2014-06-25 20:50:29"
         },
         {
             "name": "webedit/core",

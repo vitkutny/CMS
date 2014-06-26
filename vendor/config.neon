@@ -1,5 +1,5 @@
 extensions:
-    webedit: WebEdit\Extension
+    application: WebEdit\Application\Extension
     form: WebEdit\Form\Extension
     menu: WebEdit\Menu\Extension
     page: WebEdit\Page\Extension
