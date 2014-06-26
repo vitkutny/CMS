@@ -11,7 +11,8 @@
         "webedit/page": "dev-master",
         "webedit/shop": "dev-master",
         "webedit/sitemap": "dev-master",
-        "nextras/forms": "dev-master"
+        "nextras/forms": "dev-master",
+        "webedit/translation": "dev-master"
     },
     "autoload": {
         "psr-4": {
