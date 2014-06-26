@@ -4,8 +4,163 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c33961a8f8662b182d5e06a8238c2366",
+    "hash": "9f4f23f944e595c4bd35d1fb0d333424",
     "packages": [
+        {
+            "name": "kdyby/translation",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Kdyby/Translation.git",
+                "reference": "631f70bf66504b66a2e2bad1e568540e0a12770c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Kdyby/Translation/zipball/631f70bf66504b66a2e2bad1e568540e0a12770c",
+                "reference": "631f70bf66504b66a2e2bad1e568540e0a12770c",
+                "shasum": ""
+            },
+            "require": {
+                "latte/latte": "~2.2@dev",
+                "nette/caching": "~2.2@dev",
+                "nette/di": "~2.2@dev",
+                "nette/finder": "~2.2@dev",
+                "nette/http": "~2.2@dev",
+                "nette/neon": "~2.2@dev",
+                "nette/php-generator": "~2.2@dev",
+                "nette/reflection": "~2.2@dev",
+                "nette/utils": "~2.2@dev",
+                "symfony/config": "~2.4",
+                "symfony/translation": "~2.4"
+            },
+            "require-dev": {
+                "jakub-onderka/php-parallel-lint": "~0.6",
+                "latte/latte": "~2.2@dev",
+                "nette/application": "~2.2@dev",
+                "nette/bootstrap": "~2.2@dev",
+                "nette/caching": "~2.2@dev",
+                "nette/component-model": "~2.2@dev",
+                "nette/database": "~2.2@dev",
+                "nette/di": "~2.2@dev",
+                "nette/finder": "~2.2@dev",
+                "nette/forms": "~2.2@dev",
+                "nette/http": "~2.2@dev",
+                "nette/mail": "~2.2@dev",
+                "nette/neon": "~2.2@dev",
+                "nette/nette": "~2.2@dev",
+                "nette/php-generator": "~2.2@dev",
+                "nette/reflection": "~2.2@dev",
+                "nette/robot-loader": "~2.2@dev",
+                "nette/safe-stream": "~2.2@dev",
+                "nette/security": "~2.2@dev",
+                "nette/tester": "@dev",
+                "nette/tokenizer": "~2.2@dev",
+                "nette/utils": "~2.2@dev",
+                "symfony/console": "~2.4",
+                "tracy/tracy": "~2.2@dev"
+            },
+            "suggest": {
+                "kdyby/console": "If you wanna use extract command and much others, install also console.",
+                "symfony/locale": "Locale component provides fallback code to handle cases when the intl extension is missing.",
+                "symfony/yaml": "If you wanna store translations in YAML format - supports multiline strings.",
+                "tracy/tracy": "Diagnostics tool from Nette"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Kdyby\\Translation": "src/"
+                },
+                "classmap": [
+                    "src/Kdyby/Translation/exceptions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Filip Procházka",
+                    "email": "filip@prochazka.su",
+                    "homepage": "http://filip-prochazka.com"
+                }
+            ],
+            "description": "Integration of Symfony/Translation into Nette Framework",
+            "homepage": "http://kdyby.org",
+            "keywords": [
+                "kdyby",
+                "nette",
+                "translation"
+            ],
+            "time": "2014-06-24 11:59:09"
+        },
+        {
+            "name": "latte/latte",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/latte.git",
+                "reference": "ce0e37a85a4c145f9c08961ec0c286ddea6cc10f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/latte/zipball/ce0e37a85a4c145f9c08961ec0c286ddea6cc10f",
+                "reference": "ce0e37a85a4c145f9c08961ec0c286ddea6cc10f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=5.3.1"
+            },
+            "require-dev": {
+                "nette/tester": "~1.0"
+            },
+            "suggest": {
+                "ext-fileinfo": "to use filter |datastream",
+                "ext-mbstring": "to use filters like lower, upper, capitalize, ..."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "http://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "http://nette.org/contributors"
+                }
+            ],
+            "description": "Latte: the amazing template engine for PHP",
+            "homepage": "http://latte.nette.org",
+            "keywords": [
+                "templating",
+                "twig"
+            ],
+            "time": "2014-06-24 17:11:11"
+        },
         {
             "name": "nette/application",
             "version": "dev-master",
@@ -873,6 +1028,162 @@
             "time": "2014-05-24 11:17:47"
         },
         {
+            "name": "symfony/config",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/Config",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Config.git",
+                "reference": "32018f35de323afd1bffb601f9e760ff3fb6ba05"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/32018f35de323afd1bffb601f9e760ff3fb6ba05",
+                "reference": "32018f35de323afd1bffb601f9e760ff3fb6ba05",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/filesystem": "~2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Config\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Config Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-05-23 14:36:49"
+        },
+        {
+            "name": "symfony/filesystem",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/Filesystem",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Filesystem.git",
+                "reference": "c5535943b0d48e5cc54f5bc8088bfc0aefda7f39"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/c5535943b0d48e5cc54f5bc8088bfc0aefda7f39",
+                "reference": "c5535943b0d48e5cc54f5bc8088bfc0aefda7f39",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Filesystem Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-06-20 17:41:51"
+        },
+        {
+            "name": "symfony/translation",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/Translation",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Translation.git",
+                "reference": "648fe60e8921358aadb0d50b74339c52691a1763"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Translation/zipball/648fe60e8921358aadb0d50b74339c52691a1763",
+                "reference": "648fe60e8921358aadb0d50b74339c52691a1763",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/config": "~2.0",
+                "symfony/yaml": "~2.2"
+            },
+            "suggest": {
+                "symfony/config": "",
+                "symfony/yaml": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Translation\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Translation Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-06-17 05:29:56"
+        },
+        {
             "name": "tracy/tracy",
             "version": "dev-master",
             "source": {
@@ -996,18 +1307,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/form.git",
-                "reference": "baa56d49d9daa2930e7f83a0a640187114d1d6fd"
+                "reference": "1599ba803ca3efd3dfb39681d07ee03c858a211e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/form/zipball/baa56d49d9daa2930e7f83a0a640187114d1d6fd",
-                "reference": "baa56d49d9daa2930e7f83a0a640187114d1d6fd",
+                "url": "https://api.github.com/repos/webedit/form/zipball/1599ba803ca3efd3dfb39681d07ee03c858a211e",
+                "reference": "1599ba803ca3efd3dfb39681d07ee03c858a211e",
                 "shasum": ""
             },
             "require": {
-                "nette/application": "dev-master",
                 "nette/forms": "dev-master",
-                "webedit/application": "dev-master"
+                "webedit/application": "dev-master",
+                "webedit/translation": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -1016,7 +1327,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-26 14:17:15"
+            "time": "2014-06-26 20:36:43"
         },
         {
             "name": "webedit/gallery",
@@ -1077,17 +1388,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/menu.git",
-                "reference": "b2a3804c5d5642e37bdcc24212bad4b3880f22b1"
+                "reference": "d61618fc66377a3f4a5fd21cdee85f179ce1078c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/menu/zipball/b2a3804c5d5642e37bdcc24212bad4b3880f22b1",
-                "reference": "b2a3804c5d5642e37bdcc24212bad4b3880f22b1",
+                "url": "https://api.github.com/repos/webedit/menu/zipball/d61618fc66377a3f4a5fd21cdee85f179ce1078c",
+                "reference": "d61618fc66377a3f4a5fd21cdee85f179ce1078c",
                 "shasum": ""
             },
             "require": {
                 "webedit/application": "dev-master",
-                "webedit/form": "dev-master"
+                "webedit/form": "dev-master",
+                "webedit/translation": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -1096,7 +1408,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-26 14:17:52"
+            "time": "2014-06-26 20:37:18"
         },
         {
             "name": "webedit/page",
@@ -1182,6 +1494,32 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "time": "2014-06-26 14:19:29"
+        },
+        {
+            "name": "webedit/translation",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webedit/translation.git",
+                "reference": "4e3a938ccf8b50a450c8538a16a33bf459aadb0e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webedit/translation/zipball/4e3a938ccf8b50a450c8538a16a33bf459aadb0e",
+                "reference": "4e3a938ccf8b50a450c8538a16a33bf459aadb0e",
+                "shasum": ""
+            },
+            "require": {
+                "kdyby/translation": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WebEdit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2014-06-23 00:32:58"
         }
     ],
     "packages-dev": [
@@ -1197,7 +1535,8 @@
         "webedit/page": 20,
         "webedit/shop": 20,
         "webedit/sitemap": 20,
-        "nextras/forms": 20
+        "nextras/forms": 20,
+        "webedit/translation": 20
     },
     "platform": [
 
