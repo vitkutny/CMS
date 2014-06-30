@@ -6,13 +6,9 @@
     "keywords": ["webedit", "web", "edit"],
     "homepage": "http://github.com/webedit",
     "require": {
-        "webedit/core": "dev-master",
+        "webedit/bootstrap": "dev-master",
         "webedit/home": "dev-master",
-        "webedit/page": "dev-master",
-        "webedit/shop": "dev-master",
-        "webedit/sitemap": "dev-master",
-        "nextras/forms": "dev-master",
-        "webedit/translation": "dev-master"
+        "nextras/forms": "dev-master"
     },
     "autoload": {
         "psr-4": {

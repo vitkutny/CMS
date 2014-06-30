@@ -1,7 +1,5 @@
 form:
     renderer: Nextras\Forms\Rendering\Bs3FormRenderer
-translation:
-    fallback: [en_US]
 database:
     dsn: 'mysql:host=127.0.0.1;dbname=webedit'
     user: root
@@ -9,37 +7,19 @@ database:
     conventions: static
 php:
     date.timezone: Europe/Prague
-parameters:
-    application:
-        directory: %appDir%
-        vendor:
-            directory: %application.directory%/vendor
-        public:
-            directory: %wwwDir%
-            cache:
-                directory: %application.public.directory%/temp/cache
-            upload:
-                directory: %application.public.directory%/temp/upload
-        private:
-            directory: %appDir%
-            cache:
-                directory: %tempDir%/cache
-            upload:
-                directory: %tempDir%/upload
-            log:
-                directory: %tempDir%
-nette:
-    routing: #TODO: replace with Route\Provider in extension
-        routes:
-            'cache/gallery/photo[/<id>].jpg':
-                module: Gallery:Photo
-                presenter: Presenter
-                action: view
-            'admin':
-                module: Home:Admin
-                presenter: Presenter
-                action: view
-            '[<locale [a-z]{2}(_[A-Z]{2})?>/]<module [a-z.]+>[/<action [a-z]+>][/<id [0-9]+>]':
-                module: Home
-                presenter: Presenter
-                action: view
+routing:
+    routes:
+        '[<locale [a-z]{2}(_[A-Z]{2})?>/]admin':
+            module: Home:Admin
+            presenter: Presenter
+            action: view
+        '[<locale [a-z]{2}(_[A-Z]{2})?>/]<module [a-z.]+>[/<action [a-z]+>][/<id [0-9]+>]':
+            module: Home
+            presenter: Presenter
+            action: view
+extensions:
+    routing: WebEdit\Routing\Extension
+    application: WebEdit\Application\Extension
+    translation: WebEdit\Translation\Extension
+    menu: WebEdit\Menu\Extension
+    form: WebEdit\Form\Extension

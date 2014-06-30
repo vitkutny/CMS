@@ -1,9 +1,0 @@
-extensions:
-    application: WebEdit\Application\Extension
-    form: WebEdit\Form\Extension
-    menu: WebEdit\Menu\Extension
-    page: WebEdit\Page\Extension
-    gallery: WebEdit\Gallery\Extension
-    shop: WebEdit\Shop\Extension
-    sitemap: WebEdit\Sitemap\Extension
-    translation: WebEdit\Translation\Extension
