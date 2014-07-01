@@ -1,6 +1,6 @@
 form:
     renderer: Nextras\Forms\Rendering\Bs3FormRenderer
-database:
+database: #database structure and data provider ... menu provide structure.. home provide data
     dsn: 'mysql:host=127.0.0.1;dbname=webedit'
     user: root
     password: NULL
@@ -9,15 +9,11 @@ php:
     date.timezone: Europe/Prague
 routing:
     routes:
-        '[<locale [a-z]{2}(_[A-Z]{2})?>/]admin':
-            module: Home:Admin
-            presenter: Presenter
-            action: view
         '[<locale [a-z]{2}(_[A-Z]{2})?>/]<module [a-z.]+>[/<action [a-z]+>][/<id [0-9]+>]':
-            module: Home
+            module: Home:Front
             presenter: Presenter
             action: view
-extensions:
+extensions: # TODO: autoregister extension while composer install
     routing: WebEdit\Routing\Extension
     application: WebEdit\Application\Extension
     translation: WebEdit\Translation\Extension
