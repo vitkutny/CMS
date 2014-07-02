@@ -1129,12 +1129,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/admin.git",
-                "reference": "866835d30a060606030eb39a6702eabf5d95c4d5"
+                "reference": "29ee3c448085058a2758a88691c23289a1cd61fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/admin/zipball/866835d30a060606030eb39a6702eabf5d95c4d5",
-                "reference": "866835d30a060606030eb39a6702eabf5d95c4d5",
+                "url": "https://api.github.com/repos/webedit/admin/zipball/29ee3c448085058a2758a88691c23289a1cd61fa",
+                "reference": "29ee3c448085058a2758a88691c23289a1cd61fa",
                 "shasum": ""
             },
             "require": {
@@ -1147,7 +1147,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-07-01 21:57:07"
+            "time": "2014-07-02 13:55:31"
         },
         {
             "name": "webedit/application",
@@ -1155,16 +1155,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/application.git",
-                "reference": "025b855867a7b142ca6a2f17c3cdbaccde0bdda2"
+                "reference": "9d87bbd99a163ee53098d15f3aecd9d2d9cafa06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/application/zipball/025b855867a7b142ca6a2f17c3cdbaccde0bdda2",
-                "reference": "025b855867a7b142ca6a2f17c3cdbaccde0bdda2",
+                "url": "https://api.github.com/repos/webedit/application/zipball/9d87bbd99a163ee53098d15f3aecd9d2d9cafa06",
+                "reference": "9d87bbd99a163ee53098d15f3aecd9d2d9cafa06",
                 "shasum": ""
             },
             "require": {
-                "latte/latte": "dev-master",
                 "nette/application": "dev-master",
                 "nette/utils": "dev-master",
                 "webedit/bootstrap": "dev-master",
@@ -1178,7 +1177,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-07-02 00:08:34"
+            "time": "2014-07-02 13:32:32"
         },
         {
             "name": "webedit/bootstrap",
@@ -1244,12 +1243,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/front.git",
-                "reference": "9dcc92ecee21d7fe43d97ffec5cd18a8353f741b"
+                "reference": "d29e0a80eed1e910b6ce9b82030d0e45e8ae4fbf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/front/zipball/9dcc92ecee21d7fe43d97ffec5cd18a8353f741b",
-                "reference": "9dcc92ecee21d7fe43d97ffec5cd18a8353f741b",
+                "url": "https://api.github.com/repos/webedit/front/zipball/d29e0a80eed1e910b6ce9b82030d0e45e8ae4fbf",
+                "reference": "d29e0a80eed1e910b6ce9b82030d0e45e8ae4fbf",
                 "shasum": ""
             },
             "require": {
@@ -1262,7 +1261,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-07-01 21:56:50"
+            "time": "2014-07-02 13:55:50"
         },
         {
             "name": "webedit/home",
@@ -1298,12 +1297,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/menu.git",
-                "reference": "925e3aae32d2d393ccf568b2e436ec2c446eec27"
+                "reference": "3cf3d6c770a6602dc54c7330fd8b84eeddca0f14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/menu/zipball/925e3aae32d2d393ccf568b2e436ec2c446eec27",
-                "reference": "925e3aae32d2d393ccf568b2e436ec2c446eec27",
+                "url": "https://api.github.com/repos/webedit/menu/zipball/3cf3d6c770a6602dc54c7330fd8b84eeddca0f14",
+                "reference": "3cf3d6c770a6602dc54c7330fd8b84eeddca0f14",
                 "shasum": ""
             },
             "require": {
@@ -1318,7 +1317,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-07-02 00:09:06"
+            "time": "2014-07-02 13:55:14"
         },
         {
             "name": "webedit/routing",

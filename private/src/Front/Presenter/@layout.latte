@@ -3,8 +3,8 @@
 <header>
     <div class="jumbotron">
         <div class="container">
-            <h1>{_site.title}</h1>
-            <p>{_site.slogan}</p>
+            <h1>{='site.title'|translate}</h1>
+            <p>{='site.slogan'|translate}</p>
         </div>
     </div>
     {control menu-group-front:navbar}
@@ -13,7 +13,7 @@
     {control menu:breadcrumb}
     <aside n:inner-foreach="$flashes as $flash" n:if="$flashes">
         <div class="alert alert-{$flash->type}">
-            <p><strong>{$flash->type|capitalize}!</strong> {_$flash->message}</p>
+            <p><strong>{$flash->type|capitalize}!</strong> {$flash->message|translate}</p>
         </div>
     </aside>
     {include module}
@@ -43,7 +43,7 @@
     <div class="jumbotron">
         <div class="container">
             <p class="text-right">
-                {_site.title} - {_site.copyright}
+                {='site.title'|translate} - {='site.copyright'|translate}
             </p>
         </div>
     </div>

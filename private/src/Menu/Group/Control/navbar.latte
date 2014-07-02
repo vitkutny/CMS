@@ -12,17 +12,17 @@
                 <li n:class="$presenter->isLinkCurrent($entity->menu->link,[id=>$entity->menu->link_id]) ? active" n:if="$entity->menu->link">
                     <a href="{plink $entity->menu->link,id=>$entity->menu->link_id}">
                         <span class="glyphicon glyphicon-home"></span>
-                        {_$entity->menu->title}
+                        {$entity->menu->title|translate}
                     </a>
                 </li>
                 <li n:foreach="$entity->menu->related('menu')->where('hidden',NULL) as $menu" n:class="isset($breadcrumb[$menu->id])?active,$menu->related('menu')->where('hidden',NULL)->count()?dropdown">
                     <a href="{if $menu->link}{plink $menu->link,id=>$menu->link_id}{else}#{/if}"{if $menu->related('menu')->where('hidden',NULL)->count()} class="dropdown-toggle" data-toggle="dropdown"{/if}>
-                        {_$menu->title} <b class="caret" n:if="$menu->related('menu')->where('hidden',NULL)->count()"></b>
+                        {$menu->title|translate} <b class="caret" n:if="$menu->related('menu')->where('hidden',NULL)->count()"></b>
                     </a>
                     <ul n:if="$menu->related('menu')->where('hidden',NULL)->count()" class="dropdown-menu" n:inner-foreach="$menu->related('menu')->where('hidden',NULL) as $menu">
                         <li n:class="isset($breadcrumb[$menu->id])?active">
                             <a href="{if $menu->link}{plink $menu->link,id=>$menu->link_id}{else}#{/if}">
-                                {_$menu->title}
+                                {$menu->title|translate}
                             </a>
                         </li>
                     </ul>

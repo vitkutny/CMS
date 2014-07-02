@@ -7,7 +7,7 @@
     {control menu:breadcrumb}
     <aside n:inner-foreach="$flashes as $flash" n:if="$flashes">
         <div data-alert class="alert alert-{$flash->type}">
-            <p><strong>{$flash->type|capitalize}!</strong> {_$flash->message}</p>
+            <p><strong>{$flash->type|capitalize}!</strong> {$flash->message|translate}</p>
         </div>
     </aside>
     {include module}
