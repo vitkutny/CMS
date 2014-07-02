@@ -1,5 +1,3 @@
-form:
-    renderer: Nextras\Forms\Rendering\Bs3FormRenderer
 database: #database structure and data provider ... menu provide structure.. home provide data
     dsn: 'mysql:host=127.0.0.1;dbname=webedit'
     user: root
@@ -18,4 +16,3 @@ extensions: # TODO: autoregister extension while composer install
     application: WebEdit\Application\Extension
     translation: WebEdit\Translation\Extension
     menu: WebEdit\Menu\Extension
-    form: WebEdit\Form\Extension

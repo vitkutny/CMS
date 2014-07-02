@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "819adac7e47bc82c78b348eac4de54d7",
+    "hash": "f5d0ad69992f118fd26f4ab448087619",
     "packages": [
         {
             "name": "kdyby/translation",
@@ -573,65 +573,6 @@
             "time": "2014-05-25 06:27:08"
         },
         {
-            "name": "nette/forms",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nette/forms.git",
-                "reference": "8699e02663ae3e8a793f35aebe892148f2ceea03"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nette/forms/zipball/8699e02663ae3e8a793f35aebe892148f2ceea03",
-                "reference": "8699e02663ae3e8a793f35aebe892148f2ceea03",
-                "shasum": ""
-            },
-            "require": {
-                "nette/component-model": "~2.2",
-                "nette/http": "~2.2",
-                "nette/utils": "~2.2",
-                "php": ">=5.3.1"
-            },
-            "conflict": {
-                "nette/nette": "<2.2"
-            },
-            "require-dev": {
-                "latte/latte": "~2.2",
-                "nette/tester": "~1.0",
-                "tracy/tracy": "~2.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.3-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause",
-                "GPL-2.0",
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "David Grudl",
-                    "homepage": "http://davidgrudl.com"
-                },
-                {
-                    "name": "Nette Community",
-                    "homepage": "http://nette.org/contributors"
-                }
-            ],
-            "description": "Nette Forms: greatly facilitates web forms",
-            "homepage": "http://nette.org",
-            "time": "2014-06-24 16:14:11"
-        },
-        {
             "name": "nette/http",
             "version": "dev-master",
             "source": {
@@ -968,66 +909,6 @@
             "time": "2014-07-01 11:36:46"
         },
         {
-            "name": "nextras/forms",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nextras/forms.git",
-                "reference": "eca08a9576151b4c83c4931a2d9734bd89452232"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nextras/forms/zipball/eca08a9576151b4c83c4931a2d9734bd89452232",
-                "reference": "eca08a9576151b4c83c4931a2d9734bd89452232",
-                "shasum": ""
-            },
-            "require": {
-                "nette/application": "~2.2",
-                "nette/component-model": "~2.2",
-                "nette/forms": "~2.2",
-                "nette/utils": "~2.2",
-                "php": "~5.4"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Nextras\\Forms\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause",
-                "GPL-2.0",
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "David Grudl",
-                    "homepage": "http://davidgrudl.com"
-                },
-                {
-                    "name": "Jan Škrášek",
-                    "email": "hrach.cz@gmail.com",
-                    "homepage": "http://jan.skrasek.com"
-                },
-                {
-                    "name": "Nextras Community",
-                    "homepage": "https://github.com/nextras/forms/graphs/contributors"
-                }
-            ],
-            "description": "Extra form components for Nette Framework.",
-            "keywords": [
-                "form",
-                "nette"
-            ],
-            "time": "2014-05-24 11:17:47"
-        },
-        {
             "name": "symfony/config",
             "version": "dev-master",
             "target-dir": "Symfony/Component/Config",
@@ -1274,12 +1155,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/application.git",
-                "reference": "989e53a91b0c7f423b526dfee5bcc500e97b4b78"
+                "reference": "025b855867a7b142ca6a2f17c3cdbaccde0bdda2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/application/zipball/989e53a91b0c7f423b526dfee5bcc500e97b4b78",
-                "reference": "989e53a91b0c7f423b526dfee5bcc500e97b4b78",
+                "url": "https://api.github.com/repos/webedit/application/zipball/025b855867a7b142ca6a2f17c3cdbaccde0bdda2",
+                "reference": "025b855867a7b142ca6a2f17c3cdbaccde0bdda2",
                 "shasum": ""
             },
             "require": {
@@ -1287,7 +1168,8 @@
                 "nette/application": "dev-master",
                 "nette/utils": "dev-master",
                 "webedit/bootstrap": "dev-master",
-                "webedit/menu": "dev-master"
+                "webedit/menu": "dev-master",
+                "webedit/translation": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -1296,7 +1178,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-07-01 22:00:28"
+            "time": "2014-07-02 00:08:34"
         },
         {
             "name": "webedit/bootstrap",
@@ -1357,35 +1239,6 @@
             "time": "2014-06-27 23:58:40"
         },
         {
-            "name": "webedit/form",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webedit/form.git",
-                "reference": "d0cd042ec0d161972f20d178bfd6577bfee24d19"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webedit/form/zipball/d0cd042ec0d161972f20d178bfd6577bfee24d19",
-                "reference": "d0cd042ec0d161972f20d178bfd6577bfee24d19",
-                "shasum": ""
-            },
-            "require": {
-                "nette/forms": "dev-master",
-                "webedit/application": "dev-master",
-                "webedit/bootstrap": "dev-master",
-                "webedit/translation": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "WebEdit\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-28 00:13:18"
-        },
-        {
             "name": "webedit/front",
             "version": "dev-master",
             "source": {
@@ -1417,12 +1270,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/home.git",
-                "reference": "2ee624d8b2aab6131e6fba884b383fb2cd247e3b"
+                "reference": "727d6da24dc6678f194bba557f1c9778dc5b254f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/home/zipball/2ee624d8b2aab6131e6fba884b383fb2cd247e3b",
-                "reference": "2ee624d8b2aab6131e6fba884b383fb2cd247e3b",
+                "url": "https://api.github.com/repos/webedit/home/zipball/727d6da24dc6678f194bba557f1c9778dc5b254f",
+                "reference": "727d6da24dc6678f194bba557f1c9778dc5b254f",
                 "shasum": ""
             },
             "require": {
@@ -1437,7 +1290,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-07-01 22:01:21"
+            "time": "2014-07-01 22:19:54"
         },
         {
             "name": "webedit/menu",
@@ -1445,18 +1298,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/menu.git",
-                "reference": "632854c50d78623ce0cbb60bd03771c2150d1eaf"
+                "reference": "925e3aae32d2d393ccf568b2e436ec2c446eec27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/menu/zipball/632854c50d78623ce0cbb60bd03771c2150d1eaf",
-                "reference": "632854c50d78623ce0cbb60bd03771c2150d1eaf",
+                "url": "https://api.github.com/repos/webedit/menu/zipball/925e3aae32d2d393ccf568b2e436ec2c446eec27",
+                "reference": "925e3aae32d2d393ccf568b2e436ec2c446eec27",
                 "shasum": ""
             },
             "require": {
                 "webedit/application": "dev-master",
                 "webedit/bootstrap": "dev-master",
-                "webedit/form": "dev-master",
                 "webedit/translation": "dev-master"
             },
             "type": "library",
@@ -1466,7 +1318,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-06-28 15:52:09"
+            "time": "2014-07-02 00:09:06"
         },
         {
             "name": "webedit/routing",
@@ -1531,8 +1383,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "webedit/bootstrap": 20,
-        "webedit/home": 20,
-        "nextras/forms": 20
+        "webedit/home": 20
     },
     "platform": [
 

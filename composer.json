@@ -7,8 +7,7 @@
     "homepage": "http://github.com/webedit",
     "require": {
         "webedit/bootstrap": "dev-master",
-        "webedit/home": "dev-master",
-        "nextras/forms": "dev-master"
+        "webedit/home": "dev-master"
     },
     "autoload": {
         "psr-4": {
