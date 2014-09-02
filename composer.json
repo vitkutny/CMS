@@ -8,10 +8,5 @@
     "require": {
         "webedit/bootstrap": "dev-master",
         "webedit/home": "dev-master"
-    },
-    "autoload": {
-        "psr-4": {
-            "WebEdit\\": "private/src/"
-        }
     }
 }

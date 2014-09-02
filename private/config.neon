@@ -2,10 +2,3 @@ database: #database structure and data provider ... menu provide structure.. hom
     dsn: 'mysql:host=127.0.0.1;dbname=webedit'
     user: root
     password: NULL
-extensions: # TODO: autoregister extension while composer install
-    - WebEdit\Routing\Extension
-    - WebEdit\Application\Extension
-    - WebEdit\Translation\Extension
-    - WebEdit\Database\Extension
-    - WebEdit\Menu\Extension
-    - WebEdit\Templating\Extension

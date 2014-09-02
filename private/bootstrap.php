@@ -7,5 +7,6 @@ use WebEdit\Bootstrap;
 $configurator = new Bootstrap\Configurator;
 $configurator->setTempDirectory(__DIR__ . '/temp');
 $configurator->enableDebugger(__DIR__ . '/temp');
+$configurator->addConfig(__DIR__ . '/../vendor/config.neon');
 $configurator->addConfig(__DIR__ . '/config.neon');
 return $configurator->createContainer();
