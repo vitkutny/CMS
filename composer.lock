@@ -1447,12 +1447,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webedit/menu.git",
-                "reference": "4c2168db06ef813c97fd1caa92fb0af64afe2c91"
+                "reference": "7bee11941611e331dae142f7907b4c0a1bdd293e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webedit/menu/zipball/4c2168db06ef813c97fd1caa92fb0af64afe2c91",
-                "reference": "4c2168db06ef813c97fd1caa92fb0af64afe2c91",
+                "url": "https://api.github.com/repos/webedit/menu/zipball/7bee11941611e331dae142f7907b4c0a1bdd293e",
+                "reference": "7bee11941611e331dae142f7907b4c0a1bdd293e",
                 "shasum": ""
             },
             "require": {
@@ -1468,7 +1468,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-08-20 02:42:43"
+            "time": "2014-09-02 00:47:38"
         },
         {
             "name": "webedit/routing",
