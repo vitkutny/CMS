@@ -5,6 +5,7 @@
 </header>
 <main class="container">
     {control menu:breadcrumb}
+    {control menu:header}
     <aside n:inner-foreach="$flashes as $flash" n:if="$flashes">
         <div data-alert class="alert alert-{$flash->type}">
             <p><strong>{$flash->type|capitalize}!</strong> {$flash->message|translate}</p>

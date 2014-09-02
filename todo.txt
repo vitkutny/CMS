@@ -2,12 +2,9 @@ localhost catch all emails
 https
 
 <pre>
-get module name from namespace
 menu groups, not needed control ? <- sitemap control will be useless... should use menuControl with entity $sitemap->menu->mnue... and render as list.... menuControl should have render as xml
 flashmessage control
 user module
-routing module
-use ORM
 
 shop module AGAIN
 shop -> only category done
@@ -23,8 +20,6 @@ gallery photo route remove duplicity
 nette/caching, <- gallery photos
 
 better session repo + cart repo && facade
-
-formatTemplateFiles && formatLayoutTemplateFiles for presenter and controls
 
 blog module
 blog_category... like shop_category ... one category should be 'News'.
@@ -48,7 +43,5 @@ social
 	rating
 	review
 
-modules composer install script
-     register extensions
-	can run db scheme create too
+composer register extensions
 </pre>

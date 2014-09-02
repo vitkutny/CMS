@@ -2,17 +2,10 @@ database: #database structure and data provider ... menu provide structure.. hom
     dsn: 'mysql:host=127.0.0.1;dbname=webedit'
     user: root
     password: NULL
-    conventions: static
-php:
-    date.timezone: Europe/Prague
-routing:
-    routes:
-        '[<locale [a-z]{2}(_[A-Z]{2})?>/]<module [a-z.]+>[/<action [a-z]+>][/<id [0-9]+>]':
-            module: Home:Front
-            presenter: Presenter
-            action: view
 extensions: # TODO: autoregister extension while composer install
-    routing: WebEdit\Routing\Extension
-    application: WebEdit\Application\Extension
-    translation: WebEdit\Translation\Extension
-    menu: WebEdit\Menu\Extension
+    - WebEdit\Routing\Extension
+    - WebEdit\Application\Extension
+    - WebEdit\Translation\Extension
+    - WebEdit\Database\Extension
+    - WebEdit\Menu\Extension
+    - WebEdit\Templating\Extension
