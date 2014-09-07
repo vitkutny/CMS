@@ -1,6 +1,2 @@
-database: #database structure and data provider ... menu provide structure.. home provide data
-    dsn: 'mysql:host=127.0.0.1;dbname=webedit'
-    user: root
-    password: NULL
 includes:
     - ../vendor/config.neon
