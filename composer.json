@@ -6,7 +6,8 @@
     "keywords": ["webedit", "web", "edit"],
     "homepage": "http://github.com/webedit",
     "require": {
-        "webedit/bootstrap": "dev-master",
-        "webedit/home": "dev-master"
+        "webedit/application": "dev-master",
+        "webedit/home": "dev-master",
+        "webedit/page": "dev-master"
     }
 }
