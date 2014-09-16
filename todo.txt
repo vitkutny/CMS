@@ -1,9 +1,11 @@
-localhost catch all emails
-https
-
 <pre>
-menu groups, not needed control ? <- sitemap control will be useless... should use menuControl with entity $sitemap->menu->mnue... and render as list.... menuControl should have render as xml
-flashmessage control
+menu groups, not needed control ? <- site map control will be useless... should use menuControl with entity $sitemap->menu->menu... and render as list.... menuControl should have render as xml
+sitemap
+    presenter
+        action xml
+        menu-front:xml in template
+
+flash message control
 user module
 
 shop module AGAIN
@@ -30,7 +32,7 @@ reduce sql
 	double queries while creating breadcrumb
 	two queries when creating menu control
 
-menu option - hide from menu - will be still accesible through URL
+menu option - hide from menu - will be still accessible through URL
 
 publisher
 

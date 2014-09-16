@@ -3,10 +3,14 @@
     "name": "webedit/sandbox",
     "type": "project",
     "description": "WebEdit CMS",
-    "keywords": ["webedit", "web", "edit"],
+    "keywords": [
+        "webedit",
+        "web",
+        "edit"
+    ],
     "homepage": "http://github.com/webedit",
     "require": {
-        "webedit/application": "dev-master",
+        "webedit/bootstrap": "dev-master",
         "webedit/home": "dev-master",
         "webedit/page": "dev-master"
     }
