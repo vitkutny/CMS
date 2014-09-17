@@ -1,2 +1,5 @@
+templating:
+    templates:
+        - %appDir%/templates
 includes:
     - ../vendor/config.neon
