@@ -1,3 +1,3 @@
 Installing
 ============
-git clone https://github.com/vitkutny/cms.git cms && chmod 777 cms/temp && chmod 777 cms/www/temp
+git clone git@github.com:webedit/sandbox webedit && cd webedit && chmod 777 private/temp && chmod 777 public/temp
