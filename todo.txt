@@ -1,10 +1,4 @@
 <pre>
-menu groups, not needed control ? <- site map control will be useless... should use menuControl with entity $sitemap->menu->menu... and render as list.... menuControl should have render as xml
-sitemap
-    presenter
-        action xml
-        menu-front:xml in template
-
 flash message control
 user module
 
@@ -44,6 +38,4 @@ social
 	comments
 	rating
 	review
-
-composer register extensions
 </pre>
