@@ -26,8 +26,6 @@ reduce sql
 	double queries while creating breadcrumb
 	two queries when creating menu control
 
-menu option - hide from menu - will be still accessible through URL
-
 publisher
 
 gallery
