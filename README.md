@@ -1,3 +1,3 @@
 Installing
 ============
-git clone git@github.com:webedit/sandbox webedit && cd webedit && chmod 777 private/temp && chmod 777 public/temp && composer install
+git clone git@github.com:webedit/sandbox webedit && cd webedit && composer install && npm install && grunt

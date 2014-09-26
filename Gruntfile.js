@@ -6,19 +6,13 @@ module.exports = function (grunt) {
                 publicTempDir: 'public/temp'
             }
         },
-        "bower-install-simple": {
-            options: {
-                directory: '<%=bower.directory%>'
-            },
-            production: {
-                options: {
-                    production: true
-                }
-            },
-            development: {
-                options: {
-                    production: false
-                }
+        shell: {
+            default: {
+                command: [
+                    'chmod 777 private/temp',
+                    'chmod 777 public/temp',
+                    'bower install'
+                ].join('&&')
             }
         },
         copy: {
@@ -54,15 +48,13 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-composer');
+    grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-bower-install-simple');
 
     grunt.registerTask('default', [
-        'composer:install',
-        'bower-install-simple',
+        'shell',
         'copy',
         'uglify',
         'cssmin'
