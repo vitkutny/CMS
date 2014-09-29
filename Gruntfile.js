@@ -31,6 +31,7 @@ module.exports = function (grunt) {
             default: {
                 files: {
                     '<%=webedit.parameters.publicTempDir%>/application/scripts/index.js': [
+                        '<%=bower.directory%>/jquery/dist/jquery.js',
                         '<%=bower.directory%>/bootstrap/dist/js/bootstrap.js'
                     ]
                 }
