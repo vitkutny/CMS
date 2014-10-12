@@ -1,17 +1,17 @@
 {
-    "minimum-stability": "dev",
-    "name": "webedit/sandbox",
-    "type": "project",
-    "description": "WebEdit CMS",
-    "keywords": [
-        "webedit",
-        "web",
-        "edit"
-    ],
-    "homepage": "http://github.com/webedit",
-    "require": {
-        "webedit/bootstrap": "dev-master",
-        "webedit/home": "dev-master",
-        "webedit/page": "dev-master"
-    }
+  "minimum-stability": "dev",
+  "name": "webedit/sandbox",
+  "type": "project",
+  "description": "WebEdit CMS",
+  "keywords": [
+    "webedit",
+    "web",
+    "edit"
+  ],
+  "homepage": "http://github.com/webedit",
+  "require": {
+    "webedit/bootstrap": "dev-master",
+    "webedit/home": "dev-master",
+    "webedit/page": "dev-master"
+  }
 }
