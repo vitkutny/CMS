@@ -12,6 +12,7 @@
   "require": {
     "webedit/bootstrap": "dev-master",
     "webedit/home": "dev-master",
-    "webedit/page": "dev-master"
+    "webedit/page": "dev-master",
+    "webedit/sitemap": "dev-master"
   }
 }
