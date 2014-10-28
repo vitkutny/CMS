@@ -6,5 +6,27 @@
       <identifier-quote-string>`</identifier-quote-string>
     </database-info>
     <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <schema name="" catalog="webedit"/>
+    <table name="menu" schema="" catalog="webedit" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="parent_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="title" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="link" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="link_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="hidden" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="position" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="uid" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="menu_ibfk_2" columns="parent_id" ref-table="menu" ref-schema="" ref-catalog="webedit" ref-columns="id" update-rule="0" delete-rule="3" deferrability="2"/>
+      <exported-key name="menu_ibfk_2" table="menu" schema="" catalog="webedit" columns="parent_id"/>
+      <exported-key name="page_ibfk_2" table="page" schema="" catalog="webedit" columns="menu_id"/>
+    </table>
+    <table name="page" schema="" catalog="webedit" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="menu_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="content" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="false" jdbcType="-1"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="page_ibfk_2" columns="menu_id" ref-table="menu" ref-schema="" ref-catalog="webedit" ref-columns="id" update-rule="0" delete-rule="0" deferrability="2"/>
+    </table>
   </data-source>
 </component>
