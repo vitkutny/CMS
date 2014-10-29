@@ -1,83 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="976c0523-7ed6-474b-9f89-2be3c016b818" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/application/src/Application.php" afterPath="$PROJECT_DIR$/vendor/webedit/application/src/Application.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/routing/src/Routing/Route/Collection.php" afterPath="$PROJECT_DIR$/vendor/webedit/routing/src/Routing/Route/Collection.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/bootstrap/src/Bootstrap/Configurator.php" afterPath="$PROJECT_DIR$/vendor/webedit/bootstrap/src/Bootstrap/Configurator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Connection.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Connection.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Form/Container.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Form/Container.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Container.php" afterPath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Container.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Form/Container.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Form/Container.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Form/Container.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Form/Container.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Context.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Context.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Control.php" afterPath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Grid/Control.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Grid/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Control.php" afterPath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/form/src/Grid/Control.php" afterPath="$PROJECT_DIR$/vendor/webedit/form/src/Grid/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Control.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Form/Control.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Form/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Control.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Form/Control.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Form/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Entity.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Entity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Entity.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Entity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Entity.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Entity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Exception.php" afterPath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Exception.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/admin/src/Admin/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/admin/src/Admin/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/front/src/Front/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/front/src/Front/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/home/src/Home/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/home/src/Home/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/module/src/Module/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/module/src/Module/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/routing/src/Routing/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/routing/src/Routing/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/templating/src/Templating/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/templating/src/Templating/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/translation/src/Translation/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/translation/src/Translation/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Presenter/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Presenter/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Form/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Form/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Grid/Control/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Grid/Control/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Control/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Control/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Form/Control/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Form/Control/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Control/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Control/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Form/Control/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Form/Control/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/templating/src/Templating/Template/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/templating/src/Templating/Template/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Form.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/form/src/Form.php" afterPath="$PROJECT_DIR$/vendor/webedit/form/src/Form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Helpers.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Helpers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/module/src/Module/Installer.php" afterPath="$PROJECT_DIR$/vendor/webedit/module/src/Module/Installer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Mapper.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Mapper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Mapper.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Mapper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Mapper.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Mapper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Control/Multiplier.php" afterPath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Control/Multiplier.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/admin/src/Admin/Presenter.php" afterPath="$PROJECT_DIR$/vendor/webedit/admin/src/Admin/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Presenter.php" afterPath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/front/src/Front/Presenter.php" afterPath="$PROJECT_DIR$/vendor/webedit/front/src/Front/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/home/src/Home/Admin/Presenter.php" afterPath="$PROJECT_DIR$/vendor/webedit/home/src/Home/Admin/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/home/src/Home/Front/Presenter.php" afterPath="$PROJECT_DIR$/vendor/webedit/home/src/Home/Front/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Admin/Presenter.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Admin/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Admin/Presenter.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Admin/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Front/Presenter.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Front/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/sitemap/src/Sitemap/Xml/Presenter.php" afterPath="$PROJECT_DIR$/vendor/webedit/sitemap/src/Sitemap/Xml/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Provider.php" afterPath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Provider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Provider.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Provider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Provider.php" afterPath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Provider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/routing/src/Routing/Provider.php" afterPath="$PROJECT_DIR$/vendor/webedit/routing/src/Routing/Provider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/templating/src/Templating/Provider.php" afterPath="$PROJECT_DIR$/vendor/webedit/templating/src/Templating/Provider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/translation/src/Translation/Provider.php" afterPath="$PROJECT_DIR$/vendor/webedit/translation/src/Translation/Provider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Repository.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Repository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Repository.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Repository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Repository.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Repository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/routing/src/Routing/Route.php" afterPath="$PROJECT_DIR$/vendor/webedit/routing/src/Routing/Route.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Structure.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Structure.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/templating/src/Templating/Template.php" afterPath="$PROJECT_DIR$/vendor/webedit/templating/src/Templating/Template.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/bootstrap.php" afterPath="$PROJECT_DIR$/private/bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="976c0523-7ed6-474b-9f89-2be3c016b818" name="Default" comment="" />
     <ignored path="webedit.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -104,8 +28,8 @@
       <file leaf-file-name="Provider.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/webedit/translation/src/Translation/Provider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="643">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7058824" vertical-offset="0" max-vertical-offset="378">
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -282,6 +206,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webedit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webedit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webedit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -364,17 +306,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="30" width="1368" height="739" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4262295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4262295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24597365" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="515" y="64" width="336" height="671" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24597365" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="515" y="64" width="336" height="671" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -811,8 +753,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/webedit/translation/src/Translation/Provider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="670">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.7058824" vertical-offset="0" max-vertical-offset="378">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding />
         </state>
       </provider>
