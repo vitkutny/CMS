@@ -4,58 +4,7 @@
     <option name="SCOPE_TYPE" value="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="976c0523-7ed6-474b-9f89-2be3c016b818" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Container.php" afterPath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Container.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Form/Container.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Form/Container.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Form/Container.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Form/Container.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Control.php" afterPath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Entity.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Entity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Entity.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Entity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Entity.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Entity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Exception.php" afterPath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Exception.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/admin/src/Admin/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/admin/src/Admin/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Orm/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Orm/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/front/src/Front/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/front/src/Front/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/home/src/Home/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/home/src/Home/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/routing/src/Routing/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/routing/src/Routing/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/templating/src/Templating/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/templating/src/Templating/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Presenter/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Presenter/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/config/src/Config/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/config/src/Config/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Form/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Form/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Grid/Control/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Grid/Control/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Control/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Control/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Form/Control/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Form/Control/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Control/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Control/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Form/Control/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Form/Control/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/templating/src/Templating/Template/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/templating/src/Templating/Template/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/form/src/Form.php" afterPath="$PROJECT_DIR$/vendor/webedit/form/src/Form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Mapper.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Mapper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Mapper.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Mapper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Mapper.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Mapper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Control/Multiplier.php" afterPath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Control/Multiplier.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/admin/src/Admin/Presenter.php" afterPath="$PROJECT_DIR$/vendor/webedit/admin/src/Admin/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/front/src/Front/Presenter.php" afterPath="$PROJECT_DIR$/vendor/webedit/front/src/Front/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/home/src/Home/Admin/Presenter.php" afterPath="$PROJECT_DIR$/vendor/webedit/home/src/Home/Admin/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/home/src/Home/Front/Presenter.php" afterPath="$PROJECT_DIR$/vendor/webedit/home/src/Home/Front/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/sitemap/src/Sitemap/Xml/Presenter.php" afterPath="$PROJECT_DIR$/vendor/webedit/sitemap/src/Sitemap/Xml/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/config/src/Config/Provider.php" afterPath="$PROJECT_DIR$/vendor/webedit/config/src/Config/Provider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Repository.php" afterPath="$PROJECT_DIR$/vendor/webedit/database/src/Database/Repository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Repository.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Repository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Repository.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Repository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/bootstrap.php" afterPath="$PROJECT_DIR$/private/bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/vitkutny.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/vitkutny.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="976c0523-7ed6-474b-9f89-2be3c016b818" name="Default" comment="" />
     <ignored path="webedit.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -79,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="view.latte" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vendor/webedit/page/src/Page/Control/view.latte">
+      <file leaf-file-name="config.neon" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/private/config.neon">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.049723756" vertical-offset="0" max-vertical-offset="362">
-              <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.08709677" vertical-offset="0" max-vertical-offset="620">
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -151,8 +100,8 @@
         <option value="$PROJECT_DIR$/vendor/webedit/database/src/Database/Form.php" />
         <option value="$PROJECT_DIR$/vendor/webedit/database/src/Database/Grid/Control.php" />
         <option value="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Control/navbar.latte" />
-        <option value="$PROJECT_DIR$/vendor/nette/application/src/Application/UI/Multiplier.php" />
         <option value="$PROJECT_DIR$/vendor/webedit/routing/src/Routing/Route.php" />
+        <option value="$PROJECT_DIR$/vendor/nette/application/src/Application/UI/Multiplier.php" />
       </list>
     </option>
   </component>
@@ -325,6 +274,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webedit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webedit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="private" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -333,7 +296,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode.PHP" />
+    <property name="options.lastSelected" value="com.intellij.webcore.resourceRoots.WebIdeProjectStructureWithSourceConfigurable" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="FullScreen" value="false" />
@@ -402,7 +365,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3353846" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5292308" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -412,8 +375,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25302115" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="515" y="64" width="336" height="671" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25302115" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="515" y="64" width="336" height="671" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -447,14 +410,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/webedit/database/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40298507" vertical-offset="0" max-vertical-offset="402">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/webedit/form/src/Form.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="429">
@@ -614,14 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/private/config.neon">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14917128" vertical-offset="0" max-vertical-offset="362">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/webedit/database/src/Database/Form/Container.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48710603" vertical-offset="3142" max-vertical-offset="5238">
@@ -766,14 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/UI/Multiplier.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6546961" vertical-offset="177" max-vertical-offset="756">
-          <caret line="26" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/webedit/application/src/Application/Control/Multiplier.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4281768" vertical-offset="115" max-vertical-offset="504">
@@ -848,8 +787,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/webedit/page/src/Page/Control/view.latte">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.049723756" vertical-offset="0" max-vertical-offset="362">
+        <state vertical-scroll-proportion="0.0647482" vertical-offset="0" max-vertical-offset="278">
           <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54339623" vertical-offset="1674" max-vertical-offset="4158">
+          <caret line="104" column="9" selection-start-line="101" selection-start-column="9" selection-end-line="101" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/UI/Multiplier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72302157" vertical-offset="177" max-vertical-offset="756">
+          <caret line="24" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/config.neon">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08709677" vertical-offset="0" max-vertical-offset="620">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
           <folding />
         </state>
       </provider>
