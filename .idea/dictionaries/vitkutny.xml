@@ -1,3 +1,24 @@
 <component name="ProjectDictionaryState">
-  <dictionary name="vitkutny" />
+  <dictionary name="vitkutny">
+    <words>
+      <w>autoload</w>
+      <w>dbname</w>
+      <w>dropdown</w>
+      <w>glyphicon</w>
+      <w>instanceof</w>
+      <w>isset</w>
+      <w>kdyby</w>
+      <w>navbar</w>
+      <w>nette</w>
+      <w>nextras</w>
+      <w>noescape</w>
+      <w>plink</w>
+      <w>rawurldecode</w>
+      <w>sitemap</w>
+      <w>sitemaps</w>
+      <w>templating</w>
+      <w>viewport</w>
+      <w>webedit</w>
+    </words>
+  </dictionary>
 </component>

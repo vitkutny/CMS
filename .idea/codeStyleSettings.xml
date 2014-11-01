@@ -35,6 +35,7 @@
         <PHPCodeStyleSettings>
           <option name="PHPDOC_BLANK_LINE_BEFORE_TAGS" value="true" />
           <option name="PHPDOC_KEEP_BLANK_LINES" value="false" />
+          <option name="PHPDOC_BLANK_LINES_AROUND_PARAMETERS" value="true" />
           <option name="UPPER_CASE_BOOLEAN_CONST" value="true" />
           <option name="UPPER_CASE_NULL_CONST" value="true" />
           <option name="BLANK_LINE_BEFORE_RETURN_STATEMENT" value="true" />
@@ -100,6 +101,7 @@
           <option name="KEEP_BLANK_LINES_IN_CODE" value="0" />
           <option name="KEEP_BLANK_LINES_BEFORE_RBRACE" value="0" />
           <option name="BLANK_LINES_AFTER_PACKAGE" value="1" />
+          <option name="BLANK_LINES_AROUND_FIELD" value="1" />
           <option name="BLANK_LINES_AFTER_CLASS_HEADER" value="1" />
           <option name="SPECIAL_ELSE_IF_TREATMENT" value="true" />
           <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
