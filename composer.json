@@ -10,7 +10,7 @@
 	],
 	"homepage": "http://github.com/webedit",
 	"require": {
-		"webedit/bootstrap": "dev-master",
+		"webedit/config": "dev-master",
 		"webedit/home": "dev-master",
 		"webedit/page": "dev-master",
 		"webedit/sitemap": "dev-master"

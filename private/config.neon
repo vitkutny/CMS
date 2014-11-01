@@ -1,0 +1,13 @@
+extensions:
+	admin: WebEdit\Admin\Extension
+	front: WebEdit\Front\Extension
+	wapplication: WebEdit\Application\Extension
+	wtemplating: WebEdit\Templating\Extension
+	translation: Kdyby\Translation\DI\TranslationExtension
+	wform: WebEdit\Form\Extension
+	orm: WebEdit\Orm\Extension
+	wdatabase: WebEdit\Database\Extension
+	menu: WebEdit\Menu\Extension
+	wrouting: WebEdit\Routing\Extension
+	home: WebEdit\Home\Extension
+	page: WebEdit\Page\Extension
