@@ -20,6 +20,8 @@
       <sourceFolder url="file://$MODULE_DIR$/vendor/webedit/routing/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/webedit/sitemap/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/webedit/templating/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/webedit/grid/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/webedit/orm/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
