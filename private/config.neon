@@ -1,13 +1,18 @@
+database:
+	webedit:
+		dsn: 'mysql:host=127.0.0.1;dbname=webedit'
+		user: root
 extensions:
 	admin: WebEdit\Admin\Extension
 	front: WebEdit\Front\Extension
-	wapplication: WebEdit\Application\Extension
-	wtemplating: WebEdit\Templating\Extension
+	application: WebEdit\Application\Extension
+	templating: WebEdit\Templating\Extension
 	translation: Kdyby\Translation\DI\TranslationExtension
-	wform: WebEdit\Form\Extension
+	form: WebEdit\Form\Extension
+	grid: WebEdit\Grid\Extension
 	orm: WebEdit\Orm\Extension
-	wdatabase: WebEdit\Database\Extension
+	database: WebEdit\Database\Extension
 	menu: WebEdit\Menu\Extension
-	wrouting: WebEdit\Routing\Extension
+	routing: WebEdit\Routing\Extension
 	home: WebEdit\Home\Extension
 	page: WebEdit\Page\Extension
