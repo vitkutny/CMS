@@ -1,7 +1,6 @@
 database:
-	webedit:
-		dsn: 'mysql:host=127.0.0.1;dbname=webedit'
-		user: root
+	dsn: 'mysql:host=127.0.0.1;dbname=webedit'
+	user: root
 extensions:
 	admin: WebEdit\Admin\Extension
 	front: WebEdit\Front\Extension
@@ -13,6 +12,6 @@ extensions:
 	orm: WebEdit\Orm\Extension
 	database: WebEdit\Database\Extension
 	menu: WebEdit\Menu\Extension
-	webedit.routing: WebEdit\Routing\Extension #TODO
+	routing: WebEdit\Routing\Extension
 	home: WebEdit\Home\Extension
 	page: WebEdit\Page\Extension
