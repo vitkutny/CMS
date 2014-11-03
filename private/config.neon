@@ -15,3 +15,4 @@ extensions:
 	routing: WebEdit\Routing\Extension
 	home: WebEdit\Home\Extension
 	page: WebEdit\Page\Extension
+	message: WebEdit\Message\Extension

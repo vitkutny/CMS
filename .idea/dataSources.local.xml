@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="MySQL - webedit@localhost" uuid="bda90530-e86a-40cf-a1ff-38575c5b4a0b">
-      <secret-storage>memory</secret-storage>
-      <user-name>root</user-name>
-      <schema-pattern>webedit.*</schema-pattern>
-      <default-schemas>webedit.*</default-schemas>
-    </data-source>
+    <data-source name="MySQL - webedit@localhost" uuid="bda90530-e86a-40cf-a1ff-38575c5b4a0b" />
   </component>
 </project>
 
