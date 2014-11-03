@@ -10,7 +10,6 @@ extensions:
 	form: WebEdit\Form\Extension
 	grid: WebEdit\Grid\Extension
 	orm: WebEdit\Orm\Extension
-	database: WebEdit\Database\Extension
 	menu: WebEdit\Menu\Extension
 	routing: WebEdit\Routing\Extension
 	home: WebEdit\Home\Extension
