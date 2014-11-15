@@ -13,8 +13,7 @@
 		"webedit/config": "dev-master",
 		"webedit/home": "dev-master",
 		"webedit/page": "dev-master",
-		"webedit/sitemap": "dev-master",
-		"fuelphp/alias": "dev-master"
+		"webedit/sitemap": "dev-master"
 	},
 	"autoload": {
 		"psr-4": {
