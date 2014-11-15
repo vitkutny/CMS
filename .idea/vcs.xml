@@ -2,6 +2,20 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/webedit/admin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/webedit/application" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/webedit/config" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/webedit/form" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/webedit/front" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/webedit/grid" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/webedit/home" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/webedit/menu" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/webedit/message" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/webedit/orm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/webedit/page" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/webedit/routing" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/webedit/sitemap" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/webedit/templating" vcs="Git" />
   </component>
 </project>
 

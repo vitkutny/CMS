@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$/private">
-      <excludeFolder url="file://$MODULE_DIR$/private/temp" />
-    </content>
-    <content url="file://$MODULE_DIR$/public">
-      <excludeFolder url="file://$MODULE_DIR$/public/temp" />
+    <content url="file://$MODULE_DIR$/app">
+      <excludeFolder url="file://$MODULE_DIR$/app/admin/public/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/app/front/public/temp" />
     </content>
     <content url="file://$MODULE_DIR$/vendor/webedit">
       <sourceFolder url="file://$MODULE_DIR$/vendor/webedit/admin/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/webedit/application/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/webedit/config/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/vendor/webedit/database/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/webedit/form/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/webedit/front/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/webedit/home/src" isTestSource="false" />
@@ -32,6 +29,7 @@
           <root url="file://$MODULE_DIR$/vendor/nette" />
           <root url="file://$MODULE_DIR$/vendor/latte" />
           <root url="file://$MODULE_DIR$/vendor/nextras" />
+          <root url="file://$MODULE_DIR$/vendor/fuelphp" />
           <root url="file://$MODULE_DIR$/vendor/bower" />
           <root url="file://$MODULE_DIR$/vendor/kdyby" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
@@ -43,6 +41,7 @@
           <root url="file://$MODULE_DIR$/vendor/nette" />
           <root url="file://$MODULE_DIR$/vendor/latte" />
           <root url="file://$MODULE_DIR$/vendor/nextras" />
+          <root url="file://$MODULE_DIR$/vendor/fuelphp" />
           <root url="file://$MODULE_DIR$/vendor/bower" />
           <root url="file://$MODULE_DIR$/vendor/kdyby" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
