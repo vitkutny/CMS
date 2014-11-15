@@ -18,6 +18,6 @@ $manager->aliasPattern('Front\*', 'WebEdit\\$1');
 //	pattern: []
 //let web/extension add patterns for webs
 //Fuel\Alias\Manager should be registered in every app request
-//implement cache $cache = new Fuel\Alias\Cache('/path/to/cache');
-//delete cache while extension compile
+//implement alias cache
+//delete alias cache while extension compile
 return $configurator;
