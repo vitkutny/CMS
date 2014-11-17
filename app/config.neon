@@ -17,4 +17,3 @@ extensions:
 	menu: WebEdit\Menu\Extension
 	page: WebEdit\Page\Extension
 	message: WebEdit\Message\Extension
-	alias: WebEdit\Alias\Extension
