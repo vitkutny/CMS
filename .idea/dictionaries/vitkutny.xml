@@ -4,6 +4,7 @@
       <w>autoload</w>
       <w>dbname</w>
       <w>dropdown</w>
+      <w>fuelphp</w>
       <w>glyphicon</w>
       <w>instanceof</w>
       <w>isset</w>
@@ -17,6 +18,7 @@
       <w>sitemap</w>
       <w>sitemaps</w>
       <w>templating</w>
+      <w>unformat</w>
       <w>viewport</w>
       <w>webedit</w>
     </words>

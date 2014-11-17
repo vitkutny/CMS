@@ -1,5 +1,0 @@
-presenter:
-	module: Menu
-	action:
-		add: Add menu
-		edit: Edit menu

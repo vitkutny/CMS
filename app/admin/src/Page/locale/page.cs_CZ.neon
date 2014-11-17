@@ -1,5 +1,0 @@
-presenter:
-	module: Stránky
-	action:
-		add: Přidat stránku
-		edit: Upravit stránku
