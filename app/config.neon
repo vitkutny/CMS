@@ -1,12 +1,6 @@
 database:
 	dsn: 'mysql:host=127.0.0.1;dbname=webedit'
 	user: root
-templating:
-	templates:
-		- %wwwDir%/../src
-translation:
-	dirs:
-		- %wwwDir%/../src
 extensions:
 	application: WebEdit\Application\Extension
 	templating: WebEdit\Templating\Extension
