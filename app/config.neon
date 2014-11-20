@@ -11,3 +11,17 @@ extensions:
 	menu: WebEdit\Menu\Extension
 	page: WebEdit\Page\Extension
 	message: WebEdit\Message\Extension
+
+	webedit.admin: WebEdit\Web\Extension
+	webedit.com: WebEdit\Web\Extension
+	webedit.cz: WebEdit\Web\Extension
+	webedit: WebEdit\Web\Extension
+webedit.admin:
+	web: admin
+webedit.cz:
+	web: front
+	locale: cs_CZ
+webedit.com:
+	web: front
+webedit:
+	web: front
