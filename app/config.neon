@@ -15,7 +15,6 @@ extensions:
 	webedit.admin: WebEdit\Web\Extension
 	webedit.com: WebEdit\Web\Extension
 	webedit.cz: WebEdit\Web\Extension
-	webedit: WebEdit\Web\Extension
 webedit.admin:
 	web: admin
 	locale: [cs_CZ, en_US]
