@@ -1,12 +1,12 @@
 {
 	"minimum-stability": "dev",
-	"name": "kutny/sandbox",
+	"name": "ytnuk/sandbox",
 	"type": "project",
 	"require": {
-		"kutny/config": "dev-master",
-		"kutny/home": "dev-master",
-		"kutny/page": "dev-master",
-		"kutny/sitemap": "dev-master"
+		"ytnuk/config": "dev-master",
+		"ytnuk/home": "dev-master",
+		"ytnuk/page": "dev-master",
+		"ytnuk/sitemap": "dev-master"
 	},
 	"autoload": {
 		"psr-4": {

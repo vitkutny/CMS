@@ -1,25 +1,25 @@
 database:
-	dsn: 'mysql:host=127.0.0.1;dbname=kutny'
+	dsn: 'mysql:host=127.0.0.1;dbname=ytnuk'
 	user: root
 extensions:
-	application: Kutny\Application\Extension
-	templating: Kutny\Templating\Extension
+	application: Ytnuk\Application\Extension
+	templating: Ytnuk\Templating\Extension
 	translation: Kdyby\Translation\DI\TranslationExtension
-	form: Kutny\Form\Extension
-	grid: Kutny\Grid\Extension
-	orm: Kutny\Orm\Extension
-	menu: Kutny\Menu\Extension
-	page: Kutny\Page\Extension
-	message: Kutny\Message\Extension
+	form: Ytnuk\Form\Extension
+	grid: Ytnuk\Grid\Extension
+	orm: Ytnuk\Orm\Extension
+	menu: Ytnuk\Menu\Extension
+	page: Ytnuk\Page\Extension
+	message: Ytnuk\Message\Extension
 
-	kutny.admin: Kutny\Web\Extension
-	kutny.com: Kutny\Web\Extension
-	kutny.cz: Kutny\Web\Extension
-kutny.admin:
+	ytnuk.admin: Ytnuk\Web\Extension
+	ytnuk.com: Ytnuk\Web\Extension
+	ytnuk.cz: Ytnuk\Web\Extension
+ytnuk.admin:
 	web: admin
 	locale: [cs_CZ, en_US]
-kutny.cz:
+ytnuk.cz:
 	web: front
 	locale: cs_CZ
-kutny.com:
+ytnuk.com:
 	web: front

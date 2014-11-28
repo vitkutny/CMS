@@ -1,7 +1,7 @@
 module.exports = function (grunt) {
 	grunt.initConfig({
 		bower: grunt.file.readJSON('./.bowerrc'),
-		kutny: {
+		ytnuk: {
 			parameters: {
 				publicTempDir: 'public/temp'
 			}
@@ -22,7 +22,7 @@ module.exports = function (grunt) {
 						expand: true,
 						cwd: '<%=bower.directory%>/bootstrap/',
 						src: ['fonts/*'],
-						dest: '<%=kutny.parameters.publicTempDir%>/application/'
+						dest: '<%=ytnuk.parameters.publicTempDir%>/application/'
 					}
 				]
 			}
@@ -30,7 +30,7 @@ module.exports = function (grunt) {
 		uglify: {
 			default: {
 				files: {
-					'<%=kutny.parameters.publicTempDir%>/application/scripts/index.js': [
+					'<%=ytnuk.parameters.publicTempDir%>/application/scripts/index.js': [
 						'<%=bower.directory%>/jquery/dist/jquery.js',
 						'<%=bower.directory%>/bootstrap/dist/js/bootstrap.js'
 					]
@@ -40,7 +40,7 @@ module.exports = function (grunt) {
 		cssmin: {
 			default: {
 				files: {
-					'<%=kutny.parameters.publicTempDir%>/application/styles/index.css': [
+					'<%=ytnuk.parameters.publicTempDir%>/application/styles/index.css': [
 						'<%=bower.directory%>/bootstrap/dist/css/bootstrap.css',
 						'<%=bower.directory%>/bootswatch/sandstone/bootstrap.css'
 					]

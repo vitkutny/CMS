@@ -5,80 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="976c0523-7ed6-474b-9f89-2be3c016b818" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Container.php" afterPath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Container.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Form/Container.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Form/Container.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/orm/src/Orm/Form/Container.php" afterPath="$PROJECT_DIR$/vendor/webedit/orm/src/Orm/Form/Container.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Form/Container.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Form/Container.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Control.php" afterPath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Control.php" afterPath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/grid/src/Grid/Control.php" afterPath="$PROJECT_DIR$/vendor/webedit/grid/src/Grid/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Control.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Form/Control.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Form/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/message/src/Message/Control.php" afterPath="$PROJECT_DIR$/vendor/webedit/message/src/Message/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/orm/src/Orm/Grid/Control.php" afterPath="$PROJECT_DIR$/vendor/webedit/orm/src/Orm/Grid/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Control.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Form/Control.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Form/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Entity.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Entity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/orm/src/Orm/Entity.php" afterPath="$PROJECT_DIR$/vendor/webedit/orm/src/Orm/Entity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Entity.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Entity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Exception.php" afterPath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Exception.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/config/src/Config/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/config/src/Config/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/grid/src/Grid/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/grid/src/Grid/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/message/src/Message/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/message/src/Message/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/orm/src/Orm/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/orm/src/Orm/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/templating/src/Templating/Extension.php" afterPath="$PROJECT_DIR$/vendor/webedit/templating/src/Templating/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Presenter/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Presenter/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/config/src/Config/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/config/src/Config/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/form/src/Form/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Control/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Control/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Form/Control/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Form/Control/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/message/src/Message/Control/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/message/src/Message/Control/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/orm/src/Orm/Form/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/orm/src/Orm/Form/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/orm/src/Orm/Grid/Control/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/orm/src/Orm/Grid/Control/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Control/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Control/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Form/Control/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Form/Control/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/templating/src/Templating/Template/Factory.php" afterPath="$PROJECT_DIR$/vendor/webedit/templating/src/Templating/Template/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/form/src/Form.php" afterPath="$PROJECT_DIR$/vendor/webedit/form/src/Form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/orm/src/Orm/Form.php" afterPath="$PROJECT_DIR$/vendor/webedit/orm/src/Orm/Form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Mapper.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Mapper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/orm/src/Orm/Mapper.php" afterPath="$PROJECT_DIR$/vendor/webedit/orm/src/Orm/Mapper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Mapper.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Mapper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/orm/src/Orm/Model.php" afterPath="$PROJECT_DIR$/vendor/webedit/orm/src/Orm/Model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/front/src/Page/Presenter.php" afterPath="$PROJECT_DIR$/app/front/src/Page/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Presenter.php" afterPath="$PROJECT_DIR$/vendor/webedit/application/src/Application/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/home/src/Home/Presenter.php" afterPath="$PROJECT_DIR$/vendor/webedit/home/src/Home/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Presenter.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Presenter.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/sitemap/src/Sitemap/Xml/Presenter.php" afterPath="$PROJECT_DIR$/vendor/webedit/sitemap/src/Sitemap/Xml/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/config/src/Config/Provider.php" afterPath="$PROJECT_DIR$/vendor/webedit/config/src/Config/Provider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Repository.php" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Repository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/orm/src/Orm/Repository.php" afterPath="$PROJECT_DIR$/vendor/webedit/orm/src/Orm/Repository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Repository.php" afterPath="$PROJECT_DIR$/vendor/webedit/page/src/Page/Repository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/templating/src/Templating/Template.php" afterPath="$PROJECT_DIR$/vendor/webedit/templating/src/Templating/Template.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bootstrap.php" afterPath="$PROJECT_DIR$/app/bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/application/composer.json" afterPath="$PROJECT_DIR$/vendor/webedit/application/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/config/composer.json" afterPath="$PROJECT_DIR$/vendor/webedit/config/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/form/composer.json" afterPath="$PROJECT_DIR$/vendor/webedit/form/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/grid/composer.json" afterPath="$PROJECT_DIR$/vendor/webedit/grid/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/home/composer.json" afterPath="$PROJECT_DIR$/vendor/webedit/home/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/composer.json" afterPath="$PROJECT_DIR$/vendor/webedit/menu/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/message/composer.json" afterPath="$PROJECT_DIR$/vendor/webedit/message/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/orm/composer.json" afterPath="$PROJECT_DIR$/vendor/webedit/orm/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/page/composer.json" afterPath="$PROJECT_DIR$/vendor/webedit/page/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/sitemap/composer.json" afterPath="$PROJECT_DIR$/vendor/webedit/sitemap/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/templating/composer.json" afterPath="$PROJECT_DIR$/vendor/webedit/templating/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config.neon" afterPath="$PROJECT_DIR$/app/config.neon" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Control/navbar.latte" afterPath="$PROJECT_DIR$/vendor/webedit/menu/src/Menu/Control/navbar.latte" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webedit.iml" afterPath="$PROJECT_DIR$/.idea/webedit.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="webedit.iws" />
@@ -102,6 +28,20 @@
   <component name="FavoritesManager">
     <favorites_list name="webedit" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Presenter.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/front/src/Page/Presenter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5928144" vertical-offset="0" max-vertical-offset="450">
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="true" />
@@ -119,7 +59,6 @@
         <option value="$PROJECT_DIR$/app/front/config.neon" />
         <option value="$PROJECT_DIR$/app/admin/config.neon" />
         <option value="$PROJECT_DIR$/vendor/webedit/config/src/Config/Factory.php" />
-        <option value="$PROJECT_DIR$/app/front/src/Page/Presenter.php" />
         <option value="$PROJECT_DIR$/app/admin/bootstrap.php" />
         <option value="$PROJECT_DIR$/app/front/bootstrap.php" />
         <option value="$PROJECT_DIR$/vendor/webedit/web/src/Web/Presenter/@layout.latte" />
@@ -164,6 +103,7 @@
         <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/webedit.sql" />
+        <option value="$PROJECT_DIR$/app/front/src/Page/Presenter.php" />
       </list>
     </option>
   </component>
@@ -350,556 +290,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Orm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Orm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Orm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Orm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="locale" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="message" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="message" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Message" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="message" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Message" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="message" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="locale" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="locale" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="locale" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Presenter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alias" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alias" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Alias" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1048,7 +438,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="30" width="1368" height="739" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1058,7 +448,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2779456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="515" y="64" width="336" height="671" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2779456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="515" y="64" width="336" height="671" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4845679" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1130,6 +520,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="25236">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1474,18 +865,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webedit-base.sql">
+    <entry file="file://$PROJECT_DIR$/app/front/src/Page/Presenter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38227147" vertical-offset="240" max-vertical-offset="828">
-          <caret line="21" column="59" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webedit.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31034482" vertical-offset="216" max-vertical-offset="5004">
-          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.5928144" vertical-offset="0" max-vertical-offset="450">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
           <folding />
         </state>
       </provider>

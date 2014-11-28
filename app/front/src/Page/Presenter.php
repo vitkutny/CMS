@@ -2,14 +2,14 @@
 
 namespace Front\Page;
 
-use Kutny;
+use Ytnuk;
 
 /**
  * Class Presenter
  *
- * @package Kutny\Page
+ * @package Ytnuk\Page
  */
-final class Presenter extends Kutny\Page\Presenter
+final class Presenter extends Ytnuk\Page\Presenter
 {
 
 	public function renderView()
