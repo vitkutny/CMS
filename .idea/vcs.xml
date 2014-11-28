@@ -2,20 +2,19 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vendor/webedit/admin" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vendor/webedit/application" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vendor/webedit/config" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vendor/webedit/form" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vendor/webedit/front" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vendor/webedit/grid" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vendor/webedit/home" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vendor/webedit/menu" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vendor/webedit/message" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vendor/webedit/orm" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vendor/webedit/page" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vendor/webedit/routing" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vendor/webedit/sitemap" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vendor/webedit/templating" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/ytnuk/alias" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/ytnuk/application" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/ytnuk/config" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/ytnuk/form" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/ytnuk/grid" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/ytnuk/home" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/ytnuk/menu" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/ytnuk/message" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/ytnuk/orm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/ytnuk/page" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/ytnuk/sitemap" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/ytnuk/templating" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/ytnuk/web" vcs="Git" />
   </component>
 </project>
 
