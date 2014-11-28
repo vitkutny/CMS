@@ -9,6 +9,7 @@
       <w>instanceof</w>
       <w>isset</w>
       <w>kdyby</w>
+      <w>lcfirst</w>
       <w>navbar</w>
       <w>nette</w>
       <w>nextras</w>
