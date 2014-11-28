@@ -1,19 +1,12 @@
 {
 	"minimum-stability": "dev",
-	"name": "webedit/sandbox",
+	"name": "kutny/sandbox",
 	"type": "project",
-	"description": "WebEdit CMS",
-	"keywords": [
-		"webedit",
-		"web",
-		"edit"
-	],
-	"homepage": "http://github.com/webedit",
 	"require": {
-		"webedit/config": "dev-master",
-		"webedit/home": "dev-master",
-		"webedit/page": "dev-master",
-		"webedit/sitemap": "dev-master"
+		"kutny/config": "dev-master",
+		"kutny/home": "dev-master",
+		"kutny/page": "dev-master",
+		"kutny/sitemap": "dev-master"
 	},
 	"autoload": {
 		"psr-4": {

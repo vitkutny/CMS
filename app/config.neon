@@ -1,25 +1,25 @@
 database:
-	dsn: 'mysql:host=127.0.0.1;dbname=webedit'
+	dsn: 'mysql:host=127.0.0.1;dbname=kutny'
 	user: root
 extensions:
-	application: WebEdit\Application\Extension
-	templating: WebEdit\Templating\Extension
+	application: Kutny\Application\Extension
+	templating: Kutny\Templating\Extension
 	translation: Kdyby\Translation\DI\TranslationExtension
-	form: WebEdit\Form\Extension
-	grid: WebEdit\Grid\Extension
-	orm: WebEdit\Orm\Extension
-	menu: WebEdit\Menu\Extension
-	page: WebEdit\Page\Extension
-	message: WebEdit\Message\Extension
+	form: Kutny\Form\Extension
+	grid: Kutny\Grid\Extension
+	orm: Kutny\Orm\Extension
+	menu: Kutny\Menu\Extension
+	page: Kutny\Page\Extension
+	message: Kutny\Message\Extension
 
-	webedit.admin: WebEdit\Web\Extension
-	webedit.com: WebEdit\Web\Extension
-	webedit.cz: WebEdit\Web\Extension
-webedit.admin:
+	kutny.admin: Kutny\Web\Extension
+	kutny.com: Kutny\Web\Extension
+	kutny.cz: Kutny\Web\Extension
+kutny.admin:
 	web: admin
 	locale: [cs_CZ, en_US]
-webedit.cz:
+kutny.cz:
 	web: front
 	locale: cs_CZ
-webedit.com:
+kutny.com:
 	web: front

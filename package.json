@@ -1,5 +1,5 @@
 {
-	"name": "webedit",
+	"name": "kutny",
 	"private": true,
 	"dependencies": {
 		"grunt": "~0.4.5",

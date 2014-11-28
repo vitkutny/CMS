@@ -1,3 +1,3 @@
 Installing
 ============
-git clone git@github.com:webedit/sandbox webedit && cd webedit && composer install && npm install && grunt
+git clone git@github.com:kutny/sandbox kutny && cd kutny && composer install && npm install && grunt

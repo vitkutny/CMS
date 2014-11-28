@@ -2,14 +2,14 @@
 
 namespace Front\Page;
 
-use WebEdit;
+use Kutny;
 
 /**
  * Class Presenter
  *
- * @package WebEdit\Page
+ * @package Kutny\Page
  */
-final class Presenter extends WebEdit\Page\Presenter
+final class Presenter extends Kutny\Page\Presenter
 {
 
 	public function renderView()
