@@ -3,14 +3,16 @@ module.exports = function (grunt) {
 		bower: grunt.file.readJSON('./.bowerrc'),
 		ytnuk: {
 			parameters: {
-				publicTempDir: 'public/temp'
+				frontTempDir: 'app/front/public/temp',
+				adminTempDir: 'app/admin/public/temp'
 			}
 		},
 		shell: {
 			default: {
 				command: [
-					'chmod 777 private/temp',
-					'chmod 777 public/temp',
+					'chmod 777 temp',
+					'chmod 777 <%=ytnuk.parameters.frontTempDir%>',
+					'chmod 777 <%=ytnuk.parameters.adminTempDir%>',
 					'bower install'
 				].join('&&')
 			}
@@ -22,7 +24,13 @@ module.exports = function (grunt) {
 						expand: true,
 						cwd: '<%=bower.directory%>/bootstrap/',
 						src: ['fonts/*'],
-						dest: '<%=ytnuk.parameters.publicTempDir%>/application/'
+						dest: '<%=ytnuk.parameters.frontTempDir%>/application/'
+					},
+					{
+						expand: true,
+						cwd: '<%=bower.directory%>/bootstrap/',
+						src: ['fonts/*'],
+						dest: '<%=ytnuk.parameters.adminTempDir%>/application/'
 					}
 				]
 			}
@@ -30,7 +38,11 @@ module.exports = function (grunt) {
 		uglify: {
 			default: {
 				files: {
-					'<%=ytnuk.parameters.publicTempDir%>/application/scripts/index.js': [
+					'<%=ytnuk.parameters.frontTempDir%>/application/scripts/index.js': [
+						'<%=bower.directory%>/jquery/dist/jquery.js',
+						'<%=bower.directory%>/bootstrap/dist/js/bootstrap.js'
+					],
+					'<%=ytnuk.parameters.adminTempDir%>/application/scripts/index.js': [
 						'<%=bower.directory%>/jquery/dist/jquery.js',
 						'<%=bower.directory%>/bootstrap/dist/js/bootstrap.js'
 					]
@@ -40,7 +52,11 @@ module.exports = function (grunt) {
 		cssmin: {
 			default: {
 				files: {
-					'<%=ytnuk.parameters.publicTempDir%>/application/styles/index.css': [
+					'<%=ytnuk.parameters.frontTempDir%>/application/styles/index.css': [
+						'<%=bower.directory%>/bootstrap/dist/css/bootstrap.css',
+						'<%=bower.directory%>/bootswatch/sandstone/bootstrap.css'
+					],
+					'<%=ytnuk.parameters.adminTempDir%>/application/styles/index.css': [
 						'<%=bower.directory%>/bootstrap/dist/css/bootstrap.css',
 						'<%=bower.directory%>/bootswatch/sandstone/bootstrap.css'
 					]
