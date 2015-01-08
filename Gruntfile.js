@@ -13,7 +13,8 @@ module.exports = function (grunt) {
 					'chmod 777 temp',
 					'chmod 777 <%=ytnuk.parameters.frontTempDir%>',
 					'chmod 777 <%=ytnuk.parameters.adminTempDir%>',
-					'bower install'
+					'bower install',
+					'bower update'
 				].join('&&')
 			}
 		},
@@ -40,11 +41,19 @@ module.exports = function (grunt) {
 				files: {
 					'<%=ytnuk.parameters.frontTempDir%>/application/scripts/index.js': [
 						'<%=bower.directory%>/jquery/dist/jquery.js',
-						'<%=bower.directory%>/bootstrap/dist/js/bootstrap.js'
+						'<%=bower.directory%>/bootstrap/dist/js/bootstrap.js',
+						'<%=bower.directory%>/nette-forms/src/assets/netteForms.js',
+						'<%=bower.directory%>/nette.ajax.js/nette.ajax.js',
+						'<%=bower.directory%>/history.nette.ajax.js/client-side/history.ajax.js',
+						'app/main.js'
 					],
 					'<%=ytnuk.parameters.adminTempDir%>/application/scripts/index.js': [
 						'<%=bower.directory%>/jquery/dist/jquery.js',
-						'<%=bower.directory%>/bootstrap/dist/js/bootstrap.js'
+						'<%=bower.directory%>/bootstrap/dist/js/bootstrap.js',
+						'<%=bower.directory%>/nette-forms/src/assets/netteForms.js',
+						'<%=bower.directory%>/nette.ajax.js/nette.ajax.js',
+						'<%=bower.directory%>/history.nette.ajax.js/client-side/history.ajax.js',
+						'app/main.js'
 					]
 				}
 			}

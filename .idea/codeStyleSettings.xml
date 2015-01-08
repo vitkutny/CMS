@@ -24,7 +24,6 @@
         <option name="HTML_ELEMENTS_TO_INSERT_NEW_LINE_BEFORE" value="" />
         <option name="HTML_ELEMENTS_TO_REMOVE_NEW_LINE_BEFORE" value="" />
         <option name="HTML_DO_NOT_INDENT_CHILDREN_OF" value="" />
-        <option name="HTML_DO_NOT_ALIGN_CHILDREN_OF_MIN_LINES" value="0" />
         <option name="HTML_KEEP_WHITESPACES_INSIDE" value="pre" />
         <option name="HTML_INLINE_ELEMENTS" value="" />
         <option name="HTML_DONT_ADD_BREAKS_IF_INLINE_CONTENT" value="" />
@@ -47,6 +46,12 @@
         <XML>
           <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
         </XML>
+        <codeStyleSettings language="Blade">
+          <indentOptions>
+            <option name="CONTINUATION_INDENT_SIZE" value="4" />
+            <option name="USE_TAB_CHARACTER" value="true" />
+          </indentOptions>
+        </codeStyleSettings>
         <codeStyleSettings language="CSS">
           <indentOptions>
             <option name="CONTINUATION_INDENT_SIZE" value="4" />
@@ -77,6 +82,13 @@
         </codeStyleSettings>
         <codeStyleSettings language="HTML">
           <indentOptions>
+            <option name="CONTINUATION_INDENT_SIZE" value="4" />
+            <option name="USE_TAB_CHARACTER" value="true" />
+          </indentOptions>
+        </codeStyleSettings>
+        <codeStyleSettings language="JSON">
+          <indentOptions>
+            <option name="INDENT_SIZE" value="4" />
             <option name="CONTINUATION_INDENT_SIZE" value="4" />
             <option name="USE_TAB_CHARACTER" value="true" />
           </indentOptions>
@@ -161,9 +173,13 @@
             <option name="USE_TAB_CHARACTER" value="true" />
           </indentOptions>
         </codeStyleSettings>
+        <codeStyleSettings language="yaml">
+          <indentOptions>
+            <option name="INDENT_SIZE" value="4" />
+          </indentOptions>
+        </codeStyleSettings>
       </value>
     </option>
     <option name="USE_PER_PROJECT_SETTINGS" value="true" />
   </component>
 </project>
-
