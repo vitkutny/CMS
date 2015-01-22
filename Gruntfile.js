@@ -3,18 +3,57 @@ module.exports = function (grunt) {
 		bower: grunt.file.readJSON('./.bowerrc'),
 		ytnuk: {
 			parameters: {
-				frontTempDir: 'app/front/public/temp',
-				adminTempDir: 'app/admin/public/temp'
-			}
+				front: {
+					directory: 'app/front',
+					temp: {
+						directory: '<%=ytnuk.parameters.front.directory%>/temp'
+					},
+					public: {
+						directory: '<%=ytnuk.parameters.front.directory%>/public',
+						temp: {
+							directory: '<%=ytnuk.parameters.front.public.directory%>/temp'
+						}
+					}
+				},
+				admin: {
+					directory: 'app/admin',
+					temp: {
+						directory: '<%=ytnuk.parameters.admin.directory%>/temp'
+					},
+					public: {
+						directory: '<%=ytnuk.parameters.admin.directory%>/public',
+						temp: {
+							directory: '<%=ytnuk.parameters.admin.public.directory%>/temp'
+						}
+					}
+				}
+			},
+			scripts: [ //TODO: iterate over all packages from bower.directory and include main files
+				'<%=bower.directory%>/jquery/dist/jquery.js',
+				'<%=bower.directory%>/bootstrap/dist/js/bootstrap.js',
+				'<%=bower.directory%>/nette-forms/src/assets/netteForms.js',
+				'<%=bower.directory%>/nette.ajax.js/nette.ajax.js',
+				'<%=bower.directory%>/nette.ajax.snippets.multiple.js/nette.ajax.snippets.multiple.js',
+				'<%=bower.directory%>/nette.ajax.notification.js/nette.ajax.notification.js',
+				'<%=bower.directory%>/history.nette.ajax.js/client-side/history.ajax.js',
+				'app/nette.ajax.modal.js',
+				'app/nette.ajax.loader.js',
+				'<%=bower.directory%>/nette.ajax.scroll.js/nette.ajax.scroll.js',
+				'app/app.js'
+			],
+			styles: [
+				'<%=bower.directory%>/bootstrap/dist/css/bootstrap.css'
+			]
 		},
 		shell: {
 			default: {
 				command: [
-					'chmod 777 temp',
-					'chmod 777 <%=ytnuk.parameters.frontTempDir%>',
-					'chmod 777 <%=ytnuk.parameters.adminTempDir%>',
+					'chmod 777 <%=ytnuk.parameters.front.temp.directory%>',
+					'chmod 777 <%=ytnuk.parameters.admin.temp.directory%>',
+					'chmod 777 <%=ytnuk.parameters.front.public.temp.directory%>',
+					'chmod 777 <%=ytnuk.parameters.admin.public.temp.directory%>',
 					'bower install',
-					'bower update'
+					'composer install'
 				].join('&&')
 			}
 		},
@@ -25,13 +64,13 @@ module.exports = function (grunt) {
 						expand: true,
 						cwd: '<%=bower.directory%>/bootstrap/',
 						src: ['fonts/*'],
-						dest: '<%=ytnuk.parameters.frontTempDir%>/application/'
+						dest: '<%=ytnuk.parameters.admin.public.directory%>'
 					},
 					{
 						expand: true,
 						cwd: '<%=bower.directory%>/bootstrap/',
 						src: ['fonts/*'],
-						dest: '<%=ytnuk.parameters.adminTempDir%>/application/'
+						dest: '<%=ytnuk.parameters.front.public.directory%>'
 					}
 				]
 			}
@@ -39,36 +78,16 @@ module.exports = function (grunt) {
 		uglify: {
 			default: {
 				files: {
-					'<%=ytnuk.parameters.frontTempDir%>/application/scripts/index.js': [
-						'<%=bower.directory%>/jquery/dist/jquery.js',
-						'<%=bower.directory%>/bootstrap/dist/js/bootstrap.js',
-						'<%=bower.directory%>/nette-forms/src/assets/netteForms.js',
-						'<%=bower.directory%>/nette.ajax.js/nette.ajax.js',
-						'<%=bower.directory%>/history.nette.ajax.js/client-side/history.ajax.js',
-						'app/main.js'
-					],
-					'<%=ytnuk.parameters.adminTempDir%>/application/scripts/index.js': [
-						'<%=bower.directory%>/jquery/dist/jquery.js',
-						'<%=bower.directory%>/bootstrap/dist/js/bootstrap.js',
-						'<%=bower.directory%>/nette-forms/src/assets/netteForms.js',
-						'<%=bower.directory%>/nette.ajax.js/nette.ajax.js',
-						'<%=bower.directory%>/history.nette.ajax.js/client-side/history.ajax.js',
-						'app/main.js'
-					]
+					'<%=ytnuk.parameters.front.public.directory%>/scripts/index.js': '<%=ytnuk.scripts%>',
+					'<%=ytnuk.parameters.admin.public.directory%>/scripts/index.js': '<%=ytnuk.scripts%>'
 				}
 			}
 		},
 		cssmin: {
 			default: {
 				files: {
-					'<%=ytnuk.parameters.frontTempDir%>/application/styles/index.css': [
-						'<%=bower.directory%>/bootstrap/dist/css/bootstrap.css',
-						'<%=bower.directory%>/bootswatch/sandstone/bootstrap.css'
-					],
-					'<%=ytnuk.parameters.adminTempDir%>/application/styles/index.css': [
-						'<%=bower.directory%>/bootstrap/dist/css/bootstrap.css',
-						'<%=bower.directory%>/bootswatch/sandstone/bootstrap.css'
-					]
+					'<%=ytnuk.parameters.front.public.directory%>/styles/index.css': '<%=ytnuk.styles%>',
+					'<%=ytnuk.parameters.admin.public.directory%>/styles/index.css': '<%=ytnuk.styles%>'
 				}
 			}
 		}

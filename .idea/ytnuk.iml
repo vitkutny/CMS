@@ -2,8 +2,11 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$/app">
+      <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/app/admin/public/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/app/admin/temp" />
       <excludeFolder url="file://$MODULE_DIR$/app/front/public/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/app/front/temp" />
     </content>
     <content url="file://$MODULE_DIR$/vendor/ytnuk">
       <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/alias/src" isTestSource="false" />

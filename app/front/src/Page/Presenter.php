@@ -14,6 +14,6 @@ final class Presenter extends Ytnuk\Page\Presenter
 
 	public function renderView()
 	{
-		$this['menu']->setActive($this->page->menu);
+		$this[Ytnuk\Web\Control::class][Ytnuk\Menu\Control::class]->setActive($this->page->menu);
 	}
 }
