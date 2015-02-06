@@ -23,3 +23,8 @@ ytnuk.cz:
 	locale: cs_CZ
 ytnuk.com:
 	web: front
+routing:
+	cache: true
+application:
+	scanDirs:
+		- %appDir%/../vendor
