@@ -5,39 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="976c0523-7ed6-474b-9f89-2be3c016b818" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Bridges/ApplicationDI/ApplicationExtension.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Bridges/ApplicationDI/ApplicationExtension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/form/src/Form/Container.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/form/src/Form/Container.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Form/Container.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Form/Container.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/form/src/Form/Control.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/form/src/Form/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/grid/src/Grid/Control.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/grid/src/Grid/Control.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Control.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Control.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/message/src/Message/Control.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/message/src/Message/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Form/Control.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Form/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Grid/Control.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Grid/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Entity.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Entity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/config/src/Config/Extension.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/config/src/Config/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/form/src/Form/Extension.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/form/src/Form/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/grid/src/Grid/Extension.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/grid/src/Grid/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/message/src/Message/Extension.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/message/src/Message/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Extension.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/templating/src/Templating/Extension.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/templating/src/Templating/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/form/src/Form/Factory.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/form/src/Form/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/message/src/Message/Control/Factory.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/message/src/Message/Control/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Form/Factory.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Form/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Grid/Control/Factory.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Grid/Control/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/templating/src/Templating/Template/Factory.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/templating/src/Templating/Template/Factory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Entity.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Entity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Node/Entity.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Node/Entity.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/form/src/Form.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/form/src/Form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Form.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Mapper.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Mapper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Model.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/front/src/Page/Presenter.php" afterPath="$PROJECT_DIR$/app/front/src/Page/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/home/src/Home/Presenter.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/home/src/Home/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/sitemap/src/Sitemap/Xml/Presenter.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/sitemap/src/Sitemap/Xml/Presenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/config/src/Config/Provider.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/config/src/Config/Provider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Repository.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Repository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/templating/src/Templating/Template.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/templating/src/Templating/Template.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config.neon" afterPath="$PROJECT_DIR$/app/config.neon" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/public/index.php" afterPath="$PROJECT_DIR$/app/admin/public/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/front/public/index.php" afterPath="$PROJECT_DIR$/app/front/public/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Presenter.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Presenter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Presenter.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Presenter.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="webedit.iws" />
@@ -63,11 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="config.neon" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/config.neon">
+      <file leaf-file-name="view.latte" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vendor/ytnuk/message/src/Message/Control/view.latte">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6854839" vertical-offset="249" max-vertical-offset="648">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+              <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -81,62 +57,63 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/vendor/ytnuk/message" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vendor/ytnuk/home/src/Home/Presenter/@layout.latte" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Link/Alias/Form/Container.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Link/Parameter/Form/Container.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/locale/menu.cs_CZ.neon" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/locale/menu.en_US.neon" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/web/src/Web/Extension.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/form/composer.json" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/form/src/Form/Extension.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Link/Form/Container.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Form/Container.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/form/locale/form.cs_CZ.neon" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/form/locale/form.en_US.neon" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/message/locale/message.cs_CZ.neon" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/message/locale/message.en_US.neon" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/orm/locale/orm.cs_CZ.neon" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/orm/locale/orm.en_US.neon" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Form/Control.php" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Form.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/form/src/Form.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Presenter.php" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/alias/src/Alias/Extension.php" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Mapper.php" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Mapper.php" />
         <option value="$PROJECT_DIR$/vendor/nextras/orm/src/StorageReflection/DbStorageReflection.php" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Control/title.latte" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Form/Container.php" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Node/Form/Container.php" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Node/Mapper.php" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Node/Repository.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Extension.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/web/src/Web/Presenter.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Control.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Presenter.php" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Link/Entity.php" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Link/Alias/Entity.php" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Link/Parameter/Entity.php" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Entity.php" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/web/src/Web/Entity.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Entity.php" />
-        <option value="$PROJECT_DIR$/app/front/src/Page/Presenter.php" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Control/navbar.latte" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Node/Entity.php" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Repository.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Control.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Extension.php" />
         <option value="$PROJECT_DIR$/vendor/nette/application/src/Bridges/ApplicationDI/ApplicationExtension.php" />
         <option value="$PROJECT_DIR$/app/config.neon" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/config/src/Config/Factory.php" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Extension.php" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Presenter/Factory.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Control/Factory.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Extension.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Form/Factory.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Grid/Control/Factory.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Extension.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Control/Factory.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Form/Control.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Form/Control.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Extension.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Form/Control/Factory.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/web/src/Web/Control/Factory.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/web/src/Web/Control.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Control.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Link/Form/Container.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/web/src/Web/Extension.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Entity.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Form/Container.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Presenter.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/web/src/Web/Presenter.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Node/Entity.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Entity.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Presenter.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Presenter.php" />
+        <option value="$PROJECT_DIR$/app/front/src/Page/Presenter.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Control.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/message/src/Message/Control.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/form/src/Form.php" />
       </list>
     </option>
   </component>
@@ -286,14 +263,11 @@
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="false" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
     <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
-  </component>
-  <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -308,44 +282,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1126,6 +1062,44 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1174,20 +1148,17 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="com.intellij.database.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
       <option name="VM_PARAMETERS" value="" />
       <option name="USER_CFG_CLASS" />
       <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
       <BehatRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -1196,6 +1167,9 @@
       <tasks />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -1239,25 +1213,25 @@
     <layout>
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37694705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37694705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31464174" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32554516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32554516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2920937" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="515" y="64" width="336" height="671" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48435172" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32713178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3271028" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990307" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990307" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1278,7 +1252,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1295,414 +1269,10 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Form/Container.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5322581" vertical-offset="0" max-vertical-offset="378">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Link/Parameter/Form/Container.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5322581" vertical-offset="0" max-vertical-offset="378">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Link/Alias/Form/Container.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5322581" vertical-offset="0" max-vertical-offset="378">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Node/Form/Container.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5322581" vertical-offset="0" max-vertical-offset="378">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Form/Container.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55710304" vertical-offset="70" max-vertical-offset="6822">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/component-model/src/ComponentModel/Component.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34775373" vertical-offset="2527" max-vertical-offset="5958">
-          <caret line="155" column="20" selection-start-line="155" selection-start-column="20" selection-end-line="155" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/IMapper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34775373" vertical-offset="79" max-vertical-offset="2448">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/Mapper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35179153" vertical-offset="0" max-vertical-offset="614">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/BaseMapper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35179153" vertical-offset="0" max-vertical-offset="1764">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/Nette/NetteMapper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.53410983" vertical-offset="861" max-vertical-offset="6516">
-          <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Mapper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.359401" vertical-offset="0" max-vertical-offset="612">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/Nette/ConditionParser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9767054" vertical-offset="1188" max-vertical-offset="2196">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nextras/orm/src/Collection/Helpers/ConditionParserHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5276873" vertical-offset="0" max-vertical-offset="702">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nextras/orm/src/Repository/Repository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34775373" vertical-offset="1897" max-vertical-offset="7614">
-          <caret line="136" column="20" selection-start-line="136" selection-start-column="20" selection-end-line="136" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/web/src/Web/Presenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64820844" vertical-offset="1024" max-vertical-offset="1728">
-          <caret line="79" column="9" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Control.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26955074" vertical-offset="0" max-vertical-offset="2556">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Repository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32247558" vertical-offset="0" max-vertical-offset="614">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/UI/Presenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34775373" vertical-offset="12715" max-vertical-offset="25272">
-          <caret line="721" column="20" selection-start-line="721" selection-start-column="20" selection-end-line="721" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/UI/PresenterComponent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37770382" vertical-offset="5299" max-vertical-offset="7218">
-          <caret line="310" column="26" selection-start-line="310" selection-start-column="26" selection-end-line="310" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Presenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6921824" vertical-offset="1249" max-vertical-offset="2196">
-          <caret line="94" column="5" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/reflection/src/Reflection/AnnotationsParser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34775373" vertical-offset="79" max-vertical-offset="7470">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nextras/orm/src/Relationships/OneHasMany.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.059900165" vertical-offset="0" max-vertical-offset="1368">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Link/Entity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38935107" vertical-offset="0" max-vertical-offset="601">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Link/Alias/Entity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3294509" vertical-offset="0" max-vertical-offset="601">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Link/Parameter/Entity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3294509" vertical-offset="0" max-vertical-offset="601">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Entity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3294509" vertical-offset="0" max-vertical-offset="601">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Entity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32247558" vertical-offset="0" max-vertical-offset="630">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/web/src/Web/Entity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.359401" vertical-offset="0" max-vertical-offset="601">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Entity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.359401" vertical-offset="324" max-vertical-offset="1368">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/front/src/Page/Presenter/view.latte">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.044444446" vertical-offset="0" max-vertical-offset="405">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Presenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.06666667" vertical-offset="819" max-vertical-offset="1278">
-          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/front/src/Page/Presenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5777778" vertical-offset="18" max-vertical-offset="468">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Control/navbar.latte">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21465969" vertical-offset="219" max-vertical-offset="792">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Node/Entity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26955074" vertical-offset="0" max-vertical-offset="601">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Repository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35504887" vertical-offset="178" max-vertical-offset="810">
-          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Control.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75208914" vertical-offset="2322" max-vertical-offset="3006">
-          <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
-          <folding>
-            <marker date="1423165364398" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder=" Class Control ..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder=" @var Entity ..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder=" @var Repository ..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder=" @var Control\Factory ..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder=" @var Form\Control\Factory ..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder=" @var Ytnuk\Orm\Grid\Control\Factory ..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder=" @var Nette\Http\Request ..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder=" @var array ..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder=" @var array ..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder=" @var Entity ..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder=" @param Nette\ComponentModel\IContainer $menu ..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder=" @param string $offset ..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder=" @param int $id ..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder=" @param Entity $active ..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder=" @return array ..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder=" @return Form\Control ..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder=" @return Ytnuk\Orm\Grid\Control ..." />
-            <marker date="1423165364398" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/robot-loader/src/RobotLoader/RobotLoader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3844011" vertical-offset="906" max-vertical-offset="6948">
-          <caret line="61" column="24" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="24" />
-          <folding>
-            <marker date="1423178850499" expanded="false" signature="-1:-1" placeholder=" This file is part of the Nette Framework (http://nette.org) ..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder=" Nette auto loader is responsible for loading classes and interfaces. ..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder=" Register autoloader. ..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder=" Handles autoloading of classes, interfaces or traits. ..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder=" Add path or paths to list. ..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder=" @return array of class =&gt; filename ..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder=" Rebuilds class list cache. ..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder=" @internal ..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder=" Creates an iterator scaning directory for PHP files, subdirectories and 'netterobots.txt' files. ..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder=" @return void ..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder=" Searches classes, interfaces and traits in PHP file. ..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder=" @return RobotLoader ..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder=" @return Nette\Caching\IStorage ..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder=" @return Nette\Caching\Cache ..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder=" @return string ..." />
-            <marker date="1423178850499" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/nette/di/src/DI/Extensions/DIExtension.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6518106" vertical-offset="162" max-vertical-offset="1332">
           <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-          <folding>
-            <marker date="1423178843764" expanded="false" signature="-1:-1" placeholder=" This file is part of the Nette Framework (http://nette.org) ..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder=" DI extension. ..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1710,48 +1280,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6518106" vertical-offset="216" max-vertical-offset="1494">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <marker date="1423178845848" expanded="false" signature="-1:-1" placeholder=" This file is part of the Nette Framework (http://nette.org) ..." />
-            <marker date="1423178845848" expanded="true" signature="-1:-1" placeholder=" Routing extension for Nette DI. ..." />
-            <marker date="1423178845848" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178845848" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178845848" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178845848" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178845848" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178845848" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178845848" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178845848" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178845848" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178845848" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178845848" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178845848" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178845848" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178845848" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178845848" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178845848" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Extension.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61290324" vertical-offset="510" max-vertical-offset="918">
-          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding>
-            <marker date="1423180489359" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1423180489359" expanded="true" signature="-1:-1" placeholder=" Class Extension ..." />
-            <marker date="1423180489359" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423180489359" expanded="true" signature="-1:-1" placeholder=" @return array ..." />
-            <marker date="1423180489359" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423180489359" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180489359" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180489359" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180489359" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180489359" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180489359" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180489359" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180489359" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1759,7 +1287,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1767,10 +1294,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5322581" vertical-offset="0" max-vertical-offset="372">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <marker date="1417160620344" expanded="true" signature="-1:-1" placeholder=" Class Exception ..." />
-            <marker date="1417160620344" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1778,42 +1301,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.24512535" vertical-offset="358" max-vertical-offset="2664">
           <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding>
-            <marker date="1423180986540" expanded="false" signature="-1:-1" placeholder=" This file is part of the Nette Framework (http://nette.org) ..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder=" Application extension for Nette DI. ..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423180986540" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1821,50 +1308,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6573816" vertical-offset="232" max-vertical-offset="3096">
           <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-          <folding>
-            <marker date="1423178843764" expanded="false" signature="-1:-1" placeholder=" This file is part of the Nette Framework (http://nette.org) ..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder=" The DI helpers. ..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder=" Expands %placeholders%. ..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder=" Generates list of arguments using autowiring. ..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder=" Generates list of properties with annotation @inject. ..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843764" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1872,232 +1315,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4568245" vertical-offset="13516" max-vertical-offset="14976">
           <caret line="763" column="28" selection-start-line="763" selection-start-column="28" selection-end-line="763" selection-end-column="28" />
-          <folding>
-            <marker date="1423178843763" expanded="false" signature="-1:-1" placeholder=" This file is part of the Nette Framework (http://nette.org) ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" Basic container builder. ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" Adds new service definition. ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" Removes the specified service definition. ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" Gets the service definition. ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" Gets all service definitions. ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" Does the service definition or alias exist? ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" @param string ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" Gets all service aliases. ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" Resolves service name by type. ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" Gets the service names of the specified type. ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" Gets the service objects of the specified tag. ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" Creates a list of arguments using autowiring. ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" Generates $dependencies, $classes and normalizes class names. ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" @param string[] ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" Adds a file to the list of dependencies. ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" Returns the list of dependent files. ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" Generates PHP classes. First class is the container. ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" Generates body of service method. ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" Converts parameters from ServiceDefinition to PhpGenerator. ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" Formats PHP code for class instantiating, function calling or property setting in PHP. ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" Formats PHP statement. ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" Expands %placeholders% in strings. ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" @return Nette\PhpGenerator\PhpLiteral ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder=" Converts @service or @\Class -&gt; service name and checks its existence. ..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423178843763" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/web/src/Web/Extension.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35459185" vertical-offset="221" max-vertical-offset="1548">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-          <folding>
-            <marker date="1422473258713" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder=" Class Extension ..." />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder=" @var array ..." />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder=" @return array ..." />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422473258713" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2105,36 +1322,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48979592" vertical-offset="204" max-vertical-offset="2538">
           <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-          <folding>
-            <marker date="1422406281779" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder=" Class Configurator ..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder=" @return Nette\DI\Container ..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder=" @param array $extensions ..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder=" @param mixed $extension ..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder=" @param array $extensions ..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder=" @param string $class ..." />
-            <marker date="1422406281779" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2142,22 +1329,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9247911" vertical-offset="316" max-vertical-offset="1026">
           <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <marker date="1423181238636" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1423181238636" expanded="true" signature="-1:-1" placeholder=" Class Extension ..." />
-            <marker date="1423181238636" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423181238636" expanded="true" signature="-1:-1" placeholder=" @return array ..." />
-            <marker date="1423181238636" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423181238636" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423181238636" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423181238636" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423181238636" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423181238636" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423181238636" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423181238636" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423181238636" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1423181238636" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2165,37 +1336,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6766917" vertical-offset="702" max-vertical-offset="2052">
           <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
-          <folding>
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{&quot;directory&quot;: 'app/front'...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{&quot;directory&quot;: '&lt;%=ytnuk.parameters.front.directory%&gt;/temp'...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{&quot;directory&quot;: '&lt;%=ytnuk.parameters.front.directory%&gt;/public'...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{&quot;directory&quot;: '&lt;%=ytnuk.parameters.front.public.directory%&gt;/temp'...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{&quot;directory&quot;: 'app/admin'...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{&quot;directory&quot;: '&lt;%=ytnuk.parameters.admin.directory%&gt;/temp'...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{&quot;directory&quot;: '&lt;%=ytnuk.parameters.admin.directory%&gt;/public'...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{&quot;directory&quot;: '&lt;%=ytnuk.parameters.admin.public.directory%&gt;/temp'...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{&quot;expand&quot;: true...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{&quot;expand&quot;: true...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{&quot;&lt;%=ytnuk.parameters.front.public.directory%&gt;/scripts/index.js&quot;: '&lt;%=ytnuk.scripts%&gt;'...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="{&quot;&lt;%=ytnuk.parameters.front.public.directory%&gt;/styles/index.css&quot;: '&lt;%=ytnuk.styles%&gt;'...}" />
-            <marker date="1421533245122" expanded="true" signature="-1:-1" placeholder="[...]" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2203,23 +1343,359 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22580644" vertical-offset="240" max-vertical-offset="846">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <marker date="1423182550160" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1423182550160" expanded="true" signature="-1:-1" placeholder=" Class Factory ..." />
-            <marker date="1423182550160" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423182550160" expanded="true" signature="-1:-1" placeholder=" @var array ..." />
-            <marker date="1423182550160" expanded="true" signature="-1:-1" placeholder=" @param string $name ..." />
-            <marker date="1423182550160" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1423182550160" expanded="true" signature="-1:-1" placeholder=" @param array $components ..." />
-            <marker date="1423182550160" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config.neon">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6854839" vertical-offset="249" max-vertical-offset="648">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.93333334" vertical-offset="0" max-vertical-offset="648">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Control/Factory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37096775" vertical-offset="114" max-vertical-offset="486">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Form/Factory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4888889" vertical-offset="54" max-vertical-offset="486">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5510204" vertical-offset="432" max-vertical-offset="2358">
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Grid/Control/Factory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62222224" vertical-offset="54" max-vertical-offset="486">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.747449" vertical-offset="491" max-vertical-offset="1350">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Control/Factory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62222224" vertical-offset="54" max-vertical-offset="486">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Extension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51111114" vertical-offset="405" max-vertical-offset="1134">
+          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Form/Control/Factory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.84444445" vertical-offset="0" max-vertical-offset="486">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Extension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42222223" vertical-offset="441" max-vertical-offset="846">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/web/src/Web/Control/Factory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62222224" vertical-offset="54" max-vertical-offset="486">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/web/src/Web/Control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50510204" vertical-offset="0" max-vertical-offset="1098">
+          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/grid/src/Grid/Control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.125" vertical-offset="1031" max-vertical-offset="5130">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/form/src/Form/Control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4888889" vertical-offset="0" max-vertical-offset="405">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Form/Control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35555556" vertical-offset="36" max-vertical-offset="1116">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Form/Control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4888889" vertical-offset="0" max-vertical-offset="405">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Form/Control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4888889" vertical-offset="0" max-vertical-offset="405">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Grid/Control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35459185" vertical-offset="59" max-vertical-offset="1656">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35459185" vertical-offset="77" max-vertical-offset="2556">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Extension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22222222" vertical-offset="486" max-vertical-offset="918">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Link/Form/Container.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62903225" vertical-offset="108" max-vertical-offset="702">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/web/src/Web/Extension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6490251" vertical-offset="415" max-vertical-offset="1476">
+          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/UI/PresenterComponent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35654595" vertical-offset="3400" max-vertical-offset="7218">
+          <caret line="199" column="20" selection-start-line="199" selection-start-column="20" selection-end-line="199" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Entity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64444447" vertical-offset="225" max-vertical-offset="630">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Form/Container.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44642857" vertical-offset="4667" max-vertical-offset="6822">
+          <caret line="272" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="376" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44642857" vertical-offset="1769" max-vertical-offset="4464">
+          <caret line="111" column="25" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Presenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44444445" vertical-offset="882" max-vertical-offset="2196">
+          <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/web/src/Web/Presenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22222222" vertical-offset="1026" max-vertical-offset="1728">
+          <caret line="62" column="7" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Form/Container.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7244898" vertical-offset="166" max-vertical-offset="774">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Node/Entity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45918366" vertical-offset="0" max-vertical-offset="396">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/UI/Presenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35459185" vertical-offset="6539" max-vertical-offset="25254">
+          <caret line="374" column="20" selection-start-line="374" selection-start-column="20" selection-end-line="374" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Repository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35555556" vertical-offset="216" max-vertical-offset="810">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Presenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31111112" vertical-offset="846" max-vertical-offset="1278">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Presenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64444447" vertical-offset="873" max-vertical-offset="1278">
+          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Entity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35459185" vertical-offset="203" max-vertical-offset="1296">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/front/src/Page/Presenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6666667" vertical-offset="18" max-vertical-offset="450">
+          <caret line="16" column="88" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21938775" vertical-offset="2254" max-vertical-offset="3582">
+          <caret line="130" column="26" selection-start-line="130" selection-start-column="26" selection-end-line="130" selection-end-column="26" />
+          <folding>
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder=" Class Control ..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder=" @var Entity ..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder=" @var Repository ..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder=" @var Control\Factory ..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder=" @var Form\Control\Factory ..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder=" @var Ytnuk\Orm\Grid\Control\Factory ..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder=" @var Nette\Http\Request ..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder=" @var array ..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder=" @var array ..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder=" @var Entity ..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder=" @param Entity $menu ..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder=" @param string $offset ..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder=" @param int $id ..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder=" @return Entity[] ..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder=" @return Entity|NULL ..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder=" @return array ..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder=" @return Form\Control ..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder=" @return Ytnuk\Orm\Grid\Control ..." />
+            <marker date="1423212404039" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/message/src/Message/Control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6" vertical-offset="63" max-vertical-offset="468">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <marker date="1423270358376" expanded="true" signature="-1:-1" placeholder=" Class Control ..." />
+            <marker date="1423270358376" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423270358376" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/form/src/Form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35459185" vertical-offset="437" max-vertical-offset="1620">
+          <caret line="32" column="70" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
+          <folding>
+            <marker date="1423270358361" expanded="true" signature="-1:-1" placeholder=" Class Form ..." />
+            <marker date="1423270358361" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423270358361" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423270358361" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423270358361" expanded="true" signature="-1:-1" placeholder=" @return Nette\Application\UI\Control ..." />
+            <marker date="1423270358361" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423270358361" expanded="true" signature="-1:-1" placeholder=" @return string ..." />
+            <marker date="1423270358361" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423270358361" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423270358361" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423270358361" expanded="true" signature="-1:-1" placeholder=" @param string|bool $name ..." />
+            <marker date="1423270358361" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423270358361" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423270358361" expanded="true" signature="-1:-1" placeholder=" @return string ..." />
+            <marker date="1423270358361" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423270358361" expanded="true" signature="-1:-1" placeholder=" @param Nette\Application\UI\Control $control ..." />
+            <marker date="1423270358361" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423270358361" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423270358361" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423270358361" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/message/src/Message/Control/view.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+          <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
           <folding />
         </state>
       </provider>
