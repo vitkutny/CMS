@@ -25,6 +25,3 @@ ytnuk.com:
 	web: front
 routing:
 	cache: true
-application:
-	scanDirs:
-		- %appDir%/../vendor
