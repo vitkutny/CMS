@@ -4,11 +4,13 @@ database:
 extensions:
 	application: Ytnuk\Application\Extension
 	templating: Ytnuk\Templating\Extension
-	translation: Kdyby\Translation\DI\TranslationExtension
+	kdyby.translation: Kdyby\Translation\DI\TranslationExtension
 	form: Ytnuk\Form\Extension
 	grid: Ytnuk\Grid\Extension
 	orm: Ytnuk\Orm\Extension
 	menu: Ytnuk\Menu\Extension
+	link: Ytnuk\Link\Extension
+	translation: Ytnuk\Translation\Extension
 	page: Ytnuk\Page\Extension
 	message: Ytnuk\Message\Extension
 
