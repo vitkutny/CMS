@@ -1,8 +1,5 @@
-database:
-	dsn: 'mysql:host=127.0.0.1;dbname=ytnuk'
-	user: root
 extensions:
-	application: Ytnuk\Application\Extension
+	ytnuk.application: Ytnuk\Application\Extension
 	templating: Ytnuk\Templating\Extension
 	kdyby.translation: Kdyby\Translation\DI\TranslationExtension
 	form: Ytnuk\Form\Extension
@@ -13,6 +10,7 @@ extensions:
 	translation: Ytnuk\Translation\Extension
 	page: Ytnuk\Page\Extension
 	message: Ytnuk\Message\Extension
+	dbal: Nextras\Dbal\Bridges\NetteDI\DbalExtension
 
 	ytnuk.admin: Ytnuk\Web\Extension
 	ytnuk.com: Ytnuk\Web\Extension
@@ -27,3 +25,11 @@ ytnuk.com:
 	web: front
 routing:
 	cache: true
+dbal:
+	driver: mysqli
+	host: 127.0.0.1
+	dbname: ytnuk
+	user: root
+	password: null
+	connectionTz: Europe/Prague
+	simpleStorageTz: CET
