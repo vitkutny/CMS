@@ -17,17 +17,19 @@
 			});
 			var snippets = $.nette.ext('snippets');
 			this.element.off('hide.bs.modal').on('hide.bs.modal', function () {
+				$('#snippet--modal-open').html(0);
 				snippets.getElement = snippets.getElementOld || snippets.getElement;
 				snippets.getElementOld = null;
 			});
 			this.element.off('show.bs.modal').on('show.bs.modal', function () {
+				$('#snippet--modal-open').html(1);
 				snippets.getElementOld = snippets.getElementOld || snippets.getElement;
 				//TODO: use getElementOld(id) and unset everything under that.container not in that.element
 				snippets.getElement = function (id) {
-					return that.element.add('head').find('#' + this.escapeSelector(id)); //TODO: add elements thar are not in that.element
+					return that.element.add('head').find('#' + this.escapeSelector(id));
 				};
 				that.container.prepend(that.element);
-				that.element.href = location.pathname;
+				that.element.href = location.pathname + location.search + location.hash;
 			});
 		},
 		init: function () {
@@ -37,6 +39,17 @@
 				show: false
 			});
 			this.element.remove();
+			var that = this;
+			var snippetsExt = $.nette.ext('snippets');
+			var snippetsExtUpdateSnippets = snippetsExt.updateSnippets;
+			snippetsExt.updateSnippets = function (snippets, back) {
+				if (snippets['snippet--modal-open'] != undefined) {
+					console.log(snippets['snippet--modal-open']);
+					that.element.modal(snippets['snippet--modal-open'] == 1 ? 'show' : 'hide');
+					console.log(snippets);
+				}
+				return $.proxy(snippetsExtUpdateSnippets, snippetsExt)(snippets, back);
+			};
 		}
 	}, {
 		open: '[target=_blank]',
