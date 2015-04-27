@@ -4,7 +4,7 @@
 			var that = this;
 			this.element.on('hidden.bs.modal', function (e) {
 				that.element.remove();
-				if (that.element.href) {
+				if (that.element.href) { //TODO: before refreshing, reload page from history
 					$.nette.ajax({}, that.element, e);
 					that.element.href = null;
 				}
@@ -17,19 +17,20 @@
 			});
 			var snippets = $.nette.ext('snippets');
 			this.element.off('hide.bs.modal').on('hide.bs.modal', function () {
-				$('#snippet--modal-open').html(0);
+				$('#snippet--modal-open').html(null);
 				snippets.getElement = snippets.getElementOld || snippets.getElement;
 				snippets.getElementOld = null;
 			});
 			this.element.off('show.bs.modal').on('show.bs.modal', function () {
-				$('#snippet--modal-open').html(1);
 				snippets.getElementOld = snippets.getElementOld || snippets.getElement;
 				//TODO: use getElementOld(id) and unset everything under that.container not in that.element
 				snippets.getElement = function (id) {
 					return that.element.add('head').find('#' + this.escapeSelector(id));
 				};
+				var href = location.pathname + location.search + location.hash;
+				$('#snippet--modal-open').html(href); //TODO: refactor
 				that.container.prepend(that.element);
-				that.element.href = location.pathname + location.search + location.hash;
+				that.element.href = href;
 			});
 		},
 		init: function () {
@@ -44,9 +45,12 @@
 			var snippetsExtUpdateSnippets = snippetsExt.updateSnippets;
 			snippetsExt.updateSnippets = function (snippets, back) {
 				if (snippets['snippet--modal-open'] != undefined) {
-					console.log(snippets['snippet--modal-open']);
-					that.element.modal(snippets['snippet--modal-open'] == 1 ? 'show' : 'hide');
-					console.log(snippets);
+					that.element.modal(snippets['snippet--modal-open'] ? 'show' : 'hide');
+					if (snippets['snippet--modal-open']) { //TODO: refactor
+						that.element.on('shown.bs.modal', function (e) {
+							$.nette.ajax({}, {href: snippets['snippet--modal-open']}, e);
+						});
+					}
 				}
 				return $.proxy(snippetsExtUpdateSnippets, snippetsExt)(snippets, back);
 			};
@@ -57,8 +61,7 @@
 		element: null,
 		container: null
 	});
-})(window.jQuery, window.location);
-
+})(window.jQuery, window.location);//TODO: dont open modal using CMD/CTRL + click
 /*
  TODO: modal using html <a> and <form> target attribute, only on click without modifier(new tab/window)
  _blank - opens modal
