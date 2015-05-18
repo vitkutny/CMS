@@ -1,15 +1,8 @@
+//TODO: refactor : when modal open, save history stack and create new empty one, on modal close restore that stack and refresh the last opened page
 (function ($, location) {
-	$.nette.ext('modal', { //TODO: when using back in modal, if the state is matching state where modal opened, close it
+	$.nette.ext('modal', {
 		before: function () {
 			var that = this;
-			this.element.on('hidden.bs.modal', function (e) {
-				that.element.remove();
-				if (that.element.href) { //TODO: before refreshing, reload page from history
-					//TODO: it shloud go back to the original history state (where modal opened), forgetting everything what happened in modal
-					$.nette.ajax({}, that.element, e); //TODO: if clicked on target _parent or _top use href from that link
-					that.element.href = null;
-				}
-			});
 		},
 		load: function () {
 			var that = this;
@@ -18,7 +11,6 @@
 			});
 			var snippets = $.nette.ext('snippets');
 			this.element.off('hide.bs.modal').on('hide.bs.modal', function () {
-				$('#snippet--modal-open').html(null);
 				snippets.getElement = snippets.getElementOld || snippets.getElement;
 				snippets.getElementOld = null;
 			});
@@ -28,10 +20,21 @@
 				snippets.getElement = function (id) {
 					return that.element.add('head').find('#' + this.escapeSelector(id));
 				};
-				var href = location.pathname + location.search + location.hash;
-				$('#snippet--modal-open').html(href); //TODO: refactor
+				that.distance = 0;
+				that.state = history.state;
 				that.container.prepend(that.element);
-				that.element.href = href;
+			});
+			this.element.on('hidden.bs.modal', function (e) {
+				that.element.remove();
+				if (that.distance) {
+					history.go(-that.distance);
+					that.distance = 0;
+				}
+				console.log(that.state);
+				//$.nette.ajax({
+				//	url: that.state.href,
+				//	off: ['history']
+				//});
 			});
 		},
 		init: function () {
@@ -42,18 +45,20 @@
 			});
 			this.element.remove();
 			var that = this;
-			var snippetsExt = $.nette.ext('snippets');
-			snippetsExt.updateSnippetsProxy = snippetsExt.updateSnippets;
-			snippetsExt.updateSnippets = function (snippets, back) {
-				if (snippets['snippet--modal-open'] != undefined) {
-					that.element.modal(snippets['snippet--modal-open'] ? 'show' : 'hide');
-					if (snippets['snippet--modal-open']) { //TODO: refactor
-						that.element.on('shown.bs.modal', function (e) {
-							$.nette.ajax({}, {href: snippets['snippet--modal-open']}, e);
-						});
-					}
+			$(window).on('popstate.nette', function (event) {
+				if (that.distance > 0) {
+					that.distance--;
+				} else {
+					that.element.modal('hide');
+					that.element.remove();
 				}
-				return $.proxy(snippetsExt.updateSnippetsProxy, snippetsExt)(snippets, back);
+			});
+			var popstateEvents = $._data(window, 'events').popstate;
+			popstateEvents.unshift(popstateEvents.pop());
+			var pushState = history.pushState;
+			history.pushState = function(data, title, url){
+				that.distance++;
+				return $.proxy(pushState, history)(data, title, url);
 			};
 			var historyExt = $.nette.ext('history');
 			historyExt.handleUIProxy = historyExt.handleUI;
@@ -71,7 +76,9 @@
 		open: '[target=_blank]',
 		selector: '#modal',
 		element: null,
-		container: null
+		container: null,
+		distance: 0,
+		state: null
 	});
 })(window.jQuery, window.location);//TODO: dont open modal using CMD/CTRL + click
 /*
