@@ -7,6 +7,7 @@ extensions:
 	orm: Ytnuk\Orm\Extension
 	menu: Ytnuk\Menu\Extension
 	link: Ytnuk\Link\Extension
+	home: Ytnuk\Home\Extension
 	translation: Ytnuk\Translation\Extension
 	page: Ytnuk\Page\Extension
 	message: Ytnuk\Message\Extension
@@ -23,6 +24,7 @@ ytnuk.cz:
 	locale: cs_CZ
 ytnuk.com:
 	web: front
+	locale: en_US
 routing:
 	cache: true
 dbal:

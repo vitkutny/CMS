@@ -8,13 +8,14 @@
     <mapping directory="$PROJECT_DIR$/vendor/ytnuk/form" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/ytnuk/grid" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/ytnuk/home" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/ytnuk/link" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/ytnuk/menu" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/ytnuk/message" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/ytnuk/orm" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/ytnuk/page" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/ytnuk/sitemap" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/ytnuk/templating" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/ytnuk/translation" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/ytnuk/web" vcs="Git" />
   </component>
 </project>
-
