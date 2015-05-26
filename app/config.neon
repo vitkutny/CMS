@@ -35,3 +35,7 @@ dbal:
 	password: null
 	connectionTz: Europe/Prague
 	simpleStorageTz: CET
+decorator:
+	Ytnuk\Application\Control:
+		setup:
+			- setCacheStorage()
