@@ -38,6 +38,7 @@ module.exports = function (grunt) {
 				'app/nette.ajax.modal.js',
 				'app/nette.ajax.loader.js',
 				'<%=bower.directory%>/nette.ajax.scroll.js/nette.ajax.scroll.js',
+				'<%=bower.directory%>/nette.ajax.snippets.multiple.js/nette.ajax.snippets.multiple.js',
 				'app/app.js'
 			],
 			styles: [
