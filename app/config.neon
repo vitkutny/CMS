@@ -6,12 +6,14 @@ extensions:
 	grid: Ytnuk\Grid\Extension
 	orm: Ytnuk\Orm\Extension
 	menu: Ytnuk\Menu\Extension
+	shop: Ytnuk\Shop\Extension
 	link: Ytnuk\Link\Extension
 	home: Ytnuk\Home\Extension
 	translation: Ytnuk\Translation\Extension
 	page: Ytnuk\Page\Extension
 	message: Ytnuk\Message\Extension
 	dbal: Nextras\Dbal\Bridges\NetteDI\DbalExtension
+	history: VojtechDobes\NetteAjax\HistoryExtension
 
 	ytnuk.admin: Ytnuk\Web\Extension
 	ytnuk.com: Ytnuk\Web\Extension
@@ -35,7 +37,9 @@ dbal:
 	password: null
 	connectionTz: Europe/Prague
 	simpleStorageTz: CET
-decorator:
-	Ytnuk\Application\Control:
-		setup:
-			- setCacheStorage()
+kdyby.translation:
+	dirs:
+		- %wwwDir%/../locale
+templating:
+	templates:
+		- %wwwDir%/../src

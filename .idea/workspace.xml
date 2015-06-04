@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="976c0523-7ed6-474b-9f89-2be3c016b818" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Control.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ytnuk/grid/src/Grid/Control.php" afterPath="$PROJECT_DIR$/vendor/ytnuk/grid/src/Grid/Control.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config.neon" afterPath="$PROJECT_DIR$/app/config.neon" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ytnuk.iml" afterPath="$PROJECT_DIR$/.idea/ytnuk.iml" />
     </list>
     <ignored path="webedit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="view.latte" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vendor/ytnuk/message/src/Message/Control/view.latte">
+      <file leaf-file-name="MetadataValidator.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vendor/nextras/orm/src/Entity/Reflection/MetadataValidator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.115030676" vertical-offset="0" max-vertical-offset="652">
-              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+            <state vertical-scroll-proportion="1.1328" vertical-offset="267" max-vertical-offset="1095">
+              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -52,62 +52,63 @@
   </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="REBASE" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/vendor/ytnuk/message" />
+    <option name="ROOT_SYNC" value="SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vendor/ytnuk/web/locale/web.en_US.neon" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/web/src/Web/Extension.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/translation/src/Translation/Form/Container.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/alias/src/Alias/Extension.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/web/src/Web/Presenter/@layout.latte" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/alias/src/Alias/Manager.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Control.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/web/src/Web/Control.php" />
-        <option value="$PROJECT_DIR$/app/config.neon" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Control/Cache/Provider.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/application/src/Cache/Dependency/Provider.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/application/src/Cache/Provider.php" />
-        <option value="$PROJECT_DIR$/vendor/nette/caching/src/Caching/Storages/FileStorage.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Entity.php" />
-        <option value="$PROJECT_DIR$/vendor/nette/caching/src/Caching/Storages/SQLiteJournal.php" />
-        <option value="$PROJECT_DIR$/app/admin/temp/.gitignore" />
-        <option value="$PROJECT_DIR$/app/bootstrap.php" />
-        <option value="$PROJECT_DIR$/app/admin/bootstrap.php" />
-        <option value="$PROJECT_DIR$/app/front/bootstrap.php" />
-        <option value="$PROJECT_DIR$/vendor/nextras/orm/src/Entity/Reflection/AnnotationParser.php" />
-        <option value="$PROJECT_DIR$/vendor/nextras/orm/src/Bridges/NetteDI/OrmExtension.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Extension.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/link/src/Link/Entity.php" />
-        <option value="$PROJECT_DIR$/vendor/nextras/orm/src/Entity/Reflection/MetadataValidator.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/translation/src/Translation/Entity.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Entity.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/web/src/Web/Entity.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Entity.php" />
-        <option value="$PROJECT_DIR$/vendor/nextras/orm/src/Model/MetadataStorage.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Metadata/Storage.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Form/Container.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Model.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Control.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/templating/src/Templating/Template/Factory.php" />
-        <option value="$PROJECT_DIR$/app/front/src/Page/view.latte" />
-        <option value="$PROJECT_DIR$/app/front/src/Page/Control/view.latte" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Presenter.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/templating/src/Templating/Template.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/message/src/Message/Control.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/link/src/Link/Presenter.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Presenter.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/routing/src/Routing/Extension.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Control/navbar.latte" />
         <option value="$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Presenter.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/translation/src/Translation/Presenter.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/web/src/Web/Presenter/layout.latte" />
-        <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/vendor/bower/nette.ajax.snippets.multiple.js/nette.ajax.snippets.multiple.js" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Control/view.latte" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Control.php" />
-        <option value="$PROJECT_DIR$/vendor/ytnuk/message/src/Message/Control/view.latte" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Service.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Extension.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/web/composer.json" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/web/src/Web/Extension.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category/Presenter/add.latte" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category/Presenter/edit.latte" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category/Presenter/list.latte" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Entity.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category/Entity.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category/Mapper.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category/Repository.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Repository.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category/Control.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category/Form/Control/Factory.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category/Form/Control.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category/Form/Container.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category/Control/view.latte" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category/Control/Factory.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Extension.php" />
+        <option value="$PROJECT_DIR$/app/config.neon" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/home/src/Home/Extension.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/home/locale/home.cs_CZ.neon" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/home/locale/home.en_US.neon" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Presenter/view.latte" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Entity.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/translation/src/Translation/Translate/Entity.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Control.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/page/locale/page.cs_CZ.neon" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/page/locale/page.en_US.neon" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/link/locale/link.cs_CZ.neon" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/link/locale/link.en_US.neon" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/locale/menu.cs_CZ.neon" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/locale/menu.en_US.neon" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Home/Presenter/view.latte" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/translation/src/Translation/Translate/Entity/Container.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/translation/src/Translation/Entity.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category/Presenter/layout.latte" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Presenter/layout.latte" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Presenter.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Home/Presenter.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/locale/shop.cs_CZ.neon" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/locale/shop.en_US.neon" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category/Presenter.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/translation/locale/translation.cs_CZ.neon" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/translation/locale/translation.en_US.neon" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/translation/src/Translation/Locale/Entity.php" />
+        <option value="$PROJECT_DIR$/vendor/ytnuk/translation/src/Translation/Form/Container.php" />
       </list>
     </option>
   </component>
@@ -274,6 +275,44 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -304,55 +343,11 @@
               <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tracy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tracy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tracy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tracy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="nextras" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -374,29 +369,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nextras" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
+              <option name="myItemId" value="orm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -422,7 +395,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
+              <option name="myItemId" value="orm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -430,15 +403,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Bridges" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Latte" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Macros" />
+              <option name="myItemId" value="Relationships" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -456,33 +421,11 @@
               <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nette" />
+              <option name="myItemId" value="nextras" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nette" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
+              <option name="myItemId" value="orm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -490,7 +433,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Utils" />
+              <option name="myItemId" value="Model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -508,33 +451,19 @@
               <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nette" />
+              <option name="myItemId" value="nextras" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
+              <option name="myItemId" value="orm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nette" />
+              <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -552,37 +481,19 @@
               <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nette" />
+              <option name="myItemId" value="nextras" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="reflection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nette" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reflection" />
+              <option name="myItemId" value="orm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -604,85 +515,11 @@
               <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nette" />
+              <option name="myItemId" value="nextras" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="reflection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nette" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deprecated" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nette" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deprecated" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nette" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deprecated" />
+              <option name="myItemId" value="orm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -690,7 +527,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Templating" />
+              <option name="myItemId" value="Collection" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webedit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP" />
+              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nextras" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webedit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP" />
+              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nette" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -712,7 +585,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="component-model" />
+              <option name="myItemId" value="forms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -734,7 +607,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="component-model" />
+              <option name="myItemId" value="forms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -742,7 +615,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ComponentModel" />
+              <option name="myItemId" value="Forms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -764,29 +637,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="caching" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nette" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="caching" />
+              <option name="myItemId" value="forms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -794,7 +645,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Caching" />
+              <option name="myItemId" value="Forms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controls" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -816,317 +671,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="caching" />
+              <option name="myItemId" value="forms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Caching" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Storages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nette" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="caching" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nette" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nette" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bridges" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nette" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bridges" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ApplicationLatte" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nette" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bridges" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ApplicationDI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nette" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nette" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nette.ajax.snippets.multiple.js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="history.nette.ajax.js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="history.nette.ajax.js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client-side" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1172,41 +721,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ytnuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ytnuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Presenter" />
+              <option name="myItemId" value="locale" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1267,40 +782,8 @@
               <option name="myItemId" value="ytnuk" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ytnuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ytnuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ytnuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ytnuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="page" />
+              <option name="myItemId" value="translation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1308,7 +791,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Page" />
+              <option name="myItemId" value="Translation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Translate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1326,7 +813,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="page" />
+              <option name="myItemId" value="translation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1334,29 +821,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Page" />
+              <option name="myItemId" value="Translation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ytnuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ytnuk" />
+              <option name="myItemId" value="Translate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="message" />
+              <option name="myItemId" value="Form" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1374,7 +847,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="message" />
+              <option name="myItemId" value="translation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1382,7 +855,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Message" />
+              <option name="myItemId" value="Translation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Translate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1400,7 +881,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="message" />
+              <option name="myItemId" value="translation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1408,11 +889,77 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Message" />
+              <option name="myItemId" value="Translation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Control" />
+              <option name="myItemId" value="Locale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webedit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ytnuk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ytnuk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="translation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Translation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Form" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webedit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ytnuk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ytnuk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="translation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="locale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webedit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ytnuk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ytnuk" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1456,7 +1003,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Menu" />
+              <option name="myItemId" value="Shop" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1474,25 +1021,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="link" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ytnuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ytnuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="link" />
+              <option name="myItemId" value="menu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1500,99 +1029,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Link" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ytnuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ytnuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ytnuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ytnuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ytnuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ytnuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ytnuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ytnuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
+              <option name="myItemId" value="Shop" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1614,7 +1051,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
+              <option name="myItemId" value="menu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1622,11 +1059,89 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
+              <option name="myItemId" value="Shop" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Control" />
+              <option name="myItemId" value="Category" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webedit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ytnuk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ytnuk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Category" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Presenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webedit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ytnuk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ytnuk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webedit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ytnuk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ytnuk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="locale" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1682,88 +1197,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="cache" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ytnuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="temp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_Ytnuk%5CPage%5CControl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ytnuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="front" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1771,7 +1204,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Nay2014" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="web-ide.project.structure" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -1780,15 +1213,15 @@
     <property name="LayoutCode.rearrangeEntriesPHP" value="true" />
     <property name="LayoutCode.rearrangeEntries" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="Message/v&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/message/src/Message/Control/view.latte&#10;Template&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/nette/deprecated/src/Templating/Template.php&#10;macros&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/nette/application/src/Bridges/ApplicationLatte/UIMacros.php&#10;macro&#9;null&#9;null&#10;Page/V&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/page/src/Page/Control/view.latte&#10;FileTem&#9;null&#9;null&#10;Message/C&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/message/src/Message/Control.php&#10;Message/V&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/message/src/Message/Control/view.latte&#10;Page/v&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/page/src/Page/Control/view.latte&#10;Web/lay&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/web/src/Web/Presenter/layout.latte&#10;Web/layou&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/web/src/Web/Presenter/layout.latte&#10;Prese&#9;null&#9;null&#10;Page/C&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/page/src/Page/Control.php&#10;Message/Co&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/message/src/Message/Control.php&#10;Control&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/application/src/Application/Control.php&#10;@&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/sitemap/src/Sitemap/Xml/Presenter/@layout.latte&#10;@la&#9;null&#9;null&#10;@layout&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/page/src/Page/Presenter/@layout.latte&#10;@layout.latte&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/link/src/Link/Presenter/@layout.latte&#10;Application/PR&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/application/src/Application/Presenter.php&#10;Template/F&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/templating/src/Templating/Template/Factory.php&#10;implement&#9;ACTION&#9;ImplementMethods&#10;Temp&#9;null&#9;null&#10;Page/vie&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/page/src/Page/Control/view.latte&#10;Cache&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/nette/caching/src/Caching/Cache.php&#10;.git&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/.gitignore&#10;plugin&#9;ACTION&#9;WelcomeScreen.Plugins&#10;Mod&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/orm/src/Orm/Model.php&#10;Replicator/Conta&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/kdyby/forms-replicator/src/Kdyby/Replicator/Container.php&#10;Menu/E&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Menu/Entity.php&#10;Orm/St&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/orm/src/Orm/Metadata/Storage.php&#10;Abst&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/nextras/orm/src/Entity/AbstractEntity.php&#10;Abstra&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/nextras/orm/src/Entity/AbstractEntity.php&#10;Web/En&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/web/src/Web/Entity.php&#10;Page/Ent&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/page/src/Page/Entity.php&#10;Node/En&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Menu/Node/Entity.php&#10;Menu/Ent&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Menu/Entity.php&#10;Page/En&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/page/src/Page/Entity.php&#10;Valida&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/nextras/orm/src/Entity/Reflection/MetadataValidator.php&#10;EntityMet&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/nextras/orm/src/Entity/Reflection/EntityMetadata.php&#10;Repos&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/orm/src/Orm/Repository.php&#10;OrmEx&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/nextras/orm/src/Bridges/NetteDI/OrmExtension.php&#10;Enti&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Menu/Entity.php&#10;Orm/R&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/orm/src/Orm/Repository.php&#10;MetadataS&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/nextras/orm/src/Model/MetadataStorage.php&#10;SimpleMo&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/nextras/orm/src/Model/SimpleModelFactory.php&#10;M&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/nextras/orm/src/Model/MetadataStorage.php&#10;RepositoryLoader&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/nextras/orm/src/Model/SimpleRepositoryLoader.php&#10;Metada&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/nextras/orm/src/Model/MetadataStorage.php" />
+    <property name="SearchEverywhereHistoryKey" value="Validator&#9;null&#9;null&#10;AnnotationP&#9;null&#9;null&#10;Locale/E&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/translation/src/Translation/Locale/Entity.php&#10;Select&#9;null&#9;null&#10;BaseC&#9;null&#9;null&#10;Translation/C&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/translation/src/Translation/Form/Container.php&#10;Translate/Con&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/translation/src/Translation/Translate/Form/Container.php&#10;Translate/COn&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/translation/src/Translation/Translate/Entity/Container.php&#10;Translation/E&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/translation/src/Translation/Entity.php&#10;Menu/Control&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Menu/Control.php&#10;Translate/E&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/translation/src/Translation/Translate/Entity.php&#10;Translation/Con&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/translation/src/Translation/Form/Container.php&#10;Translation/Cont&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/translation/src/Translation/Form/Container.php&#10;Page/P&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/page/src/Page/Presenter.php&#10;Shop/P&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Shop/Category/Presenter.php&#10;Category/P&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Shop/Category/Presenter.php&#10;conf&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/app/config.neon&#10;Page/E&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/page/src/Page/Entity.php&#10;Web/E&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/web/src/Web/Extension.php&#10;RoutingE&#9;null&#9;null&#10;Application/E&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/application/src/Application/Extension.php&#10;ConditionP&#9;null&#9;null&#10;Menu/C&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Menu/Control.php&#10;Page/PR&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/page/src/Page/Presenter.php&#10;Menu/P&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Menu/Presenter.php&#10;Menu/Cont&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Menu/Control.php&#10;Translate/RE&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/translation/src/Translation/Translate/Repository.php&#10;Menu/RE&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Menu/Repository.php&#10;Translation/R&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/translation/src/Translation/Repository.php&#10;O&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/orm/src/Orm/Form/Container.php&#10;Node/Conta&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Menu/Node/Form/Container.php&#10;Node/R&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Menu/Node/Repository.php&#10;Page/V&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/page/src/Page/Control/view.latte&#10;Orm/R&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/orm/src/Orm/Repository.php&#10;Primary/Co&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Menu/Node/Primary/Form/Container.php&#10;Node/Cont&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Menu/Node/Form/Container.php&#10;Primary/E&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Menu/Node/Primary/Entity.php&#10;Node/E&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Menu/Node/Entity.php&#10;Menu/E&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Menu/Entity.php&#10;Repository&#9;null&#9;null&#10;REposi&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/nextras/orm/src/Repository/IRepository.php&#10;Menu/Entit&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Menu/Entity.php&#10;Menu/e&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Menu/Entity.php&#10;Menu/Container&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Menu/Form/Container.php&#10;Node/Co&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Menu/Node/Form/Container.php&#10;Entity&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/web/src/Web/Entity.php&#10;Container&#9;null&#9;null&#10;Menu/Ent&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/ytnuk/menu/src/Menu/Entity.php&#10;Defau&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/nette/forms/src/Forms/Rendering/DefaultFormRenderer.php&#10;Mapper&#9;FILE&#9;file:///Users/vitkutny/Desktop/ytnuk/vendor/nextras/orm/src/Mapper/IMapper.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/app/front/temp" />
-      <recent name="$PROJECT_DIR$/app/front" />
-      <recent name="$PROJECT_DIR$/vendor/ytnuk/web" />
-      <recent name="$PROJECT_DIR$/vendor/ytnuk/home/src/Home" />
+      <recent name="$PROJECT_DIR$/vendor/ytnuk/menu/locale" />
+      <recent name="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Home/Presenter" />
+      <recent name="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category/Presenter" />
+      <recent name="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Presenter" />
+      <recent name="$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/front/src/Page/Control" />
@@ -1817,17 +1250,20 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="com.intellij.database.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
       <option name="VM_PARAMETERS" value="" />
       <option name="USER_CFG_CLASS" />
       <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
       <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -1837,9 +1273,6 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -1881,10 +1314,11 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21514423" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36626506" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24879807" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32331732" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1894,14 +1328,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3271028" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32331732" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39783654" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39783654" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1922,7 +1355,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="43" />
+      <option name="time" value="46" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1939,808 +1372,360 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Presenter/layout.latte">
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/home/src/Home/Extension.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="574">
+        <state vertical-scroll-proportion="0.20496894" vertical-offset="0" max-vertical-offset="805">
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/home/locale/home.cs_CZ.neon">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="805">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Bridges/ApplicationDI/LatteExtension.php">
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/home/locale/home.en_US.neon">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34727272" vertical-offset="49" max-vertical-offset="1695">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/translation/src/Translation/Presenter/layout.latte">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="574">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="829">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/sitemap/src/Sitemap/Xml/Presenter/layout.latte">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="574">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/reflection/src/Reflection/ClassType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34727272" vertical-offset="1774" max-vertical-offset="3660">
-          <caret line="134" column="20" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Reflection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34727272" vertical-offset="17209" max-vertical-offset="26130">
-          <caret line="1160" column="20" selection-start-line="1160" selection-start-column="20" selection-end-line="1160" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/home/src/Home/Presenter/view.latte">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="574">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/home/src/Home/Presenter/layout.latte">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="574">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/templating/src/Templating/Template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72" vertical-offset="1899" max-vertical-offset="2775">
-          <caret line="157" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/grid/src/Grid/Control.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.269461" vertical-offset="0" max-vertical-offset="4845">
-          <caret line="177" column="14" selection-start-line="177" selection-start-column="14" selection-end-line="177" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Form/Container.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32934132" vertical-offset="0" max-vertical-offset="7110">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Node/Primary/Form/Container.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4090909" vertical-offset="0" max-vertical-offset="550">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Presenter/Factory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Extension.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/caching/src/Caching/Cache.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53333336" vertical-offset="1745" max-vertical-offset="5655">
-          <caret line="138" column="31" selection-start-line="138" selection-start-column="31" selection-end-line="138" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/caching/src/Caching/IStorage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6467391" vertical-offset="363" max-vertical-offset="915">
-          <caret line="51" column="20" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/caching/src/Caching/Storages/FileStorage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4692029" vertical-offset="2471" max-vertical-offset="6150">
-          <caret line="185" column="9" selection-start-line="185" selection-start-column="9" selection-end-line="185" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Control/view.latte">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.026041666" vertical-offset="0" max-vertical-offset="576">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Control.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.076087" vertical-offset="759" max-vertical-offset="1335">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Presenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29891303" vertical-offset="0" max-vertical-offset="1875">
-          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/link/src/Link/Presenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4021739" vertical-offset="303" max-vertical-offset="1080">
-          <caret line="36" column="30" selection-start-line="35" selection-start-column="5" selection-end-line="36" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Presenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4021739" vertical-offset="303" max-vertical-offset="1080">
-          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Presenter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3478261" vertical-offset="303" max-vertical-offset="1440">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.60124224" vertical-offset="566" max-vertical-offset="1440">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="80" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/translation/src/Translation/Presenter.php">
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category/Presenter/edit.latte">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4021739" vertical-offset="303" max-vertical-offset="1080">
-          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.018094089" vertical-offset="0" max-vertical-offset="829">
+          <caret line="1" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/UI/Presenter.php">
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Presenter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3478261" vertical-offset="1698" max-vertical-offset="21030">
-          <caret line="129" column="20" selection-start-line="129" selection-start-column="20" selection-end-line="129" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.33271375" vertical-offset="901" max-vertical-offset="1875">
+          <caret line="73" column="46" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_8.php">
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34727272" vertical-offset="13354" max-vertical-offset="16530">
-          <caret line="903" column="9" selection-start-line="903" selection-start-column="9" selection-end-line="903" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/web/src/Web/Presenter/layout.latte">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3420139" vertical-offset="43" max-vertical-offset="675">
-          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/component-model/src/ComponentModel/Container.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3478261" vertical-offset="18" max-vertical-offset="3810">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/tracy/tracy/src/shortcuts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24456522" vertical-offset="0" max-vertical-offset="552">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/nette.ajax.loader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/nette.ajax.modal.js">
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Service.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30054644" vertical-offset="0" max-vertical-offset="1635">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18229167" vertical-offset="0" max-vertical-offset="576">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bower/history.nette.ajax.js/client-side/history.ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36458334" vertical-offset="210" max-vertical-offset="1755">
-          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.265625" vertical-offset="402" max-vertical-offset="1710">
-          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bower/nette.ajax.snippets.multiple.js/nette.ajax.snippets.multiple.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46875" vertical-offset="0" max-vertical-offset="576">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/component-model/src/ComponentModel/Component.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34324658" vertical-offset="443" max-vertical-offset="4965">
-          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/UI/PresenterComponent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34324658" vertical-offset="2828" max-vertical-offset="6000">
-          <caret line="210" column="20" selection-start-line="210" selection-start-column="20" selection-end-line="210" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/UI/Control.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48946717" vertical-offset="1000" max-vertical-offset="2790">
-          <caret line="96" column="52" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/message/src/Message/Control.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29739776" vertical-offset="0" max-vertical-offset="807">
-          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_0.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54770756" vertical-offset="18893" max-vertical-offset="20880">
-          <caret line="1289" column="9" selection-start-line="1289" selection-start-column="9" selection-end-line="1289" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.656051" vertical-offset="338" max-vertical-offset="17130">
-          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
-          <folding>
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4 &amp;gt;= 4.0.3, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4 &amp;gt;= 4.3.0, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4 &amp;gt;= 4.3.0, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4 &amp;gt;= 4.0.5, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4 &amp;gt;= 4.3.0, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.3.0)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
-            <marker date="1423725062000" expanded="true" signature="-1:-1" placeholder=" (PHP 4 &amp;gt;= 4.0.5, PHP 5)&lt;br/&gt; ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/utils/src/Utils/Html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0031847134" vertical-offset="6707" max-vertical-offset="9030">
-          <caret line="450" column="20" selection-start-line="450" selection-start-column="20" selection-end-line="450" selection-end-column="20" />
-          <folding>
-            <marker date="1432149946000" expanded="false" signature="-1:-1" placeholder=" This file is part of the Nette Framework (http://nette.org) ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" HTML helper. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Static factory. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Changes element's name. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Returns element's name. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Is element empty? ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Sets multiple attributes. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Overloaded setter for element's attribute. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Overloaded getter for element's attribute. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Overloaded tester for element's attribute. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Overloaded unsetter for element's attribute. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Overloaded setter for element's attribute. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Special setter for element's attribute. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Setter for data-* attributes. Booleans are converted to 'true' resp. 'false'. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Sets element's HTML content. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Returns element's HTML content. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Sets element's textual content. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Returns element's textual content. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Adds new element's child. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Creates and adds a new Html child. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Inserts child node. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Inserts (replaces) child node (\ArrayAccess implementation). ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Returns child node (\ArrayAccess implementation). ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Exists child node? (\ArrayAccess implementation). ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Removes child node (\ArrayAccess implementation). ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Returns children count. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Removed all children. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Iterates over a elements. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Returns all of children. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Renders element's start tag, content and end tag. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Returns element's start tag. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Returns element's end tag. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Returns element's attributes. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder=" Clones all children too. ..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432149946000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nextras/forms/src/Bridges/Latte/Macros/BaseInputMacros.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6210191" vertical-offset="525" max-vertical-offset="1410">
-          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-          <folding>
-            <marker date="1424470893000" expanded="false" signature="-1:-1" placeholder=" This file is part of the Nextras community extensions of Nette Framework ..." />
-            <marker date="1424470893000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1424470893000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470893000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470893000" expanded="true" signature="-1:-1" placeholder=" {label ...} ..." />
-            <marker date="1424470893000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470893000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470893000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470893000" expanded="true" signature="-1:-1" placeholder=" {/label} ..." />
-            <marker date="1424470893000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470893000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470893000" expanded="true" signature="-1:-1" placeholder=" {input ...} ..." />
-            <marker date="1424470893000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470893000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470893000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470893000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470893000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/page/src/Page/Control/view.latte">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18404908" vertical-offset="0" max-vertical-offset="652">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <marker date="1432922825000" expanded="true" signature="-1:-1" placeholder="{control}" />
-            <marker date="1432922825000" expanded="true" signature="-1:-1" placeholder="{control}" />
-            <marker date="1432922825000" expanded="true" signature="-1:-1" placeholder="{control}" />
-            <marker date="1432922825000" expanded="true" signature="-1:-1" placeholder="&lt;article&gt;" />
-            <marker date="1432922825000" expanded="true" signature="-1:-1" placeholder="{=}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/deprecated/src/Templating/FileTemplate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45063695" vertical-offset="1172" max-vertical-offset="1815">
-          <caret line="100" column="32" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="32" />
-          <folding>
-            <marker date="1424470798000" expanded="false" signature="-1:-1" placeholder=" This file is part of the Nette Framework (http://nette.org) ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" @deprecated ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Constructor. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Sets the path to the template file. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Returns the path to the template file. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Returns template source code. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Renders template to output. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/deprecated/src/Templating/Template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3455414" vertical-offset="53" max-vertical-offset="7245">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-          <folding>
-            <marker date="1424470798000" expanded="false" signature="-1:-1" placeholder=" This file is part of the Nette Framework (http://nette.org) ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" @deprecated ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Sets template source code. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Returns template source code. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Renders template to output. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Renders template to file. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Renders template to string. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Applies filters on template content. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" @return Latte\Engine ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Registers callback as template compile-time filter. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Returns all registered compile-time filters. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Registers callback as template run-time helper. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Registers callback as template run-time helpers loader. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Returns all registered run-time helpers. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Returns all registered template run-time helper loaders. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Call a template run-time helper. Do not call directly. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Sets translate adapter. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Adds new template parameter. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Sets all parameters. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Returns array of all parameters. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Sets a template parameter. Do not call directly. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Returns a template parameter. Do not call directly. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Determines whether parameter is defined. Do not call directly. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Removes a template parameter. Do not call directly. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Set cache storage. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" @return Nette\Caching\IStorage ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder=" Extracts all blocks of PHP code. ..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424470798000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/temp/cache/_Ytnuk%5CPage%5CControl/_0dc264a8f3f26d4f33483ad6537fb053">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="652">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/temp/cache/_Ytnuk%5CPage%5CControl/_ae24564aac4f7b44ffc46960b4f30139">
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/link/src/Link/Repository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="652">
+        <state vertical-scroll-proportion="0.40334573" vertical-offset="608" max-vertical-offset="1170">
+          <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nextras/orm/src/Entity/AbstractEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34758365" vertical-offset="1643" max-vertical-offset="7335">
+          <caret line="135" column="22" selection-start-line="135" selection-start-column="22" selection-end-line="135" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/orm/src/Orm/Entity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48141265" vertical-offset="236" max-vertical-offset="1080">
+          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Menu/Control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58550185" vertical-offset="1005" max-vertical-offset="3000">
+          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/page/locale/page.cs_CZ.neon">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08364312" vertical-offset="0" max-vertical-offset="538">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/page/locale/page.en_US.neon">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08364312" vertical-offset="0" max-vertical-offset="538">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/link/locale/link.cs_CZ.neon">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.055762082" vertical-offset="0" max-vertical-offset="675">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/link/locale/link.en_US.neon">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.055762082" vertical-offset="0" max-vertical-offset="675">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category/Presenter/list.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.026690392" vertical-offset="0" max-vertical-offset="562">
+          <caret line="1" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/translation/src/Translation/Translate/Entity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30669144" vertical-offset="0" max-vertical-offset="538">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nextras/orm/src/Relationships/IRelationshipCollection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8643123" vertical-offset="600" max-vertical-offset="1365">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nextras/orm/src/Relationships/HasMany.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.0539036" vertical-offset="3930" max-vertical-offset="5490">
+          <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nextras/orm/src/Relationships/OneHasMany.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25092936" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nextras/orm/src/Collection/ICollection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34758365" vertical-offset="683" max-vertical-offset="1965">
+          <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nextras/orm/src/Model/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34758365" vertical-offset="1493" max-vertical-offset="2340">
+          <caret line="121" column="20" selection-start-line="121" selection-start-column="20" selection-end-line="121" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nextras/orm/src/Model/IModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7936803" vertical-offset="713" max-vertical-offset="1275">
+          <caret line="83" column="20" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/translation/src/Translation/Entity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44237918" vertical-offset="182" max-vertical-offset="750">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/translation/src/Translation/Translate/Entity/Container.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30669144" vertical-offset="195" max-vertical-offset="1245">
+          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Home/Presenter/view.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.053380784" vertical-offset="0" max-vertical-offset="562">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category/Presenter/layout.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="562">
+          <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Home/Presenter/layout.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.026690392" vertical-offset="0" max-vertical-offset="562">
+          <caret line="1" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Presenter/layout.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="562">
+          <caret line="0" column="46" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Home/Presenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30669144" vertical-offset="0" max-vertical-offset="538">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Presenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4182156" vertical-offset="0" max-vertical-offset="538">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/locale/menu.en_US.neon">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47397768" vertical-offset="0" max-vertical-offset="630">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/locale/menu.cs_CZ.neon">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.055762082" vertical-offset="0" max-vertical-offset="630">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/locale/shop.cs_CZ.neon">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25092936" vertical-offset="0" max-vertical-offset="538">
+          <caret line="9" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/locale/shop.en_US.neon">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2788104" vertical-offset="0" max-vertical-offset="538">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category/Repository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30669144" vertical-offset="0" max-vertical-offset="538">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category/Control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30669144" vertical-offset="0" max-vertical-offset="1335">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/menu/src/Shop/Category/Presenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6048" vertical-offset="582" max-vertical-offset="1455">
+          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/translation/src/Translation/Translate/Form/Container.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="649">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Bridges/ApplicationLatte/UIMacros.php">
+    <entry file="file://$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/BaseControl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5366242" vertical-offset="1643" max-vertical-offset="2340">
-          <caret line="135" column="27" selection-start-line="135" selection-start-column="27" selection-end-line="135" selection-end-column="27" />
-          <folding>
-            <marker date="1432247126000" expanded="false" signature="-1:-1" placeholder=" This file is part of the Nette Framework (http://nette.org) ..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder=" Macros for Nette\Application\UI. ..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder=" Finishes template parsing. ..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder=" {control name[:method] [params]} ..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder=" {link destination [,] [params]} ..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder=" {ifCurrent destination [,] [params]} ..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432247126000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-0.7926421" vertical-offset="999" max-vertical-offset="8460">
+          <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/application/src/Application/Control.php">
+    <entry file="file://$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/ChoiceControl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5700637" vertical-offset="2087" max-vertical-offset="4665">
-          <caret line="164" column="13" selection-start-line="164" selection-start-column="13" selection-end-line="164" selection-end-column="13" />
-          <folding>
-            <marker date="1432922761000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" Class Control ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" @var bool ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" @var array ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" @var string ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" @var array ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" @var array ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" @var string ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" @var array ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" @var array ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" @var Nette\Caching\Cache ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" @inheritdoc ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" @inheritdoc ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" @return string ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" @param string $method ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" @return self|NULL ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" @param Control $control ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" @inheritdoc ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" @inheritdoc ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" @param Nette\Caching\IStorage $storage ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" @inheritdoc ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" @return array ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder=" @inheritdoc ..." />
-            <marker date="1432922761000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
+        <state vertical-scroll-proportion="-1.0224" vertical-offset="954" max-vertical-offset="2340">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/message/src/Message/Control/view.latte">
+    <entry file="file://$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/SelectBox.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.115030676" vertical-offset="0" max-vertical-offset="652">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.2368" vertical-offset="92" max-vertical-offset="1725">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/translation/locale/translation.cs_CZ.neon">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.048" vertical-offset="0" max-vertical-offset="625">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/translation/locale/translation.en_US.neon">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36" vertical-offset="0" max-vertical-offset="625">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/web/locale/web.cs_CZ.neon">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="649">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/web/locale/web.en_US.neon">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.048" vertical-offset="0" max-vertical-offset="625">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/translation/src/Translation/Locale/Entity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.168" vertical-offset="0" max-vertical-offset="625">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ytnuk/translation/src/Translation/Form/Container.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.576" vertical-offset="0" max-vertical-offset="625">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nextras/orm/src/Entity/Reflection/AnnotationParser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33277592" vertical-offset="461" max-vertical-offset="5850">
+          <caret line="56" column="22" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nextras/orm/src/Entity/Reflection/MetadataValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1328" vertical-offset="267" max-vertical-offset="1095">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding />
         </state>
       </provider>

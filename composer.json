@@ -6,7 +6,8 @@
 		"ytnuk/config": "dev-master",
 		"ytnuk/home": "dev-master",
 		"ytnuk/page": "dev-master",
-		"ytnuk/sitemap": "dev-master"
+		"ytnuk/sitemap": "dev-master",
+		"vojtech-dobes/nette-ajax-history": "dev-master"
 	},
 	"autoload": {
 		"psr-4": {
