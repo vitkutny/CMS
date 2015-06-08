@@ -7,6 +7,7 @@ extensions:
 	orm: Ytnuk\Orm\Extension
 	menu: Ytnuk\Menu\Extension
 	shop: Ytnuk\Shop\Extension
+	blog: Ytnuk\Blog\Extension
 	link: Ytnuk\Link\Extension
 	home: Ytnuk\Home\Extension
 	translation: Ytnuk\Translation\Extension
