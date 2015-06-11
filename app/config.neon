@@ -21,13 +21,13 @@ extensions:
 	ytnuk.cz: Ytnuk\Web\Extension
 ytnuk.admin:
 	web: admin
-	locale: [cs_CZ, en_US]
+	locale: [🇵🇭, 🇺🇸]
 ytnuk.cz:
 	web: front
-	locale: cs_CZ
+	locale: 🇵🇭
 ytnuk.com:
 	web: front
-	locale: en_US
+	locale: 🇺🇸
 routing:
 	cache: true
 dbal:
