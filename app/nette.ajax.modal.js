@@ -56,7 +56,7 @@
 			var popstateEvents = $._data(window, 'events').popstate;
 			popstateEvents.unshift(popstateEvents.pop());
 			var pushState = history.pushState;
-			history.pushState = function(data, title, url){
+			history.pushState = function (data, title, url) {
 				that.distance++;
 				return $.proxy(pushState, history)(data, title, url);
 			};

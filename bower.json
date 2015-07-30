@@ -2,12 +2,12 @@
   "name": "ytnuk",
   "private": true,
   "dependencies": {
-    "bootstrap": "~3.3.4",
-    "nette-forms": "~2.2",
+    "bootstrap": "~3.3.5",
+    "nette-forms": "~2.3",
     "nette.ajax.js": "~2.0",
-    "nette.ajax.notification.js": "1.0.0",
-    "nette.ajax.scroll.js": "1.0.0",
-    "nette.ajax.snippets.multiple.js": "1.0.0",
-    "history.nette.ajax.js": "master"
+    "nette.ajax.notification.js": "~1.0",
+    "nette.ajax.scroll.js": "~1.0",
+    "nette.ajax.snippets.multiple.js": "~1.0",
+    "history.nette.ajax.js": "~2.0"
   }
 }

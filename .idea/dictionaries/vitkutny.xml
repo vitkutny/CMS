@@ -2,6 +2,7 @@
   <dictionary name="vitkutny">
     <words>
       <w>autoload</w>
+      <w>dbal</w>
       <w>dbname</w>
       <w>dobes</w>
       <w>dropdown</w>
@@ -15,12 +16,16 @@
       <w>nette</w>
       <w>nextras</w>
       <w>noescape</w>
+      <w>nullable</w>
+      <w>paginator</w>
       <w>plink</w>
+      <w>postgre</w>
       <w>rawurldecode</w>
       <w>sitemap</w>
       <w>sitemaps</w>
       <w>templating</w>
       <w>unformat</w>
+      <w>unserialize</w>
       <w>viewport</w>
       <w>vojtech</w>
       <w>ytnuk</w>

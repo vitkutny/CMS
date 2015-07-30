@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @var Ytnuk\Config\Factory $configurator
  */

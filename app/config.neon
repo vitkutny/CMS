@@ -16,17 +16,18 @@ extensions:
 	dbal: Nextras\Dbal\Bridges\NetteDI\DbalExtension
 	history: VojtechDobes\NetteAjax\HistoryExtension
 
-	ytnuk.admin: Ytnuk\Web\Extension
-	ytnuk.com: Ytnuk\Web\Extension
-	ytnuk.cz: Ytnuk\Web\Extension
+	ytnuk.admin: Ytnuk\Web\Extension(%wwwDir%)
+	ytnuk.com: Ytnuk\Web\Extension(%wwwDir%)
+	ytnuk.cz: Ytnuk\Web\Extension(%wwwDir%)
+#	web: Ytnuk\Web\Extension(%wwwDir%)
 ytnuk.admin:
-	web: admin
-	locale: [🇵🇭, 🇺🇸]
+	project: admin
+	locale: [🇨🇿, 🇺🇸]
 ytnuk.cz:
-	web: front
-	locale: 🇵🇭
+	project: front
+	locale: 🇨🇿
 ytnuk.com:
-	web: front
+	project: front
 	locale: 🇺🇸
 routing:
 	cache: true
