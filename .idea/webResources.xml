@@ -1,21 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="WebResourcesPaths">
-    <contentEntries>
-      <entry url="file://$PROJECT_DIR$/app">
-        <entryData>
-          <resourceRoots>
-            <path value="file://$PROJECT_DIR$/app/front/public/fonts" />
-            <path value="file://$PROJECT_DIR$/app/front/public/scripts" />
-            <path value="file://$PROJECT_DIR$/app/front/public/styles" />
-            <path value="file://$PROJECT_DIR$/app/front/public/temp" />
-            <path value="file://$PROJECT_DIR$/app/admin/public/fonts" />
-            <path value="file://$PROJECT_DIR$/app/admin/public/scripts" />
-            <path value="file://$PROJECT_DIR$/app/admin/public/styles" />
-            <path value="file://$PROJECT_DIR$/app/admin/public/temp" />
-          </resourceRoots>
-        </entryData>
-      </entry>
-    </contentEntries>
-  </component>
-</project>
+<project version="4" />
