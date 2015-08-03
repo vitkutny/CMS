@@ -1,11 +1,9 @@
 <?php
-/**
- * @var Ytnuk\Config\Factory $configurator
- */
 $configurator = require_once __DIR__ . '/../bootstrap.php';
-$container = $configurator->createContainer();
-/**
- * @var Nette\Application\Application $application
- */
-$application = $container->getByType(Nette\Application\Application::class);
-$application->run();
+if ($configurator instanceof Nette\Configurator) {
+	$container = $configurator->createContainer();
+	$application = $container->getByType(Nette\Application\Application::class);
+	if ($application instanceof Nette\Application\Application) {
+		$application->run();
+	}
+}
