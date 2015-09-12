@@ -3,16 +3,14 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$/app">
       <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" />
-      <excludeFolder url="file://$MODULE_DIR$/app/admin/public/fonts" />
-      <excludeFolder url="file://$MODULE_DIR$/app/admin/public/scripts" />
-      <excludeFolder url="file://$MODULE_DIR$/app/admin/public/styles" />
-      <excludeFolder url="file://$MODULE_DIR$/app/admin/public/temp" />
-      <excludeFolder url="file://$MODULE_DIR$/app/admin/temp" />
-      <excludeFolder url="file://$MODULE_DIR$/app/front/public/fonts" />
-      <excludeFolder url="file://$MODULE_DIR$/app/front/public/scripts" />
-      <excludeFolder url="file://$MODULE_DIR$/app/front/public/styles" />
-      <excludeFolder url="file://$MODULE_DIR$/app/front/public/temp" />
-      <excludeFolder url="file://$MODULE_DIR$/app/front/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/app/Admin/public/scripts" />
+      <excludeFolder url="file://$MODULE_DIR$/app/Admin/public/styles" />
+      <excludeFolder url="file://$MODULE_DIR$/app/Admin/public/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/app/Admin/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/app/Front/public/scripts" />
+      <excludeFolder url="file://$MODULE_DIR$/app/Front/public/styles" />
+      <excludeFolder url="file://$MODULE_DIR$/app/Front/public/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/app/Front/temp" />
       <excludeFolder url="file://$MODULE_DIR$/app/temp" />
     </content>
     <content url="file://$MODULE_DIR$/vendor/ytnuk">
@@ -37,30 +35,28 @@
     <orderEntry type="module-library">
       <library name="PHP">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/composer" />
-          <root url="file://$MODULE_DIR$/vendor/nette" />
-          <root url="file://$MODULE_DIR$/vendor/vojtech-dobes" />
-          <root url="file://$MODULE_DIR$/vendor/symfony" />
-          <root url="file://$MODULE_DIR$/vendor/oodle" />
           <root url="file://$MODULE_DIR$/vendor/bower" />
-          <root url="file://$MODULE_DIR$/vendor/tracy" />
-          <root url="file://$MODULE_DIR$/vendor/nextras" />
-          <root url="file://$MODULE_DIR$/vendor/kdyby" />
+          <root url="file://$MODULE_DIR$/vendor/composer" />
           <root url="file://$MODULE_DIR$/vendor/fuelphp" />
+          <root url="file://$MODULE_DIR$/vendor/kdyby" />
           <root url="file://$MODULE_DIR$/vendor/latte" />
+          <root url="file://$MODULE_DIR$/vendor/nette" />
+          <root url="file://$MODULE_DIR$/vendor/nextras" />
+          <root url="file://$MODULE_DIR$/vendor/oodle" />
+          <root url="file://$MODULE_DIR$/vendor/symfony" />
+          <root url="file://$MODULE_DIR$/vendor/tracy" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/composer" />
-          <root url="file://$MODULE_DIR$/vendor/nette" />
-          <root url="file://$MODULE_DIR$/vendor/vojtech-dobes" />
-          <root url="file://$MODULE_DIR$/vendor/symfony" />
-          <root url="file://$MODULE_DIR$/vendor/oodle" />
           <root url="file://$MODULE_DIR$/vendor/bower" />
-          <root url="file://$MODULE_DIR$/vendor/tracy" />
-          <root url="file://$MODULE_DIR$/vendor/nextras" />
-          <root url="file://$MODULE_DIR$/vendor/kdyby" />
+          <root url="file://$MODULE_DIR$/vendor/composer" />
           <root url="file://$MODULE_DIR$/vendor/fuelphp" />
+          <root url="file://$MODULE_DIR$/vendor/kdyby" />
           <root url="file://$MODULE_DIR$/vendor/latte" />
+          <root url="file://$MODULE_DIR$/vendor/nette" />
+          <root url="file://$MODULE_DIR$/vendor/nextras" />
+          <root url="file://$MODULE_DIR$/vendor/oodle" />
+          <root url="file://$MODULE_DIR$/vendor/symfony" />
+          <root url="file://$MODULE_DIR$/vendor/tracy" />
         </SOURCES>
       </library>
     </orderEntry>

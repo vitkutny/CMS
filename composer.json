@@ -8,13 +8,15 @@
 		"ytnuk/page": "dev-master",
 		"ytnuk/sitemap": "dev-master",
 		"ytnuk/blog": "dev-master",
-		"ytnuk/shop": "dev-master",
-		"vojtech-dobes/nette-ajax-history": "dev-master"
+		"ytnuk/shop": "dev-master"
 	},
 	"autoload": {
 		"psr-4": {
-			"Admin\\": "app/admin/src/",
-			"Front\\": "app/front/src/"
+			"Admin\\": "app/Admin/",
+			"Front\\": "app/Front/"
 		}
+	},
+	"require-dev": {
+		"nette/tester": "dev-master"
 	}
 }

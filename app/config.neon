@@ -14,34 +14,13 @@ extensions:
 	page: Ytnuk\Page\Extension
 	message: Ytnuk\Message\Extension
 	dbal: Nextras\Dbal\Bridges\NetteDI\DbalExtension
-	history: VojtechDobes\NetteAjax\HistoryExtension
-
-	ytnuk.admin: Ytnuk\Web\Extension(%wwwDir%)
-	ytnuk.com: Ytnuk\Web\Extension(%wwwDir%)
-	ytnuk.cz: Ytnuk\Web\Extension(%wwwDir%)
-#	web: Ytnuk\Web\Extension(%wwwDir%)
-ytnuk.admin:
-	project: admin
-	locale: [🇨🇿, 🇺🇸]
-ytnuk.cz:
-	project: front
-	locale: 🇨🇿
-ytnuk.com:
-	project: front
-	locale: 🇺🇸
-routing:
-	cache: true
+	web: Ytnuk\Web\Extension(%wwwDir%)
 dbal:
-	driver: mysqli
+	driver: pgsql
 	host: 127.0.0.1
 	dbname: ytnuk
-	user: root
+	user: vitkutny
+	connect_timeout: 123
 	password: null
 	connectionTz: Europe/Prague
 	simpleStorageTz: CET
-kdyby.translation:
-	dirs:
-		- %wwwDir%/../locale
-templating:
-	templates:
-		- %wwwDir%/../src

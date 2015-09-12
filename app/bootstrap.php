@@ -1,6 +1,16 @@
 <?php
-require_once __DIR__ . '/../vendor/autoload.php';
-$configurator = new Ytnuk\Config\Factory;
-$configurator->addConfig(__DIR__ . '/config.neon');
-$configurator->setTempDirectory(__DIR__ . '/temp');
-return $configurator;
+return call_user_func(
+	function () : Nette\Configurator {
+		return call_user_func(
+			function (Composer\Autoload\ClassLoader $classLoader) : Nette\Configurator {
+				$configurator = new Ytnuk\Config\Factory;
+				$configurator->addConfig(__DIR__ . '/config.neon');
+				$configurator->setTempDirectory(__DIR__ . '/temp');
+				$configurator->setDebugMode(TRUE);
+
+				return $configurator;
+			},
+			require_once __DIR__ . '/../vendor/autoload.php'
+		);
+	}
+);
