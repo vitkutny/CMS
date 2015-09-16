@@ -65,7 +65,8 @@ module.exports = function (grunt) {
 				command: [
 					'rm -rf app/temp/cache',
 					'find app/Admin/temp -mindepth 1 -not -name ".gitignore" -delete',
-					'find app/Front/temp -mindepth 1 -not -name ".gitignore" -delete'
+					'find app/Front/temp -mindepth 1 -not -name ".gitignore" -delete',
+					'find . -name ".DS_Store" -delete'
 				].join(' && ')
 			},
 			dump: {
