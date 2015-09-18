@@ -6,7 +6,7 @@ return call_user_func(
 				$configurator = new Ytnuk\Config\Factory;
 				$configurator->addConfig(__DIR__ . '/config.neon');
 				$configurator->setTempDirectory(__DIR__ . '/temp');
-				$configurator->setDebugMode(TRUE);
+				$configurator->setDebugMode(FALSE);
 
 				return $configurator;
 			},

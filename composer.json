@@ -8,8 +8,15 @@
 		"ytnuk/page": "dev-master",
 		"ytnuk/sitemap": "dev-master",
 		"ytnuk/blog": "dev-master",
-		"ytnuk/shop": "dev-master"
+		"ytnuk/shop": "dev-master",
+		"vojtech-dobes/nette-ajax-history": "dev-composer-require as dev-master"
 	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "http://github.com/vitkutny/history.nette.ajax.js"
+		}
+	],
 	"autoload": {
 		"psr-4": {
 			"Admin\\": "app/Admin/",

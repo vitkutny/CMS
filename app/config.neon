@@ -15,6 +15,7 @@ extensions:
 	message: Ytnuk\Message\Extension
 	dbal: Nextras\Dbal\Bridges\NetteDI\DbalExtension
 	web: Ytnuk\Web\Extension(%wwwDir%)
+	history: VojtechDobes\NetteAjax\HistoryExtension
 dbal:
 	driver: pgsql
 	host: 127.0.0.1
