@@ -15,7 +15,6 @@ SET search_path = public, pg_catalog;
 -- Data for Name: link; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-INSERT INTO link VALUES (2, 'Home', 'Presenter', 'view');
 INSERT INTO link VALUES (3, 'Home', 'Presenter', 'view');
 INSERT INTO link VALUES (4, 'Page', 'Presenter', 'list');
 INSERT INTO link VALUES (5, 'Page', 'Presenter', 'add');
@@ -51,9 +50,12 @@ INSERT INTO link VALUES (107, 'Blog:Category', 'Presenter', 'view');
 INSERT INTO link VALUES (114, 'Shop:Product', 'Presenter', 'list');
 INSERT INTO link VALUES (115, 'Shop:Product', 'Presenter', 'add');
 INSERT INTO link VALUES (117, 'Shop:Product', 'Presenter', 'view');
-INSERT INTO link VALUES (104, 'Blog:Post', 'Presenter', 'view');
 INSERT INTO link VALUES (20, 'Page', 'Presenter', 'view');
 INSERT INTO link VALUES (116, 'Shop:Category', 'Presenter', 'view');
+INSERT INTO link VALUES (104, 'Blog:Post', 'Presenter', 'view');
+INSERT INTO link VALUES (133, 'Web', 'Presenter', 'list');
+INSERT INTO link VALUES (135, 'Web', 'Presenter', 'add');
+INSERT INTO link VALUES (2, 'Home', 'Presenter', 'view');
 
 
 --
@@ -104,6 +106,8 @@ INSERT INTO translation VALUES (239);
 INSERT INTO translation VALUES (240);
 INSERT INTO translation VALUES (245);
 INSERT INTO translation VALUES (246);
+INSERT INTO translation VALUES (281);
+INSERT INTO translation VALUES (283);
 
 
 --
@@ -135,6 +139,8 @@ INSERT INTO menu VALUES (63, 107, 224);
 INSERT INTO menu VALUES (69, 114, 235);
 INSERT INTO menu VALUES (70, 115, 236);
 INSERT INTO menu VALUES (71, 116, 237);
+INSERT INTO menu VALUES (87, 133, 281);
+INSERT INTO menu VALUES (89, 135, 283);
 
 
 --
@@ -231,7 +237,7 @@ SELECT pg_catalog.setval('link_alias_id_seq', 1, false);
 -- Name: link_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('link_id_seq', 118, false);
+SELECT pg_catalog.setval('link_id_seq', 137, true);
 
 
 --
@@ -263,14 +269,14 @@ INSERT INTO link_parameter VALUES (31, 20, 'id', '1');
 -- Name: link_parameter_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('link_parameter_id_seq', 55, false);
+SELECT pg_catalog.setval('link_parameter_id_seq', 70, true);
 
 
 --
 -- Name: menu_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('menu_id_seq', 72, false);
+SELECT pg_catalog.setval('menu_id_seq', 91, true);
 
 
 --
@@ -293,9 +299,11 @@ INSERT INTO menu_node VALUES (33, 53, 52, true);
 INSERT INTO menu_node VALUES (34, 54, 52, true);
 INSERT INTO menu_node VALUES (35, 55, 53, true);
 INSERT INTO menu_node VALUES (36, 56, 54, true);
-INSERT INTO menu_node VALUES (39, 60, 1, true);
 INSERT INTO menu_node VALUES (41, 69, 49, true);
 INSERT INTO menu_node VALUES (42, 70, 69, true);
+INSERT INTO menu_node VALUES (53, 87, 2, true);
+INSERT INTO menu_node VALUES (55, 89, 87, true);
+INSERT INTO menu_node VALUES (39, 60, 1, true);
 INSERT INTO menu_node VALUES (50, 47, 1, true);
 INSERT INTO menu_node VALUES (52, 71, 1, true);
 
@@ -304,7 +312,7 @@ INSERT INTO menu_node VALUES (52, 71, 1, true);
 -- Name: menu_node_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('menu_node_id_seq', 52, true);
+SELECT pg_catalog.setval('menu_node_id_seq', 55, true);
 
 
 --
@@ -318,7 +326,7 @@ INSERT INTO page VALUES (1, 47, 62);
 -- Name: page_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('page_id_seq', 1, false);
+SELECT pg_catalog.setval('page_id_seq', 17, true);
 
 
 --
@@ -409,26 +417,22 @@ SELECT pg_catalog.setval('shop_product_id_seq', 1, true);
 -- Name: translation_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('translation_id_seq', 247, false);
+SELECT pg_catalog.setval('translation_id_seq', 287, true);
 
 
 --
 -- Data for Name: translation_locale; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-INSERT INTO translation_locale VALUES ('🇨🇿', '🇨🇿 Čeština ');
 INSERT INTO translation_locale VALUES ('🇺🇸', '🇺🇸 English');
+INSERT INTO translation_locale VALUES ('🇨🇿', '🇨🇿 Čeština');
 
 
 --
 -- Data for Name: translation_translate; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-INSERT INTO translation_translate VALUES (2, 55, '🇨🇿', 'Titulní strana');
 INSERT INTO translation_translate VALUES (3, 56, '🇨🇿', 'Administrace');
-INSERT INTO translation_translate VALUES (10, 55, '🇺🇸', 'Homepage');
-INSERT INTO translation_translate VALUES (14, 43, '🇨🇿', 'Titulní strana');
-INSERT INTO translation_translate VALUES (15, 43, '🇺🇸', 'Homepage');
 INSERT INTO translation_translate VALUES (16, 44, '🇨🇿', 'Administrace');
 INSERT INTO translation_translate VALUES (17, 44, '🇺🇸', 'Administration');
 INSERT INTO translation_translate VALUES (19, 65, '🇺🇸', 'Shop');
@@ -489,8 +493,6 @@ INSERT INTO translation_translate VALUES (230, 239, '🇺🇸', 'description');
 INSERT INTO translation_translate VALUES (231, 240, '🇨🇿', 'obsah');
 INSERT INTO translation_translate VALUES (232, 240, '🇺🇸', 'content');
 INSERT INTO translation_translate VALUES (236, 245, '🇨🇿', 'test');
-INSERT INTO translation_translate VALUES (204, 219, '🇨🇿', 'Windows a Windows Phone přestanou synchronizovat Facebook');
-INSERT INTO translation_translate VALUES (203, 218, '🇨🇿', '<div class=\"ar\">     	 		 		 		 		<p>Windows a Windows Phone <a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25C5%2599ipojen%25C3%25AD-k-Facebooku-u%25C5%25BE-nen%25C3%25AD-dostupn%25C3%25A9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3dcs-CZ%26amp%3brs%3dcs-CZ%26amp%3bad%3dCZ&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\">přestanou nativně podporovat</a> synchronizaci s&nbsp;Facebookem. Jedná se především o adresáře kontaktů, které přestanou načítat dodatečné informace o kontaktech, fotografie a další údaje ze sociální sítě. Stejně tak kalendářová služba přestane synchronizovat přihlášené události z&nbsp;Facebooku. Na vině je podle Microsoftu samotný Facebook, který upravil svoje Graph API, ze kterého Microsoft čerpá.</p>  <p>Na stránce podpory jsou nicméně zmíněné jen starší a současné produkty Windows 8, Windows 8.1 a Windows Phone 7 a 8. Chybí jakákoliv zmínka o blížícím se Windows 10. Buď jej Microsoft na stránce podpory nezmínil jednoduše proto, že se jedná o systém ve vývoji, anebo se jej tato nepříjemnost netýká.</p>  <h4>Seznam produktů, které přestanou komunikovat s Facebookem:</h4>  <ul> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_outlook.com&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Kontakty na Outlook.com\">Kontakty na Outlook.com</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_facebook_calendar&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Synchronizace Outlook.com, Windows, Windows Phone a Kalendáře Office 365\">Synchronizace Outlook.com, Windows, Windows Phone a Kalendáře Office 365</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_desktoppeopleapp&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Aplikace Lidé ve Windows 8.1\">Aplikace Lidé ve Windows 8.1</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_desktoppeople8&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Aplikace Lidé ve Windows 8\">Aplikace Lidé ve Windows 8</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_calendarapp8and8.1&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Aplikace Kalendář ve Windows 8 a Windows 8.1\">Aplikace Kalendář ve Windows 8 a Windows 8.1</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_photo&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Fotogalerie a Movie Maker ve Windows 8\">Fotogalerie a Movie Maker ve Windows 8</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_win8photo-app&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Aplikace Fotky systému Windows 8\">Aplikace Fotky systému Windows 8</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_peopleHub&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Aplikace Lidé ve Windows Phone 7 a 8\">Aplikace Lidé ve Windows Phone 7 a 8</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_onephone&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"OneDrive ve Windows Phone 7 a 8\">OneDrive ve Windows Phone 7 a 8</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_phone7-8photos&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Fotky ve Windows Phone 7 a 8\">Fotky ve Windows Phone 7 a 8</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_essentials&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Kalendář a kontakty ve Windows Live Essentials\">Kalendář a kontakty ve Windows Live Essentials</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_onedriveonline&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"OneDrive Online\">OneDrive Online</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_Social&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Outlook Social Connector v Outlooku 2013\">Outlook Social Connector v Outlooku 2013</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_OWA&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Outlook Web App v Office 365\">Outlook Web App v Office 365</a></li> </ul>  <p>Ačkoliv z&nbsp;textu na stránkách Microsoftu vyplývá, že je už ukončení komunikace s&nbsp;Facebookem hotovou věcí, i několik dnů poté nám na zkušebním počítači s&nbsp;Windows 8.1 synchronizace bez problému funguje.</p>  		  		 			 			<p class=\"hr\">&nbsp;</p> 			<p class=\"sm\"><b>Rubriky:</b>  			 		<a href=\"/software/sc-169/?pgnum=1\" title=\"Software\">Software</a>, <a href=\"/facebook/sc-242/?pgnum=1\" title=\"Facebook\">Facebook</a>, <a href=\"/socialni-site/sc-223/?pgnum=1\" title=\"Sociální sítě\">Sociální sítě</a> 			 			</p> 			 		  	<div class=\"clear\"></div> </div>');
 INSERT INTO translation_translate VALUES (12, 62, '🇺🇸', 'download');
 INSERT INTO translation_translate VALUES (190, 63, '🇨🇿', 'Začínáme');
 INSERT INTO translation_translate VALUES (13, 63, '🇺🇸', 'Getting started');
@@ -498,37 +500,47 @@ INSERT INTO translation_translate VALUES (225, 237, '🇨🇿', 'Chytré telefon
 INSERT INTO translation_translate VALUES (226, 237, '🇺🇸', 'Smartphones');
 INSERT INTO translation_translate VALUES (237, 246, '🇨🇿', 'Něco o smartphonech');
 INSERT INTO translation_translate VALUES (238, 246, '🇺🇸', 'Something about smartphones');
+INSERT INTO translation_translate VALUES (271, 283, '🇨🇿', 'Přidat web');
+INSERT INTO translation_translate VALUES (272, 283, '🇺🇸', 'Add web');
+INSERT INTO translation_translate VALUES (2, 55, '🇨🇿', 'Frontend');
+INSERT INTO translation_translate VALUES (10, 55, '🇺🇸', 'Frontend');
+INSERT INTO translation_translate VALUES (14, 43, '🇨🇿', 'Titulní strana');
+INSERT INTO translation_translate VALUES (15, 43, '🇺🇸', 'Homepage');
+INSERT INTO translation_translate VALUES (267, 281, '🇨🇿', 'Weby');
+INSERT INTO translation_translate VALUES (268, 281, '🇺🇸', 'Webs');
+INSERT INTO translation_translate VALUES (204, 219, '🇨🇿', 'Windows a Windows Phone přestanou synchronizovat Facebook');
+INSERT INTO translation_translate VALUES (203, 218, '🇨🇿', '<div class=\"ar\">     	 		 		 		 		<p>Windows a Windows Phone <a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25C5%2599ipojen%25C3%25AD-k-Facebooku-u%25C5%25BE-nen%25C3%25AD-dostupn%25C3%25A9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3dcs-CZ%26amp%3brs%3dcs-CZ%26amp%3bad%3dCZ&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\">přestanou nativně podporovat</a> synchronizaci s&nbsp;Facebookem. Jedná se především o adresáře kontaktů, které přestanou načítat dodatečné informace o kontaktech, fotografie a další údaje ze sociální sítě. Stejně tak kalendářová služba přestane synchronizovat přihlášené události z&nbsp;Facebooku. Na vině je podle Microsoftu samotný Facebook, který upravil svoje Graph API, ze kterého Microsoft čerpá.</p>  <p>Na stránce podpory jsou nicméně zmíněné jen starší a současné produkty Windows 8, Windows 8.1 a Windows Phone 7 a 8. Chybí jakákoliv zmínka o blížícím se Windows 10. Buď jej Microsoft na stránce podpory nezmínil jednoduše proto, že se jedná o systém ve vývoji, anebo se jej tato nepříjemnost netýká.</p>  <h4>Seznam produktů, které přestanou komunikovat s Facebookem:</h4>  <ul> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_outlook.com&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Kontakty na Outlook.com\">Kontakty na Outlook.com</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_facebook_calendar&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Synchronizace Outlook.com, Windows, Windows Phone a Kalendáře Office 365\">Synchronizace Outlook.com, Windows, Windows Phone a Kalendáře Office 365</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_desktoppeopleapp&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Aplikace Lidé ve Windows 8.1\">Aplikace Lidé ve Windows 8.1</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_desktoppeople8&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Aplikace Lidé ve Windows 8\">Aplikace Lidé ve Windows 8</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_calendarapp8and8.1&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Aplikace Kalendář ve Windows 8 a Windows 8.1\">Aplikace Kalendář ve Windows 8 a Windows 8.1</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_photo&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Fotogalerie a Movie Maker ve Windows 8\">Fotogalerie a Movie Maker ve Windows 8</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_win8photo-app&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Aplikace Fotky systému Windows 8\">Aplikace Fotky systému Windows 8</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_peopleHub&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Aplikace Lidé ve Windows Phone 7 a 8\">Aplikace Lidé ve Windows Phone 7 a 8</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_onephone&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"OneDrive ve Windows Phone 7 a 8\">OneDrive ve Windows Phone 7 a 8</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_phone7-8photos&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Fotky ve Windows Phone 7 a 8\">Fotky ve Windows Phone 7 a 8</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_essentials&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Kalendář a kontakty ve Windows Live Essentials\">Kalendář a kontakty ve Windows Live Essentials</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_onedriveonline&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"OneDrive Online\">OneDrive Online</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_Social&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Outlook Social Connector v Outlooku 2013\">Outlook Social Connector v Outlooku 2013</a></li> 	<li><a href=\"/TextRedirect.aspx?qu=https%3a%2f%2fsupport.office.com%2fcs-cz%2farticle%2fP%25c5%2599ipojen%25c3%25ad-k-Facebooku-u%25c5%25be-nen%25c3%25ad-dostupn%25c3%25a9-f31c8107-7b5a-4e3d-8a22-e506dacb6db6%3fui%3den-US%26amp%3brs%3dcs-CZ%26amp%3bad%3dUS%26amp%3bfromAR%3d1%23BKMK_OWA&amp;backurl=%2fdefault.aspx%3f404%3bhttp%3a%2f%2fm.zive.cz%3a80%2fwindows-a-windows-phone-prestanou-synchronizovat-facebook%2fa-178625%2f%3ftextart%3d1\" title=\"Outlook Web App v Office 365\">Outlook Web App v Office 365</a></li> </ul>  <p>Ačkoliv z&nbsp;textu na stránkách Microsoftu vyplývá, že je už ukončení komunikace s&nbsp;Facebookem hotovou věcí, i několik dnů poté nám na zkušebním počítači s&nbsp;Windows 8.1 synchronizace bez problému funguje.</p>  		  		 			 			<p class=\"hr\">&nbsp;</p> 			<p class=\"sm\"><b>Rubriky:</b>  			 		<a href=\"/software/sc-169/?pgnum=1\" title=\"Software\">Software</a>, <a href=\"/facebook/sc-242/?pgnum=1\" title=\"Facebook\">Facebook</a>, <a href=\"/socialni-site/sc-223/?pgnum=1\" title=\"Sociální sítě\">Sociální sítě</a> 			 			</p> 			 		  	<div class=\"clear\"></div> </div>');
 
 
 --
 -- Name: translation_translate_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('translation_translate_id_seq', 239, false);
+SELECT pg_catalog.setval('translation_translate_id_seq', 276, true);
 
 
 --
 -- Data for Name: web; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-INSERT INTO web VALUES ('ytnuk.cz[!:8080]', 1, 55);
-INSERT INTO web VALUES ('ytnuk.admin[!:8080]', 2, 56);
+INSERT INTO web VALUES ('ytnuk.cz', 1, 55);
+INSERT INTO web VALUES ('ytnuk.admin', 2, 56);
 
 
 --
 -- Data for Name: web_locale; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-INSERT INTO web_locale VALUES (1, 'ytnuk.cz[!:8080]', '🇨🇿', true);
-INSERT INTO web_locale VALUES (2, 'ytnuk.admin[!:8080]', '🇨🇿', true);
-INSERT INTO web_locale VALUES (3, 'ytnuk.admin[!:8080]', '🇺🇸', NULL);
+INSERT INTO web_locale VALUES (2, 'ytnuk.admin', '🇨🇿', true);
+INSERT INTO web_locale VALUES (3, 'ytnuk.admin', '🇺🇸', NULL);
+INSERT INTO web_locale VALUES (1, 'ytnuk.cz', '🇨🇿', true);
 
 
 --
 -- Name: web_locale_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('web_locale_id_seq', 3, true);
+SELECT pg_catalog.setval('web_locale_id_seq', 4, true);
 
 
 --
