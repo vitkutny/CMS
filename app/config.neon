@@ -18,10 +18,4 @@ extensions:
 	history: VojtechDobes\NetteAjax\HistoryExtension
 dbal:
 	driver: pgsql
-	host: 127.0.0.1
 	dbname: ytnuk
-	user: vitkutny
-	connect_timeout: 123
-	password: null
-	connectionTz: Europe/Prague
-	simpleStorageTz: CET
