@@ -13,6 +13,7 @@
       <excludeFolder url="file://$MODULE_DIR$/app/Front/temp" />
       <excludeFolder url="file://$MODULE_DIR$/app/temp" />
     </content>
+    <content url="file://$MODULE_DIR$/server" />
     <content url="file://$MODULE_DIR$/vendor/ytnuk">
       <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/alias/src" isTestSource="false" packagePrefix="Ytnuk" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/application/src" isTestSource="false" packagePrefix="Ytnuk" />
