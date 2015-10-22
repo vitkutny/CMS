@@ -29,13 +29,8 @@ fi
 
 chown www-data "/var/lib/php/sessions"
 
-#su - postgres
-#dropdb ytnuk
-#createdb ytnuk
-#psql ytnuk < /vagrant/schema.sql
-#psql ytnuk < /vagrant/data.sql
-#psql -s ytnuk
-#CREATE USER "www-data";
-#GRANT ALL PRIVILEGES ON DATABASE ytnuk TO "www-data";
-#GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO "www-data";
-#GRANT USAGE ON SCHEMA public TO "www-data";
+su postgres -c 'dropdb ytnuk'
+su postgres -c 'createdb ytnuk'
+su postgres -c 'psql ytnuk < /vagrant/schema.sql'
+su postgres -c 'psql ytnuk < /vagrant/data.sql'
+su postgres -c 'psql ytnuk < /vagrant/permission.sql'
