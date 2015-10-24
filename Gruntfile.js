@@ -114,7 +114,8 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('default', [
 		'uglify',
-		'sass'
+		'sass',
+		'shell:cleanup'
 	]);
 
 	grunt.registerTask('install', [
@@ -124,8 +125,7 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('update', [
 		'shell:update',
-		'default',
-		'shell:cleanup'
+		'default'
 	]);
 
 };

@@ -1,6 +1,7 @@
 Vagrant.configure(2) do |config|
 	config.vm.box = "ubuntu/vivid64"
 	config.vm.provision :shell, path: "server/bootstrap.sh"
+	config.vm.provision :shell, path: "server/bootstrap.user.sh", privileged: false
 	config.vm.provision :shell, path: "server/run.sh", run: "always"
 	config.vm.network "private_network", type: "dhcp"
 
