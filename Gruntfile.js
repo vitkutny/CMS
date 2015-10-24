@@ -71,8 +71,8 @@ module.exports = function (grunt) {
 			},
 			dump: {
 				command: [
-					'pg_dump ytnuk > schema.sql --no-owner --no-privileges --schema-only --clean --if-exists',
-					'pg_dump ytnuk > data.sql --no-owner --no-privileges --data-only --inserts'
+					'pg_dump ytnuk > server/database/schema.sql --no-owner --no-privileges --schema-only --clean --if-exists',
+					'pg_dump ytnuk > server/database/data.sql --no-owner --no-privileges --data-only --inserts'
 				].join(' && ')
 			}
 		},
