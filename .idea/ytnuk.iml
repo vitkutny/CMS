@@ -1,65 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$/app">
-      <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" />
-      <excludeFolder url="file://$MODULE_DIR$/app/Admin/public/scripts" />
-      <excludeFolder url="file://$MODULE_DIR$/app/Admin/public/styles" />
-      <excludeFolder url="file://$MODULE_DIR$/app/Admin/public/temp" />
-      <excludeFolder url="file://$MODULE_DIR$/app/Admin/temp" />
-      <excludeFolder url="file://$MODULE_DIR$/app/Front/public/scripts" />
-      <excludeFolder url="file://$MODULE_DIR$/app/Front/public/styles" />
-      <excludeFolder url="file://$MODULE_DIR$/app/Front/public/temp" />
-      <excludeFolder url="file://$MODULE_DIR$/app/Front/temp" />
-      <excludeFolder url="file://$MODULE_DIR$/app/temp" />
-    </content>
-    <content url="file://$MODULE_DIR$/server" />
-    <content url="file://$MODULE_DIR$/vendor/ytnuk">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" packagePrefix="Ytnuk" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/alias/src" isTestSource="false" packagePrefix="Ytnuk" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/application/src" isTestSource="false" packagePrefix="Ytnuk" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/blog/src" isTestSource="false" packagePrefix="Ytnuk" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/config/src" isTestSource="false" packagePrefix="Ytnuk" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/form/src" isTestSource="false" packagePrefix="Ytnuk" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/grid/src" isTestSource="false" packagePrefix="Ytnuk" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/home/src" isTestSource="false" packagePrefix="Ytnuk" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/link/src" isTestSource="false" packagePrefix="Ytnuk" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/menu/src" isTestSource="false" packagePrefix="Ytnuk" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/message/src" isTestSource="false" packagePrefix="Ytnuk" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/orm/src" isTestSource="false" packagePrefix="Ytnuk" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/page/src" isTestSource="false" packagePrefix="Ytnuk" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/pagination/src" isTestSource="false" packagePrefix="Ytnuk" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/shop/src" isTestSource="false" packagePrefix="Ytnuk" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/sitemap/src" isTestSource="false" packagePrefix="Ytnuk" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/templating/src" isTestSource="false" packagePrefix="Ytnuk" />
-      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/web/src" isTestSource="false" packagePrefix="Ytnuk" />
-      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/link/src" isTestSource="false" packagePrefix="Ytnuk" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/translation/src" isTestSource="false" packagePrefix="Ytnuk" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/web/src" isTestSource="false" packagePrefix="Ytnuk" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/.sass-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/.vagrant" />
+      <excludeFolder url="file://$MODULE_DIR$/app/Admin/public/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/app/Admin/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/app/Front/public/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/app/Front/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/app/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library name="PHP">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bower" />
-          <root url="file://$MODULE_DIR$/vendor/composer" />
-          <root url="file://$MODULE_DIR$/vendor/fuelphp" />
-          <root url="file://$MODULE_DIR$/vendor/kdyby" />
-          <root url="file://$MODULE_DIR$/vendor/latte" />
-          <root url="file://$MODULE_DIR$/vendor/nette" />
-          <root url="file://$MODULE_DIR$/vendor/nextras" />
-          <root url="file://$MODULE_DIR$/vendor/symfony" />
-          <root url="file://$MODULE_DIR$/vendor/tracy" />
-          <root url="file://$MODULE_DIR$/vendor/vojtech-dobes" />
-        </CLASSES>
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bower" />
-          <root url="file://$MODULE_DIR$/vendor/composer" />
-          <root url="file://$MODULE_DIR$/vendor/fuelphp" />
-          <root url="file://$MODULE_DIR$/vendor/kdyby" />
-          <root url="file://$MODULE_DIR$/vendor/latte" />
-          <root url="file://$MODULE_DIR$/vendor/nette" />
-          <root url="file://$MODULE_DIR$/vendor/nextras" />
-          <root url="file://$MODULE_DIR$/vendor/symfony" />
-          <root url="file://$MODULE_DIR$/vendor/tracy" />
-          <root url="file://$MODULE_DIR$/vendor/vojtech-dobes" />
-        </SOURCES>
-      </library>
-    </orderEntry>
   </component>
 </module>
