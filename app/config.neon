@@ -1,20 +1,20 @@
 extensions:
 	ytnuk.application: Ytnuk\Application\Extension
-	templating: Ytnuk\Templating\Extension
+	ytnuk.templating: Ytnuk\Templating\Extension
 	kdyby.translation: Kdyby\Translation\DI\TranslationExtension
-	form: Ytnuk\Form\Extension
-	grid: Ytnuk\Grid\Extension
-	orm: Ytnuk\Orm\Extension
-	menu: Ytnuk\Menu\Extension
-	shop: Ytnuk\Shop\Extension
-	blog: Ytnuk\Blog\Extension
-	link: Ytnuk\Link\Extension
-	home: Ytnuk\Home\Extension
-	translation: Ytnuk\Translation\Extension
-	page: Ytnuk\Page\Extension
-	message: Ytnuk\Message\Extension
-	dbal: Nextras\Dbal\Bridges\NetteDI\DbalExtension
-	web: Ytnuk\Web\Extension(%wwwDir%)
-	history: VojtechDobes\NetteAjax\HistoryExtension
-dbal:
+	ytnuk.form: Ytnuk\Form\Extension
+	ytnuk.grid: Ytnuk\Grid\Extension
+	ytnuk.orm: Ytnuk\Orm\Extension
+	ytnuk.menu: Ytnuk\Menu\Extension
+	ytnuk.shop: Ytnuk\Shop\Extension
+	ytnuk.blog: Ytnuk\Blog\Extension
+	ytnuk.link: Ytnuk\Link\Extension
+	ytnuk.home: Ytnuk\Home\Extension
+	ytnuk.translation: Ytnuk\Translation\Extension
+	ytnuk.page: Ytnuk\Page\Extension
+	ytnuk.message: Ytnuk\Message\Extension
+	nextras.dbal: Nextras\Dbal\Bridges\NetteDI\DbalExtension
+	ytnuk.web: Ytnuk\Web\Extension(%wwwDir%)
+	vojtechDobes.history: VojtechDobes\NetteAjax\HistoryExtension
+nextras.dbal:
 	driver: pgsql
