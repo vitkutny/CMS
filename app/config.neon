@@ -18,4 +18,3 @@ extensions:
 	history: VojtechDobes\NetteAjax\HistoryExtension
 dbal:
 	driver: pgsql
-	dbname: ytnuk

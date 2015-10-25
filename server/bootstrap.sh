@@ -29,11 +29,11 @@ fi
 
 chown www-data "/var/lib/php/sessions"
 
-su postgres -c 'dropdb ytnuk'
-su postgres -c 'createdb ytnuk'
-su postgres -c 'psql ytnuk < /vagrant/server/database/schema.sql'
-su postgres -c 'psql ytnuk < /vagrant/server/database/data.sql'
-su postgres -c 'psql ytnuk < /vagrant/server/database/permission.sql'
+su postgres -c 'dropdb www-data'
+su postgres -c 'createdb www-data'
+su postgres -c 'psql www-data < /vagrant/server/database/schema.sql'
+su postgres -c 'psql www-data < /vagrant/server/database/data.sql'
+su postgres -c 'psql www-data < /vagrant/server/database/permission.sql'
 
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
