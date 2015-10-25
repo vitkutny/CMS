@@ -65,7 +65,9 @@ module.exports = function (grunt) {
 				command: [
 					'git clean -xdf app/temp',
 					'git clean -xdf app/Admin/temp',
-					'git clean -xdf app/Front/temp '
+					'git clean -xdf app/Admin/public/temp',
+					'git clean -xdf app/Front/temp ',
+					'git clean -xdf app/Front/public/temp ',
 				].join(' && ')
 			},
 			dump: {
@@ -78,8 +80,8 @@ module.exports = function (grunt) {
 		uglify: {
 			default: {
 				files: {
-					'<%=ytnuk.parameters.front.public.directory%>/scripts/index.js': '<%=ytnuk.scripts%>',
-					'<%=ytnuk.parameters.admin.public.directory%>/scripts/index.js': '<%=ytnuk.scripts%>'
+					'<%=ytnuk.parameters.front.public.directory%>/temp/scripts.js': '<%=ytnuk.scripts%>',
+					'<%=ytnuk.parameters.admin.public.directory%>/temp/scripts.js': '<%=ytnuk.scripts%>'
 				}
 			}
 		},
@@ -89,8 +91,8 @@ module.exports = function (grunt) {
 					style: 'compressed'
 				},
 				files: {
-					'<%=ytnuk.parameters.front.public.directory%>/styles/index.css': '<%=ytnuk.parameters.front.directory%>/styles/index.scss',
-					'<%=ytnuk.parameters.admin.public.directory%>/styles/index.css': '<%=ytnuk.parameters.admin.directory%>/styles/index.scss'
+					'<%=ytnuk.parameters.front.public.directory%>/temp/styles.css': '<%=ytnuk.parameters.front.directory%>/styles/index.scss',
+					'<%=ytnuk.parameters.admin.public.directory%>/temp/styles.css': '<%=ytnuk.parameters.admin.directory%>/styles/index.scss'
 				}
 			},
 		},
@@ -112,9 +114,9 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.registerTask('default', [
+		'shell:cleanup',
 		'uglify',
 		'sass',
-		'shell:cleanup'
 	]);
 
 	grunt.registerTask('install', [
