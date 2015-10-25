@@ -6,7 +6,7 @@ add-apt-repository -y ppa:ondrej/php-7.0
 apt-get update
 apt-get upgrade -y --force-yes
 
-apt-get install -y --force-yes nginx php7.0-fpm php-pgsql php-sqlite3 postgresql nodejs-legacy
+apt-get install -y --force-yes nginx php7.0-fpm php-pgsql php-sqlite3 postgresql nodejs-legacy npm
 
 if ! [ -L "/var/www" ]; then
 	rm -rf "/var/www"
@@ -37,3 +37,6 @@ su postgres -c 'psql ytnuk < /vagrant/server/database/permission.sql'
 
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
+npm install -g grunt-cli
+npm install -g bower
+gem install sass
