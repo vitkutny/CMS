@@ -28,7 +28,7 @@ module.exports = function (grunt) {
 					}
 				}
 			},
-			scripts: [ //TODO: iterate over all packages from bower.directory and include main files
+			scripts: [
 				'<%=bower.directory%>/jquery/dist/jquery.js',
 				'<%=bower.directory%>/bootstrap/dist/js/bootstrap.js',
 				'<%=bower.directory%>/nette-forms/src/assets/netteForms.js',

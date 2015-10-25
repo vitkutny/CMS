@@ -6,8 +6,10 @@
 		},
 		load: function () {
 			var that = this;
-			$(this.open).on('click', function () {
-				that.element.modal('show');
+			$(this.open).on('click', function (event) {
+				if (!event.ctrlKey && !event.metaKey) {
+					that.element.modal('show');
+				}
 			});
 			var snippets = $.nette.ext('snippets');
 			this.element.off('hide.bs.modal').on('hide.bs.modal', function () {
@@ -80,7 +82,7 @@
 		distance: 0,
 		state: null
 	});
-})(window.jQuery, window.location);//TODO: dont open modal using CMD/CTRL + click
+})(window.jQuery, window.location);
 /*
  TODO: modal using html <a> and <form> target attribute, only on click without modifier(new tab/window)
  _blank - opens modal
@@ -88,16 +90,3 @@
  _parent - redraw on parent (body or parent modal window)
  _top - redraw on the body element
  */
-
-//$.nette.ext('bs-modal', {
-//	init: function () {
-//		this.ext('snippets', true).after($.proxy(function ($el) {
-//			if (!$el.is('.modal')) {
-//				return;
-//			}
-//
-//			$el.modal({});
-//
-//		}, this));
-//	}
-//});
