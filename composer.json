@@ -3,7 +3,6 @@
 	"name": "ytnuk/sandbox",
 	"type": "project",
 	"require": {
-		"ytnuk/config": "dev-master",
 		"ytnuk/home": "dev-master",
 		"ytnuk/page": "dev-master",
 		"ytnuk/sitemap": "dev-master",

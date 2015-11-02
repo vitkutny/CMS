@@ -35,8 +35,8 @@ su postgres -c 'psql www-data < /vagrant/server/database/schema.sql'
 su postgres -c 'psql www-data < /vagrant/server/database/data.sql'
 su postgres -c 'psql www-data < /vagrant/server/database/permission.sql'
 
-curl -sS https://getcomposer.org/installer | php
-mv composer.phar /usr/local/bin/composer
+curl -sS "https://getcomposer.org/installer" | php
+mv "composer.phar" "/usr/local/bin/composer"
 npm install -g grunt-cli
 npm install -g bower
 gem install sass

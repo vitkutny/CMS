@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-cd /vagrant
+cd "/vagrant"
 npm install
 grunt install

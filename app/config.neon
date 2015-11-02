@@ -1,7 +1,6 @@
 extensions:
 	ytnuk.application: Ytnuk\Application\Extension
 	ytnuk.templating: Ytnuk\Templating\Extension
-	kdyby.translation: Kdyby\Translation\DI\TranslationExtension
 	ytnuk.form: Ytnuk\Form\Extension
 	ytnuk.grid: Ytnuk\Grid\Extension
 	ytnuk.orm: Ytnuk\Orm\Extension
@@ -13,8 +12,8 @@ extensions:
 	ytnuk.translation: Ytnuk\Translation\Extension
 	ytnuk.page: Ytnuk\Page\Extension
 	ytnuk.message: Ytnuk\Message\Extension
+	ytnuk.web: Ytnuk\Web\Extension
 	nextras.dbal: Nextras\Dbal\Bridges\NetteDI\DbalExtension
-	ytnuk.web: Ytnuk\Web\Extension(%wwwDir%)
 	vojtechDobes.history: VojtechDobes\NetteAjax\HistoryExtension
 nextras.dbal:
 	driver: pgsql
