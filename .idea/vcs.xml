@@ -7,10 +7,8 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vendor/ytnuk/alias" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/ytnuk/application" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/ytnuk/blog" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vendor/ytnuk/config" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/ytnuk/form" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/ytnuk/grid" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/ytnuk/home" vcs="Git" />
