@@ -12,54 +12,7 @@
     <content url="file://$MODULE_DIR$/server">
       <sourceFolder url="file://$MODULE_DIR$/server" isTestSource="false" />
     </content>
-    <content url="file://$MODULE_DIR$/vendor/ytnuk/application">
-      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/application/src" isTestSource="false" packagePrefix="Ytnuk" />
-    </content>
-    <content url="file://$MODULE_DIR$/vendor/ytnuk/blog">
-      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/blog/src" isTestSource="false" packagePrefix="Ytnuk" />
-    </content>
-    <content url="file://$MODULE_DIR$/vendor/ytnuk/form">
-      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/form/src" isTestSource="false" packagePrefix="Ytnuk" />
-    </content>
-    <content url="file://$MODULE_DIR$/vendor/ytnuk/grid">
-      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/grid/src" isTestSource="false" packagePrefix="Ytnuk" />
-    </content>
-    <content url="file://$MODULE_DIR$/vendor/ytnuk/home">
-      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/home/src" isTestSource="false" packagePrefix="Ytnuk" />
-    </content>
-    <content url="file://$MODULE_DIR$/vendor/ytnuk/link">
-      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/link/src" isTestSource="false" packagePrefix="Ytnuk" />
-    </content>
-    <content url="file://$MODULE_DIR$/vendor/ytnuk/menu">
-      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/menu/src" isTestSource="false" packagePrefix="Ytnuk" />
-    </content>
-    <content url="file://$MODULE_DIR$/vendor/ytnuk/message">
-      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/message/src" isTestSource="false" packagePrefix="Ytnuk" />
-    </content>
-    <content url="file://$MODULE_DIR$/vendor/ytnuk/orm">
-      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/orm/src" isTestSource="false" packagePrefix="Ytnuk" />
-    </content>
-    <content url="file://$MODULE_DIR$/vendor/ytnuk/page">
-      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/page/src" isTestSource="false" packagePrefix="Ytnuk" />
-    </content>
-    <content url="file://$MODULE_DIR$/vendor/ytnuk/pagination">
-      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/pagination/src" isTestSource="false" packagePrefix="Ytnuk" />
-    </content>
-    <content url="file://$MODULE_DIR$/vendor/ytnuk/shop">
-      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/shop/src" isTestSource="false" packagePrefix="Ytnuk" />
-    </content>
-    <content url="file://$MODULE_DIR$/vendor/ytnuk/sitemap">
-      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/sitemap/src" isTestSource="false" packagePrefix="Ytnuk" />
-    </content>
-    <content url="file://$MODULE_DIR$/vendor/ytnuk/templating">
-      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/templating/src" isTestSource="false" packagePrefix="Ytnuk" />
-    </content>
-    <content url="file://$MODULE_DIR$/vendor/ytnuk/translation">
-      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/translation/src" isTestSource="false" packagePrefix="Ytnuk" />
-    </content>
-    <content url="file://$MODULE_DIR$/vendor/ytnuk/web">
-      <sourceFolder url="file://$MODULE_DIR$/vendor/ytnuk/web/src" isTestSource="false" packagePrefix="Ytnuk" />
-    </content>
+    <content url="file://$MODULE_DIR$/vendor/ytnuk" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
