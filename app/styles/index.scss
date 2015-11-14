@@ -1,1 +1,8 @@
 @import '../../vendor/bower/bootstrap/scss/bootstrap-flex';
+
+html.loading {
+	cursor: progress;
+	a, input, button {
+		cursor: progress;
+	}
+}
