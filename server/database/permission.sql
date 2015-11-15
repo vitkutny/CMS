@@ -1,4 +1,4 @@
-CREATE USER "www-data";
+CREATE USER "www-data" WITH PASSWORD 'www-data';
 GRANT ALL PRIVILEGES ON DATABASE ytnuk TO "www-data";
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO "www-data";
 GRANT USAGE ON SCHEMA public TO "www-data";
