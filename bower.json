@@ -3,6 +3,7 @@
 	"private": true,
 	"dependencies": {
 		"bootstrap": "#v4-dev",
+		"tether": "~1.0",
 		"nette-forms": "~2.3",
 		"nette.ajax.js": "~2.0",
 		"nette.ajax.notification.js": "~1.0",

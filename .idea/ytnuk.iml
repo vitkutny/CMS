@@ -28,6 +28,7 @@
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.scroll.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.snippets.multiple.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/nprogress" />
+          <root url="file://$MODULE_DIR$/vendor/bower/tether" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
           <root url="file://$MODULE_DIR$/vendor/kdyby/forms-replicator" />
           <root url="file://$MODULE_DIR$/vendor/kdyby/translation" />
@@ -69,6 +70,7 @@
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.scroll.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.snippets.multiple.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/nprogress" />
+          <root url="file://$MODULE_DIR$/vendor/bower/tether" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
           <root url="file://$MODULE_DIR$/vendor/kdyby/forms-replicator" />
           <root url="file://$MODULE_DIR$/vendor/kdyby/translation" />

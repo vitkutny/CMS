@@ -29,6 +29,7 @@ module.exports = function (grunt) {
 				}
 			},
 			scripts: [
+				'<%=bower.directory%>/tether/dist/js/tether.js',
 				'<%=bower.directory%>/jquery/dist/jquery.js',
 				'<%=bower.directory%>/bootstrap/dist/js/bootstrap.js',
 				'<%=bower.directory%>/nette-forms/src/assets/netteForms.js',
