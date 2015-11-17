@@ -34,7 +34,6 @@ module.exports = function (grunt) {
 				'<%=bower.directory%>/bootstrap/dist/js/bootstrap.js',
 				'<%=bower.directory%>/nette-forms/src/assets/netteForms.js',
 				'<%=bower.directory%>/nette.ajax.js/nette.ajax.js',
-				'<%=bower.directory%>/nette.ajax.notification.js/nette.ajax.notification.js',
 				'<%=bower.directory%>/history.nette.ajax.js/client-side/history.ajax.js',
 				'app/scripts/nette.ajax.modal.js',
 				'app/scripts/nette.ajax.loader.js',
