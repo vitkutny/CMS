@@ -30,7 +30,7 @@ module.exports = function (grunt) {
 			},
 			scripts: [
 				'<%=bower.directory%>/tether/dist/js/tether.js',
-				'<%=bower.directory%>/jquery/dist/jquery.js',
+				'<%=bower.directory%>/jquery/jquery.js',
 				'<%=bower.directory%>/bootstrap/dist/js/bootstrap.js',
 				'<%=bower.directory%>/nette-forms/src/assets/netteForms.js',
 				'<%=bower.directory%>/nette.ajax.js/nette.ajax.js',
@@ -39,7 +39,6 @@ module.exports = function (grunt) {
 				'app/scripts/nette.ajax.modal.js',
 				'app/scripts/nette.ajax.loader.js',
 				'<%=bower.directory%>/nette.ajax.scroll.js/nette.ajax.scroll.js',
-				'<%=bower.directory%>/nette.ajax.snippets.multiple.js/nette.ajax.snippets.multiple.js',
 				'app/scripts/index.js',
 				'<%=ytnuk.parameters.front.directory%>/scripts/index.js',
 				'<%=ytnuk.parameters.admin.directory%>/scripts/index.js'
