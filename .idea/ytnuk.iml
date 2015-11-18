@@ -18,17 +18,13 @@
     <orderEntry type="module-library">
       <library name="PHP">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bower/SpinKit" />
           <root url="file://$MODULE_DIR$/vendor/bower/bootstrap" />
           <root url="file://$MODULE_DIR$/vendor/bower/history.nette.ajax.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/jquery" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette-forms" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.loader.js" />
-          <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.notification.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.scroll.js" />
-          <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.snippets.multiple.js" />
-          <root url="file://$MODULE_DIR$/vendor/bower/nprogress" />
           <root url="file://$MODULE_DIR$/vendor/bower/tether" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
           <root url="file://$MODULE_DIR$/vendor/kdyby/forms-replicator" />
@@ -61,17 +57,13 @@
           <root url="file://$MODULE_DIR$/vendor/vojtech-dobes/nette-ajax-history" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bower/SpinKit" />
           <root url="file://$MODULE_DIR$/vendor/bower/bootstrap" />
           <root url="file://$MODULE_DIR$/vendor/bower/history.nette.ajax.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/jquery" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette-forms" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.loader.js" />
-          <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.notification.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.scroll.js" />
-          <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.snippets.multiple.js" />
-          <root url="file://$MODULE_DIR$/vendor/bower/nprogress" />
           <root url="file://$MODULE_DIR$/vendor/bower/tether" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
           <root url="file://$MODULE_DIR$/vendor/kdyby/forms-replicator" />
