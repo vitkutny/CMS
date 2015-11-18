@@ -24,6 +24,7 @@
           <root url="file://$MODULE_DIR$/vendor/bower/jquery" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette-forms" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.js" />
+          <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.loader.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.notification.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.scroll.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.snippets.multiple.js" />
@@ -66,6 +67,7 @@
           <root url="file://$MODULE_DIR$/vendor/bower/jquery" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette-forms" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.js" />
+          <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.loader.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.notification.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.scroll.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.snippets.multiple.js" />

@@ -38,6 +38,7 @@ module.exports = function (grunt) {
 				'app/scripts/nette.ajax.modal.js',
 				'app/scripts/nette.ajax.loader.js',
 				'<%=bower.directory%>/nette.ajax.scroll.js/nette.ajax.scroll.js',
+				'<%=bower.directory%>/nette.ajax.loader.js/nette.ajax.loader.js',
 				'app/scripts/index.js',
 				'<%=ytnuk.parameters.front.directory%>/scripts/index.js',
 				'<%=ytnuk.parameters.admin.directory%>/scripts/index.js'

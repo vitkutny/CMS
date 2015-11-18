@@ -6,3 +6,10 @@ html.loading {
 		cursor: progress;
 	}
 }
+
+[id^="snippet-"] {
+	transition: opacity .1s ease-in-out;
+	.loaded {
+		opacity: 0.8;
+	}
+}
