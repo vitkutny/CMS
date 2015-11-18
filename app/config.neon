@@ -14,6 +14,5 @@ extensions:
 	ytnuk.message: Ytnuk\Message\Extension
 	ytnuk.web: Ytnuk\Web\Extension
 	nextras.dbal: Nextras\Dbal\Bridges\NetteDI\DbalExtension
-	vojtechDobes.history: VojtechDobes\NetteAjax\HistoryExtension
 nextras.dbal:
 	driver: pgsql
