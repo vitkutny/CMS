@@ -42,7 +42,6 @@
           <root url="file://$MODULE_DIR$/vendor/nette/php-generator" />
           <root url="file://$MODULE_DIR$/vendor/nette/reflection" />
           <root url="file://$MODULE_DIR$/vendor/nette/security" />
-          <root url="file://$MODULE_DIR$/vendor/nette/tester" />
           <root url="file://$MODULE_DIR$/vendor/nette/tokenizer" />
           <root url="file://$MODULE_DIR$/vendor/nette/utils" />
           <root url="file://$MODULE_DIR$/vendor/nextras/dbal" />
@@ -81,7 +80,6 @@
           <root url="file://$MODULE_DIR$/vendor/nette/php-generator" />
           <root url="file://$MODULE_DIR$/vendor/nette/reflection" />
           <root url="file://$MODULE_DIR$/vendor/nette/security" />
-          <root url="file://$MODULE_DIR$/vendor/nette/tester" />
           <root url="file://$MODULE_DIR$/vendor/nette/tokenizer" />
           <root url="file://$MODULE_DIR$/vendor/nette/utils" />
           <root url="file://$MODULE_DIR$/vendor/nextras/dbal" />
