@@ -4,9 +4,10 @@ return call_user_func(
 		return call_user_func(
 			function (Composer\Autoload\ClassLoader $classLoader) : Nette\Configurator {
 				$configurator = new Nette\Configurator;
+				$configurator->setDebugMode(TRUE);
 				$configurator->addConfig(__DIR__ . '/config.neon');
 				$configurator->setTempDirectory(__DIR__ . '/temp');
-				$configurator->setDebugMode(TRUE);
+				$configurator->enableDebugger(__DIR__ . '/temp');
 
 				return $configurator;
 			},

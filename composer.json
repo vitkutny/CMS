@@ -20,11 +20,8 @@
 	],
 	"autoload": {
 		"psr-4": {
-			"Admin\\": "app/Admin/",
-			"Front\\": "app/Front/"
+			"Admin\\": "app/Admin/src",
+			"Front\\": "app/Front/src"
 		}
-	},
-	"require-dev": {
-		"nette/tester": "dev-master"
 	}
 }
