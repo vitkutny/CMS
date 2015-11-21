@@ -10,6 +10,8 @@
 		"ytnuk/sitemap": "dev-master",
 		"ytnuk/blog": "dev-master",
 		"ytnuk/shop": "dev-master",
+		"kdyby/console": "dev-master",
+		"nextras/migrations": "dev-master",
 		"vojtech-dobes/nette-ajax-history": "dev-composer-require as dev-master"
 	},
 	"repositories": [

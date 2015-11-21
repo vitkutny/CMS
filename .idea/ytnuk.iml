@@ -27,6 +27,7 @@
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.scroll.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/tether" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
+          <root url="file://$MODULE_DIR$/vendor/kdyby/console" />
           <root url="file://$MODULE_DIR$/vendor/kdyby/forms-replicator" />
           <root url="file://$MODULE_DIR$/vendor/kdyby/translation" />
           <root url="file://$MODULE_DIR$/vendor/latte/latte" />
@@ -46,8 +47,10 @@
           <root url="file://$MODULE_DIR$/vendor/nette/utils" />
           <root url="file://$MODULE_DIR$/vendor/nextras/dbal" />
           <root url="file://$MODULE_DIR$/vendor/nextras/forms" />
+          <root url="file://$MODULE_DIR$/vendor/nextras/migrations" />
           <root url="file://$MODULE_DIR$/vendor/nextras/orm" />
           <root url="file://$MODULE_DIR$/vendor/symfony/config" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/console" />
           <root url="file://$MODULE_DIR$/vendor/symfony/filesystem" />
           <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
           <root url="file://$MODULE_DIR$/vendor/symfony/translation" />
@@ -65,6 +68,7 @@
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.scroll.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/tether" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
+          <root url="file://$MODULE_DIR$/vendor/kdyby/console" />
           <root url="file://$MODULE_DIR$/vendor/kdyby/forms-replicator" />
           <root url="file://$MODULE_DIR$/vendor/kdyby/translation" />
           <root url="file://$MODULE_DIR$/vendor/latte/latte" />
@@ -84,8 +88,10 @@
           <root url="file://$MODULE_DIR$/vendor/nette/utils" />
           <root url="file://$MODULE_DIR$/vendor/nextras/dbal" />
           <root url="file://$MODULE_DIR$/vendor/nextras/forms" />
+          <root url="file://$MODULE_DIR$/vendor/nextras/migrations" />
           <root url="file://$MODULE_DIR$/vendor/nextras/orm" />
           <root url="file://$MODULE_DIR$/vendor/symfony/config" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/console" />
           <root url="file://$MODULE_DIR$/vendor/symfony/filesystem" />
           <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
           <root url="file://$MODULE_DIR$/vendor/symfony/translation" />

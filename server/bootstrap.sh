@@ -27,15 +27,13 @@ if ! [ -L "/etc/nginx/snippets/php.conf" ]; then
 	ln -fs "/vagrant/server/nginx/snippets/php.conf" "/etc/nginx/snippets/php.conf"
 fi
 
-su postgres -c 'dropdb vagrant'
-su postgres -c 'createdb vagrant'
-su postgres -c 'psql vagrant < /vagrant/server/database/schema.sql'
-su postgres -c 'psql vagrant < /vagrant/server/database/data.sql'
-su postgres -c 'psql vagrant < /vagrant/server/database/permission.sql'
-
 chown vagrant "/var/lib/php/sessions"
 sed -ie "s/www-data/vagrant/g" "/etc/nginx/nginx.conf"
 sed -ie "s/www-data/vagrant/g" "/etc/php/7.0/fpm/pool.d/www.conf"
+
+su postgres -c 'dropdb vagrant'
+su postgres -c 'createdb vagrant'
+su postgres -c 'psql vagrant < /vagrant/server/database/permission.sql'
 
 curl -sS "https://getcomposer.org/installer" | php
 mv "composer.phar" "/usr/local/bin/composer"
