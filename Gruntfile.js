@@ -5,9 +5,6 @@ module.exports = function (grunt) {
 			parameters: {
 				front: {
 					directory: 'app/Front',
-					temp: {
-						directory: '<%=ytnuk.parameters.front.directory%>/temp'
-					},
 					public: {
 						directory: '<%=ytnuk.parameters.front.directory%>/public',
 						temp: {
@@ -17,9 +14,6 @@ module.exports = function (grunt) {
 				},
 				admin: {
 					directory: 'app/Admin',
-					temp: {
-						directory: '<%=ytnuk.parameters.admin.directory%>/temp'
-					},
 					public: {
 						directory: '<%=ytnuk.parameters.admin.directory%>/public',
 						temp: {
@@ -47,8 +41,6 @@ module.exports = function (grunt) {
 		shell: {
 			install: {
 				command: [
-					'chmod 777 <%=ytnuk.parameters.front.temp.directory%>',
-					'chmod 777 <%=ytnuk.parameters.admin.temp.directory%>',
 					'chmod 777 <%=ytnuk.parameters.front.public.temp.directory%>',
 					'chmod 777 <%=ytnuk.parameters.admin.public.temp.directory%>',
 					'bower install --colors',
@@ -72,8 +64,8 @@ module.exports = function (grunt) {
 			},
 			dump: {
 				command: [
-					'pg_dump ytnuk > server/database/schema.sql --no-owner --no-privileges --schema-only --clean --if-exists',
-					'pg_dump ytnuk > server/database/data.sql --no-owner --no-privileges --data-only --inserts'
+					'pg_dump vagrant > server/database/schema.sql --no-owner --no-privileges --schema-only --clean --if-exists',
+					'pg_dump vagrant > server/database/data.sql --no-owner --no-privileges --data-only --inserts'
 				].join(' && ')
 			}
 		},
