@@ -19,8 +19,11 @@ final class Config
 					'extensions' => [],
 				];
 				foreach ($repository->getPackages() as $package) {
-					$extra = $package->getExtra();
-					if (isset($extra['extensions']) && is_array($extra['extensions'])) {
+					$extra = array_filter(
+						$package->getExtra(),
+						'is_array'
+					);
+					if (isset($extra['extensions'])) {
 						$config['extensions'] += $extensions = array_filter(
 							array_filter(
 								$extra['extensions'],
