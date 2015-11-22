@@ -14,6 +14,14 @@
 		"nextras/migrations": "dev-master",
 		"vojtech-dobes/nette-ajax-history": "dev-composer-require as dev-master"
 	},
+	"require-dev": {
+		"composer/composer": "~1.0.0"
+	},
+	"scripts": {
+		"post-autoload-dump": [
+			"Ytnuk\\Config::dump"
+		]
+	},
 	"repositories": [
 		{
 			"type": "vcs",
@@ -22,6 +30,7 @@
 	],
 	"autoload": {
 		"psr-4": {
+			"Ytnuk\\": "app/src",
 			"Admin\\": "app/Admin/src",
 			"Front\\": "app/Front/src"
 		}

@@ -44,13 +44,13 @@ module.exports = function (grunt) {
 					'chmod 777 <%=ytnuk.parameters.front.public.temp.directory%>',
 					'chmod 777 <%=ytnuk.parameters.admin.public.temp.directory%>',
 					'bower install --colors',
-					'composer install --ansi'
+					'composer install --prefer-source --ansi'
 				].join(' && ')
 			},
 			update: {
 				command: [
 					'bower update --colors',
-					'composer update --ansi',
+					'composer update --prefer-source --ansi',
 				].join(' && ')
 			},
 			cleanup: {

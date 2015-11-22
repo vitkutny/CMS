@@ -1,18 +1,4 @@
 extensions:
-	ytnuk.application: Ytnuk\Application\Extension
-	ytnuk.templating: Ytnuk\Templating\Extension
-	ytnuk.form: Ytnuk\Form\Extension
-	ytnuk.grid: Ytnuk\Grid\Extension
-	ytnuk.orm: Ytnuk\Orm\Extension
-	ytnuk.menu: Ytnuk\Menu\Extension
-	ytnuk.shop: Ytnuk\Shop\Extension
-	ytnuk.blog: Ytnuk\Blog\Extension
-	ytnuk.link: Ytnuk\Link\Extension
-	ytnuk.home: Ytnuk\Home\Extension
-	ytnuk.translation: Ytnuk\Translation\Extension
-	ytnuk.page: Ytnuk\Page\Extension
-	ytnuk.message: Ytnuk\Message\Extension
-	ytnuk.web: Ytnuk\Web\Extension
 	nextras.dbal: Nextras\Dbal\Bridges\NetteDI\DbalExtension
 	nextras.migrations: Nextras\Migrations\Bridges\NetteDI\MigrationsExtension
 	kdyby.console: Kdyby\Console\DI\ConsoleExtension
