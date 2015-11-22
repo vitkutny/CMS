@@ -15,11 +15,13 @@ final class Config
 				Nette\Configurator $configurator,
 				Composer\Repository\RepositoryInterface $repository
 			) {
-				$extensions = [];
+				$config = [
+					'extensions' => [],
+				];
 				foreach ($repository->getPackages() as $package) {
 					$extra = $package->getExtra();
 					if (isset($extra['extensions']) && is_array($extra['extensions'])) {
-						$extensions += array_filter(
+						$config['extensions'] += $extensions = array_filter(
 							array_filter(
 								$extra['extensions'],
 								'is_string'
@@ -30,6 +32,13 @@ final class Config
 									Nette\DI\CompilerExtension::class
 								);
 							}
+						);
+						$config = array_merge_recursive(
+							$config,
+							array_intersect_key(
+								$extra,
+								$extensions
+							)
 						);
 					}
 				}
@@ -48,7 +57,7 @@ final class Config
 						]
 					),
 					Nette\Neon\Neon::encode(
-						['extensions' => $extensions],
+						$config,
 						Nette\Neon\Neon::BLOCK
 					)
 				);

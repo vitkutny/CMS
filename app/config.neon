@@ -1,9 +1,6 @@
 extensions:
-	nextras.dbal: Nextras\Dbal\Bridges\NetteDI\DbalExtension
 	nextras.migrations: Nextras\Migrations\Bridges\NetteDI\MigrationsExtension
 	kdyby.console: Kdyby\Console\DI\ConsoleExtension
-nextras.dbal:
-	driver: pgsql
 nextras.migrations:
 	dir: %appDir%/migrations
 	driver: pgsql
