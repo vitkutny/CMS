@@ -58,7 +58,6 @@ module.exports = function (grunt) {
 					'git clean -xdf app/temp',
 					'git clean -xdf app/Admin/public/temp',
 					'git clean -xdf app/Front/public/temp ',
-					'composer dump-autoload'
 				].join(' && ')
 			},
 			dump: {

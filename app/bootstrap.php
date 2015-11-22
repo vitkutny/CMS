@@ -7,7 +7,7 @@ return call_user_func(
 				$configurator->setDebugMode(TRUE);
 				$configurator->enableDebugger(__DIR__ . '/temp');
 				$configurator->setTempDirectory(__DIR__ . '/temp');
-				$configurator->addConfig(__DIR__ . '/temp/config.neon');
+				$configurator->addConfig(__DIR__ . '/../vendor/config.neon');
 				$configurator->addConfig(__DIR__ . '/config.neon');
 
 				return $configurator;
