@@ -5,11 +5,13 @@ Vagrant.configure(2) do |config|
 	config.vm.provision :shell, path: "server/run.sh", run: "always"
 	config.vm.network "private_network", type: "dhcp"
 
-	config.vm.hostname = "vagrant.ytnuk.cz"
+	config.vm.hostname = "ytnuk.cz"
 	if Vagrant.has_plugin?('vagrant-hostmanager')
 		config.hostmanager.aliases = %w(
-			vagrant.ytnuk.com
-			vagrant.ytnuk.admin
+			admin.ytnuk.com
+			ytnuk.com
+			ytnuk.sk
+			ytnuk.de
 		)
 		config.hostmanager.enabled = true
 		config.hostmanager.manage_host = true
