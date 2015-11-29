@@ -2,26 +2,6 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		bower: grunt.file.readJSON('./.bowerrc'),
 		ytnuk: {
-			parameters: {
-				front: {
-					directory: 'app/Front',
-					public: {
-						directory: '<%=ytnuk.parameters.front.directory%>/public',
-						temp: {
-							directory: '<%=ytnuk.parameters.front.public.directory%>/temp'
-						}
-					}
-				},
-				admin: {
-					directory: 'app/Admin',
-					public: {
-						directory: '<%=ytnuk.parameters.admin.directory%>/public',
-						temp: {
-							directory: '<%=ytnuk.parameters.admin.public.directory%>/temp'
-						}
-					}
-				}
-			},
 			scripts: [
 				'<%=bower.directory%>/tether/dist/js/tether.js',
 				'<%=bower.directory%>/jquery/jquery.js',
@@ -33,16 +13,13 @@ module.exports = function (grunt) {
 				'app/scripts/nette.ajax.loader.js',
 				'<%=bower.directory%>/nette.ajax.scroll.js/nette.ajax.scroll.js',
 				'<%=bower.directory%>/nette.ajax.loader.js/nette.ajax.loader.js',
-				'app/scripts/index.js',
-				'<%=ytnuk.parameters.front.directory%>/scripts/index.js',
-				'<%=ytnuk.parameters.admin.directory%>/scripts/index.js'
+				'app/scripts/index.js'
 			]
 		},
 		shell: {
 			install: {
 				command: [
-					'chmod 777 <%=ytnuk.parameters.front.public.temp.directory%>',
-					'chmod 777 <%=ytnuk.parameters.admin.public.temp.directory%>',
+					'chmod 777 app/temp',
 					'bower install --colors',
 					'composer install --prefer-source --ansi'
 				].join(' && ')
@@ -56,8 +33,8 @@ module.exports = function (grunt) {
 			cleanup: {
 				command: [
 					'git clean -xdf app/temp',
-					'git clean -xdf app/Admin/public/temp',
-					'git clean -xdf app/Front/public/temp ',
+					'git clean -xdf app/public/scripts',
+					'git clean -xdf app/public/styles ',
 				].join(' && ')
 			},
 			dump: {
@@ -70,8 +47,7 @@ module.exports = function (grunt) {
 		uglify: {
 			default: {
 				files: {
-					'<%=ytnuk.parameters.front.public.directory%>/temp/scripts.js': '<%=ytnuk.scripts%>',
-					'<%=ytnuk.parameters.admin.public.directory%>/temp/scripts.js': '<%=ytnuk.scripts%>'
+					'app/public/scripts/index.js': '<%=ytnuk.scripts%>'
 				}
 			}
 		},
@@ -81,16 +57,13 @@ module.exports = function (grunt) {
 					style: 'compressed'
 				},
 				files: {
-					'<%=ytnuk.parameters.front.public.directory%>/temp/styles.css': '<%=ytnuk.parameters.front.directory%>/styles/index.scss',
-					'<%=ytnuk.parameters.admin.public.directory%>/temp/styles.css': '<%=ytnuk.parameters.admin.directory%>/styles/index.scss'
+					'app/public/styles/index.css': 'app/styles/index.scss'
 				}
 			},
 		},
 		watch: {
 			sass: {
 				files: [
-					'<%=ytnuk.parameters.front.directory%>/styles/{,*/}*.scss',
-					'<%=ytnuk.parameters.admin.directory%>/styles/{,*/}*.scss',
 					'app/styles/{,*/}*.scss'
 				],
 				tasks: ['sass']

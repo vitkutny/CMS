@@ -28,8 +28,7 @@
 	],
 	"autoload": {
 		"psr-4": {
-			"Admin\\": "app/Admin/src",
-			"Front\\": "app/Front/src"
+			"Ytnuk\\": "app/src"
 		}
 	}
 }
