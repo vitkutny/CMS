@@ -6,7 +6,14 @@ add-apt-repository -y ppa:ondrej/php-7.0
 apt-get update
 apt-get upgrade -y --force-yes
 
-apt-get install -y --force-yes nginx php7.0-fpm php-pgsql php-sqlite3 postgresql nodejs-legacy npm
+apt-get install -y --force-yes \
+	nginx \
+	php7.0-fpm \
+	php-pgsql \
+	php-sqlite3 \
+	postgresql \
+	nodejs-legacy \
+	npm
 
 if ! [ -L "/var/www" ]; then
 	rm -rf "/var/www"
