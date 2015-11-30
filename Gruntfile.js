@@ -33,8 +33,7 @@ module.exports = function (grunt) {
 			cleanup: {
 				command: [
 					'git clean -xdf app/temp',
-					'git clean -xdf app/public/scripts',
-					'git clean -xdf app/public/styles ',
+					'git clean -xdf app/public'
 				].join(' && ')
 			},
 			dump: {
