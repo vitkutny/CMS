@@ -221,19 +221,6 @@ SELECT pg_catalog.setval('blog_post_id_seq', 70, false);
 
 
 --
--- Data for Name: link_alias; Type: TABLE DATA; Schema: public; Owner: -
---
-
-
-
---
--- Name: link_alias_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
---
-
-SELECT pg_catalog.setval('link_alias_id_seq', 1, false);
-
-
---
 -- Name: link_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 

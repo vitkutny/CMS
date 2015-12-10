@@ -193,37 +193,6 @@ CREATE TABLE link (
 
 
 --
--- Name: link_alias; Type: TABLE; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE TABLE link_alias (
-    id integer NOT NULL,
-    link_id integer NOT NULL,
-    value integer NOT NULL,
-    "primary" boolean
-);
-
-
---
--- Name: link_alias_id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE link_alias_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
---
--- Name: link_alias_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
---
-
-ALTER SEQUENCE link_alias_id_seq OWNED BY link_alias.id;
-
-
---
 -- Name: link_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
@@ -737,13 +706,6 @@ ALTER TABLE ONLY link ALTER COLUMN id SET DEFAULT nextval('link_id_seq'::regclas
 -- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY link_alias ALTER COLUMN id SET DEFAULT nextval('link_alias_id_seq'::regclass);
-
-
---
--- Name: id; Type: DEFAULT; Schema: public; Owner: -
---
-
 ALTER TABLE ONLY link_parameter ALTER COLUMN id SET DEFAULT nextval('link_parameter_id_seq'::regclass);
 
 
@@ -949,30 +911,6 @@ ALTER TABLE ONLY blog_post
 
 ALTER TABLE ONLY blog_post
     ADD CONSTRAINT blog_post_title UNIQUE (title);
-
-
---
--- Name: link_alias_id; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
---
-
-ALTER TABLE ONLY link_alias
-    ADD CONSTRAINT link_alias_id PRIMARY KEY (id);
-
-
---
--- Name: link_alias_link_id_primary; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
---
-
-ALTER TABLE ONLY link_alias
-    ADD CONSTRAINT link_alias_link_id_primary UNIQUE (link_id, "primary") DEFERRABLE INITIALLY DEFERRED;
-
-
---
--- Name: link_alias_value; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
---
-
-ALTER TABLE ONLY link_alias
-    ADD CONSTRAINT link_alias_value UNIQUE (value);
 
 
 --
@@ -1326,13 +1264,6 @@ CREATE INDEX blog_post_category_post_id ON blog_post_category USING btree (post_
 
 
 --
--- Name: link_alias_link_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX link_alias_link_id ON link_alias USING btree (link_id);
-
-
---
 -- Name: link_parameter_key; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -1473,22 +1404,6 @@ ALTER TABLE ONLY blog_post
 
 ALTER TABLE ONLY blog_post
     ADD CONSTRAINT blog_post_title_fkey FOREIGN KEY (title) REFERENCES translation(id) ON UPDATE CASCADE ON DELETE CASCADE;
-
-
---
--- Name: link_alias_link_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY link_alias
-    ADD CONSTRAINT link_alias_link_id_fkey FOREIGN KEY (link_id) REFERENCES link(id) ON UPDATE CASCADE ON DELETE CASCADE;
-
-
---
--- Name: link_alias_value_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY link_alias
-    ADD CONSTRAINT link_alias_value_fkey FOREIGN KEY (value) REFERENCES translation(id) ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 --
