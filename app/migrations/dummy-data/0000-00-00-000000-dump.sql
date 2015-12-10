@@ -426,6 +426,8 @@ SELECT pg_catalog.setval('translation_id_seq', 287, true);
 
 INSERT INTO translation_locale VALUES ('🇨🇿', '🇨🇿 Čeština');
 INSERT INTO translation_locale VALUES ('🇺🇸', '🇺🇸 English');
+INSERT INTO translation_locale VALUES ('🇩🇪', '🇩🇪 Deutsch');
+INSERT INTO translation_locale VALUES ('🇸🇰', '🇸🇰 Slovenčina');
 
 
 --
@@ -532,26 +534,38 @@ INSERT INTO web VALUES (2, 2, 56);
 --
 
 INSERT INTO web_domain VALUES (1, 1, true, 'ytnuk.com');
+INSERT INTO web_domain VALUES (2, 2, true, 'admin.ytnuk.com');
+INSERT INTO web_domain VALUES (3, 1, true, 'ytnuk.cz');
+INSERT INTO web_domain VALUES (4, 1, true, 'ytnuk.sk');
+INSERT INTO web_domain VALUES (5, 1, true, 'ytnuk.de');
 
 
 --
 -- Name: web_domain_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('web_domain_id_seq', 1, false);
+SELECT pg_catalog.setval('web_domain_id_seq', 5, true);
 
 
 --
 -- Data for Name: web_domain_locale; Type: TABLE DATA; Schema: public; Owner: -
 --
 
+INSERT INTO web_domain_locale VALUES (1, 3, '🇨🇿', true);
+INSERT INTO web_domain_locale VALUES (2, 1, '🇺🇸', true);
+INSERT INTO web_domain_locale VALUES (3, 2, '🇺🇸', true);
+INSERT INTO web_domain_locale VALUES (4, 4, '🇸🇰', true);
+INSERT INTO web_domain_locale VALUES (5, 5, '🇩🇪', true);
+INSERT INTO web_domain_locale VALUES (7, 2, '🇸🇰', NULL);
+INSERT INTO web_domain_locale VALUES (8, 2, '🇩🇪', NULL);
+INSERT INTO web_domain_locale VALUES (6, 2, '🇨🇿', NULL);
 
 
 --
 -- Name: web_domain_locale_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('web_domain_locale_id_seq', 1, false);
+SELECT pg_catalog.setval('web_domain_locale_id_seq', 8, true);
 
 
 --

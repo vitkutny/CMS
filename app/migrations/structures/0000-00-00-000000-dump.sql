@@ -1248,11 +1248,35 @@ ALTER TABLE ONLY translation_translate
 
 
 --
+-- Name: web_domain_host; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY web_domain
+    ADD CONSTRAINT web_domain_host UNIQUE (host);
+
+
+--
 -- Name: web_domain_id; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY web_domain
     ADD CONSTRAINT web_domain_id PRIMARY KEY (id);
+
+
+--
+-- Name: web_domain_locale_domain_id_locale_id; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY web_domain_locale
+    ADD CONSTRAINT web_domain_locale_domain_id_locale_id UNIQUE (domain_id, locale_id);
+
+
+--
+-- Name: web_domain_locale_domain_id_primary; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY web_domain_locale
+    ADD CONSTRAINT web_domain_locale_domain_id_primary UNIQUE (domain_id, "primary");
 
 
 --
@@ -1355,6 +1379,20 @@ CREATE INDEX translation_translate_locale_id ON translation_translate USING btre
 --
 
 CREATE INDEX translation_translate_translation_id ON translation_translate USING btree (translation_id);
+
+
+--
+-- Name: web_domain_locale_locale_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE INDEX web_domain_locale_locale_id ON web_domain_locale USING btree (locale_id);
+
+
+--
+-- Name: web_domain_web_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE INDEX web_domain_web_id ON web_domain USING btree (web_id);
 
 
 --
