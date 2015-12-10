@@ -1248,19 +1248,19 @@ ALTER TABLE ONLY translation_translate
 
 
 --
--- Name: web_domain_locale_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
---
-
-ALTER TABLE ONLY web_domain_locale
-    ADD CONSTRAINT web_domain_locale_pkey PRIMARY KEY (id);
-
-
---
--- Name: web_domain_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: web_domain_id; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY web_domain
-    ADD CONSTRAINT web_domain_pkey PRIMARY KEY (id);
+    ADD CONSTRAINT web_domain_id PRIMARY KEY (id);
+
+
+--
+-- Name: web_domain_locale_id; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY web_domain_locale
+    ADD CONSTRAINT web_domain_locale_id PRIMARY KEY (id);
 
 
 --
