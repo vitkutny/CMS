@@ -523,15 +523,22 @@ SELECT pg_catalog.setval('translation_translate_id_seq', 276, true);
 -- Data for Name: web; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-INSERT INTO web VALUES ('1', 1, 55);
-INSERT INTO web VALUES ('2', 2, 56);
+INSERT INTO web VALUES (1, 1, 55);
+INSERT INTO web VALUES (2, 2, 56);
 
 
 --
 -- Data for Name: web_domain; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-INSERT INTO web_domain VALUES ('1', '1', true, 'ytnuk.com');
+INSERT INTO web_domain VALUES (1, 1, true, 'ytnuk.com');
+
+
+--
+-- Name: web_domain_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('web_domain_id_seq', 1, false);
 
 
 --
@@ -545,6 +552,13 @@ INSERT INTO web_domain VALUES ('1', '1', true, 'ytnuk.com');
 --
 
 SELECT pg_catalog.setval('web_domain_locale_id_seq', 1, false);
+
+
+--
+-- Name: web_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('web_id_seq', 1, false);
 
 
 --

@@ -618,10 +618,22 @@ ALTER SEQUENCE translation_translate_id_seq OWNED BY translation_translate.id;
 --
 
 CREATE TABLE web (
-    id character varying NOT NULL,
+    id integer NOT NULL,
     menu_id integer NOT NULL,
     name integer NOT NULL
 );
+
+
+--
+-- Name: web_domain_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE web_domain_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
 
 
 --
@@ -629,8 +641,8 @@ CREATE TABLE web (
 --
 
 CREATE TABLE web_domain (
-    id character varying NOT NULL,
-    web_id character varying NOT NULL,
+    id integer DEFAULT nextval('web_domain_id_seq'::regclass) NOT NULL,
+    web_id integer NOT NULL,
     secured boolean DEFAULT true NOT NULL,
     host character varying NOT NULL
 );
@@ -654,10 +666,29 @@ CREATE SEQUENCE web_domain_locale_id_seq
 
 CREATE TABLE web_domain_locale (
     id integer DEFAULT nextval('web_domain_locale_id_seq'::regclass) NOT NULL,
-    domain_id character varying NOT NULL,
+    domain_id integer NOT NULL,
     locale_id character varying NOT NULL,
     "primary" boolean
 );
+
+
+--
+-- Name: web_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE web_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: web_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE web_id_seq OWNED BY web.id;
 
 
 --
@@ -791,6 +822,13 @@ ALTER TABLE ONLY translation ALTER COLUMN id SET DEFAULT nextval('translation_id
 --
 
 ALTER TABLE ONLY translation_translate ALTER COLUMN id SET DEFAULT nextval('translation_translate_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY web ALTER COLUMN id SET DEFAULT nextval('web_id_seq'::regclass);
 
 
 --
