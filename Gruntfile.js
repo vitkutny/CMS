@@ -38,8 +38,8 @@ module.exports = function (grunt) {
 			},
 			dump: {
 				command: [
-					'pg_dump vagrant > server/database/schema.sql --no-owner --no-privileges --schema-only --clean --if-exists',
-					'pg_dump vagrant > server/database/data.sql --no-owner --no-privileges --data-only --inserts'
+					'pg_dump vagrant > app/migrations/structures/0000-00-00-000000-dump.sql --no-owner --no-privileges --schema-only --clean --if-exists',
+					'pg_dump vagrant > app/migrations/dummy-data/0000-00-00-000000-dump.sql --no-owner --no-privileges --data-only --inserts'
 				].join(' && ')
 			}
 		},

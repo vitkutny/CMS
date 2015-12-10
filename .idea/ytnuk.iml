@@ -16,6 +16,7 @@
       <library name="PHP">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bower/bootstrap" />
+          <root url="file://$MODULE_DIR$/vendor/bower/bourbon" />
           <root url="file://$MODULE_DIR$/vendor/bower/history.nette.ajax.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/jquery" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette-forms" />
@@ -62,6 +63,7 @@
         </CLASSES>
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/bower/bootstrap" />
+          <root url="file://$MODULE_DIR$/vendor/bower/bourbon" />
           <root url="file://$MODULE_DIR$/vendor/bower/history.nette.ajax.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/jquery" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette-forms" />
