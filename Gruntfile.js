@@ -1,21 +1,6 @@
 module.exports = function (grunt) {
 	grunt.initConfig({
 		bower: grunt.file.readJSON('./.bowerrc'),
-		ytnuk: {
-			scripts: [
-				'<%=bower.directory%>/tether/dist/js/tether.js',
-				'<%=bower.directory%>/jquery/jquery.js',
-				'<%=bower.directory%>/bootstrap/dist/js/bootstrap.js',
-				'<%=bower.directory%>/nette-forms/src/assets/netteForms.js',
-				'<%=bower.directory%>/nette.ajax.js/nette.ajax.js',
-				'<%=bower.directory%>/history.nette.ajax.js/client-side/history.ajax.js',
-				'app/scripts/nette.ajax.modal.js',
-				'app/scripts/nette.ajax.loader.js',
-				'<%=bower.directory%>/nette.ajax.scroll.js/nette.ajax.scroll.js',
-				'<%=bower.directory%>/nette.ajax.loader.js/nette.ajax.loader.js',
-				'app/scripts/index.js'
-			]
-		},
 		shell: {
 			install: {
 				command: [
@@ -46,7 +31,18 @@ module.exports = function (grunt) {
 		uglify: {
 			default: {
 				files: {
-					'app/public/scripts/index.js': '<%=ytnuk.scripts%>'
+					'app/public/scripts/index.js': [
+						'<%=bower.directory%>/tether/dist/js/tether.js',
+						'<%=bower.directory%>/jquery/jquery.js',
+						'<%=bower.directory%>/bootstrap/dist/js/bootstrap.js',
+						'<%=bower.directory%>/nette-forms/src/assets/netteForms.js',
+						'<%=bower.directory%>/nette.ajax.js/nette.ajax.js',
+						'<%=bower.directory%>/history.nette.ajax.js/client-side/history.ajax.js',
+						'<%=bower.directory%>/nette.ajax.scroll.js/nette.ajax.scroll.js',
+						'<%=bower.directory%>/nette.ajax.loader.js/nette.ajax.loader.js',
+						'app/scripts/nette.ajax.modal.js',
+						'app/scripts/index.js'
+					]
 				}
 			}
 		},
