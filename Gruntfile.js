@@ -23,8 +23,8 @@ module.exports = function (grunt) {
 			},
 			dump: {
 				command: [
-					'pg_dump --no-owner --no-privileges --schema-only --exclude-table "migrations|migrations_id_seq" --dbname=vagrant --file=app/migrations/structures/0000-00-00-000000-dump.sql',
-					'pg_dump --no-owner --no-privileges --data-only --inserts --exclude-table "migrations|migrations_id_seq" --dbname=vagrant --file=app/migrations/dummy-data/0000-00-00-000000-dump.sql'
+					'pg_dump --no-owner --no-privileges --schema-only --exclude-table "migrations*" --dbname=vagrant --file=app/migrations/structures/0000-00-00-000000-dump.sql',
+					'pg_dump --no-owner --no-privileges --data-only --inserts --exclude-table "migrations*" --dbname=vagrant --file=app/migrations/dummy-data/0000-00-00-000000-dump.sql'
 				].join(' && ')
 			}
 		},
