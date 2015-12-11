@@ -17,8 +17,7 @@ module.exports = function (grunt) {
 			},
 			cleanup: {
 				command: [
-					'git clean -xdf app/temp',
-					'git clean -xdf app/public'
+					'git clean -xdf app/temp'
 				].join(' && ')
 			},
 			dump: {
