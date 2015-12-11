@@ -17,12 +17,14 @@
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bower/bootstrap" />
           <root url="file://$MODULE_DIR$/vendor/bower/bourbon" />
+          <root url="file://$MODULE_DIR$/vendor/bower/font-awesome" />
           <root url="file://$MODULE_DIR$/vendor/bower/history.nette.ajax.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/jquery" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette-forms" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.loader.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.scroll.js" />
+          <root url="file://$MODULE_DIR$/vendor/bower/octicons" />
           <root url="file://$MODULE_DIR$/vendor/bower/tether" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
           <root url="file://$MODULE_DIR$/vendor/justinrainbow/json-schema" />
@@ -64,12 +66,14 @@
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/bower/bootstrap" />
           <root url="file://$MODULE_DIR$/vendor/bower/bourbon" />
+          <root url="file://$MODULE_DIR$/vendor/bower/font-awesome" />
           <root url="file://$MODULE_DIR$/vendor/bower/history.nette.ajax.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/jquery" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette-forms" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.loader.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.scroll.js" />
+          <root url="file://$MODULE_DIR$/vendor/bower/octicons" />
           <root url="file://$MODULE_DIR$/vendor/bower/tether" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
           <root url="file://$MODULE_DIR$/vendor/justinrainbow/json-schema" />

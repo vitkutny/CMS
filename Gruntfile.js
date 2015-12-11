@@ -62,10 +62,19 @@ module.exports = function (grunt) {
 				],
 				tasks: ['sass']
 			}
+		},
+		copy: {
+			fontawesome: {
+				src: '<%=bower.directory%>/font-awesome/fonts/*',
+				dest: 'app/public/styles/fonts/',
+				flatten: true,
+				expand: true
+			}
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-shell');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
@@ -74,6 +83,7 @@ module.exports = function (grunt) {
 		'shell:cleanup',
 		'uglify',
 		'sass',
+		'copy'
 	]);
 
 	grunt.registerTask('install', [
