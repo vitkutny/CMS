@@ -64,7 +64,7 @@ module.exports = function (grunt) {
 			}
 		},
 		copy: {
-			fontawesome: {
+			FontAwesome: {
 				src: '<%=bower.directory%>/font-awesome/fonts/*',
 				dest: 'app/public/styles/fonts/',
 				flatten: true,
