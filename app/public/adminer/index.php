@@ -5,7 +5,20 @@ $connection = call_user_func(
 		return call_user_func(
 			function (Nette\Configurator $configurator) : Nextras\Dbal\Connection {
 				return call_user_func(
-					function (Nette\DI\Container $container) : Nextras\Dbal\Connection {
+					function (Nette\DI\Container $container) use
+					(
+						$configurator
+					) : Nextras\Dbal\Connection {
+						if ( ! $configurator->isDebugMode()) {
+							call_user_func(
+								function (Nette\Application\Application $application) : Nette\Application\Application {
+									$application->run();
+									exit;
+								},
+								$container->getByType(Nette\Application\Application::class)
+							);
+						}
+
 						return $container->getByType(Nextras\Dbal\Connection::class);
 					},
 					$configurator->createContainer()
