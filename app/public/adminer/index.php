@@ -38,7 +38,7 @@ call_user_func(
 						'password' => $username,
 					];
 				if ( ! isset($_GET['db'])) {
-					$_GET['db'] = posix_getpwuid(posix_geteuid())['name'] ?? NULL;
+					$_GET['db'] = $username;
 				}
 				if (isset($adminer_config['driver'])) {
 					$_GET['username'] = $_GET[$adminer_config['driver']] = '';
