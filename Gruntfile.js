@@ -2,6 +2,12 @@ module.exports = function (grunt) {
 	grunt.config.init({
 		bower: grunt.file.readJSON('./.bowerrc'),
 		shell: {
+			run: {
+				command: 'echo "<?php return require_once __DIR__ . \'/../run.php\';" > app/public/index.php'
+			},
+			maintenance: {
+				command: 'echo "<?php return require_once __DIR__ . \'/../maintenance.php\';" > app/public/index.php'
+			},
 			install: {
 				command: [
 					'chmod 777 app/temp',
@@ -78,20 +84,25 @@ module.exports = function (grunt) {
 	grunt.task.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.task.registerTask('default', [
-		'shell:cleanup',
 		'uglify',
 		'sass',
 		'copy'
 	]);
 
 	grunt.task.registerTask('install', [
+		'shell:maintenance',
+		'shell:cleanup',
 		'shell:install',
-		'default'
+		'default',
+		'shell:run'
 	]);
 
 	grunt.task.registerTask('update', [
+		'shell:maintenance',
+		'shell:cleanup',
 		'shell:update',
-		'default'
+		'default',
+		'shell:run'
 	]);
 
 };
