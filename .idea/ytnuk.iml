@@ -26,6 +26,7 @@
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.scroll.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/tether" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
+          <root url="file://$MODULE_DIR$/vendor/dg/adminer-custom" />
           <root url="file://$MODULE_DIR$/vendor/justinrainbow/json-schema" />
           <root url="file://$MODULE_DIR$/vendor/kdyby/console" />
           <root url="file://$MODULE_DIR$/vendor/kdyby/forms-replicator" />
@@ -74,6 +75,7 @@
           <root url="file://$MODULE_DIR$/vendor/bower/nette.ajax.scroll.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/tether" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
+          <root url="file://$MODULE_DIR$/vendor/dg/adminer-custom" />
           <root url="file://$MODULE_DIR$/vendor/justinrainbow/json-schema" />
           <root url="file://$MODULE_DIR$/vendor/kdyby/console" />
           <root url="file://$MODULE_DIR$/vendor/kdyby/forms-replicator" />

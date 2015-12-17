@@ -3,6 +3,7 @@
 	"name": "ytnuk/sandbox",
 	"type": "project",
 	"require": {
+		"dg/adminer-custom": "dev-master",
 		"nette/bootstrap": "dev-master",
 		"ytnuk/config": "dev-master",
 		"kdyby/console": "dev-master",
