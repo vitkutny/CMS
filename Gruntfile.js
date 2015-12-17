@@ -1,5 +1,5 @@
 module.exports = function (grunt) {
-	grunt.initConfig({
+	grunt.config.init({
 		bower: grunt.file.readJSON('./.bowerrc'),
 		shell: {
 			install: {
@@ -47,9 +47,6 @@ module.exports = function (grunt) {
 		},
 		sass: {
 			default: {
-				options: {
-					style: 'compressed'
-				},
 				files: {
 					'app/public/styles/index.css': 'app/styles/index.scss'
 				}
@@ -72,26 +69,27 @@ module.exports = function (grunt) {
 			}
 		}
 	});
+	grunt.file.exists('./local.json') && grunt.config.merge(grunt.file.readJSON('./local.json'));
 
-	grunt.loadNpmTasks('grunt-shell');
-	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.task.loadNpmTasks('grunt-shell');
+	grunt.task.loadNpmTasks('grunt-contrib-copy');
+	grunt.task.loadNpmTasks('grunt-contrib-uglify');
+	grunt.task.loadNpmTasks('grunt-contrib-sass');
+	grunt.task.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('default', [
+	grunt.task.registerTask('default', [
 		'shell:cleanup',
 		'uglify',
 		'sass',
 		'copy'
 	]);
 
-	grunt.registerTask('install', [
+	grunt.task.registerTask('install', [
 		'shell:install',
 		'default'
 	]);
 
-	grunt.registerTask('update', [
+	grunt.task.registerTask('update', [
 		'shell:update',
 		'default'
 	]);
