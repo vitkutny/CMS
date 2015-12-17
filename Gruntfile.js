@@ -1,55 +1,6 @@
 module.exports = function (grunt) {
 	grunt.config.init({
 		bower: grunt.file.readJSON('./.bowerrc'),
-		shell: {
-			application: {
-				command: function (mode) {
-					var file = './app/' + mode + '.php';
-					if (grunt.file.exists(file)) {
-						return 'echo "<?php return require_once __DIR__ . \'/../' + mode + '.php\';" > app/public/index.php';
-					} else {
-						grunt.fail.warn('File "' + file + '" does not exists');
-						return '';
-					}
-				}
-			},
-			install: {
-				command: [
-					'chmod 777 app/temp',
-					'bower install --colors',
-					'composer install --prefer-source --ansi'
-				].join('&&')
-			},
-			update: {
-				command: [
-					'bower update --colors',
-					'composer update --prefer-source --ansi',
-				].join('&&')
-			},
-			cleanup: {
-				command: [
-					'git clean -xdf app/temp'
-				].join('&&')
-			},
-			dump: {
-				command: [
-					'pg_dump --no-owner --no-privileges --schema-only --exclude-table "migrations*" --dbname=vagrant --file=app/migrations/structures/0000-00-00-000000-dump.sql',
-					'pg_dump --no-owner --no-privileges --data-only --inserts --exclude-table "migrations*" --dbname=vagrant --file=app/migrations/dummy-data/0000-00-00-000000-dump.sql'
-				].join('&&')
-			},
-			public: {
-				command: [
-					'for from in $(find app/temp/public -type f); do ' + [
-						'to=$(echo $from | sed -r "s/^app\\/temp\\/public\\//app\\/public\\//g")',
-						'if ! diff -q $from $to 2> /dev/null',
-						'then mkdir -p $(dirname $to) && mv $from $to',
-						'fi',
-						'done'
-					].join(';'),
-					'rm -rf app/temp/public'
-				].join('&&')
-			}
-		},
 		uglify: {
 			default: {
 				files: {
@@ -75,20 +26,75 @@ module.exports = function (grunt) {
 				}
 			},
 		},
-		watch: {
-			sass: {
-				files: [
-					'app/styles/{,*/}*.scss'
-				],
-				tasks: ['sass']
-			}
-		},
 		copy: {
 			FontAwesome: {
 				src: '<%=bower.directory%>/font-awesome/fonts/*',
 				dest: 'app/temp/public/styles/fonts/',
 				flatten: true,
 				expand: true
+			}
+		},
+		watch: {
+			scripts: {
+				files: [
+					'app/scripts/*.js'
+				],
+				tasks: ['uglify', 'shell:public']
+			},
+			styles: {
+				files: [
+					'app/styles/*.scss'
+				],
+				tasks: ['sass', 'shell:public']
+			}
+		},
+		shell: {
+			application: {
+				command: function (mode) {
+					var file = './app/' + mode + '.php';
+					if (grunt.file.exists(file)) {
+						return 'echo "<?php return require_once __DIR__ . \'/../' + mode + '.php\';" > app/public/index.php';
+					} else {
+						grunt.fail.warn('File "' + file + '" does not exists');
+						return '';
+					}
+				}
+			},
+			public: {
+				command: [
+					'for from in $(find app/temp/public -type f); do ' + [
+						'to=$(echo $from | sed -r "s/^app\\/temp\\/public\\//app\\/public\\//g")',
+						'if ! diff -q $from $to 2> /dev/null',
+						'then mkdir -p $(dirname $to) && mv $from $to',
+						'fi',
+						'done'
+					].join(';'),
+					'rm -rf app/temp/public'
+				].join('&&')
+			},
+			install: {
+				command: [
+					'chmod 777 app/temp',
+					'bower install --colors',
+					'composer install --prefer-source --ansi'
+				].join('&&')
+			},
+			update: {
+				command: [
+					'bower update --colors',
+					'composer update --prefer-source --ansi',
+				].join('&&')
+			},
+			cleanup: {
+				command: [
+					'git clean -xdf app/temp'
+				].join('&&')
+			},
+			dump: {
+				command: [
+					'pg_dump --no-owner --no-privileges --schema-only --exclude-table "migrations*" --dbname=vagrant --file=app/migrations/structures/0000-00-00-000000-dump.sql',
+					'pg_dump --no-owner --no-privileges --data-only --inserts --exclude-table "migrations*" --dbname=vagrant --file=app/migrations/dummy-data/0000-00-00-000000-dump.sql'
+				].join('&&')
 			}
 		}
 	});
