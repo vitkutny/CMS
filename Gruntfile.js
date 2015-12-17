@@ -2,11 +2,16 @@ module.exports = function (grunt) {
 	grunt.config.init({
 		bower: grunt.file.readJSON('./.bowerrc'),
 		shell: {
-			run: {
-				command: 'echo "<?php return require_once __DIR__ . \'/../run.php\';" > app/public/index.php'
-			},
-			maintenance: {
-				command: 'echo "<?php return require_once __DIR__ . \'/../maintenance.php\';" > app/public/index.php'
+			application: {
+				command: function (mode) {
+					var file = './app/' + mode + '.php';
+					if (grunt.file.exists(file)) {
+						return 'echo "<?php return require_once __DIR__ . \'/../' + mode + '.php\';" > app/public/index.php';
+					} else {
+						grunt.fail.warn('File "' + file + '" does not exists');
+						return '';
+					}
+				}
 			},
 			install: {
 				command: [
@@ -90,19 +95,19 @@ module.exports = function (grunt) {
 	]);
 
 	grunt.task.registerTask('install', [
-		'shell:maintenance',
+		'shell:application:maintenance',
 		'shell:cleanup',
 		'shell:install',
 		'default',
-		'shell:run'
+		'shell:application:run'
 	]);
 
 	grunt.task.registerTask('update', [
-		'shell:maintenance',
+		'shell:application:maintenance',
 		'shell:cleanup',
 		'shell:update',
 		'default',
-		'shell:run'
+		'shell:application:run'
 	]);
 
 };
