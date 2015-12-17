@@ -18,30 +18,43 @@ module.exports = function (grunt) {
 					'chmod 777 app/temp',
 					'bower install --colors',
 					'composer install --prefer-source --ansi'
-				].join(' && ')
+				].join('&&')
 			},
 			update: {
 				command: [
 					'bower update --colors',
 					'composer update --prefer-source --ansi',
-				].join(' && ')
+				].join('&&')
 			},
 			cleanup: {
 				command: [
 					'git clean -xdf app/temp'
-				].join(' && ')
+				].join('&&')
 			},
 			dump: {
 				command: [
 					'pg_dump --no-owner --no-privileges --schema-only --exclude-table "migrations*" --dbname=vagrant --file=app/migrations/structures/0000-00-00-000000-dump.sql',
 					'pg_dump --no-owner --no-privileges --data-only --inserts --exclude-table "migrations*" --dbname=vagrant --file=app/migrations/dummy-data/0000-00-00-000000-dump.sql'
-				].join(' && ')
+				].join('&&')
+			},
+			public: {
+				command: [
+					'for from in $(find app/temp/public -type f); do ' + [
+						'to=$(echo $from | sed -r "s/^app\\/temp\\/public\\//app\\/public\\//g")',
+						'if diff -q $from $to 2> /dev/null',
+						'then rm $from',
+						'else mkdir -p $(dirname $to) && mv $from $to',
+						'fi',
+						'done'
+					].join(';'),
+					'rm -rf app/temp/public'
+				].join('&&')
 			}
 		},
 		uglify: {
 			default: {
 				files: {
-					'app/public/scripts/index.js': [
+					'app/temp/public/scripts/index.js': [
 						'<%=bower.directory%>/tether/dist/js/tether.js',
 						'<%=bower.directory%>/jquery/jquery.js',
 						'<%=bower.directory%>/bootstrap/dist/js/bootstrap.js',
@@ -59,7 +72,7 @@ module.exports = function (grunt) {
 		sass: {
 			default: {
 				files: {
-					'app/public/styles/index.css': 'app/styles/index.scss'
+					'app/temp/public/styles/index.css': 'app/styles/index.scss'
 				}
 			},
 		},
@@ -74,7 +87,7 @@ module.exports = function (grunt) {
 		copy: {
 			FontAwesome: {
 				src: '<%=bower.directory%>/font-awesome/fonts/*',
-				dest: 'app/public/styles/fonts/',
+				dest: 'app/temp/public/styles/fonts/',
 				flatten: true,
 				expand: true
 			}
@@ -91,7 +104,8 @@ module.exports = function (grunt) {
 	grunt.task.registerTask('default', [
 		'uglify',
 		'sass',
-		'copy'
+		'copy',
+		'shell:public',
 	]);
 
 	grunt.task.registerTask('install', [

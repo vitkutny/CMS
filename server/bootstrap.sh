@@ -13,7 +13,8 @@ apt-get install -y --force-yes \
 	php-sqlite3 \
 	postgresql \
 	nodejs-legacy \
-	npm
+	npm \
+	diffutils
 
 if ! [ -L "/var/www" ]; then
 	rm -rf "/var/www"
