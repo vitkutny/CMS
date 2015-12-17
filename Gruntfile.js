@@ -41,9 +41,8 @@ module.exports = function (grunt) {
 				command: [
 					'for from in $(find app/temp/public -type f); do ' + [
 						'to=$(echo $from | sed -r "s/^app\\/temp\\/public\\//app\\/public\\//g")',
-						'if diff -q $from $to 2> /dev/null',
-						'then rm $from',
-						'else mkdir -p $(dirname $to) && mv $from $to',
+						'if ! diff -q $from $to 2> /dev/null',
+						'then mkdir -p $(dirname $to) && mv $from $to',
 						'fi',
 						'done'
 					].join(';'),
