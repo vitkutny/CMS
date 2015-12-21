@@ -1,3 +1,8 @@
+http:
+	headers:
+		Content-Security-Policy: "default-src 'self'; form-action 'self'"
+tracy:
+	errorTemplate: %appDir%/maintenance.php
 extensions:
 	nextras.migrations: Nextras\Migrations\Bridges\NetteDI\MigrationsExtension
 	kdyby.console: Kdyby\Console\DI\ConsoleExtension
@@ -8,5 +13,3 @@ nextras.migrations:
 	phpParams: [[
 		model: @Nextras\Orm\Model\IModel
 	]]
-tracy:
-	errorTemplate: %appDir%/maintenance.php
