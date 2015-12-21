@@ -1,6 +1,8 @@
 <?php
-header('HTTP/1.1 503 Service Unavailable');
-header('Retry-After: 300'); // 5 minutes in seconds
+if ( ! headers_sent()) {
+	header('HTTP/1.1 503 Service Unavailable');
+	header('Retry-After: 300'); // 5 minutes in seconds
+}
 ?>
 	<!DOCTYPE html>
 	<meta charset="utf-8">

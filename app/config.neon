@@ -8,3 +8,5 @@ nextras.migrations:
 	phpParams: [[
 		model: @Nextras\Orm\Model\IModel
 	]]
+tracy:
+	errorTemplate: %appDir%/maintenance.php
