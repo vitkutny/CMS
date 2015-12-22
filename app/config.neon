@@ -1,6 +1,3 @@
-http:
-	headers:
-		Content-Security-Policy: "default-src 'self'; form-action 'self'"
 tracy:
 	errorTemplate: %appDir%/maintenance.php
 extensions:
