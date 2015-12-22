@@ -10,7 +10,11 @@
 			xhr.settings = settings;
 		},
 		error: function (xhr) {
-			location.replace(xhr.settings.url);
+			switch (xhr.settings.type) {
+				case 'GET':
+					location.replace(xhr.settings.url);
+					break;
+			}
 		}
 	});
 
