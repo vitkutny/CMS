@@ -589,7 +589,8 @@ ALTER SEQUENCE translation_translate_id_seq OWNED BY translation_translate.id;
 CREATE TABLE web (
     id integer NOT NULL,
     menu_id integer NOT NULL,
-    name integer NOT NULL
+    name integer NOT NULL,
+    alias character varying NOT NULL
 );
 
 
@@ -1183,6 +1184,14 @@ ALTER TABLE ONLY translation_translate
 
 ALTER TABLE ONLY translation_translate
     ADD CONSTRAINT translation_translate_translation_id_locale_id UNIQUE (translation_id, locale_id);
+
+
+--
+-- Name: web_alias; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY web
+    ADD CONSTRAINT web_alias UNIQUE (alias);
 
 
 --

@@ -512,8 +512,8 @@ SELECT pg_catalog.setval('translation_translate_id_seq', 276, true);
 -- Data for Name: web; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-INSERT INTO web VALUES (1, 1, 55);
-INSERT INTO web VALUES (2, 2, 56);
+INSERT INTO web VALUES (1, 1, 55, 'front');
+INSERT INTO web VALUES (2, 2, 56, 'admin');
 
 
 --
