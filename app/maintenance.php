@@ -5,29 +5,25 @@ if ( ! headers_sent()) {
 }
 ?>
 	<!DOCTYPE html>
-	<meta charset="utf-8">
-	<meta name="robots" content="noindex">
-	<meta name="generator" content="Nette Framework">
-	<style>
-		body {
-			color: #333;
-			background: white;
-			width: 500px;
-			margin: 100px auto
-		}
-
-		h1 {
-			font: bold 47px/1.5 sans-serif;
-			margin: .6em 0
-		}
-
-		p {
-			font: 21px/1.5 Georgia, serif;
-			margin: 1.5em 0
-		}
-	</style>
-	<title>Site is temporarily down for maintenance</title>
-	<h1>We're Sorry</h1>
-	<p>The site is temporarily down for maintenance. Please try again in a few minutes.</p>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta name="robots" content="noindex">
+			<title>Site is temporarily down for maintenance</title>
+			<link rel="stylesheet" type="text/css" href="/styles/index.css?version=<?php echo time(); ?>">
+		</head>
+		<body class="jumbotron container bg-faded">
+			<blockquote class="blockquote">
+				<h1>We're Sorry</h1>
+				<p class="lead">
+					The site is temporarily down for maintenance. Please try again in a few minutes.
+				</p>
+				<footer class="blockquote-footer">
+					<code>503</code>
+				</footer>
+			</blockquote>
+		</body>
+	</html>
 <?php
 exit;
