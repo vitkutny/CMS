@@ -1,10 +1,13 @@
 module.exports = function (grunt) {
 	grunt.config.init({
+		temp: {
+			directory: '/tmp/ytnuk-sandbox'
+		},
 		bower: grunt.file.readJSON('./.bowerrc'),
 		uglify: {
 			default: {
 				files: {
-					'app/temp/public/scripts/index.js': [
+					'<%=temp.directory%>/public/scripts/index.js': [
 						'<%=bower.directory%>/tether/dist/js/tether.js',
 						'<%=bower.directory%>/jquery/jquery.js',
 						'<%=bower.directory%>/bootstrap/dist/js/bootstrap.js',
@@ -22,14 +25,14 @@ module.exports = function (grunt) {
 		sass: {
 			default: {
 				files: {
-					'app/temp/public/styles/index.css': 'app/styles/index.scss'
+					'<%=temp.directory%>/public/styles/index.css': 'app/styles/index.scss'
 				}
 			},
 		},
 		copy: {
 			FontAwesome: {
 				src: '<%=bower.directory%>/font-awesome/fonts/*',
-				dest: 'app/temp/public/styles/fonts/',
+				dest: '<%=temp.directory%>/public/styles/fonts/',
 				flatten: true,
 				expand: true
 			}
@@ -62,19 +65,37 @@ module.exports = function (grunt) {
 			},
 			public: {
 				command: [
-					'for from in $(find app/temp/public -type f); do ' + [
-						'to=$(echo $from | sed "s/^app\\/temp\\/public\\//app\\/public\\//g")',
+					'directory=$(pwd)',
+					'cd <%=temp.directory%>',
+					'files=' + [
+						'$(if [ -d public ]',
+						'then find public -type f',
+						'fi)'
+					].join(';'),
+					'cd $directory',
+					'for file in $files; do ' + [
+						'from=<%=temp.directory%>/$file',
+						'to=app/$file',
 						'if ! diff -q $from $to 2> /dev/null',
-						'then mkdir -p $(dirname $to) && mv $from $to',
+						'then mkdir -p $(dirname $to) && cp $from $to',
 						'fi',
 						'done'
 					].join(';'),
-					'rm -rf app/temp/public'
+					[
+						'if [ -d public ]',
+						'then rm -rf <%=temp.directory%>/public',
+						'fi'
+					].join(';')
 				].join('&&')
 			},
 			install: {
 				command: [
-					'chmod 777 app/temp',
+					[
+						'if ! [ -d <%=temp.directory%> ]',
+						'then mkdir -p <%=temp.directory%>',
+						'fi'
+					].join(';'),
+					'chmod 777 <%=temp.directory%>',
 					'bower install --colors',
 					'composer install --prefer-source --ansi'
 				].join('&&')
@@ -87,7 +108,7 @@ module.exports = function (grunt) {
 			},
 			cleanup: {
 				command: [
-					'rm -rf /tmp/ytnuk-sandbox'
+					'rm -rf <%=temp.directory%>/*'
 				].join('&&')
 			},
 			dump: {
