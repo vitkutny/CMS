@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$/app">
-      <excludeFolder url="file://$MODULE_DIR$/app/public/assets" />
+    <content url="file://$MODULE_DIR$/application">
+      <excludeFolder url="file://$MODULE_DIR$/application/public/assets" />
     </content>
     <content url="file://$MODULE_DIR$/server" />
     <content url="file://$MODULE_DIR$/vendor/vitkutny" />

@@ -16,8 +16,8 @@ module.exports = function (grunt) {
 						'<%=bower.directory%>/history.nette.ajax.js/client-side/history.ajax.js',
 						'<%=bower.directory%>/nette.ajax.scroll.js/nette.ajax.scroll.js',
 						'<%=bower.directory%>/nette.ajax.loader.js/nette.ajax.loader.js',
-						'app/assets/scripts/nette.ajax.modal.js',
-						'app/assets/scripts/index.js'
+						'application/assets/scripts/nette.ajax.modal.js',
+						'application/assets/scripts/index.js'
 					]
 				}
 			}
@@ -25,7 +25,7 @@ module.exports = function (grunt) {
 		sass: {
 			default: {
 				files: {
-					'<%=temp.directory%>/public/assets/styles/index.css': 'app/assets/styles/index.scss'
+					'<%=temp.directory%>/public/assets/styles/index.css': 'application/assets/styles/index.scss'
 				}
 			},
 		},
@@ -40,13 +40,13 @@ module.exports = function (grunt) {
 		watch: {
 			scripts: {
 				files: [
-					'app/assets/scripts/*.js'
+					'application/assets/scripts/*.js'
 				],
 				tasks: ['uglify', 'shell:public']
 			},
 			styles: {
 				files: [
-					'app/assets/styles/*.scss'
+					'application/assets/styles/*.scss'
 				],
 				tasks: ['sass', 'shell:public']
 			}
@@ -54,9 +54,9 @@ module.exports = function (grunt) {
 		shell: {
 			application: {
 				command: function (mode) {
-					var file = './app/' + mode + '.php';
+					var file = './application/' + mode + '.php';
 					if (grunt.file.exists(file)) {
-						return 'echo "<?php return require_once __DIR__ . \'/../' + mode + '.php\';" > app/public/index.php';
+						return 'echo "<?php return require_once __DIR__ . \'/../' + mode + '.php\';" > application/public/index.php';
 					} else {
 						grunt.fail.warn('File "' + file + '" does not exists');
 						return '';
@@ -75,7 +75,7 @@ module.exports = function (grunt) {
 					'cd $directory',
 					'for file in $files; do ' + [
 						'from=<%=temp.directory%>/$file',
-						'to=app/$file',
+						'to=application/$file',
 						'if ! diff -q $from $to 2> /dev/null',
 						'then mkdir -p $(dirname $to) && cp $from $to',
 						'fi',
@@ -113,8 +113,8 @@ module.exports = function (grunt) {
 			},
 			dump: {
 				command: [
-					'pg_dump --no-owner --no-privileges --schema-only --exclude-table "migrations*" --dbname=vagrant --file=app/migrations/structures/0000-00-00-000000-dump.sql',
-					'pg_dump --no-owner --no-privileges --data-only --inserts --exclude-table "migrations*" --dbname=vagrant --file=app/migrations/dummy-data/0000-00-00-000000-dump.sql'
+					'pg_dump --no-owner --no-privileges --schema-only --exclude-table "migrations*" --dbname=vagrant --file=application/migrations/structures/0000-00-00-000000-dump.sql',
+					'pg_dump --no-owner --no-privileges --data-only --inserts --exclude-table "migrations*" --dbname=vagrant --file=application/migrations/dummy-data/0000-00-00-000000-dump.sql'
 				].join('&&')
 			}
 		}
