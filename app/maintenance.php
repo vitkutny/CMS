@@ -12,7 +12,7 @@ if ( ! $ob = ob_get_level() && ob_get_length()) {
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<meta name="robots" content="noindex">
 			<title>Site is temporarily down for maintenance</title>
-			<link rel="stylesheet" type="text/css" href="/styles/index.css?version=' . time() . '">
+			<link rel="stylesheet" type="text/css" href="/assets/styles/index.css?version=' . time() . '">
 		</head>
 		<body class="jumbotron container bg-faded">
 	');

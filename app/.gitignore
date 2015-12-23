@@ -1,10 +1,2 @@
 public/index.php
-public/scripts
-public/styles
-public/temp
-public/web/*/scripts
-public/web/*/styles
-public/web/*/temp
-public/web/*/domain/*/scripts
-public/web/*/domain/*/styles
-public/web/*/domain/*/temp
+public/**/assets/

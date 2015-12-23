@@ -1,8 +1,6 @@
-@import "../../vendor/bower/bourbon/app/assets/stylesheets/bourbon";
-@import '../../vendor/bower/bootstrap/scss/bootstrap-flex';
-
-$fa-font-path: "./fonts";
-@import "../../vendor/bower/font-awesome/scss/font-awesome";
+@import "../../../vendor/bower/bourbon/app/assets/stylesheets/bourbon";
+@import '../../../vendor/bower/bootstrap/scss/bootstrap-flex';
+@import "../../../vendor/bower/font-awesome/scss/font-awesome";
 
 html.loading {
 	cursor: progress;

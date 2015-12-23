@@ -2,8 +2,7 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$/app">
-      <excludeFolder url="file://$MODULE_DIR$/app/public/scripts" />
-      <excludeFolder url="file://$MODULE_DIR$/app/public/styles" />
+      <excludeFolder url="file://$MODULE_DIR$/app/public/assets" />
     </content>
     <content url="file://$MODULE_DIR$/server" />
     <content url="file://$MODULE_DIR$/vendor/vitkutny" />

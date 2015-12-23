@@ -7,7 +7,7 @@ module.exports = function (grunt) {
 		uglify: {
 			default: {
 				files: {
-					'<%=temp.directory%>/public/scripts/index.js': [
+					'<%=temp.directory%>/public/assets/scripts/index.js': [
 						'<%=bower.directory%>/tether/dist/js/tether.js',
 						'<%=bower.directory%>/jquery/jquery.js',
 						'<%=bower.directory%>/bootstrap/dist/js/bootstrap.js',
@@ -16,8 +16,8 @@ module.exports = function (grunt) {
 						'<%=bower.directory%>/history.nette.ajax.js/client-side/history.ajax.js',
 						'<%=bower.directory%>/nette.ajax.scroll.js/nette.ajax.scroll.js',
 						'<%=bower.directory%>/nette.ajax.loader.js/nette.ajax.loader.js',
-						'app/scripts/nette.ajax.modal.js',
-						'app/scripts/index.js'
+						'app/assets/scripts/nette.ajax.modal.js',
+						'app/assets/scripts/index.js'
 					]
 				}
 			}
@@ -25,14 +25,14 @@ module.exports = function (grunt) {
 		sass: {
 			default: {
 				files: {
-					'<%=temp.directory%>/public/styles/index.css': 'app/styles/index.scss'
+					'<%=temp.directory%>/public/assets/styles/index.css': 'app/assets/styles/index.scss'
 				}
 			},
 		},
 		copy: {
 			FontAwesome: {
 				src: '<%=bower.directory%>/font-awesome/fonts/*',
-				dest: '<%=temp.directory%>/public/styles/fonts/',
+				dest: '<%=temp.directory%>/public/assets/fonts/',
 				flatten: true,
 				expand: true
 			}
@@ -40,13 +40,13 @@ module.exports = function (grunt) {
 		watch: {
 			scripts: {
 				files: [
-					'app/scripts/*.js'
+					'app/assets/scripts/*.js'
 				],
 				tasks: ['uglify', 'shell:public']
 			},
 			styles: {
 				files: [
-					'app/styles/*.scss'
+					'app/assets/styles/*.scss'
 				],
 				tasks: ['sass', 'shell:public']
 			}
@@ -82,7 +82,7 @@ module.exports = function (grunt) {
 						'done'
 					].join(';'),
 					[
-						'if [ -d public ]',
+						'if [ -d <%=temp.directory%>/public ]',
 						'then rm -rf <%=temp.directory%>/public',
 						'fi'
 					].join(';')
