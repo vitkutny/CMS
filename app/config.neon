@@ -1,8 +1,10 @@
-tracy:
-	errorTemplate: %appDir%/maintenance.php
 extensions:
-	nextras.migrations: Nextras\Migrations\Bridges\NetteDI\MigrationsExtension
 	kdyby.console: Kdyby\Console\DI\ConsoleExtension
+	kdyby.monolog: Kdyby\Monolog\DI\MonologExtension
+	nextras.migrations: Nextras\Migrations\Bridges\NetteDI\MigrationsExtension
+kdyby.monolog:
+	handlers:
+		- Monolog\Handler\SyslogHandler(ytnuk/sandbox)
 nextras.migrations:
 	dir: %appDir%/migrations
 	driver: pgsql
@@ -10,3 +12,5 @@ nextras.migrations:
 	phpParams: [[
 		model: @Nextras\Orm\Model\IModel
 	]]
+tracy:
+	errorTemplate: %appDir%/maintenance.php
