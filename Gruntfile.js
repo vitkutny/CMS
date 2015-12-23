@@ -87,7 +87,7 @@ module.exports = function (grunt) {
 			},
 			cleanup: {
 				command: [
-					'git clean -xdf app/temp'
+					'rm -rf /tmp/ytnuk-sandbox'
 				].join('&&')
 			},
 			dump: {
