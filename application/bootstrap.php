@@ -6,7 +6,17 @@ return call_user_func(
 				if ( ! ($configurator = is_file($local = __DIR__ . '/local.php') ? require_once $local : NULL) instanceof Nette\Configurator) {
 					$configurator = new Nette\Configurator;
 				}
-				$configurator->enableDebugger($directory = '/tmp/ytnuk-sandbox');
+				$directory = implode(
+					DIRECTORY_SEPARATOR,
+					[
+						sys_get_temp_dir(),
+						'ytnuk-sandbox',
+					]
+				);
+				if ( ! is_dir($directory)) {
+					@mkdir($directory);
+				}
+				$configurator->enableDebugger($directory);
 				$configurator->setTempDirectory($directory);
 				$configurator->addConfig(__DIR__ . '/../vendor/config.neon');
 				$configurator->addConfig(__DIR__ . '/config.neon');
