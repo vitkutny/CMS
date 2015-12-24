@@ -4,7 +4,7 @@ extensions:
 	nextras.migrations: Nextras\Migrations\Bridges\NetteDI\MigrationsExtension
 kdyby.monolog:
 	handlers:
-		- Monolog\Handler\SyslogHandler(ytnuk/sandbox)
+		- Monolog\Handler\SyslogHandler(%composer.name%)
 nextras.migrations:
 	dir: %appDir%/migrations
 	driver: pgsql

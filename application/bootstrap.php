@@ -6,15 +6,27 @@ return call_user_func(
 				if ( ! ($configurator = is_file($local = __DIR__ . '/local.php') ? require_once $local : NULL) instanceof Nette\Configurator) {
 					$configurator = new Nette\Configurator;
 				}
+				$configurator->addParameters(
+					[
+						'composer' => $composer = json_decode(
+							file_get_contents(__DIR__ . '/../composer.json'),
+							TRUE
+						),
+					]
+				);
 				$directory = implode(
 					DIRECTORY_SEPARATOR,
 					[
 						sys_get_temp_dir(),
-						'ytnuk-sandbox',
+						$composer['name'],
 					]
 				);
 				if ( ! is_dir($directory)) {
-					@mkdir($directory);
+					@mkdir(
+						$directory,
+						0777,
+						TRUE
+					);
 				}
 				$configurator->enableDebugger($directory);
 				$configurator->setTempDirectory($directory);

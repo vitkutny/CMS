@@ -2,10 +2,11 @@ module.exports = function (grunt) {
 	var os = require('os');
 	var path = require('path');
 	grunt.config.init({
-		temp: {
-			directory: [os.tmpdir(), 'ytnuk-sandbox'].join(path.sep)
-		},
 		bower: grunt.file.readJSON('./.bowerrc'),
+		composer: grunt.file.readJSON('./composer.json'),
+		temp: {
+			directory: [os.tmpdir(), '<%=composer.name%>'].join(path.sep)
+		},
 		uglify: {
 			default: {
 				files: {
