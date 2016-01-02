@@ -41,7 +41,7 @@ sed -ie "s/www-data/vagrant/g" "/etc/php/7.0/fpm/pool.d/www.conf"
 
 su postgres -c 'dropdb vagrant'
 su postgres -c 'createdb vagrant'
-su postgres -c 'psql vagrant < /vagrant/server/database/permission.sql'
+su postgres -c 'psql vagrant --command="CREATE USER vagrant WITH PASSWORD '\''vagrant'\'' SUPERUSER"'
 
 curl -sS "https://getcomposer.org/installer" | php
 mv "composer.phar" "/usr/local/bin/composer"

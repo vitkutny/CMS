@@ -1,1 +1,0 @@
-CREATE USER "vagrant" WITH PASSWORD 'vagrant' SUPERUSER;
