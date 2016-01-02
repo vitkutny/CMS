@@ -4,7 +4,6 @@
 	"dependencies": {
 		"bourbon": "~4.2",
 		"bootstrap": "#v4-dev",
-		"tether": "~1.0",
 		"font-awesome": "~4.5",
 		"nette-forms": "~2.3",
 		"nette.ajax.js": "~2.0",
