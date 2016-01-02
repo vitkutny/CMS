@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-export LC_ALL=en_US.utf8
 add-apt-repository -y ppa:ondrej/php-7.0
 
 apt-get update
@@ -8,7 +7,7 @@ apt-get upgrade -y --force-yes
 
 apt-get install -y --force-yes \
 	nginx \
-	php7.0-fpm \
+	php-fpm \
 	php-pgsql \
 	php-sqlite3 \
 	postgresql \
@@ -39,7 +38,7 @@ chown vagrant "/var/lib/php/sessions"
 sed -ie "s/www-data/vagrant/g" "/etc/nginx/nginx.conf"
 sed -ie "s/www-data/vagrant/g" "/etc/php/7.0/fpm/pool.d/www.conf"
 
-su postgres -c 'dropdb vagrant'
+su postgres -c 'dropdb vagrant --if-exists'
 su postgres -c 'createdb vagrant'
 su postgres -c 'psql vagrant --command="CREATE USER vagrant WITH PASSWORD '\''vagrant'\'' SUPERUSER"'
 
