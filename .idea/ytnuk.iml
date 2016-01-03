@@ -56,25 +56,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/process" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/translation" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/tracy/tracy" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/vitkutny/version" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/vojtech-dobes/nette-ajax-history" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/ytnuk/application" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/ytnuk/blog" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/ytnuk/config" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/ytnuk/form" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/ytnuk/grid" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/ytnuk/home" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/ytnuk/link" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/ytnuk/menu" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/ytnuk/message" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/ytnuk/orm" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/ytnuk/page" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/ytnuk/pagination" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/ytnuk/shop" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/ytnuk/sitemap" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/ytnuk/templating" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/ytnuk/translation" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/ytnuk/web" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -130,25 +112,7 @@
           <root url="file://$MODULE_DIR$/vendor/symfony/process" />
           <root url="file://$MODULE_DIR$/vendor/symfony/translation" />
           <root url="file://$MODULE_DIR$/vendor/tracy/tracy" />
-          <root url="file://$MODULE_DIR$/vendor/vitkutny/version" />
           <root url="file://$MODULE_DIR$/vendor/vojtech-dobes/nette-ajax-history" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/application" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/blog" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/config" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/form" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/grid" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/home" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/link" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/menu" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/message" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/orm" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/page" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/pagination" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/shop" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/sitemap" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/templating" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/translation" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/web" />
         </CLASSES>
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/bower/bootstrap" />
@@ -200,25 +164,7 @@
           <root url="file://$MODULE_DIR$/vendor/symfony/process" />
           <root url="file://$MODULE_DIR$/vendor/symfony/translation" />
           <root url="file://$MODULE_DIR$/vendor/tracy/tracy" />
-          <root url="file://$MODULE_DIR$/vendor/vitkutny/version" />
           <root url="file://$MODULE_DIR$/vendor/vojtech-dobes/nette-ajax-history" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/application" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/blog" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/config" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/form" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/grid" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/home" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/link" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/menu" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/message" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/orm" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/page" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/pagination" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/shop" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/sitemap" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/templating" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/translation" />
-          <root url="file://$MODULE_DIR$/vendor/ytnuk/web" />
         </SOURCES>
       </library>
     </orderEntry>
