@@ -23,21 +23,21 @@ fi
 
 if ! [ -L "/etc/nginx/sites-enabled" ]; then
 	rm -rf "/etc/nginx/sites-enabled"
-	ln -fs "/vagrant/server/nginx/sites-available" "/etc/nginx/sites-enabled"
+	ln -fs "/vagrant/server/etc/nginx/sites-enabled" "/etc/nginx/sites-enabled"
 fi
 
 if ! [ -L "/etc/nginx/snippets/nette.conf" ]; then
 	rm -rf "/etc/nginx/snippets/nette.conf"
-	ln -fs "/vagrant/server/nginx/snippets/nette.conf" "/etc/nginx/snippets/nette.conf"
+	ln -fs "/vagrant/server/etc/nginx/snippets/nette.conf" "/etc/nginx/snippets/nette.conf"
 fi
 if ! [ -L "/etc/nginx/snippets/php.conf" ]; then
 	rm -rf "/etc/nginx/snippets/php.conf"
-	ln -fs "/vagrant/server/nginx/snippets/php.conf" "/etc/nginx/snippets/php.conf"
+	ln -fs "/vagrant/server/etc/nginx/snippets/php.conf" "/etc/nginx/snippets/php.conf"
 fi
 
 if ! [ -L "/etc/php/mods-available/xdebug.ini" ]; then
 	rm -f "/etc/php/mods-available/xdebug.ini"
-	ln -fs "/vagrant/server/php/mods-available/xdebug.ini" "/etc/php/mods-available/xdebug.ini"
+	ln -fs "/vagrant/server/etc/php/mods-available/xdebug.ini" "/etc/php/mods-available/xdebug.ini"
 fi
 
 chown vagrant "/var/lib/php/sessions"
