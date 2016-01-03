@@ -1380,7 +1380,7 @@ ALTER TABLE ONLY blog_post_category
 --
 
 ALTER TABLE ONLY blog_post
-    ADD CONSTRAINT blog_post_content_fkey FOREIGN KEY (content) REFERENCES translation(id) ON UPDATE CASCADE ON DELETE CASCADE;
+    ADD CONSTRAINT blog_post_content_fkey FOREIGN KEY (content) REFERENCES translation(id) ON UPDATE CASCADE ON DELETE RESTRICT;
 
 
 --
@@ -1412,7 +1412,7 @@ ALTER TABLE ONLY blog_post
 --
 
 ALTER TABLE ONLY blog_post
-    ADD CONSTRAINT blog_post_title_fkey FOREIGN KEY (title) REFERENCES translation(id) ON UPDATE CASCADE ON DELETE CASCADE;
+    ADD CONSTRAINT blog_post_title_fkey FOREIGN KEY (title) REFERENCES translation(id) ON UPDATE CASCADE ON DELETE RESTRICT;
 
 
 --
@@ -1452,7 +1452,7 @@ ALTER TABLE ONLY menu_node
 --
 
 ALTER TABLE ONLY menu
-    ADD CONSTRAINT menu_title_fkey FOREIGN KEY (title) REFERENCES translation(id) ON UPDATE CASCADE ON DELETE CASCADE;
+    ADD CONSTRAINT menu_title_fkey FOREIGN KEY (title) REFERENCES translation(id) ON UPDATE CASCADE ON DELETE RESTRICT;
 
 
 --
@@ -1460,7 +1460,7 @@ ALTER TABLE ONLY menu
 --
 
 ALTER TABLE ONLY page
-    ADD CONSTRAINT page_content_fkey FOREIGN KEY (content) REFERENCES translation(id) ON UPDATE CASCADE ON DELETE CASCADE;
+    ADD CONSTRAINT page_content_fkey FOREIGN KEY (content) REFERENCES translation(id) ON UPDATE CASCADE ON DELETE RESTRICT;
 
 
 --
@@ -1556,7 +1556,7 @@ ALTER TABLE ONLY shop_product
 --
 
 ALTER TABLE ONLY shop_product
-    ADD CONSTRAINT shop_product_title_fkey FOREIGN KEY (title) REFERENCES translation(id) ON UPDATE CASCADE ON DELETE CASCADE;
+    ADD CONSTRAINT shop_product_title_fkey FOREIGN KEY (title) REFERENCES translation(id) ON UPDATE CASCADE ON DELETE RESTRICT;
 
 
 --
@@ -1612,7 +1612,7 @@ ALTER TABLE ONLY web
 --
 
 ALTER TABLE ONLY web
-    ADD CONSTRAINT web_name_fkey FOREIGN KEY (name) REFERENCES translation(id) ON UPDATE CASCADE ON DELETE CASCADE;
+    ADD CONSTRAINT web_name_fkey FOREIGN KEY (name) REFERENCES translation(id) ON UPDATE CASCADE ON DELETE RESTRICT;
 
 
 --
