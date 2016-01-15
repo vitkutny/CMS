@@ -30,7 +30,7 @@ module.exports = function (grunt) {
 				files: {
 					'<%=temp.directory%>/public/assets/styles/index.css': 'application/assets/styles/index.scss'
 				}
-			},
+			}
 		},
 		copy: {
 			FontAwesome: {
@@ -106,7 +106,7 @@ module.exports = function (grunt) {
 			update: {
 				command: [
 					'bower update --colors',
-					'composer update --prefer-source --ansi',
+					'composer update --prefer-source --ansi'
 				].join('&&')
 			},
 			cleanup: {
@@ -134,7 +134,7 @@ module.exports = function (grunt) {
 		'uglify',
 		'sass',
 		'copy',
-		'shell:public',
+		'shell:public'
 	]);
 
 	grunt.task.registerTask('install', [

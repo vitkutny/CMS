@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Ytnuk" pattern="file[ytnuk]:*||file[ytnuk]:vendor/ytnuk//*||file[ytnuk]:vendor/vitkutny//*||file[ytnuk]:server//*||file[ytnuk]:application/*||file[ytnuk]:application/public/*||file[ytnuk]:application/public/adminer/*||file[ytnuk]:application/assets//*" />
+</component>
