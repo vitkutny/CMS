@@ -8,15 +8,17 @@ return call_user_func(function () : Nette\Configurator {
 		$configurator->addParameters([
 			'composer' => $composer = json_decode(file_get_contents(__DIR__ . '/../composer.json'), TRUE),
 		]);
-		if ( ! is_dir($directory = implode(DIRECTORY_SEPARATOR, [
+		$directory = isset($composer['name']) ? implode(DIRECTORY_SEPARATOR, [
 			sys_get_temp_dir(),
 			$composer['name'],
-		]))
-		) {
-			@mkdir($directory, 0777, TRUE);
+		]) : NULL;
+		if ($directory) {
+			if ( ! is_dir($directory)) {
+				@mkdir($directory, 0777, TRUE);
+			}
+			$configurator->enableDebugger($directory);
+			$configurator->setTempDirectory($directory);
 		}
-		$configurator->enableDebugger($directory);
-		$configurator->setTempDirectory($directory);
 		$configurator->addConfig(__DIR__ . '/../vendor/config.neon');
 		$configurator->addConfig(__DIR__ . '/config.neon');
 		if (is_file($local = __DIR__ . '/local.neon')) {
