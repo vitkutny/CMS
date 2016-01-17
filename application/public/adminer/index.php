@@ -6,20 +6,33 @@ call_user_func(function () {
 			exit;
 		}
 		call_user_func(function (Nette\DI\Container $container) {
-			call_user_func(function (Nextras\Dbal\Connection $connection) {
+			call_user_func(function (
+				Nextras\Dbal\Connection $connection,
+				Nette\Http\IRequest $request,
+				Nette\Http\IResponse $response
+			) {
 				global $adminer_config;
 				$adminer_config = $connection->getConfig() + [
 						'host' => 'localhost',
 						'user' => $username = posix_getpwuid(posix_geteuid())['name'] ?? NULL,
 						'password' => $username,
+						'dbname' => $username,
 					];
-				if ( ! isset($_GET['db'])) {
-					$_GET['db'] = $username;
+				$url = $request->getUrl();
+				$url->setQuery([
+						'username' => $adminer_config['user'],
+						'db' => $adminer_config['dbname'],
+						$adminer_config['driver'] => '',
+					] + $query = $url->getQueryParameters());
+				if ($url->getQueryParameters() !== $query) {
+					$response->redirect($url);
+					exit;
 				}
-				if (isset($adminer_config['driver'])) {
-					$_GET['username'] = $_GET[$adminer_config['driver']] = '';
-				}
-			}, $container->getByType(Nextras\Dbal\Connection::class));
+			}, ...[
+				$container->getByType(Nextras\Dbal\Connection::class),
+				$container->getByType(Nette\Http\Request::class),
+				$container->getByType(Nette\Http\IResponse::class),
+			]);
 		}, $configurator->createContainer());
 	}, require __DIR__ . '/../../bootstrap.php');
 });
