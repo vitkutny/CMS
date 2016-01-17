@@ -5,6 +5,8 @@ call_user_func(function () {
 			require __DIR__ . '/../index.php';
 			exit;
 		}
+		$configurator->setDebugMode(FALSE);
+		$configurator->enableDebugger();
 		call_user_func(function (Nette\DI\Container $container) {
 			call_user_func(function (
 				Nextras\Dbal\Connection $connection,
