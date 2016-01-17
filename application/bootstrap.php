@@ -2,10 +2,12 @@
 return call_user_func(function () : Nette\Configurator {
 	return call_user_func(function (Composer\Autoload\ClassLoader $classLoader) : Nette\Configurator {
 		Tracy\Debugger::$errorTemplate = __DIR__ . '/maintenance.php';
-		if ( ! ($configurator = is_file($local = __DIR__ . '/local.php') ? require_once $local : NULL) instanceof Nette\Configurator) {
+		if ( ! ($configurator = is_file($local = __DIR__ . '/local.php') ? require $local : NULL) instanceof Nette\Configurator) {
 			$configurator = new Nette\Configurator;
 		}
 		$configurator->addParameters([
+			'appDir' => __DIR__,
+			'wwwDir' => __DIR__ . '/public',
 			'composer' => $composer = json_decode(file_get_contents(__DIR__ . '/../composer.json'), TRUE),
 		]);
 		$directory = isset($composer['name']) ? implode(DIRECTORY_SEPARATOR, [
@@ -26,5 +28,5 @@ return call_user_func(function () : Nette\Configurator {
 		}
 
 		return $configurator;
-	}, require_once __DIR__ . '/../vendor/autoload.php');
+	}, require __DIR__ . '/../vendor/autoload.php');
 });

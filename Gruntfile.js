@@ -59,7 +59,7 @@ module.exports = function (grunt) {
 				command: function (mode) {
 					var file = './application/' + mode + '.php';
 					if (grunt.file.exists(file)) {
-						return 'echo "<?php return require_once __DIR__ . \'/../' + mode + '.php\';" > application/public/index.php';
+						return 'echo "<?php return require __DIR__ . \'/../' + mode + '.php\';" > application/public/index.php';
 					} else {
 						grunt.fail.warn('File "' + file + '" does not exists');
 						return '';

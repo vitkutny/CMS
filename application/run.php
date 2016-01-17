@@ -8,5 +8,5 @@ return call_user_func(function () : Nette\Application\Application {
 				return $application;
 			}, $container->getByType(Nette\Application\Application::class));
 		}, $configurator->createContainer());
-	}, require_once __DIR__ . '/bootstrap.php');
+	}, require __DIR__ . '/bootstrap.php');
 });
