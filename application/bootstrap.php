@@ -1,6 +1,6 @@
 <?php
 return call_user_func(function () : Nette\Configurator {
-	return call_user_func(function (Composer\Autoload\ClassLoader $classLoader) : Nette\Configurator {
+	return call_user_func(function () : Nette\Configurator {
 		Tracy\Debugger::$errorTemplate = __DIR__ . '/maintenance.php';
 		if ( ! ($configurator = is_file($local = __DIR__ . '/local.php') ? require $local : NULL) instanceof Nette\Configurator) {
 			$configurator = new Nette\Configurator;
